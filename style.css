@@ -1,21 +1,73 @@
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #5f6368;
+    margin-bottom: 30px;
+}
+
+#generate {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate:hover {
+    background-color: #155ab6;
+}
+
+#numbers-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.placeholder-text {
+    color: #1a73e8;
 }
 
 #numbers {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .number {
     width: 50px;
     height: 50px;
-    background-color: green; /* Simple and visible */
+    background-color: #4caf50;
     color: white;
     display: flex;
     align-items: center;
@@ -23,4 +75,27 @@ body {
     border-radius: 50%;
     font-size: 24px;
     font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    #generate {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }

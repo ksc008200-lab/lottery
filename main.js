@@ -1,16 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const generateBtn = document.getElementById('generate');
-  const numbersDiv = document.getElementById('numbers');
+document.getElementById('generate').addEventListener('click', function() {
+    const numbersContainer = document.getElementById('numbers-container');
+    numbersContainer.innerHTML = ''; // Clear previous numbers
 
-  if (generateBtn && numbersDiv) {
-    generateBtn.addEventListener('click', () => {
-      console.log('Button clicked!');
-      const numberDiv = document.createElement('div');
-      numberDiv.className = 'number';
-      numberDiv.textContent = Math.floor(Math.random() * 45) + 1;
-      numbersDiv.appendChild(numberDiv);
+    const numbers = generateLottoNumbers();
+
+    const numbersDiv = document.createElement('div');
+    numbersDiv.id = 'numbers';
+
+    numbers.forEach(num => {
+        const numberDiv = document.createElement('div');
+        numberDiv.className = 'number';
+        numberDiv.textContent = num;
+        numbersDiv.appendChild(numberDiv);
     });
-  } else {
-    console.error('Initialization failed: Button or numbers container not found.');
-  }
+
+    numbersContainer.appendChild(numbersDiv);
 });
+
+function generateLottoNumbers() {
+    const numbers = new Set();
+    while (numbers.size < 6) {
+        numbers.add(Math.floor(Math.random() * 45) + 1);
+    }
+    return Array.from(numbers).sort((a, b) => a - b);
+}
