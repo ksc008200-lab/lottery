@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기 - 비숑 버프</title>
+    <title>로또 번호 생성기 - 비숑 버프 자동화</title>
     <link rel="stylesheet" href="lotto.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="nav-link">홈</a>
-            <a href="lotto.html" class="nav-link active">로또 생성기</a>
-            <a href="contact.html" class="nav-link">문의하기</a>
+            <a href="index.html">홈</a>
+            <a href="lotto.html" class="active">로또 번호 생성기</a>
         </nav>
     </header>
+
     <main>
         <div class="container">
             <h1>로또 번호 생성기</h1>
             <p>버튼을 눌러 행운의 번호를 받아보세요!</p>
-            <div id="lotto-numbers" class="lotto-numbers-container">
+            <div class="lotto-numbers-container" id="lotto-numbers">
                 <!-- 생성된 번호가 여기에 표시됩니다. -->
             </div>
             <button id="generate-btn">번호 생성</button>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2024 비숑 버프. All rights reserved.</p>
-        <p>
-            <a href="privacy.html">개인정보 처리방침</a> | 
-            <a href="terms.html">이용약관</a>
-        </p>
+        <p>&copy; 2024 비숑 버프 자동화. All rights reserved.</p>
+        <div>
+            <a href="privacy.html">개인정보 처리방침</a> |
+            <a href="terms.html">이용약관</a> |
+            <a href="contact.html">문의하기</a>
+        </div>
     </footer>
+
     <script src="lotto.js"></script>
 </body>
 </html>
