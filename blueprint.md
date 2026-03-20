@@ -1,42 +1,43 @@
-# Lotto Number Generator - Blueprint
+# Blueprint: Bichon Buff Blog
 
 ## Overview
 
-This application generates lotto numbers for users. Initially, it provided purely random numbers. The current version generates numbers based on a weighted probability derived from a sample of historical winning numbers, increasing the chances of picking statistically more frequent numbers.
+A personal blog website for "Bichon Buff" showcasing automation tips and programs. The site is built with modern, framework-less web technologies (HTML, CSS, JS) and deployed via Cloudflare Pages. It features a clean, responsive design, blog post management, and interactive services.
 
-## Project Outline & Features
+## Implemented Features & Design
 
-### Version 1: Random Generator
-- **HTML:** Basic structure with a title, a "Generate" button, and a container for the numbers.
-- **CSS:** Simple styling for the button and number display. Numbers are shown in green circles.
-- **JavaScript:** A click listener on the button generates 6 unique random numbers between 1 and 45.
+### Core Structure
+- **Project Root:** `my-blog/`
+- **Deployment:** Cloudflare Pages, auto-deployed from the `main` branch of a GitHub repository.
+- **Main Page (`index.html`):** Displays a list of blog posts, a search bar, and category filters.
+- **Admin Functionality:** In-place "수정(Edit)" and "삭제(Delete)" buttons for posts, visible to administrators.
 
-### Version 2 (Current): Statistical Generator
-- **Style:**
-  - The color of the number circles is now determined by the number itself, creating a rainbow effect (`hsl`).
-  - The "Generate" button color is changed to blue.
-  - Added a hover effect to the number circles.
-- **Design:** The overall layout remains a simple, centered component.
-- **Features:**
-  - **Historical Data:** Includes a built-in, static dataset of past winning lotto numbers.
-  - **Weighted Probability:** The JavaScript logic has been updated to:
-    1. Calculate the frequency of each number from the historical data.
-    2. Create a "weighted pool" of numbers, where more frequent numbers appear more often.
-    3. Generate 6 unique numbers by randomly picking from this weighted pool.
-  - **Colorful Display:** The generated numbers are displayed with a color corresponding to their value, making the result more visually appealing.
+### Design & Style
+- **Layout:** Clean, card-based layout for blog posts.
+- **Color Scheme:** Primarily black, white, and grey with green accents.
+- **Typography:** Sans-serif fonts for readability.
 
-## Current Request Plan
+### Content Pages
+- **`ads.txt`:** Added for Google AdSense compliance.
+- **`privacy.html`:** Outlines the privacy policy.
+- **`terms.html`:** Outlines the terms of service.
+- **`contact.html`:** Provides contact information.
+- **Footer Navigation:** Links to policy pages and contact page added to the main page footer.
 
-**Request:** "로또가 시행된 년도 이래로 당첨 번호를 통계적으로 반영해서 확률이 높은 번호가 나오도록 바꿔줘" (Change it so that numbers with a higher probability appear, reflecting the winning numbers statistically since the lottery began.)
+## Current Task: Add Lotto Number Generator
 
-**Plan:**
-1.  **[Done] Create `blueprint.md`:** Document the project's purpose, features, and the plan for the current request.
-2.  **[Done] Update JavaScript (`main.js`):**
-    *   Embed a sample of historical lotto winning numbers.
-    *   Implement logic to calculate the frequency of each number.
-    *   Create a new number generation function that uses a weighted pool based on these frequencies to increase the probability of selecting historically common numbers.
-3.  **[Done] Update CSS (`style.css`):**
-    *   Change the button color for a refreshed look.
-    *   Remove the static background color from the `.number` class.
-    *   Modify the JavaScript to apply a dynamic background color to each number circle based on its value (using HSL colors) for better visual feedback.
-4.  **[Done] Inform User:** Notify the user that the changes have been implemented and explain the new logic.
+### Plan
+1.  **Create Service Page:**
+    *   Create a new file `my-blog/lotto.html` to house the generator.
+    *   The page will have a title, a button to trigger the generation, and a visually appealing area to display the 6 generated numbers.
+2.  **Implement Generator Logic:**
+    *   Create a new JavaScript file `my-blog/lotto.js`.
+    *   The script will generate 6 unique random numbers from 1 to 45.
+    *   The numbers will be sorted and displayed dynamically on the page.
+    *   The display will be enhanced with colors and animations for a better user experience.
+3.  **Style the Page:**
+    *   Create a new CSS file `my-blog/lotto.css` for custom styles.
+    *   The design will be modern, interactive, and consistent with the blog's overall aesthetic. Each number will be displayed in a colored circle.
+4.  **Integrate Navigation:**
+    *   Modify `my-blog/index.html` to add a prominent link or button to the new "로또 생성기" (Lotto Generator) service. A good location would be in the header navigation area.
+    *   Ensure consistent navigation across all pages by adding the link to the header of `privacy.html`, `terms.html`, and `contact.html` as well.
