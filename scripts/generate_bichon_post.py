@@ -6,6 +6,7 @@ import random
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 BICHON_API_KEY = os.environ["BICHON_API_KEY"].strip()
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
+TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "").strip()
 
 TOPICS = [
     ("혈압 관리에 좋은 음식 TOP 5", "건강관리", "blood pressure healthy food"),
@@ -66,20 +67,83 @@ def get_image_url(query):
     return ""
 
 
-def generate_post(topic):
-    prompt = f"""당신은 10년 경력의 건강 전문 블로거입니다. 아래 주제로 독자들이 실제로 도움받을 수 있는 고품질 한국어 블로그 포스트를 작성해주세요.
+def search_references(topic):
+    """Tavily로 신뢰할 수 있는 자료 검색"""
+    if not TAVILY_API_KEY:
+        print("TAVILY_API_KEY 없음 - 검색 스킵")
+        return ""
+    try:
+        print(f"자료 검색 중: {topic}")
+        resp = requests.post(
+            "https://api.tavily.com/search",
+            json={
+                "api_key": TAVILY_API_KEY,
+                "query": f"{topic} 연구 논문 전문가 영양사 의학적 효과",
+                "search_depth": "advanced",
+                "max_results": 5,
+                "include_domains": [
+                    "pubmed.ncbi.nlm.nih.gov",
+                    "health.harvard.edu",
+                    "ncbi.nlm.nih.gov",
+                    "who.int",
+                    "mayoclinic.org",
+                    "nhs.uk",
+                    "korea.kr",
+                    "kdca.go.kr",
+                    "health.kr"
+                ]
+            },
+            timeout=15
+        )
+        data = resp.json()
+        results = data.get("results", [])
+        if not results:
+            # 도메인 제한 없이 재시도
+            resp2 = requests.post(
+                "https://api.tavily.com/search",
+                json={
+                    "api_key": TAVILY_API_KEY,
+                    "query": f"{topic} 영양사 교수 연구결과 효능 효과",
+                    "search_depth": "advanced",
+                    "max_results": 5,
+                },
+                timeout=15
+            )
+            data = resp2.json()
+            results = data.get("results", [])
+
+        ref_text = ""
+        for r in results[:4]:
+            ref_text += f"\n출처: {r.get('title','')}\nURL: {r.get('url','')}\n내용: {r.get('content','')[:500]}\n"
+        print(f"검색 결과 {len(results)}개 수집")
+        return ref_text
+    except Exception as e:
+        print(f"검색 실패: {e}")
+        return ""
+
+
+def generate_post(topic, references=""):
+    ref_section = f"""
+[참고 자료 - 아래 내용을 바탕으로 신뢰도 높은 글을 작성하세요]
+{references}
+""" if references else ""
+
+    prompt = f"""당신은 영양학 석사 학위를 보유한 10년 경력의 건강 전문 블로거입니다.
+논문, 의학 연구, 공신력 있는 전문가(영양사, 의사, 교수)의 견해를 바탕으로 아래 주제의 고품질 블로그 포스트를 작성해주세요.
 
 주제: {topic}
-
+{ref_section}
 [작성 규칙]
-- HTML 형식 (h2, h3, p, ul, li, strong, table 태그 적극 활용)
-- 분량: 1500~2000단어
+- HTML 형식 (h2, h3, p, ul, li, strong, blockquote, table 태그 적극 활용)
+- 분량: 1800~2500단어
 - 구성:
-  1. 흥미로운 도입부 (왜 이 주제가 중요한지)
-  2. 핵심 내용 4~5개 섹션 (각 섹션마다 h2 태그)
-  3. 각 섹션 안에 구체적인 설명, 수치, 예시 포함
-  4. 실천 가능한 팁을 bullet point로 정리
-  5. 마무리 (핵심 요약 + 독자 행동 유도)
+  1. 흥미로운 도입부 (통계나 연구 수치로 시작)
+  2. 핵심 내용 5개 섹션 (각 섹션마다 h2 태그)
+  3. 각 섹션에 연구 결과, 전문가 의견, 구체적 수치 포함
+  4. blockquote 태그로 전문가 인용구 1~2개 삽입
+  5. 실천 가능한 팁을 bullet point로 정리
+  6. 마무리 (핵심 요약 + 독자 행동 유도)
+- "연구에 따르면", "전문가들은", "○○ 대학 연구팀", "대한영양사협회" 등 출처 명시
 - 의학적 면책 조항을 마지막에 추가
 - 친근하고 신뢰감 있는 문체
 - SEO를 위해 주제 키워드를 자연스럽게 반복
@@ -120,8 +184,10 @@ CONTENT: (HTML 본문 전체)"""
 
 
 print(f"주제: {topic}")
+print("자료 검색 중...")
+references = search_references(topic)
 print("글 생성 중...")
-title, content = generate_post(topic)
+title, content = generate_post(topic, references)
 
 print("이미지 검색 중...")
 thumbnail = get_image_url(image_query)
