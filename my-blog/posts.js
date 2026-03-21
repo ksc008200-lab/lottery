@@ -9,6 +9,15 @@
 
 const POSTS = [
   {
+    id: 'cardio-comparison-walking-running-cycling',
+    title: '걷기 vs 달리기 vs 자전거: 체지방 태우는 유산소 운동, 당신에게 맞는 건 뭘까?',
+    excerpt: '유산소 운동을 시작하려는데 어떤 운동이 체지방 감량에 가장 효과적인지 고민되시나요? 걷기, 달리기, 자전거의 칼로리 소모량과 지방 연소 효율을 비교해 내 몸에 딱 맞는 운동을 찾아드립니다.',
+    date: '2026-03-21',
+    category: '다이어트',
+    thumbnail: '',
+    file: 'post-cardio-comparison-walking-running-cycling.html'
+  },
+  {
     id: 'senior-diet',
     title: '시니어 건강을 위한 식단 — 60대 이상 필수 영양 가이드',
     excerpt: '근육 손실 예방, 뼈 건강 유지, 만성질환 예방을 위한 시니어 맞춤 식단 전략. 꼭 챙겨야 할 영양소와 하루 식사 구성법을 정리했습니다.',
