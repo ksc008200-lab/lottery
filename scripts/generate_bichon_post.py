@@ -40,19 +40,27 @@ topic, category, image_query = random.choice(TOPICS)
 
 def get_image_url(query):
     if not PEXELS_API_KEY:
+        print("PEXELS_API_KEY 없음 - 이미지 스킵")
         return ""
     try:
+        print(f"Pexels 검색: {query}")
         resp = requests.get(
             "https://api.pexels.com/v1/search",
             headers={"Authorization": PEXELS_API_KEY},
             params={"query": query, "per_page": 10, "orientation": "landscape"},
             timeout=10
         )
+        print(f"Pexels 응답 코드: {resp.status_code}")
         data = resp.json()
         photos = data.get("photos", [])
+        print(f"이미지 수: {len(photos)}")
         if photos:
             photo = random.choice(photos[:5])
-            return photo["src"]["large2x"]
+            url = photo["src"]["large2x"]
+            print(f"선택된 이미지: {url[:60]}...")
+            return url
+        else:
+            print(f"이미지 없음. 응답: {data}")
     except Exception as e:
         print(f"이미지 가져오기 실패: {e}")
     return ""
@@ -82,7 +90,7 @@ CONTENT: (HTML 본문 전체)"""
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=4096,
+        max_tokens=8192,
         messages=[{"role": "user", "content": prompt}]
     )
 
