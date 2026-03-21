@@ -4,7 +4,7 @@ import os
 import random
 
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-BICHON_API_KEY = os.environ["BICHON_API_KEY"]
+BICHON_API_KEY = os.environ["BICHON_API_KEY"].strip()
 
 TOPICS = [
     ("혈압 관리에 좋은 음식 TOP 5", "건강관리"),
