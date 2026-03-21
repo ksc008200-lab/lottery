@@ -39,32 +39,46 @@ TOPICS = [
 topic, category, image_query = random.choice(TOPICS)
 
 
-def get_image_url(query):
-    if not PEXELS_API_KEY:
-        print("PEXELS_API_KEY 없음 - 이미지 스킵")
-        return ""
-    try:
-        print(f"Pexels 검색: {query}")
-        resp = requests.get(
-            "https://api.pexels.com/v1/search",
-            headers={"Authorization": PEXELS_API_KEY},
-            params={"query": query, "per_page": 10, "orientation": "landscape"},
-            timeout=10
-        )
-        print(f"Pexels 응답 코드: {resp.status_code}")
-        data = resp.json()
-        photos = data.get("photos", [])
-        print(f"이미지 수: {len(photos)}")
-        if photos:
-            photo = random.choice(photos[:5])
-            url = photo["src"]["large2x"]
-            print(f"선택된 이미지: {url[:60]}...")
-            return url
-        else:
-            print(f"이미지 없음. 응답: {data}")
-    except Exception as e:
-        print(f"이미지 가져오기 실패: {e}")
-    return ""
+FALLBACK_IMAGES = {
+    "건강":          "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+    "건강관리":      "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg",
+    "건강생활":      "https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg",
+    "시니어건강":    "https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg",
+    "건강식품":      "https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg",
+    "건강다이어트":  "https://images.pexels.com/photos/2377045/pexels-photo-2377045.jpeg",
+    "건강백세":      "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+}
+
+
+def get_image_url(query, category="건강"):
+    print(f"PEXELS_API_KEY 길이: {len(PEXELS_API_KEY)}")
+    if PEXELS_API_KEY:
+        try:
+            print(f"Pexels 검색: {query}")
+            resp = requests.get(
+                "https://api.pexels.com/v1/search",
+                headers={"Authorization": PEXELS_API_KEY},
+                params={"query": query, "per_page": 10, "orientation": "landscape"},
+                timeout=10
+            )
+            print(f"Pexels 응답 코드: {resp.status_code}")
+            data = resp.json()
+            photos = data.get("photos", [])
+            print(f"이미지 수: {len(photos)}")
+            if photos:
+                photo = random.choice(photos[:5])
+                url = photo["src"]["large2x"]
+                print(f"선택된 이미지: {url[:60]}...")
+                return url
+            else:
+                print(f"이미지 없음. 응답: {str(data)[:200]}")
+        except Exception as e:
+            print(f"Pexels 실패: {e}")
+
+    # 기본 이미지 사용
+    fallback = FALLBACK_IMAGES.get(category, FALLBACK_IMAGES["건강"])
+    print(f"기본 이미지 사용: {fallback[:60]}...")
+    return fallback
 
 
 def search_references(topic):
@@ -190,7 +204,7 @@ print("글 생성 중...")
 title, content = generate_post(topic, references)
 
 print("이미지 검색 중...")
-thumbnail = get_image_url(image_query)
+thumbnail = get_image_url(image_query, category)
 if thumbnail:
     print(f"이미지 URL: {thumbnail[:60]}...")
 else:
