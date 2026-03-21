@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ 제목 수정 -->
+  <title>포스트 제목 | 비숑 웰니스</title>
+  <!-- ✏️ 설명 수정 (검색 결과에 표시됨, 80-120자 권장) -->
+  <meta name="description" content="포스트 요약 설명을 여기에 작성합니다.">
+  <!-- ✏️ OG 태그 수정 -->
+  <meta property="og:title" content="포스트 제목">
+  <meta property="og:description" content="포스트 요약 설명">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bichonbuff.com/post-파일명.html">
+  <meta property="og:site_name" content="비숑 웰니스">
+  <!-- ✏️ 썸네일 이미지가 있으면 아래 주석 해제 후 경로 수정 -->
+  <!-- <meta property="og:image" content="https://bichonbuff.com/images/썸네일.jpg"> -->
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .nav{display:flex;gap:20px;align-items:center}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .15s}
+    .nav a:hover{color:var(--txt)}
+    .post-wrap{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+    .back-btn{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--muted);text-decoration:none;margin-bottom:28px;transition:color .15s}
+    .back-btn:hover{color:var(--txt)}
+    .post-cat{display:inline-block;font-size:.75rem;font-weight:700;color:var(--accent);background:rgba(0,113,227,.08);padding:4px 10px;border-radius:20px;text-decoration:none;margin-bottom:16px}
+    .post-title{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;letter-spacing:-.04em;line-height:1.3;margin:0 0 14px}
+    .post-meta{font-size:.8rem;color:var(--muted);margin-bottom:32px}
+    /* 썸네일 이미지 스타일 */
+    .post-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin-bottom:36px;display:block}
+    /* 본문 스타일 */
+    .post-body{line-height:1.9;font-size:1rem;color:#2d2d2f}
+    .post-body h2{font-size:1.3rem;font-weight:700;letter-spacing:-.03em;margin:2.8rem 0 1rem;color:var(--txt);padding-bottom:.5rem;border-bottom:1px solid var(--line2)}
+    .post-body h3{font-size:1.05rem;font-weight:700;margin:1.8rem 0 .7rem;color:var(--txt)}
+    .post-body p{margin:0 0 1.2rem}
+    .post-body ul,.post-body ol{padding-left:1.5rem;margin:0 0 1.2rem}
+    .post-body li{margin-bottom:.5rem}
+    .post-body strong{color:var(--txt)}
+    .post-body a{color:var(--accent);text-decoration:none}
+    .post-body a:hover{text-decoration:underline}
+    .post-body img{max-width:100%;border-radius:12px;margin:1rem 0}
+    /* 강조 박스 */
+    .callout{background:rgba(0,113,227,.06);border-left:3px solid var(--accent);padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}
+    .callout p{margin:0}
+    /* 경고 박스 */
+    .warning{background:rgba(255,149,0,.07);border-left:3px solid #ff9500;padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}
+    .warning p{margin:0}
+    /* 표 */
+    .post-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
+    .post-body th,.post-body td{padding:10px 14px;border:1px solid var(--line2);text-align:left}
+    .post-body th{background:var(--bg2);font-weight:700}
+    footer{text-align:center;padding:24px 20px;margin-top:60px;border-top:1px solid var(--line2);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    footer a:hover{text-decoration:underline}
+    .footer-copy{margin-top:8px;font-size:.75rem}
+    @media(max-width:600px){.post-wrap{padding:28px 16px 60px}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand">비숑 웰니스</a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="reservation.html">예약</a>
+      <a href="lotto.html">로또 생성기</a>
+    </nav>
+  </div>
+</header>
+
+<div class="post-wrap">
+  <a href="index.html" class="back-btn">← 목록으로</a>
+
+  <!-- ✏️ 카테고리 수정: 건강정보 / 운동 / 식단 / 영양제 / 다이어트 -->
+  <span class="post-cat">건강정보</span>
+
+  <!-- ✏️ 제목 수정 -->
+  <h1 class="post-title">포스트 제목을 여기에 작성하세요</h1>
+
+  <!-- ✏️ 날짜 수정 -->
+  <div class="post-meta">2026년 3월 20일 · 건강정보</div>
+
+  <!-- ✏️ 썸네일 이미지가 있으면 주석 해제 후 경로 수정, 없으면 이 줄 삭제 -->
+  <!-- <img class="post-thumb" src="images/썸네일.jpg" alt="포스트 제목"> -->
+
+
+  <!-- ====================================================
+       ✏️ 본문을 아래에 HTML로 작성하세요
+       ==================================================== -->
+  <div class="post-body">
+
+    <p>도입부를 여기에 작성합니다. 이 글에서 다룰 내용을 간략하게 소개해주세요.</p>
+
+    <h2>첫 번째 소제목</h2>
+    <p>내용을 작성합니다.</p>
+
+    <h2>두 번째 소제목</h2>
+    <p>내용을 작성합니다.</p>
+    <ul>
+      <li>항목 1</li>
+      <li>항목 2</li>
+      <li>항목 3</li>
+    </ul>
+
+    <!-- 강조 박스 (필요할 때 사용) -->
+    <div class="callout">
+      <p><strong>핵심 포인트:</strong> 중요한 내용을 여기에 강조합니다.</p>
+    </div>
+
+    <!-- 경고/주의 박스 (필요할 때 사용) -->
+    <!--
+    <div class="warning">
+      <p><strong>주의:</strong> 주의사항을 여기에 작성합니다.</p>
+    </div>
+    -->
+
+    <h2>마치며</h2>
+    <p>마무리 내용을 작성합니다.</p>
+
+  </div>
+  <!-- ====================================================
+       본문 끝
+       ==================================================== -->
+
+</div>
+
+<footer>
+  <a href="privacy.html">개인정보 처리방침</a> |
+  <a href="terms.html">이용약관</a> |
+  <a href="contact.html">문의하기</a>
+  <div class="footer-copy">© 2025 비숑 웰니스. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

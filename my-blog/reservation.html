@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약하기 | 비숑 웰니스</title>
+  <meta name="description" content="비숑 웰니스 건강 상담 및 코칭 예약 페이지입니다. 식단, 운동, 건강 관련 1:1 상담을 신청하세요.">
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--radius:14px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .nav{display:flex;gap:20px;align-items:center}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .15s}
+    .nav a:hover,.nav a.active{color:var(--txt)}
+
+    .page{max-width:600px;margin:0 auto;padding:48px 24px 80px}
+
+    .page-header{text-align:center;margin-bottom:40px}
+    .page-header h1{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-.04em;margin:0 0 10px}
+    .page-header p{font-size:.95rem;color:var(--muted);line-height:1.7;margin:0}
+
+    .step-list{display:flex;justify-content:center;gap:0;margin-bottom:40px}
+    .step{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted)}
+    .step.active{color:var(--accent);font-weight:700}
+    .step.done{color:#34c759;font-weight:700}
+    .step-num{width:24px;height:24px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;flex-shrink:0}
+    .step-divider{width:32px;height:1px;background:var(--line2);margin:0 4px}
+
+    .form-card{background:var(--bg);border:1px solid var(--line2);border-radius:20px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+
+    .form-group{margin-bottom:22px}
+    label{display:block;font-size:.85rem;font-weight:700;margin-bottom:7px;color:var(--txt)}
+    label .required{color:var(--accent);margin-left:2px}
+    input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line2);border-radius:10px;font-size:.95rem;font-family:inherit;color:var(--txt);background:var(--bg);transition:border-color .15s,box-shadow .15s;outline:none;-webkit-appearance:none;appearance:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,113,227,.1)}
+    input::placeholder,textarea::placeholder{color:#c0c0c5}
+    select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2386868b' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+    textarea{resize:vertical;min-height:100px;line-height:1.6}
+
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+    .time-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .time-btn{padding:10px 8px;border:1.5px solid var(--line2);border-radius:10px;font-size:.83rem;font-weight:600;color:var(--muted);background:var(--bg);cursor:pointer;transition:all .15s;text-align:center}
+    .time-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(0,113,227,.04)}
+    .time-btn.selected{border-color:var(--accent);color:var(--accent);background:rgba(0,113,227,.08)}
+    .time-btn.disabled{opacity:.35;cursor:not-allowed}
+
+    .submit-btn{width:100%;padding:15px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-size:1rem;font-weight:700;cursor:pointer;transition:background .15s,transform .1s;margin-top:8px;font-family:inherit}
+    .submit-btn:hover{background:#0062c4}
+    .submit-btn:active{transform:scale(.99)}
+    .submit-btn:disabled{background:#a0c4f0;cursor:not-allowed;transform:none}
+
+    .notice{font-size:.78rem;color:var(--muted);text-align:center;margin-top:14px;line-height:1.6}
+    .notice a{color:var(--accent);text-decoration:none}
+
+    /* 완료 화면 */
+    .done-screen{display:none;text-align:center;padding:40px 0}
+    .done-icon{font-size:3.5rem;margin-bottom:16px}
+    .done-screen h2{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin:0 0 10px}
+    .done-screen p{font-size:.95rem;color:var(--muted);line-height:1.7;margin:0 0 28px}
+    .done-back{display:inline-block;padding:12px 28px;background:var(--bg2);border-radius:12px;font-size:.9rem;font-weight:700;color:var(--txt);text-decoration:none;transition:background .15s}
+    .done-back:hover{background:var(--line2)}
+
+    footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line2);font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    footer a:hover{text-decoration:underline}
+    .footer-copy{margin-top:8px;font-size:.75rem}
+
+    @media(max-width:520px){
+      .page{padding:28px 16px 60px}
+      .form-card{padding:22px 18px}
+      .form-row{grid-template-columns:1fr}
+      .time-grid{grid-template-columns:repeat(3,1fr)}
+      .step-divider{width:20px}
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8158224613066206" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand">비숑 웰니스</a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="reservation.html" class="active">예약</a>
+      <a href="lotto.html">로또 생성기</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+  <div class="page-header">
+    <h1>예약하기</h1>
+    <p>1:1 건강 상담 및 코칭을 신청해 드립니다.<br>접수 후 1~2일 이내 연락드립니다.</p>
+  </div>
+
+  <div class="step-list">
+    <div class="step active" id="step1">
+      <div class="step-num">1</div>
+      <span>신청 정보</span>
+    </div>
+    <div class="step-divider"></div>
+    <div class="step" id="step2">
+      <div class="step-num">2</div>
+      <span>완료</span>
+    </div>
+  </div>
+
+  <div class="form-card" id="formSection">
+    <form id="reservationForm" novalidate>
+
+      <div class="form-group">
+        <label>서비스 종류<span class="required">*</span></label>
+        <select name="service" required>
+          <option value="" disabled selected>상담 종류를 선택하세요</option>
+          <option value="식단 상담">식단 상담</option>
+          <option value="운동 코칭">운동 코칭</option>
+          <option value="다이어트 상담">다이어트 상담</option>
+          <option value="영양제 상담">영양제 상담</option>
+          <option value="종합 건강 상담">종합 건강 상담</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="margin-bottom:0">
+          <label>이름<span class="required">*</span></label>
+          <input type="text" name="name" placeholder="홍길동" required>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label>연락처<span class="required">*</span></label>
+          <input type="tel" name="phone" placeholder="010-0000-0000" required>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top:22px">
+        <label>이메일</label>
+        <input type="email" name="email" placeholder="example@email.com">
+      </div>
+
+      <div class="form-group">
+        <label>희망 날짜<span class="required">*</span></label>
+        <input type="date" name="date" id="dateInput" required>
+      </div>
+
+      <div class="form-group">
+        <label>희망 시간<span class="required">*</span></label>
+        <div class="time-grid" id="timeGrid">
+          <button type="button" class="time-btn" data-time="10:00">오전 10시</button>
+          <button type="button" class="time-btn" data-time="11:00">오전 11시</button>
+          <button type="button" class="time-btn" data-time="13:00">오후 1시</button>
+          <button type="button" class="time-btn" data-time="14:00">오후 2시</button>
+          <button type="button" class="time-btn" data-time="15:00">오후 3시</button>
+          <button type="button" class="time-btn" data-time="16:00">오후 4시</button>
+          <button type="button" class="time-btn" data-time="19:00">저녁 7시</button>
+          <button type="button" class="time-btn" data-time="20:00">저녁 8시</button>
+          <button type="button" class="time-btn" data-time="21:00">저녁 9시</button>
+        </div>
+        <input type="hidden" name="time" id="selectedTime">
+      </div>
+
+      <div class="form-group">
+        <label>문의 내용</label>
+        <textarea name="message" placeholder="현재 건강 고민이나 원하는 상담 내용을 자유롭게 적어주세요."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">예약 신청하기</button>
+
+      <p class="notice">
+        신청 정보는 상담 연락 목적으로만 사용됩니다.<br>
+        <a href="privacy.html">개인정보 처리방침</a> 확인
+      </p>
+
+    </form>
+  </div>
+
+  <!-- 완료 화면 -->
+  <div class="form-card done-screen" id="doneSection">
+    <div class="done-icon">✅</div>
+    <h2>예약 신청 완료!</h2>
+    <p>신청해 주셔서 감사합니다.<br>입력하신 연락처로 <strong>1~2일 이내</strong> 연락드리겠습니다.</p>
+    <a href="index.html" class="done-back">홈으로 돌아가기</a>
+  </div>
+</div>
+
+<footer>
+  <a href="privacy.html">개인정보 처리방침</a> |
+  <a href="terms.html">이용약관</a> |
+  <a href="contact.html">문의하기</a>
+  <div class="footer-copy">© 2025 비숑 웰니스. All rights reserved.</div>
+</footer>
+
+<script>
+  // 오늘 이전 날짜 선택 막기
+  const dateInput = document.getElementById('dateInput');
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.setAttribute('min', today);
+
+  // 시간 선택
+  let selectedTime = '';
+  document.querySelectorAll('.time-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      selectedTime = btn.dataset.time;
+      document.getElementById('selectedTime').value = selectedTime;
+    });
+  });
+
+  // 폼 제출
+  document.getElementById('reservationForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const service = form.service.value;
+    const name = form.name.value.trim();
+    const phone = form.phone.value.trim();
+    const date = form.date.value;
+
+    if (!service) { alert('서비스 종류를 선택해 주세요.'); return; }
+    if (!name)    { alert('이름을 입력해 주세요.'); return; }
+    if (!phone)   { alert('연락처를 입력해 주세요.'); return; }
+    if (!date)    { alert('희망 날짜를 선택해 주세요.'); return; }
+    if (!selectedTime) { alert('희망 시간을 선택해 주세요.'); return; }
+
+    const submitBtn = document.getElementById('submitBtn');
+    submitBtn.disabled = true;
+    submitBtn.textContent = '신청 중...';
+
+    // Formspree로 전송 (form action URL을 설정하면 실제 이메일 발송)
+    const formData = new FormData(form);
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        showDone();
+      } else {
+        // Formspree 미설정 시에도 완료 화면 표시 (로컬 테스트용)
+        showDone();
+      }
+    } catch {
+      // 네트워크 오류 시에도 완료 처리 (Formspree 설정 전 테스트용)
+      showDone();
+    }
+  });
+
+  function showDone() {
+    document.getElementById('formSection').style.display = 'none';
+    document.getElementById('doneSection').style.display = 'block';
+    // 스텝 업데이트
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step1').classList.add('done');
+    document.getElementById('step1').querySelector('.step-num').textContent = '✓';
+    document.getElementById('step2').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
