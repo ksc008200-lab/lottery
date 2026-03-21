@@ -7,6 +7,9 @@ on:
   workflow_dispatch:
     # 수동 실행도 가능 (GitHub Actions 탭에서 "Run workflow" 버튼)
 
+permissions:
+  contents: write
+
 jobs:
   generate-post:
     runs-on: ubuntu-latest
