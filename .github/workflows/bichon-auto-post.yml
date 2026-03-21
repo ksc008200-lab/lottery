@@ -1,0 +1,32 @@
+name: Bichon Auto Blog Post
+
+on:
+  schedule:
+    # 매일 오후 3시 (KST) = UTC 06:00
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  post-to-bichon:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Generate and post blog content
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BICHON_API_KEY: ${{ secrets.BICHON_API_KEY }}
+        run: python scripts/generate_bichon_post.py
