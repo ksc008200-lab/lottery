@@ -138,11 +138,19 @@ def search_references(topic):
         return ""
 
 
-def generate_post(topic, references=""):
+def generate_post(topic, references="", body_image=""):
     ref_section = f"""
 [참고 자료 - 아래 내용을 바탕으로 신뢰도 높은 글을 작성하세요]
 {references}
 """ if references else ""
+
+    body_image_instruction = f"""
+- 본문 중간(두 번째 또는 세 번째 h2 섹션 직후)에 아래 이미지를 반드시 삽입하세요:
+  <figure style="margin:1.8rem 0">
+    <img src="{body_image}" alt="[주제와 관련된 구체적인 설명으로 채워주세요]" style="width:100%;border-radius:12px">
+    <figcaption style="text-align:center;font-size:.8rem;color:#86868b;margin-top:6px">[이미지 설명 1줄]</figcaption>
+  </figure>
+  (alt 속성에는 "이미지" 같은 단어 대신 해당 섹션 내용을 설명하는 구체적인 한국어 문장을 넣으세요)""" if body_image else ""
 
     prompt = f"""당신은 영양학 석사 학위를 보유한 10년 경력의 건강 전문 블로거입니다.
 논문, 의학 연구, 공신력 있는 전문가(영양사, 의사, 교수)의 견해를 바탕으로 아래 주제의 고품질 블로그 포스트를 작성해주세요.
@@ -163,6 +171,14 @@ def generate_post(topic, references=""):
 - 의학적 면책 조항을 마지막에 추가
 - 친근하고 신뢰감 있는 문체
 - SEO를 위해 주제 키워드를 자연스럽게 반복
+
+[SEO 필수 규칙 - 반드시 준수]
+1. 첫 번째 <p> 태그의 첫 문장에 제목의 핵심 키워드를 자연스럽게 포함하세요.
+   예) 주제가 "혈압 낮추는 법"이면 → "혈압을 낮추는 방법을 찾고 계신가요? ..."
+2. 링크(<a> 태그)를 사용할 때는 반드시 설명적인 앵커 텍스트를 사용하세요.
+   금지: <a href="...">여기</a>, <a href="...">클릭</a>
+   권장: <a href="...">혈압 낮추는 DASH 식단 자세히 보기</a>
+{body_image_instruction}
 
 아래 형식으로만 응답하세요. 마크다운 코드블록(```)을 절대 사용하지 마세요:
 TITLE: (매력적인 제목, 숫자나 효과를 포함)
@@ -350,15 +366,22 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
 print(f"주제: {topic}")
 print("자료 검색 중...")
 references = search_references(topic)
-print("글 생성 중...")
-title, excerpt, keywords, content = generate_post(topic, references)
 
 print("이미지 검색 중...")
 thumbnail = get_image_url(image_query, category)
 if thumbnail:
-    print(f"이미지 URL: {thumbnail[:60]}...")
+    print(f"썸네일 URL: {thumbnail[:60]}...")
 else:
-    print("이미지 없이 진행")
+    print("썸네일 없이 진행")
+
+# 본문용 이미지 — 썸네일과 다른 결과를 얻기 위해 쿼리 변형
+body_image = get_image_url(image_query + " lifestyle", category)
+if body_image == thumbnail:
+    body_image = get_image_url(image_query + " healthy food", category)
+print(f"본문 이미지 URL: {body_image[:60] if body_image else '없음'}...")
+
+print("글 생성 중...")
+title, excerpt, keywords, content = generate_post(topic, references, body_image)
 
 pub_date = datetime.now().strftime("%Y-%m-%d")
 slug = make_slug(title)
