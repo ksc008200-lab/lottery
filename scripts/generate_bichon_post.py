@@ -11,6 +11,7 @@ PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
 TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "").strip()
 
 TOPICS = [
+    # 건강
     ("혈압 관리에 좋은 음식 TOP 5", "건강관리", "blood pressure healthy food"),
     ("하루 30분 걷기의 놀라운 건강 효과", "건강생활", "walking exercise health"),
     ("면역력 높이는 생활습관 7가지", "건강", "immune system healthy lifestyle"),
@@ -36,8 +37,40 @@ TOPICS = [
     ("단백질 식품 TOP 10 완벽 정리", "건강다이어트", "protein food diet health"),
     ("혈액순환 개선을 위한 운동과 음식", "건강생활", "blood circulation exercise food"),
     ("아침 식사의 중요성과 건강한 아침 메뉴", "건강생활", "healthy breakfast morning food"),
+    # 재테크
+    ("월 10만원으로 시작하는 재테크 완벽 가이드", "재테크", "savings investment money beginner"),
+    ("주식 투자 초보가 반드시 알아야 할 원칙 7가지", "재테크", "stock investment beginner tips"),
+    ("ISA 계좌 완벽 가이드 2026 — 절세 핵심 정리", "재테크", "ISA account savings tax Korea"),
+    ("ETF 투자로 노후 준비하는 방법", "재테크", "ETF investment retirement savings"),
+    ("청년도약계좌 신청 방법과 혜택 총정리", "재테크", "youth savings account Korea government"),
+    ("부동산 소액 투자 시작하는 법 — 리츠(REITs) 완벽 정리", "재테크", "REITs real estate investment Korea"),
+    ("카드 포인트로 월 5만원 아끼는 방법", "재테크", "credit card points cashback saving"),
+    ("비상금 통장 만드는 법과 최고 금리 적금 추천", "재테크", "emergency fund savings account interest"),
+    # 생활정보
+    ("집에서 할 수 있는 10분 스트레칭 루틴 완벽 가이드", "생활정보", "home stretching exercise routine"),
+    ("전기요금 절약하는 생활 습관 15가지", "생활정보", "electricity bill saving household tips"),
+    ("봄철 환절기 건강 관리법 — 면역력 지키기", "생활정보", "spring health care seasonal"),
+    ("냉장고 정리법과 식품 보관 꿀팁", "생활정보", "refrigerator organization food storage tips"),
+    ("중고거래 안전하게 하는 방법과 꿀팁", "생활정보", "secondhand trading safe tips Korea"),
+    ("스마트폰 배터리 오래 쓰는 방법", "생활정보", "smartphone battery life tips"),
+    # 멘탈헬스
+    ("우울감 이겨내는 일상 습관 10가지", "멘탈헬스", "depression anxiety mental health daily"),
+    ("번아웃 증후군 극복하는 방법", "멘탈헬스", "burnout syndrome recovery mental health"),
+    ("불안 해소에 효과적인 호흡법과 명상", "멘탈헬스", "anxiety breathing meditation mindfulness"),
+    ("자존감 높이는 심리 훈련법", "멘탈헬스", "self esteem confidence mental health"),
+    # 반려동물
+    ("비숑프리제 건강 관리 완벽 가이드", "반려동물", "bichon frise dog health care"),
+    ("반려견 영양제 추천과 올바른 선택법", "반려동물", "dog supplement health care nutrition"),
+    ("강아지 피부병 원인과 예방법", "반려동물", "dog skin disease prevention care"),
+    ("고양이 건강 검진 시기와 필수 예방접종", "반려동물", "cat health checkup vaccination"),
+    # 뷰티/피부
+    ("피부 트러블 없애는 생활 습관 7가지", "뷰티건강", "skin care healthy lifestyle acne"),
+    ("자외선 차단제 올바르게 바르는 법", "뷰티건강", "sunscreen SPF skin protection"),
+    ("탈모 예방을 위한 두피 관리법", "뷰티건강", "hair loss prevention scalp care"),
 ]
 
+# 속보뉴스 비율: 30% 확률로 뉴스 포스팅
+USE_NEWS = TAVILY_API_KEY and random.random() < 0.30
 topic, category, image_query = random.choice(TOPICS)
 
 
@@ -49,6 +82,12 @@ FALLBACK_IMAGES = {
     "건강식품":      "https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg",
     "건강다이어트":  "https://images.pexels.com/photos/2377045/pexels-photo-2377045.jpeg",
     "건강백세":      "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+    "재테크":        "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg",
+    "생활정보":      "https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg",
+    "멘탈헬스":      "https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg",
+    "반려동물":      "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg",
+    "뷰티건강":      "https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg",
+    "속보뉴스":      "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg",
 }
 
 
@@ -81,6 +120,122 @@ def get_image_url(query, category="건강"):
     fallback = FALLBACK_IMAGES.get(category, FALLBACK_IMAGES["건강"])
     print(f"기본 이미지 사용: {fallback[:60]}...")
     return fallback
+
+
+def fetch_breaking_news():
+    """Tavily로 오늘의 한국 주요 뉴스 검색"""
+    if not TAVILY_API_KEY:
+        return None
+    try:
+        print("속보뉴스 검색 중...")
+        resp = requests.post(
+            "https://api.tavily.com/search",
+            json={
+                "api_key": TAVILY_API_KEY,
+                "query": "오늘 한국 주요 뉴스 속보 이슈",
+                "search_depth": "basic",
+                "max_results": 5,
+                "days": 1,
+            },
+            timeout=15
+        )
+        results = resp.json().get("results", [])
+        if not results:
+            # 폴백: 최근 2일
+            resp2 = requests.post(
+                "https://api.tavily.com/search",
+                json={
+                    "api_key": TAVILY_API_KEY,
+                    "query": "한국 주요 뉴스 이슈 최신",
+                    "search_depth": "basic",
+                    "max_results": 5,
+                    "days": 2,
+                },
+                timeout=15
+            )
+            results = resp2.json().get("results", [])
+        if not results:
+            return None
+        # 가장 관련성 높은 뉴스 선택
+        top = results[0]
+        news_items = []
+        for r in results[:5]:
+            news_items.append({
+                "title": r.get("title", ""),
+                "content": r.get("content", "")[:600],
+                "url": r.get("url", ""),
+            })
+        print(f"뉴스 {len(news_items)}건 수집: {top.get('title', '')[:50]}")
+        return news_items
+    except Exception as e:
+        print(f"뉴스 검색 실패: {e}")
+        return None
+
+
+def generate_news_post(news_items):
+    """속보뉴스 기반 포스팅 생성"""
+    news_text = ""
+    for i, n in enumerate(news_items, 1):
+        news_text += f"\n[뉴스 {i}]\n제목: {n['title']}\n내용: {n['content']}\n"
+
+    prompt = f"""당신은 시사·생활 정보를 알기 쉽게 전달하는 블로거입니다.
+아래 오늘의 주요 뉴스를 바탕으로 독자들이 꼭 알아야 할 핵심 내용을 정리해 주세요.
+
+[오늘의 뉴스 자료]
+{news_text}
+
+[작성 규칙]
+- HTML 형식 (h2, h3, p, ul, li, strong, blockquote 태그 활용)
+- 분량: 1200~1800단어
+- 구성:
+  1. 오늘의 주요 이슈 요약 (도입부 — 왜 중요한지 설명)
+  2. 핵심 내용 3~4개 섹션 (각 h2 태그)
+  3. 독자에게 미치는 영향 / 생활 속 대응법
+  4. 마무리 (핵심 요약)
+- 출처는 직접 URL 노출 금지, 내용만 자연스럽게 반영
+- 친근하고 이해하기 쉬운 문체
+- SEO를 위해 핵심 키워드 자연스럽게 반복
+- 뉴스가 여러 개면 가장 영향력 있는 1~2개를 중심으로 작성
+
+아래 형식으로만 응답하세요. 마크다운 코드블록(```)을 절대 사용하지 마세요:
+TITLE: (오늘의 이슈를 담은 매력적인 제목)
+EXCERPT: (80~120자 요약)
+KEYWORDS: (SEO 키워드 5~7개, 쉼표 구분)
+CONTENT: (HTML 본문 전체)"""
+
+    message = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=6000,
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    response_text = message.content[0].text
+    lines = response_text.split("\n")
+    title = "오늘의 주요 뉴스 정리"
+    excerpt = ""
+    keywords = ""
+    content_lines = []
+    content_started = False
+
+    for line in lines:
+        if line.startswith("TITLE:"):
+            title = line.replace("TITLE:", "").strip()
+        elif line.startswith("EXCERPT:"):
+            excerpt = line.replace("EXCERPT:", "").strip()
+        elif line.startswith("KEYWORDS:"):
+            keywords = line.replace("KEYWORDS:", "").strip()
+        elif line.startswith("CONTENT:"):
+            content_started = True
+            rest = line.replace("CONTENT:", "").strip()
+            if rest:
+                content_lines.append(rest)
+        elif content_started:
+            content_lines.append(line)
+
+    content = "\n".join(content_lines).strip()
+    content = re.sub(r'^```[a-zA-Z]*\s*', '', content)
+    content = re.sub(r'\s*```\s*$', '', content)
+    return title, excerpt, keywords, content.strip()
 
 
 def search_personal_experiences(topic):
@@ -645,28 +800,47 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
 </html>"""
 
 
-print(f"주제: {topic}")
-print("전문 자료 검색 중...")
-references = search_references(topic)
+if USE_NEWS:
+    # 속보뉴스 포스팅
+    news_items = fetch_breaking_news()
+    if news_items:
+        category = "속보뉴스"
+        image_query = "news korea current events"
+        print("속보뉴스 글 생성 중...")
+        title, excerpt, keywords, content = generate_news_post(news_items)
+        references = ""
+    else:
+        # 뉴스 검색 실패 시 일반 토픽으로 폴백
+        USE_NEWS = False
 
-print("개인 체험담 검색 중...")
-experiences = search_personal_experiences(topic)
+if not USE_NEWS:
+    print(f"주제: {topic}")
+    print("전문 자료 검색 중...")
+    references = search_references(topic)
 
-print("이미지 검색 중...")
-thumbnail = get_image_url(image_query, category)
-if thumbnail:
-    print(f"썸네일 URL: {thumbnail[:60]}...")
-else:
-    print("썸네일 없이 진행")
+    print("개인 체험담 검색 중...")
+    experiences = search_personal_experiences(topic)
 
-# 본문용 이미지 — 썸네일과 다른 결과를 얻기 위해 쿼리 변형
-body_image = get_image_url(image_query + " lifestyle", category)
-if body_image == thumbnail:
-    body_image = get_image_url(image_query + " healthy food", category)
-print(f"본문 이미지 URL: {body_image[:60] if body_image else '없음'}...")
+    print("이미지 검색 중...")
+    thumbnail = get_image_url(image_query, category)
+    if thumbnail:
+        print(f"썸네일 URL: {thumbnail[:60]}...")
+    else:
+        print("썸네일 없이 진행")
 
-print("글 생성 중...")
-title, excerpt, keywords, content = generate_post(topic, references, body_image, experiences)
+    # 본문용 이미지 — 썸네일과 다른 결과를 얻기 위해 쿼리 변형
+    body_image = get_image_url(image_query + " lifestyle", category)
+    if body_image == thumbnail:
+        body_image = get_image_url(image_query + " healthy food", category)
+    print(f"본문 이미지 URL: {body_image[:60] if body_image else '없음'}...")
+
+    print("글 생성 중...")
+    title, excerpt, keywords, content = generate_post(topic, references, body_image, experiences)
+
+if USE_NEWS:
+    print("이미지 검색 중...")
+    thumbnail = get_image_url(image_query, category)
+    body_image = ""
 
 pub_date = datetime.now().strftime("%Y-%m-%d")
 slug = make_slug(title)

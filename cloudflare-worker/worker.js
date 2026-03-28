@@ -1763,6 +1763,34 @@ async function handleApi(request, env, url) {
     return json({ success: true, views: Number(row?.views || 0) });
   }
 
+  // 댓글 API
+  if (path === "/api/comments" && method === "GET") {
+    const slug = url.searchParams.get("slug");
+    if (!slug) return json({ error: "slug required" }, 400);
+    const rows = await db.prepare("SELECT id, parent_id, author_name, content, created_at FROM comments WHERE post_slug = ? AND approved = 1 ORDER BY created_at ASC").bind(slug).all();
+    return json({ success: true, comments: rows.results || [] });
+  }
+
+  if (path === "/api/comments" && method === "POST") {
+    const body = await safeJson(request);
+    const slug = String(body?.slug || "").trim();
+    const authorName = String(body?.author_name || "").trim().slice(0, 50);
+    const content = String(body?.content || "").trim().slice(0, 1000);
+    const parentId = body?.parent_id ? parseInt(body.parent_id, 10) : null;
+    if (!slug || !authorName || !content) return json({ error: "slug, author_name, content required" }, 400);
+    await db.prepare("INSERT INTO comments (post_slug, parent_id, author_name, content) VALUES (?, ?, ?, ?)").bind(slug, parentId || null, authorName, content).run();
+    return json({ success: true });
+  }
+
+  if (path.startsWith("/api/comments/") && method === "DELETE") {
+    const admin = await requireAdmin(request, db);
+    if (!admin.ok) return admin.res;
+    const id = parseInt(path.replace("/api/comments/", ""), 10);
+    if (!Number.isFinite(id)) return json({ error: "invalid id" }, 400);
+    await db.prepare("DELETE FROM comments WHERE id = ?").bind(id).run();
+    return json({ success: true });
+  }
+
   return json({ error: "not_found" }, 404);
 }
 
@@ -1858,6 +1886,12 @@ async function runMigrations(db) {
 
   await db.prepare("CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT)").run();
   await db.prepare("CREATE TABLE IF NOT EXISTS sessions (id TEXT PRIMARY KEY, token TEXT UNIQUE, role TEXT, expires_at TEXT, created_at TEXT DEFAULT (datetime('now'))) ").run();
+  await db.prepare("CREATE TABLE IF NOT EXISTS comments (id INTEGER PRIMARY KEY AUTOINCREMENT, post_slug TEXT NOT NULL, parent_id INTEGER DEFAULT NULL, author_name TEXT NOT NULL, content TEXT NOT NULL, approved INTEGER DEFAULT 1, created_at TEXT DEFAULT (datetime('now')))").run();
+  await db.prepare("CREATE INDEX IF NOT EXISTS idx_comments_slug ON comments(post_slug, approved, created_at)").run();
+  // 카테고리 기본값 업데이트 (구버전 '복지정책' → 새 카테고리로)
+  try {
+    await db.prepare("UPDATE settings SET value = ? WHERE key = 'categories' AND value = '복지정책'").bind("건강관리,재테크,생활정보,멘탈헬스,반려동물,뷰티건강,속보뉴스").run();
+  } catch {}
 
   const defaults = {
     blog_name: "관리자 - 설정 - 블로그 이름 바꿔주세요",
@@ -1877,7 +1911,7 @@ async function runMigrations(db) {
     turtlebuff_api_key: randomToken(),
     naver_client_id: "",
     naver_client_secret: "",
-    categories: "복지정책",
+    categories: "건강관리,재테크,생활정보,멘탈헬스,반려동물,뷰티건강,속보뉴스",
     indexnow_key: randomToken(),
   };
 
@@ -2782,6 +2816,19 @@ ${relatedPosts.length ? `<div class="related"><h3>관련 글</h3><div class="rel
         <a class="act-btn admin-only" href="/admin#edit-${post.id}">수정</a>
         <button class="act-btn del admin-only" onclick="deletePost(${post.id})">삭제</button>
       </div>
+      <div style="margin-top:36px;padding-top:28px;border-top:1px solid var(--line)">
+        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 20px">💬 댓글</h3>
+        <div id="comments-list" style="margin-bottom:24px"></div>
+        <div style="background:var(--bg2);border-radius:12px;padding:16px">
+          <div id="reply-notice" style="display:none;font-size:.82rem;color:#2563eb;margin-bottom:8px;font-weight:600"></div>
+          <input id="comment-name" placeholder="이름" maxlength="50" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;margin-bottom:8px;background:#fff;font-size:.9rem" />
+          <textarea id="comment-content" placeholder="댓글을 입력하세요..." maxlength="1000" rows="3" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;resize:vertical;margin-bottom:8px;font-size:.9rem"></textarea>
+          <div style="display:flex;gap:8px;justify-content:flex-end">
+            <button id="cancel-reply-btn" onclick="cancelReply()" style="display:none;padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;font:inherit;font-size:.84rem">취소</button>
+            <button onclick="submitComment()" style="padding:8px 16px;background:#111;color:#fff;border:none;border-radius:8px;cursor:pointer;font:inherit;font-weight:700;font-size:.84rem">등록</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
  </div>
@@ -2799,6 +2846,59 @@ if(localStorage.getItem('admin_token')){document.querySelectorAll('.admin-only')
 function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.getElementById('mobileOverlay').classList.add('open')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.getElementById('mobileOverlay').classList.remove('open')}
 (function(){var k='viewed_${post.id}',u='/api/posts/${post.id}/view',isAdmin=!!localStorage.getItem('admin_token'),opt=(!sessionStorage.getItem(k)&&!isAdmin)?{method:'POST'}:{};if(!sessionStorage.getItem(k)&&!isAdmin){sessionStorage.setItem(k,'1')}fetch(u,opt).then(function(r){return r.json()}).then(function(d){if(d.views!=null){var m=document.querySelector('.meta');if(m){m.textContent=m.textContent.replace(/조회 \\d+/,'조회 '+d.views)}}}).catch(function(){})})();
+(function(){
+var slug='${post.slug}';
+var replyTo=null;
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function fmt(s){return esc(s).replace(/\\n/g,'<br>')}
+var nameMap={};
+function renderComments(list){
+  var cont=document.getElementById('comments-list');
+  if(!list||!list.length){cont.innerHTML='<p style="color:var(--muted);font-size:.88rem;padding:8px 0">아직 댓글이 없습니다. 첫 댓글을 남겨보세요!</p>';return;}
+  var roots=list.filter(function(c){return !c.parent_id});
+  var replies={};
+  list.filter(function(c){return c.parent_id}).forEach(function(c){if(!replies[c.parent_id])replies[c.parent_id]=[];replies[c.parent_id].push(c);});
+  roots.forEach(function(c){nameMap[c.id]=c.author_name;});
+  cont.innerHTML=roots.map(function(c){
+    var reps=(replies[c.id]||[]).map(function(r){
+      return '<div style="margin:8px 0 0 24px;padding:10px 12px;background:#fff;border-radius:8px;border-left:3px solid #e8e8eb">'+
+        '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">'+
+        '<span style="font-weight:700;font-size:.84rem">'+esc(r.author_name)+'</span>'+
+        '<span style="font-size:.75rem;color:var(--muted)">'+r.created_at.slice(0,16).replace('T',' ')+'</span>'+
+        (localStorage.getItem('admin_token')?'<button onclick="delComment('+r.id+')" style="margin-left:auto;background:none;border:none;color:#e53e3e;cursor:pointer;font-size:.78rem;padding:0">삭제</button>':'')+
+        '</div><div style="font-size:.88rem;line-height:1.7">'+fmt(r.content)+'</div></div>';
+    }).join('');
+    return '<div style="padding:14px 0;border-bottom:1px solid var(--line)">'+
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">'+
+      '<span style="font-weight:700;font-size:.88rem">'+esc(c.author_name)+'</span>'+
+      '<span style="font-size:.75rem;color:var(--muted)">'+c.created_at.slice(0,16).replace('T',' ')+'</span>'+
+      '<button onclick="startReply('+c.id+')" style="margin-left:auto;background:none;border:none;color:#2563eb;cursor:pointer;font-size:.8rem;font-weight:600;padding:0">답글</button>'+
+      (localStorage.getItem('admin_token')?'<button onclick="delComment('+c.id+')" style="background:none;border:none;color:#e53e3e;cursor:pointer;font-size:.78rem;padding:0;margin-left:6px">삭제</button>':'')+
+      '</div><div style="font-size:.9rem;line-height:1.7">'+fmt(c.content)+'</div>'+reps+'</div>';
+  }).join('');
+}
+window.startReply=function(id){replyTo=id;var name=nameMap[id]||'';var n=document.getElementById('reply-notice');n.style.display='block';n.textContent='@'+name+' 에게 답글 작성 중';document.getElementById('cancel-reply-btn').style.display='inline-block';document.getElementById('comment-content').focus();};
+window.cancelReply=function(){replyTo=null;document.getElementById('reply-notice').style.display='none';document.getElementById('cancel-reply-btn').style.display='none';};
+window.submitComment=function(){
+  var name=document.getElementById('comment-name').value.trim();
+  var content=document.getElementById('comment-content').value.trim();
+  if(!name||!content){alert('이름과 댓글을 입력하세요.');return;}
+  fetch('/api/comments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({slug:slug,author_name:name,content:content,parent_id:replyTo})})
+  .then(function(r){return r.json()})
+  .then(function(d){if(d.success){document.getElementById('comment-content').value='';cancelReply();loadComments();}else{alert('오류: '+(d.error||''));}})
+  .catch(function(e){alert('오류: '+e.message);});
+};
+window.delComment=function(id){
+  if(!confirm('댓글을 삭제하시겠습니까?'))return;
+  var t=localStorage.getItem('admin_token');
+  fetch('/api/comments/'+id,{method:'DELETE',headers:{'Authorization':'Bearer '+t}})
+  .then(function(r){return r.json()})
+  .then(function(d){if(d.success){loadComments();}else{alert('삭제 실패');}})
+  .catch(function(e){alert('오류:'+e.message);});
+};
+function loadComments(){fetch('/api/comments?slug='+encodeURIComponent(slug)).then(function(r){return r.json()}).then(function(d){renderComments(d.comments||[])}).catch(function(){});}
+loadComments();
+})();
 </script>
 </body>
 </html>`;
