@@ -164,11 +164,11 @@ def generate_post(topic, references=""):
 - 친근하고 신뢰감 있는 문체
 - SEO를 위해 주제 키워드를 자연스럽게 반복
 
-아래 형식으로만 응답하세요:
+아래 형식으로만 응답하세요. 마크다운 코드블록(```)을 절대 사용하지 마세요:
 TITLE: (매력적인 제목, 숫자나 효과를 포함)
 EXCERPT: (80~120자 요약, 검색 결과에 표시될 문장)
 KEYWORDS: (SEO 키워드 5~7개, 쉼표 구분)
-CONTENT: (HTML 본문 전체)"""
+CONTENT: (HTML 본문 전체, 코드블록 없이 HTML 태그만 사용)"""
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
@@ -203,6 +203,11 @@ CONTENT: (HTML 본문 전체)"""
     content = "\n".join(content_lines).strip()
     if not content:
         content = response_text
+
+    # 마크다운 코드블록 제거: ```html ... ``` 또는 ``` ... ```
+    content = re.sub(r'^```[a-zA-Z]*\s*', '', content)
+    content = re.sub(r'\s*```\s*$', '', content)
+    content = content.strip()
 
     return title, excerpt, keywords, content
 
