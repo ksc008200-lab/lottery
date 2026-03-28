@@ -288,46 +288,114 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
   <style>
     :root{{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3}}
-    *{{box-sizing:border-box}}
-    body{{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--txt);-webkit-font-smoothing:antialiased}}
-    .header{{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}}
-    .header-in{{max-width:1200px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center}}
+    *{{box-sizing:border-box;margin:0;padding:0}}
+    body{{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:#f8f8fa;color:var(--txt);-webkit-font-smoothing:antialiased}}
+
+    /* ── 헤더 ── */
+    .header{{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}}
+    .header-in{{max-width:1280px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center}}
     .brand{{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}}
-    .nav{{display:flex;gap:20px;align-items:center}}
+    .nav{{display:flex;gap:20px}}
     .nav a{{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .15s}}
     .nav a:hover{{color:var(--txt)}}
-    .post-wrap{{max-width:760px;margin:0 auto;padding:48px 24px 80px}}
-    .back-btn{{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--muted);text-decoration:none;margin-bottom:28px;transition:color .15s}}
-    .back-btn:hover{{color:var(--txt)}}
-    .post-cat{{display:inline-block;font-size:.75rem;font-weight:700;color:var(--accent);background:rgba(0,113,227,.08);padding:4px 10px;border-radius:20px;margin-bottom:16px}}
-    .post-title{{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;letter-spacing:-.04em;line-height:1.3;margin:0 0 14px}}
-    .post-meta{{font-size:.8rem;color:var(--muted);margin-bottom:32px}}
-    .post-thumb{{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin-bottom:36px;display:block;background:var(--bg2)}}
-    .post-body{{line-height:1.9;font-size:1rem;color:#2d2d2f}}
-    .post-body h2{{font-size:1.3rem;font-weight:700;letter-spacing:-.03em;margin:2.8rem 0 1rem;color:var(--txt);padding-bottom:.5rem;border-bottom:1px solid var(--line2)}}
-    .post-body h3{{font-size:1.05rem;font-weight:700;margin:1.8rem 0 .7rem;color:var(--txt)}}
+
+    /* ── 카테고리 상단 바 ── */
+    .cat-bar{{background:#fff;border-bottom:1px solid var(--line2);padding:10px 0}}
+    .cat-bar-in{{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--muted)}}
+    .cat-bar a{{color:var(--muted);text-decoration:none}}
+    .cat-bar a:hover{{color:var(--accent)}}
+    .cat-bar .sep{{opacity:.4}}
+    .cat-bar .current{{color:var(--accent);font-weight:700}}
+
+    /* ── 3컬럼 메인 그리드 ── */
+    .page-grid{{max-width:1280px;margin:0 auto;padding:28px 16px 60px;display:grid;grid-template-columns:160px 1fr 240px;gap:24px;align-items:start}}
+
+    /* ── 좌측 광고 컬럼 ── */
+    .col-left{{position:sticky;top:80px}}
+    .v-ad{{background:#fff;border-radius:12px;border:1px solid var(--line2);overflow:hidden;min-height:600px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:8px 0}}
+    .v-ad-label{{font-size:.62rem;color:#ccc;letter-spacing:.08em;text-transform:uppercase;padding:6px 0 4px}}
+
+    /* ── 중앙 본문 컬럼 ── */
+    .col-main{{min-width:0}}
+    .post-card{{background:#fff;border-radius:16px;border:1px solid var(--line2);overflow:hidden;padding:32px 36px 40px}}
+
+    /* ── 포스트 헤더 ── */
+    .post-cat{{display:inline-block;font-size:.72rem;font-weight:700;color:var(--accent);background:rgba(0,113,227,.08);padding:3px 10px;border-radius:20px;margin-bottom:14px}}
+    .post-title{{font-size:clamp(1.55rem,3.5vw,2.1rem);font-weight:800;letter-spacing:-.04em;line-height:1.35;color:var(--txt);margin-bottom:12px}}
+    .post-meta{{font-size:.8rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--line2)}}
+
+    /* ── 썸네일 ── */
+    .post-thumb{{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:28px;display:block;background:var(--bg2)}}
+
+    /* ── 인콘텐츠 광고 ── */
+    .in-ad{{margin:2rem -4px;padding:12px 4px;border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);background:#fafafa;text-align:center}}
+    .in-ad-label{{font-size:.62rem;color:#ccc;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}}
+
+    /* ── 본문 ── */
+    .post-body{{line-height:1.95;font-size:1rem;color:#2a2a2f}}
+    .post-body h2{{font-size:1.3rem;font-weight:800;letter-spacing:-.03em;margin:2.8rem 0 1rem;color:var(--txt);padding-bottom:.55rem;border-bottom:2px solid var(--line2)}}
+    .post-body h3{{font-size:1.06rem;font-weight:700;margin:1.8rem 0 .7rem;color:var(--txt)}}
     .post-body p{{margin:0 0 1.2rem}}
     .post-body ul,.post-body ol{{padding-left:1.5rem;margin:0 0 1.2rem}}
-    .post-body li{{margin-bottom:.6rem}}
-    .post-body strong{{color:var(--txt)}}
-    .post-body a{{color:var(--accent);text-decoration:none}}
-    .post-body a:hover{{text-decoration:underline}}
-    .post-body img{{max-width:100%;border-radius:12px;margin:1rem 0}}
+    .post-body li{{margin-bottom:.6rem;line-height:1.8}}
+    .post-body strong{{color:var(--txt);font-weight:700}}
+    .post-body a{{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(0,113,227,.2);transition:border-color .15s}}
+    .post-body a:hover{{border-color:var(--accent)}}
+    .post-body img{{max-width:100%;border-radius:12px;margin:1.2rem 0;display:block}}
+    .post-body figure{{margin:1.8rem 0}}
+    .post-body figcaption{{text-align:center;font-size:.78rem;color:var(--muted);margin-top:6px}}
     .post-body table{{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}}
     .post-body th,.post-body td{{padding:10px 14px;border:1px solid var(--line2);text-align:left}}
     .post-body th{{background:var(--bg2);font-weight:700}}
-    .callout{{background:rgba(0,113,227,.06);border-left:3px solid var(--accent);padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}}
-    .callout p{{margin:0}}
-    .warning{{background:rgba(255,149,0,.07);border-left:3px solid #ff9500;padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin:1.5rem 0}}
-    .warning p{{margin:0}}
-    footer{{text-align:center;padding:24px 20px;margin-top:60px;border-top:1px solid var(--line2);font-size:.8rem;color:var(--muted)}}
+    .post-body blockquote{{margin:1.8rem 0;padding:1rem 1.4rem;border-left:4px solid var(--accent);background:rgba(0,113,227,.04);border-radius:0 10px 10px 0;font-style:italic;color:#555}}
+    .post-body blockquote p{{margin:0}}
+    .callout{{background:rgba(0,113,227,.06);border-left:4px solid var(--accent);padding:1rem 1.3rem;border-radius:0 10px 10px 0;margin:1.6rem 0}}
+    .callout p{{margin:0;font-size:.95rem}}
+    .warning{{background:rgba(255,149,0,.07);border-left:4px solid #ff9500;padding:1rem 1.3rem;border-radius:0 10px 10px 0;margin:1.6rem 0}}
+    .warning p{{margin:0;font-size:.95rem}}
+
+    /* ── 본문 하단 광고 ── */
+    .bottom-ad{{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line2);text-align:center}}
+    .bottom-ad-label{{font-size:.62rem;color:#ccc;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}}
+
+    /* ── 우측 사이드바 컬럼 ── */
+    .col-right{{position:sticky;top:80px;display:flex;flex-direction:column;gap:16px}}
+    .toc-box{{background:#fff;border-radius:12px;border:1px solid var(--line2);padding:16px}}
+    .toc-title{{font-size:.74rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}}
+    .toc-list{{list-style:none;padding:0}}
+    .toc-list li{{padding:5px 0;border-bottom:1px solid var(--line2)}}
+    .toc-list li:last-child{{border:none}}
+    .toc-list a{{font-size:.82rem;color:var(--txt);text-decoration:none;display:block;line-height:1.4;transition:color .15s}}
+    .toc-list a:hover{{color:var(--accent)}}
+    .toc-list a.active{{color:var(--accent);font-weight:700}}
+    .right-ad{{background:#fff;border-radius:12px;border:1px solid var(--line2);overflow:hidden;min-height:250px;padding:8px 0;text-align:center}}
+    .right-ad-label{{font-size:.62rem;color:#ccc;letter-spacing:.08em;text-transform:uppercase;padding:4px 0 6px}}
+
+    /* ── 네비 ── */
+    .back-btn{{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:var(--muted);text-decoration:none;margin-bottom:16px;transition:color .15s}}
+    .back-btn:hover{{color:var(--accent)}}
+
+    /* ── 푸터 ── */
+    footer{{text-align:center;padding:28px 20px;margin-top:20px;border-top:1px solid var(--line2);background:#fff;font-size:.8rem;color:var(--muted)}}
     footer a{{color:inherit;text-decoration:none;margin:0 10px}}
     footer a:hover{{text-decoration:underline}}
     .footer-copy{{margin-top:8px;font-size:.75rem}}
-    @media(max-width:600px){{.post-wrap{{padding:28px 16px 60px}}}}
+
+    /* ── 반응형 ── */
+    @media(max-width:1020px){{
+      .page-grid{{grid-template-columns:0 1fr 200px;padding:20px 12px 40px}}
+      .col-left{{display:none}}
+    }}
+    @media(max-width:720px){{
+      .page-grid{{grid-template-columns:1fr;padding:16px 12px 40px}}
+      .col-right{{display:none}}
+      .post-card{{padding:20px 18px 28px;border-radius:12px}}
+    }}
   </style>
 </head>
 <body>
+
+<!-- 헤더 -->
 <header class="header">
   <div class="header-in">
     <a href="index.html" class="brand">비숑 웰니스</a>
@@ -340,18 +408,96 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
   </div>
 </header>
 
-<div class="post-wrap">
-  <a href="index.html" class="back-btn">← 목록으로</a>
-  <span class="post-cat">{category}</span>
-  <h1 class="post-title">{title}</h1>
-  <div class="post-meta">{date_display} · {category}</div>
-
-  {thumb_html}
-
-  <div class="post-body">
-{content}
+<!-- 카테고리 경로 바 -->
+<div class="cat-bar">
+  <div class="cat-bar-in">
+    <a href="index.html">홈</a>
+    <span class="sep">›</span>
+    <a href="index.html">{category}</a>
+    <span class="sep">›</span>
+    <span class="current">{title[:30]}{'...' if len(title) > 30 else ''}</span>
   </div>
 </div>
+
+<!-- 3컬럼 그리드 -->
+<div class="page-grid">
+
+  <!-- 좌측 세로 광고 -->
+  <aside class="col-left">
+    <div class="v-ad">
+      <div class="v-ad-label">광고</div>
+      <ins class="adsbygoogle"
+           style="display:block;width:160px"
+           data-ad-client="ca-pub-3425189666333844"
+           data-ad-slot="auto"
+           data-ad-format="auto"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    </div>
+  </aside>
+
+  <!-- 중앙 본문 -->
+  <main class="col-main">
+    <a href="index.html" class="back-btn">← 전체 글 목록</a>
+
+    <div class="post-card">
+      <span class="post-cat">{category}</span>
+      <h1 class="post-title">{title}</h1>
+      <div class="post-meta">
+        <span>📅 {date_display}</span>
+        <span>📂 {category}</span>
+      </div>
+
+      {thumb_html}
+
+      <!-- 썸네일 아래 인콘텐츠 광고 (도입부 직후) -->
+      <div class="in-ad">
+        <div class="in-ad-label">광고</div>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3425189666333844"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+      </div>
+
+      <div class="post-body" id="postBody">
+{content}
+      </div>
+
+      <!-- 본문 끝 광고 -->
+      <div class="bottom-ad">
+        <div class="bottom-ad-label">광고</div>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3425189666333844"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+      </div>
+    </div>
+  </main>
+
+  <!-- 우측 사이드바: 목차 + 광고 -->
+  <aside class="col-right">
+    <div class="toc-box">
+      <div class="toc-title">목차</div>
+      <ul class="toc-list" id="tocList"></ul>
+    </div>
+    <div class="right-ad">
+      <div class="right-ad-label">광고</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3425189666333844"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    </div>
+  </aside>
+
+</div><!-- /page-grid -->
 
 <footer>
   <a href="privacy.html">개인정보 처리방침</a> |
@@ -359,6 +505,36 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
   <a href="contact.html">문의하기</a>
   <div class="footer-copy">© 2026 비숑 웰니스. All rights reserved.</div>
 </footer>
+
+<script>
+  // 목차 자동 생성 + 스크롤 하이라이트
+  (function() {{
+    const body = document.getElementById('postBody');
+    const toc  = document.getElementById('tocList');
+    if (!body || !toc) return;
+    const headings = body.querySelectorAll('h2');
+    headings.forEach((h, i) => {{
+      h.id = h.id || 'sec-' + i;
+      const li = document.createElement('li');
+      const a  = document.createElement('a');
+      a.href        = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      toc.appendChild(li);
+    }});
+    const links = toc.querySelectorAll('a');
+    const io = new IntersectionObserver(entries => {{
+      entries.forEach(e => {{
+        if (e.isIntersecting) {{
+          links.forEach(l => l.classList.remove('active'));
+          const t = toc.querySelector('a[href="#' + e.target.id + '"]');
+          if (t) t.classList.add('active');
+        }}
+      }});
+    }}, {{rootMargin: '-15% 0px -75% 0px'}});
+    headings.forEach(h => io.observe(h));
+  }})();
+</script>
 </body>
 </html>"""
 
