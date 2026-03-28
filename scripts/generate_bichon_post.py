@@ -54,8 +54,8 @@ TOPICS = [
     ("노화 방지를 위한 항산화 생활 습관", "건강백세", "anti aging antioxidant lifestyle"),
 ]
 
-# 속보뉴스 비율: 30% 확률로 뉴스 포스팅
-USE_NEWS = TAVILY_API_KEY and random.random() < 0.30
+# 속보뉴스 비율: 애드센스 승인 전까지 비활성화
+USE_NEWS = False  # 승인 후 활성화: TAVILY_API_KEY and random.random() < 0.30
 topic, category, image_query = random.choice(TOPICS)
 
 
