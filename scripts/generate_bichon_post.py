@@ -83,6 +83,72 @@ def get_image_url(query, category="건강"):
     return fallback
 
 
+def search_personal_experiences(topic):
+    """블로그/유튜브/네이버카페 실제 체험담 검색"""
+    if not TAVILY_API_KEY:
+        return ""
+    try:
+        print(f"개인 체험 검색 중: {topic}")
+        queries = [
+            f"{topic} 후기 블로그 직접 해봤어요 체험",
+            f"{topic} 네이버카페 실제 경험 솔직 후기",
+            f"{topic} 유튜브 실천 일상 변화 경험담",
+        ]
+        all_results = []
+        for q in queries[:2]:
+            try:
+                resp = requests.post(
+                    "https://api.tavily.com/search",
+                    json={
+                        "api_key": TAVILY_API_KEY,
+                        "query": q,
+                        "search_depth": "basic",
+                        "max_results": 3,
+                        "include_domains": [
+                            "blog.naver.com",
+                            "cafe.naver.com",
+                            "tistory.com",
+                            "brunch.co.kr",
+                            "youtube.com",
+                            "instagram.com",
+                            "m.blog.naver.com",
+                        ]
+                    },
+                    timeout=12
+                )
+                results = resp.json().get("results", [])
+                all_results.extend(results)
+            except Exception:
+                pass
+
+        if not all_results:
+            # 도메인 제한 없이 재시도
+            try:
+                resp = requests.post(
+                    "https://api.tavily.com/search",
+                    json={
+                        "api_key": TAVILY_API_KEY,
+                        "query": f"{topic} 솔직후기 직접해봤어요 일상 변화",
+                        "search_depth": "basic",
+                        "max_results": 4,
+                    },
+                    timeout=12
+                )
+                all_results = resp.json().get("results", [])
+            except Exception:
+                pass
+
+        exp_text = ""
+        for r in all_results[:4]:
+            content = r.get("content", "")[:400]
+            exp_text += f"\n[체험 출처: {r.get('title','')}]\n{content}\n"
+        print(f"체험 검색 결과 {len(all_results)}개 수집")
+        return exp_text
+    except Exception as e:
+        print(f"체험 검색 실패: {e}")
+        return ""
+
+
 def search_references(topic):
     """Tavily로 신뢰할 수 있는 자료 검색"""
     if not TAVILY_API_KEY:
@@ -138,11 +204,16 @@ def search_references(topic):
         return ""
 
 
-def generate_post(topic, references="", body_image=""):
+def generate_post(topic, references="", body_image="", experiences=""):
     ref_section = f"""
 [참고 자료 - 아래 내용을 바탕으로 신뢰도 높은 글을 작성하세요]
 {references}
 """ if references else ""
+
+    exp_section = f"""
+[실제 체험담 자료 - 블로그/카페/유튜브에서 수집한 실제 경험들]
+{experiences}
+""" if experiences else ""
 
     body_image_instruction = f"""
 - 본문 중간(두 번째 또는 세 번째 h2 섹션 직후)에 아래 이미지를 반드시 삽입하세요:
@@ -152,24 +223,27 @@ def generate_post(topic, references="", body_image=""):
   </figure>
   (alt 속성에는 "이미지" 같은 단어 대신 해당 섹션 내용을 설명하는 구체적인 한국어 문장을 넣으세요)""" if body_image else ""
 
-    prompt = f"""당신은 영양학 석사 학위를 보유한 10년 경력의 건강 전문 블로거입니다.
-논문, 의학 연구, 공신력 있는 전문가(영양사, 의사, 교수)의 견해를 바탕으로 아래 주제의 고품질 블로그 포스트를 작성해주세요.
+    prompt = f"""당신은 건강한 생활을 10년째 직접 실천하며 블로그를 운영 중인 건강 전문 블로거입니다.
+영양학 지식과 함께 본인의 직접 체험, 주변 사람들의 경험을 자연스럽게 녹여 글을 씁니다.
 
 주제: {topic}
-{ref_section}
+{ref_section}{exp_section}
 [작성 규칙]
 - HTML 형식 (h2, h3, p, ul, li, strong, blockquote, table 태그 적극 활용)
 - 분량: 1800~2500단어
 - 구성:
-  1. 흥미로운 도입부 (통계나 연구 수치로 시작)
+  1. 개인적인 경험이나 주변 사례로 시작하는 도입부 (통계/연구 수치 포함)
   2. 핵심 내용 5개 섹션 (각 섹션마다 h2 태그)
   3. 각 섹션에 연구 결과, 전문가 의견, 구체적 수치 포함
-  4. blockquote 태그로 전문가 인용구 1~2개 삽입
+  4. blockquote 태그로 전문가 인용구 또는 실제 후기 1~2개 삽입
   5. 실천 가능한 팁을 bullet point로 정리
   6. 마무리 (핵심 요약 + 독자 행동 유도)
-- "연구에 따르면", "전문가들은", "○○ 대학 연구팀", "대한영양사협회" 등 출처 명시
+- "연구에 따르면", "전문가들은", "○○ 대학 연구팀" 등 출처 명시
+- 위에 제공된 [실제 체험담 자료]를 참고하여, 블로거 본인 또는 독자들의 실제 경험처럼 자연스럽게 1~2곳에 녹여주세요.
+  예) "저도 3개월 전부터 직접 해봤는데...", "카페에서 많은 분들이 비슷한 경험을 나눠주셨어요..."
+  단, 출처 URL은 노출하지 말고 내용만 자연스럽게 반영하세요.
 - 의학적 면책 조항을 마지막에 추가
-- 친근하고 신뢰감 있는 문체
+- 친근하고 공감가는 문체 (너무 딱딱하지 않게)
 - SEO를 위해 주제 키워드를 자연스럽게 반복
 
 [SEO 필수 규칙 - 반드시 준수]
@@ -572,8 +646,11 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
 
 
 print(f"주제: {topic}")
-print("자료 검색 중...")
+print("전문 자료 검색 중...")
 references = search_references(topic)
+
+print("개인 체험담 검색 중...")
+experiences = search_personal_experiences(topic)
 
 print("이미지 검색 중...")
 thumbnail = get_image_url(image_query, category)
@@ -589,7 +666,7 @@ if body_image == thumbnail:
 print(f"본문 이미지 URL: {body_image[:60] if body_image else '없음'}...")
 
 print("글 생성 중...")
-title, excerpt, keywords, content = generate_post(topic, references, body_image)
+title, excerpt, keywords, content = generate_post(topic, references, body_image, experiences)
 
 pub_date = datetime.now().strftime("%Y-%m-%d")
 slug = make_slug(title)
