@@ -37,36 +37,21 @@ TOPICS = [
     ("단백질 식품 TOP 10 완벽 정리", "건강다이어트", "protein food diet health"),
     ("혈액순환 개선을 위한 운동과 음식", "건강생활", "blood circulation exercise food"),
     ("아침 식사의 중요성과 건강한 아침 메뉴", "건강생활", "healthy breakfast morning food"),
-    # 재테크
-    ("월 10만원으로 시작하는 재테크 완벽 가이드", "재테크", "savings investment money beginner"),
-    ("주식 투자 초보가 반드시 알아야 할 원칙 7가지", "재테크", "stock investment beginner tips"),
-    ("ISA 계좌 완벽 가이드 2026 — 절세 핵심 정리", "재테크", "ISA account savings tax Korea"),
-    ("ETF 투자로 노후 준비하는 방법", "재테크", "ETF investment retirement savings"),
-    ("청년도약계좌 신청 방법과 혜택 총정리", "재테크", "youth savings account Korea government"),
-    ("부동산 소액 투자 시작하는 법 — 리츠(REITs) 완벽 정리", "재테크", "REITs real estate investment Korea"),
-    ("카드 포인트로 월 5만원 아끼는 방법", "재테크", "credit card points cashback saving"),
-    ("비상금 통장 만드는 법과 최고 금리 적금 추천", "재테크", "emergency fund savings account interest"),
-    # 생활정보
-    ("집에서 할 수 있는 10분 스트레칭 루틴 완벽 가이드", "생활정보", "home stretching exercise routine"),
-    ("전기요금 절약하는 생활 습관 15가지", "생활정보", "electricity bill saving household tips"),
-    ("봄철 환절기 건강 관리법 — 면역력 지키기", "생활정보", "spring health care seasonal"),
-    ("냉장고 정리법과 식품 보관 꿀팁", "생활정보", "refrigerator organization food storage tips"),
-    ("중고거래 안전하게 하는 방법과 꿀팁", "생활정보", "secondhand trading safe tips Korea"),
-    ("스마트폰 배터리 오래 쓰는 방법", "생활정보", "smartphone battery life tips"),
-    # 멘탈헬스
-    ("우울감 이겨내는 일상 습관 10가지", "멘탈헬스", "depression anxiety mental health daily"),
-    ("번아웃 증후군 극복하는 방법", "멘탈헬스", "burnout syndrome recovery mental health"),
-    ("불안 해소에 효과적인 호흡법과 명상", "멘탈헬스", "anxiety breathing meditation mindfulness"),
-    ("자존감 높이는 심리 훈련법", "멘탈헬스", "self esteem confidence mental health"),
-    # 반려동물
-    ("비숑프리제 건강 관리 완벽 가이드", "반려동물", "bichon frise dog health care"),
-    ("반려견 영양제 추천과 올바른 선택법", "반려동물", "dog supplement health care nutrition"),
-    ("강아지 피부병 원인과 예방법", "반려동물", "dog skin disease prevention care"),
-    ("고양이 건강 검진 시기와 필수 예방접종", "반려동물", "cat health checkup vaccination"),
-    # 뷰티/피부
-    ("피부 트러블 없애는 생활 습관 7가지", "뷰티건강", "skin care healthy lifestyle acne"),
-    ("자외선 차단제 올바르게 바르는 법", "뷰티건강", "sunscreen SPF skin protection"),
-    ("탈모 예방을 위한 두피 관리법", "뷰티건강", "hair loss prevention scalp care"),
+    # 건강 추가
+    ("갱년기 여성을 위한 호르몬 균형 식단", "건강관리", "menopause diet hormone balance"),
+    ("50대 이후 꼭 받아야 할 건강검진 항목", "시니어건강", "health checkup over 50 senior"),
+    ("신장 건강을 지키는 생활 습관과 음식", "건강관리", "kidney health food lifestyle"),
+    ("심장 건강을 위한 유산소 운동 가이드", "건강생활", "heart health cardio exercise"),
+    ("염증을 줄이는 항염 식단 완벽 가이드", "건강식품", "anti inflammatory diet food"),
+    ("장누수증후군 원인과 치유 식단", "건강관리", "leaky gut syndrome diet heal"),
+    ("수족냉증 개선에 좋은 음식과 운동", "건강", "cold hands feet circulation remedy"),
+    ("허리 통증 줄이는 코어 운동 루틴", "건강생활", "back pain core exercise routine"),
+    ("고지혈증 낮추는 식습관 7가지", "건강관리", "high cholesterol diet lifestyle"),
+    ("갑상선 건강을 위한 식품과 생활 습관", "건강관리", "thyroid health food lifestyle"),
+    ("뇌 건강을 지키는 슈퍼푸드 TOP 10", "건강식품", "brain health superfood nutrition"),
+    ("불면증 극복을 위한 수면 루틴과 음식", "건강생활", "insomnia sleep routine food"),
+    ("피로 회복에 좋은 비타민과 미네랄 총정리", "건강식품", "fatigue vitamins minerals supplement"),
+    ("노화 방지를 위한 항산화 생활 습관", "건강백세", "anti aging antioxidant lifestyle"),
 ]
 
 # 속보뉴스 비율: 30% 확률로 뉴스 포스팅
