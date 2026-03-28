@@ -169,6 +169,625 @@ export default {
         return handleApi(request, env, url);
       }
 
+
+      if (request.method === "GET" && path === "/calc") {
+        return new Response(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-3425189666333844">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복리계산기 — 원금·이율·기간으로 미래 자산 계산 | 비숑 웰니스</title>
+  <meta name="description" content="복리 계산기로 원금, 연이율, 투자 기간을 입력하면 미래 자산과 총 수익을 즉시 계산합니다. 적립식/거치식 모두 지원.">
+  <link rel="canonical" href="https://bichonbuff.com/compound-calculator.html">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--green:#30d158;--radius:14px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:#f8f8fa;color:var(--txt);-webkit-font-smoothing:antialiased}
+
+    /* 헤더 */
+    .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08)}
+    .header-in{max-width:1280px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .nav{display:flex;gap:20px}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .15s}
+    .nav a:hover{color:var(--txt)}
+
+    /* 상단 카테고리/도구 바 */
+    .topbar{background:#fff;border-bottom:1px solid var(--line2);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .topbar::-webkit-scrollbar{display:none}
+    .topbar-in{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap;gap:0}
+    .topbar-group{display:flex;align-items:center;gap:0}
+    .topbar-label{font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px;white-space:nowrap}
+    .topbar-group a{display:inline-flex;align-items:center;gap:4px;padding:9px 12px;font-size:.8rem;color:var(--muted);text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
+    .topbar-group a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+    .topbar-group a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+    .topbar-div{width:1px;background:var(--line2);margin:8px 4px;align-self:stretch}
+
+    /* 레이아웃 */
+    .page{max-width:960px;margin:0 auto;padding:36px 20px 80px}
+    .page-title{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;letter-spacing:-.04em;margin-bottom:6px}
+    .page-desc{font-size:.9rem;color:var(--muted);margin-bottom:28px}
+
+    /* 탭 */
+    .tab-wrap{display:flex;gap:0;background:var(--bg2);border-radius:var(--radius);padding:4px;margin-bottom:24px;width:fit-content}
+    .tab{padding:7px 20px;font-size:.85rem;font-weight:600;color:var(--muted);border:none;background:none;border-radius:10px;cursor:pointer;transition:all .2s}
+    .tab.active{background:#fff;color:var(--txt);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+
+    /* 카드 */
+    .card{background:#fff;border:1px solid var(--line2);border-radius:var(--radius);padding:24px 28px;margin-bottom:20px}
+    .card-title{font-size:.88rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
+
+    /* 입력 그리드 */
+    .input-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .field{display:flex;flex-direction:column;gap:6px}
+    .field label{font-size:.8rem;font-weight:600;color:var(--muted)}
+    .field-wrap{display:flex;align-items:center;background:var(--bg2);border-radius:10px;border:1.5px solid transparent;transition:border-color .15s;overflow:hidden}
+    .field-wrap:focus-within{border-color:var(--accent);background:#fff}
+    .field input{flex:1;border:none;background:none;padding:10px 12px;font-size:1rem;font-weight:600;color:var(--txt);outline:none;font-family:inherit;width:0}
+    .field-unit{padding:0 12px 0 4px;font-size:.82rem;font-weight:600;color:var(--muted);white-space:nowrap}
+
+    /* 버튼 */
+    .calc-btn{width:100%;margin-top:20px;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:1rem;font-weight:700;cursor:pointer;transition:opacity .15s;font-family:inherit}
+    .calc-btn:hover{opacity:.88}
+    .calc-btn:active{opacity:.76}
+
+    /* 결과 */
+    .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:4px}
+    .result-item{background:var(--bg2);border-radius:var(--radius);padding:16px 18px}
+    .result-label{font-size:.75rem;color:var(--muted);font-weight:600;margin-bottom:6px}
+    .result-value{font-size:1.4rem;font-weight:800;letter-spacing:-.03em}
+    .result-value.main{color:var(--accent);font-size:1.7rem}
+    .result-value.profit{color:var(--green)}
+
+    /* 차트 바 */
+    .chart-wrap{margin-top:20px}
+    .chart-title{font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:12px}
+    .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:.8rem}
+    .bar-label{width:36px;text-align:right;color:var(--muted);font-weight:600;flex-shrink:0}
+    .bar-track{flex:1;background:var(--bg2);border-radius:4px;height:20px;overflow:hidden;position:relative}
+    .bar-fill-principal{height:100%;background:#d1d1d6;border-radius:4px 0 0 4px;position:absolute;left:0;top:0;transition:width .5s ease}
+    .bar-fill-interest{height:100%;background:var(--accent);border-radius:0 4px 4px 0;position:absolute;top:0;transition:width .5s ease,left .5s ease}
+    .bar-val{width:80px;text-align:right;font-weight:700;color:var(--txt);flex-shrink:0;font-size:.78rem}
+
+    /* 적립식 추가 필드 */
+    .monthly-field{display:none}
+    .monthly-field.show{display:block}
+
+    /* 안내 */
+    .info-box{background:rgba(0,113,227,.05);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;font-size:.85rem;color:#444;line-height:1.7;margin-top:20px}
+
+    footer{text-align:center;padding:24px 20px;margin-top:20px;border-top:1px solid var(--line2);background:#fff;font-size:.8rem;color:var(--muted)}
+    footer a{color:inherit;text-decoration:none;margin:0 10px}
+    .footer-copy{margin-top:8px;font-size:.75rem}
+
+    @media(max-width:640px){
+      .input-grid{grid-template-columns:1fr 1fr}
+      .result-grid{grid-template-columns:1fr 1fr}
+      .result-value.main{font-size:1.4rem}
+      .card{padding:18px 16px}
+      .page{padding:20px 14px 60px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand">비숑 웰니스</a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="reservation.html">예약</a>
+    </nav>
+  </div>
+</header>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="topbar-group">
+      <span class="topbar-label">카테고리</span>
+      <a href="index.html">전체</a>
+      <a href="index.html">건강정보</a>
+      <a href="index.html">운동</a>
+      <a href="index.html">식단</a>
+      <a href="index.html">영양제</a>
+      <a href="index.html">다이어트</a>
+    </div>
+    <div class="topbar-div"></div>
+    <div class="topbar-group">
+      <span class="topbar-label">도구</span>
+      <a href="compound-calculator.html" class="active">💰 복리계산기</a>
+      <a href="lotto.html">🎱 로또번호</a>
+      <a href="code-playground.html">💻 코드연습창</a>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <h1 class="page-title">💰 복리계산기</h1>
+  <p class="page-desc">원금, 연이율, 기간을 입력하면 복리로 불어나는 미래 자산을 계산합니다.</p>
+
+  <!-- 거치식/적립식 탭 -->
+  <div class="tab-wrap">
+    <button class="tab active" onclick="switchMode('lump',this)">거치식 (일시 투자)</button>
+    <button class="tab" onclick="switchMode('monthly',this)">적립식 (매월 투자)</button>
+  </div>
+
+  <!-- 입력 카드 -->
+  <div class="card">
+    <div class="card-title">투자 조건 입력</div>
+    <div class="input-grid">
+      <div class="field">
+        <label>초기 원금</label>
+        <div class="field-wrap">
+          <input type="number" id="principal" value="10000000" min="0">
+          <span class="field-unit">원</span>
+        </div>
+      </div>
+      <div class="field monthly-field" id="monthlyField">
+        <label>매월 추가 납입</label>
+        <div class="field-wrap">
+          <input type="number" id="monthly" value="300000" min="0">
+          <span class="field-unit">원</span>
+        </div>
+      </div>
+      <div class="field">
+        <label>연 이율 (수익률)</label>
+        <div class="field-wrap">
+          <input type="number" id="rate" value="7" step="0.1" min="0" max="100">
+          <span class="field-unit">%</span>
+        </div>
+      </div>
+      <div class="field">
+        <label>투자 기간</label>
+        <div class="field-wrap">
+          <input type="number" id="years" value="20" min="1" max="50">
+          <span class="field-unit">년</span>
+        </div>
+      </div>
+      <div class="field">
+        <label>복리 주기</label>
+        <div class="field-wrap" style="background:var(--bg2)">
+          <select id="compound" style="flex:1;border:none;background:none;padding:10px 12px;font-size:.95rem;font-weight:600;color:var(--txt);outline:none;font-family:inherit">
+            <option value="12">월 복리</option>
+            <option value="4">분기 복리</option>
+            <option value="1" selected>연 복리</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <button class="calc-btn" onclick="calculate()">계산하기</button>
+  </div>
+
+  <!-- 결과 카드 -->
+  <div class="card" id="resultCard" style="display:none">
+    <div class="card-title">계산 결과</div>
+    <div class="result-grid">
+      <div class="result-item">
+        <div class="result-label">미래 자산 (원리합계)</div>
+        <div class="result-value main" id="rTotal">—</div>
+      </div>
+      <div class="result-item">
+        <div class="result-label">총 납입 원금</div>
+        <div class="result-value" id="rPrincipal">—</div>
+      </div>
+      <div class="result-item">
+        <div class="result-label">총 이자·수익</div>
+        <div class="result-value profit" id="rInterest">—</div>
+      </div>
+    </div>
+
+    <!-- 연도별 막대 차트 -->
+    <div class="chart-wrap">
+      <div class="chart-title">연도별 자산 추이 <span style="font-weight:400;color:#aaa">(■ 원금 &nbsp;■ 수익)</span></div>
+      <div id="chartBars"></div>
+    </div>
+
+    <div class="info-box">
+      💡 <strong>72의 법칙:</strong> 원금이 2배가 되는 기간 ≈ 72 ÷ 연이율<br>
+      현재 이율 <strong id="ruleRate">—</strong>% 기준으로 약 <strong id="ruleYears">—</strong>년 후 원금이 2배가 됩니다.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="privacy.html">개인정보 처리방침</a> |
+  <a href="terms.html">이용약관</a> |
+  <a href="contact.html">문의하기</a>
+  <div class="footer-copy">© 2026 비숑 웰니스. All rights reserved.</div>
+</footer>
+
+<script>
+  let mode = 'lump';
+
+  function switchMode(m, btn) {
+    mode = m;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    const mf = document.getElementById('monthlyField');
+    if (m === 'monthly') mf.classList.add('show');
+    else mf.classList.remove('show');
+  }
+
+  function fmt(n) {
+    if (n >= 1e8) return (n / 1e8).toFixed(2) + '억원';
+    if (n >= 1e4) return Math.round(n / 1e4) + '만원';
+    return Math.round(n).toLocaleString() + '원';
+  }
+
+  function calculate() {
+    const P  = parseFloat(document.getElementById('principal').value) || 0;
+    const M  = parseFloat(document.getElementById('monthly').value)   || 0;
+    const r  = parseFloat(document.getElementById('rate').value)      / 100;
+    const n  = parseInt(document.getElementById('compound').value);
+    const Y  = parseInt(document.getElementById('years').value)       || 1;
+
+    // 연도별 계산
+    const yearly = [];
+    for (let y = 1; y <= Y; y++) {
+      let fv;
+      if (mode === 'lump') {
+        fv = P * Math.pow(1 + r / n, n * y);
+      } else {
+        // 거치분 + 적립분 (월 납입)
+        const fvLump = P * Math.pow(1 + r / n, n * y);
+        const rM = r / 12;
+        const fvMonthly = M * ((Math.pow(1 + rM, 12 * y) - 1) / rM) * (1 + rM);
+        fv = fvLump + fvMonthly;
+      }
+      const totalPaid = mode === 'lump' ? P : P + M * 12 * y;
+      yearly.push({ y, fv, principal: totalPaid, interest: fv - totalPaid });
+    }
+
+    const last = yearly[yearly.length - 1];
+    document.getElementById('rTotal').textContent    = fmt(last.fv);
+    document.getElementById('rPrincipal').textContent = fmt(last.principal);
+    document.getElementById('rInterest').textContent  = fmt(last.interest);
+    document.getElementById('ruleRate').textContent   = (r * 100).toFixed(1);
+    document.getElementById('ruleYears').textContent  = r > 0 ? (72 / (r * 100)).toFixed(1) : '∞';
+
+    // 차트
+    const bars = document.getElementById('chartBars');
+    bars.innerHTML = '';
+    const step = Math.max(1, Math.floor(Y / 10));
+    const maxFv = last.fv;
+    const shown = yearly.filter((_, i) => (i + 1) % step === 0 || i === Y - 1);
+    shown.forEach(({ y, fv, principal }) => {
+      const pct  = (principal / maxFv * 100).toFixed(1);
+      const iPct = ((fv - principal) / maxFv * 100).toFixed(1);
+      bars.innerHTML += \`
+        <div class="bar-row">
+          <span class="bar-label">\${y}년</span>
+          <div class="bar-track">
+            <div class="bar-fill-principal" style="width:\${pct}%"></div>
+            <div class="bar-fill-interest" style="left:\${pct}%;width:\${iPct}%"></div>
+          </div>
+          <span class="bar-val">\${fmt(fv)}</span>
+        </div>\`;
+    });
+
+    document.getElementById('resultCard').style.display = 'block';
+    document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // 초기 자동 계산
+  calculate();
+</script>
+</body>
+</html>
+`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      }
+
+      if (request.method === "GET" && path === "/lotto-gen") {
+        return new Response(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-3425189666333844">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 번호 생성기 | 비숑 웰니스</title>
+    <meta name="description" content="무료 로또 6/45 번호 자동 생성기입니다. 버튼 하나로 행운의 번호 6개를 즉시 뽑아보세요.">
+    <meta property="og:title" content="로또 번호 생성기 | 비숑 웰니스">
+    <meta property="og:description" content="무료 로또 6/45 번호 자동 생성기. 버튼 하나로 행운의 번호를 뽑아보세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bichonbuff.com/lotto.html">
+    <meta property="og:site_name" content="비숑 웰니스">
+    <link rel="canonical" href="https://bichonbuff.com/lotto.html">
+    <link rel="stylesheet" href="lotto.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="lotto.html" class="active">로또 번호 생성기</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>로또 번호 생성기</h1>
+            <p>버튼을 눌러 행운의 번호를 받아보세요!</p>
+            <div class="lotto-numbers-container" id="lotto-numbers">
+                <!-- 생성된 번호가 여기에 표시됩니다. -->
+            </div>
+            <button id="generate-btn">번호 생성</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 비숑 웰니스. All rights reserved.</p>
+        <div>
+            <a href="privacy.html">개인정보 처리방침</a> |
+            <a href="terms.html">이용약관</a> |
+            <a href="contact.html">문의하기</a>
+        </div>
+    </footer>
+
+    <script src="lotto.js"></script>
+</body>
+</html>
+`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      }
+
+      if (request.method === "GET" && path === "/code") {
+        return new Response(`<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-3425189666333844">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코드연습창 — HTML/CSS/JS 온라인 에디터 | 비숑 웰니스</title>
+  <meta name="description" content="브라우저에서 바로 HTML, CSS, JavaScript를 작성하고 실시간으로 결과를 확인하세요. 설치 없이 사용 가능한 무료 온라인 코드 에디터.">
+  <link rel="canonical" href="https://bichonbuff.com/code-playground.html">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
+  <style>
+    :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--dark:#1c1c1e;--green:#30d158}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:#f8f8fa;color:var(--txt);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+
+    /* 헤더 */
+    .header{background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08);flex-shrink:0}
+    .header-in{max-width:100%;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none;flex-shrink:0}
+    .nav{display:flex;gap:16px}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:500}
+    .nav a:hover{color:var(--txt)}
+
+    /* 상단 카테고리/도구 바 */
+    .topbar{background:#fff;border-bottom:1px solid var(--line2);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex-shrink:0}
+    .topbar::-webkit-scrollbar{display:none}
+    .topbar-in{max-width:100%;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap}
+    .topbar-group{display:flex;align-items:center}
+    .topbar-label{font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px}
+    .topbar-group a{display:inline-flex;align-items:center;gap:4px;padding:9px 12px;font-size:.8rem;color:var(--muted);text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s}
+    .topbar-group a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+    .topbar-group a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+    .topbar-div{width:1px;background:var(--line2);margin:8px 4px}
+
+    /* 에디터 툴바 */
+    .editor-toolbar{background:var(--dark);display:flex;align-items:center;gap:8px;padding:8px 16px;flex-shrink:0}
+    .toolbar-title{font-size:.88rem;font-weight:700;color:#fff;flex:1}
+    .run-btn{display:inline-flex;align-items:center;gap:6px;background:var(--green);color:#000;border:none;padding:7px 16px;border-radius:8px;font-size:.85rem;font-weight:700;cursor:pointer;transition:opacity .15s;font-family:inherit}
+    .run-btn:hover{opacity:.85}
+    .clear-btn{display:inline-flex;align-items:center;gap:6px;background:#3a3a3c;color:#ebebf5;border:none;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit}
+    .clear-btn:hover{background:#48484a}
+
+    /* 탭 */
+    .tab-bar{background:#2c2c2e;display:flex;align-items:center;flex-shrink:0;border-bottom:1px solid #3a3a3c}
+    .ed-tab{padding:8px 18px;font-size:.82rem;font-weight:600;color:#8e8e93;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;font-family:inherit}
+    .ed-tab:hover{color:#ebebf5}
+    .ed-tab.active{color:#fff;border-bottom-color:var(--accent)}
+
+    /* 에디터 영역 */
+    .workspace{flex:1;display:grid;grid-template-rows:1fr 1fr;overflow:hidden}
+    .workspace.split-v{grid-template-rows:1fr;grid-template-columns:1fr 1fr}
+
+    .editor-pane{display:flex;flex-direction:column;background:var(--dark);overflow:hidden}
+    .editor-pane.hidden{display:none}
+    textarea.code{flex:1;background:#1c1c1e;color:#e8e8f0;border:none;padding:14px 16px;font-family:'Fira Code','Cascadia Code','Consolas',monospace;font-size:.9rem;line-height:1.65;resize:none;outline:none;tab-size:2;-moz-tab-size:2;overflow:auto}
+    textarea.code::selection{background:rgba(0,113,227,.4)}
+
+    .preview-pane{background:#fff;display:flex;flex-direction:column;border-top:2px solid var(--accent)}
+    .preview-pane.split-border{border-top:none;border-left:2px solid var(--accent)}
+    .preview-label{background:#f0f0f5;padding:6px 14px;font-size:.75rem;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;border-bottom:1px solid var(--line2);flex-shrink:0}
+    iframe#preview{flex:1;border:none;background:#fff}
+
+    /* 레이아웃 전환 버튼 */
+    .layout-btn{background:#3a3a3c;color:#ebebf5;border:none;padding:6px 10px;border-radius:6px;font-size:.75rem;cursor:pointer;font-family:inherit}
+    .layout-btn:hover{background:#48484a}
+    .layout-btn.active{background:var(--accent);color:#fff}
+
+    /* 예제 드롭다운 */
+    .example-select{background:#3a3a3c;color:#ebebf5;border:none;padding:7px 10px;border-radius:8px;font-size:.8rem;cursor:pointer;font-family:inherit;outline:none}
+
+    @media(max-width:640px){
+      .workspace{grid-template-rows:1fr 1fr}
+      .workspace.split-v{grid-template-rows:1fr 1fr;grid-template-columns:1fr}
+      .preview-pane.split-border{border-left:none;border-top:2px solid var(--accent)}
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-in">
+    <a href="index.html" class="brand">비숑 웰니스</a>
+    <nav class="nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+    </nav>
+  </div>
+</header>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="topbar-group">
+      <span class="topbar-label">카테고리</span>
+      <a href="index.html">전체</a>
+      <a href="index.html">건강정보</a>
+      <a href="index.html">운동</a>
+      <a href="index.html">식단</a>
+      <a href="index.html">영양제</a>
+      <a href="index.html">다이어트</a>
+    </div>
+    <div class="topbar-div"></div>
+    <div class="topbar-group">
+      <span class="topbar-label">도구</span>
+      <a href="compound-calculator.html">💰 복리계산기</a>
+      <a href="lotto.html">🎱 로또번호</a>
+      <a href="code-playground.html" class="active">💻 코드연습창</a>
+    </div>
+  </div>
+</div>
+
+<!-- 에디터 툴바 -->
+<div class="editor-toolbar">
+  <span class="toolbar-title">💻 코드연습창</span>
+  <select class="example-select" id="exampleSelect" onchange="loadExample(this.value)">
+    <option value="">예제 불러오기</option>
+    <option value="hello">Hello World</option>
+    <option value="counter">카운터 버튼</option>
+    <option value="flexbox">Flexbox 레이아웃</option>
+    <option value="calculator">간단한 계산기</option>
+    <option value="colorpicker">색상 선택기</option>
+  </select>
+  <button class="layout-btn" id="layoutBtn" onclick="toggleLayout()">⬛ 상하 분할</button>
+  <button class="clear-btn" onclick="clearAll()">초기화</button>
+  <button class="run-btn" onclick="runCode()">▶ 실행</button>
+</div>
+
+<!-- 탭 -->
+<div class="tab-bar">
+  <button class="ed-tab active" onclick="switchTab('html',this)">HTML</button>
+  <button class="ed-tab" onclick="switchTab('css',this)">CSS</button>
+  <button class="ed-tab" onclick="switchTab('js',this)">JavaScript</button>
+</div>
+
+<!-- 에디터 + 미리보기 -->
+<div class="workspace" id="workspace">
+  <div class="editor-pane" id="paneHtml">
+    <textarea class="code" id="codeHtml" placeholder="HTML 코드를 입력하세요..." spellcheck="false"></textarea>
+  </div>
+  <div class="editor-pane hidden" id="paneCss">
+    <textarea class="code" id="codeCss" placeholder="CSS 코드를 입력하세요..." spellcheck="false"></textarea>
+  </div>
+  <div class="editor-pane hidden" id="paneJs">
+    <textarea class="code" id="codeJs" placeholder="JavaScript 코드를 입력하세요..." spellcheck="false"></textarea>
+  </div>
+
+  <div class="preview-pane" id="previewPane">
+    <div class="preview-label">미리보기 (결과)</div>
+    <iframe id="preview" sandbox="allow-scripts allow-modals"></iframe>
+  </div>
+</div>
+
+<script>
+  let splitV = false;
+  let activeTab = 'html';
+
+  const EXAMPLES = {
+    hello: {
+      html: \`<h1>안녕하세요! 👋</h1>\\n<p>여기에 HTML을 작성하세요.</p>\\n<button onclick="greet()">클릭해보세요</button>\`,
+      css:  \`body {\\n  font-family: sans-serif;\\n  padding: 20px;\\n  background: #f5f5f7;\\n}\\nh1 { color: #0071e3; }\\nbutton {\\n  margin-top: 12px;\\n  padding: 10px 20px;\\n  background: #0071e3;\\n  color: #fff;\\n  border: none;\\n  border-radius: 8px;\\n  font-size: 1rem;\\n  cursor: pointer;\\n}\`,
+      js:   \`function greet() {\\n  alert('반갑습니다! 코드연습창에 오신 것을 환영합니다 🎉');\\n}\`
+    },
+    counter: {
+      html: \`<div class="counter-wrap">\\n  <h2>카운터</h2>\\n  <div class="count" id="count">0</div>\\n  <div class="btns">\\n    <button onclick="change(-1)">−</button>\\n    <button onclick="reset()">초기화</button>\\n    <button onclick="change(1)">+</button>\\n  </div>\\n</div>\`,
+      css:  \`body { font-family: sans-serif; display:flex; justify-content:center; align-items:center; min-height:100vh; margin:0; background:#f5f5f7; }\\n.counter-wrap { text-align:center; background:#fff; padding:40px; border-radius:20px; box-shadow:0 4px 20px rgba(0,0,0,.08); }\\n.count { font-size:5rem; font-weight:800; color:#0071e3; line-height:1; margin:20px 0; }\\n.btns { display:flex; gap:10px; justify-content:center; }\\nbutton { padding:12px 24px; font-size:1.2rem; border:none; border-radius:10px; background:#0071e3; color:#fff; cursor:pointer; font-weight:700; }\\nbutton:hover { opacity:.85; }\`,
+      js:   \`let n = 0;\\nfunction change(d) {\\n  n += d;\\n  document.getElementById('count').textContent = n;\\n}\\nfunction reset() {\\n  n = 0;\\n  document.getElementById('count').textContent = 0;\\n}\`
+    },
+    flexbox: {
+      html: \`<div class="container">\\n  <div class="box">1</div>\\n  <div class="box">2</div>\\n  <div class="box">3</div>\\n  <div class="box wide">4 (넓음)</div>\\n  <div class="box">5</div>\\n</div>\`,
+      css:  \`body { font-family: sans-serif; padding: 20px; background: #f5f5f7; }\\n.container {\\n  display: flex;\\n  flex-wrap: wrap;\\n  gap: 12px;\\n}\\n.box {\\n  background: #0071e3;\\n  color: #fff;\\n  padding: 20px;\\n  border-radius: 10px;\\n  font-weight: 700;\\n  font-size: 1.1rem;\\n  flex: 1 1 100px;\\n  text-align: center;\\n}\\n.wide { flex: 2 1 200px; background: #30d158; }\`,
+      js:   \`// Flexbox 예제입니다.\\n// CSS의 flex 속성을 변경해보세요!\`
+    },
+    calculator: {
+      html: \`<div class="calc">\\n  <input id="disp" readonly>\\n  <div class="keys">\\n    <button onclick="clr()">C</button>\\n    <button onclick="inp('(')">(</button>\\n    <button onclick="inp(')')">)</button>\\n    <button onclick="inp('/')">÷</button>\\n    <button onclick="inp('7')">7</button>\\n    <button onclick="inp('8')">8</button>\\n    <button onclick="inp('9')">9</button>\\n    <button onclick="inp('*')">×</button>\\n    <button onclick="inp('4')">4</button>\\n    <button onclick="inp('5')">5</button>\\n    <button onclick="inp('6')">6</button>\\n    <button onclick="inp('-')">−</button>\\n    <button onclick="inp('1')">1</button>\\n    <button onclick="inp('2')">2</button>\\n    <button onclick="inp('3')">3</button>\\n    <button onclick="inp('+')">+</button>\\n    <button onclick="inp('0')" class="zero">0</button>\\n    <button onclick="inp('.')">.</button>\\n    <button onclick="calc()" class="eq">=</button>\\n  </div>\\n</div>\`,
+      css:  \`body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#1c1c1e;font-family:sans-serif}\\n.calc{background:#2c2c2e;border-radius:20px;padding:20px;width:260px}\\ninput{width:100%;background:none;border:none;color:#fff;font-size:2rem;font-weight:300;text-align:right;padding:10px 4px 20px;outline:none}\\n.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}\\nbutton{background:#3a3a3c;color:#fff;border:none;border-radius:12px;padding:18px;font-size:1.1rem;cursor:pointer;font-weight:500}\\nbutton:hover{opacity:.8}\\n.eq{background:#0071e3;font-weight:700}\\n.zero{grid-column:span 2}\`,
+      js:   \`const d = document.getElementById('disp');\\nfunction inp(v){d.value+=v}\\nfunction clr(){d.value=''}\\nfunction calc(){\\n  try{d.value=eval(d.value.replace(/÷/g,'/').replace(/×/g,'*'))}\\n  catch{d.value='오류'}\\n}\`
+    },
+    colorpicker: {
+      html: \`<div class="wrap">\\n  <h2>색상 선택기</h2>\\n  <input type="color" id="picker" value="#0071e3">\\n  <div class="preview" id="preview"></div>\\n  <p id="hex">#0071e3</p>\\n  <p id="rgb">rgb(0, 113, 227)</p>\\n</div>\`,
+      css:  \`body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#f5f5f7}\\n.wrap{text-align:center;background:#fff;padding:40px;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.08)}\\nh2{margin-bottom:20px;color:#1d1d1f}\\n#picker{width:80px;height:80px;border:none;border-radius:50%;cursor:pointer;padding:0}\\n.preview{width:200px;height:100px;border-radius:14px;margin:20px auto;transition:background .2s}\\np{font-size:1.1rem;font-weight:700;margin:6px 0;color:#1d1d1f}\`,
+      js:   \`const p=document.getElementById('picker');\\nconst prev=document.getElementById('preview');\\np.addEventListener('input',()=>{\\n  const h=p.value;\\n  prev.style.background=h;\\n  document.getElementById('hex').textContent=h;\\n  const r=parseInt(h.slice(1,3),16);\\n  const g=parseInt(h.slice(3,5),16);\\n  const b=parseInt(h.slice(5,7),16);\\n  document.getElementById('rgb').textContent=\\\`rgb(\\\${r}, \\\${g}, \\\${b})\\\`;\\n});\\np.dispatchEvent(new Event('input'));\`
+    }
+  };
+
+  function switchTab(tab, btn) {
+    activeTab = tab;
+    document.querySelectorAll('.ed-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    ['Html','Css','Js'].forEach(t => {
+      document.getElementById('pane'+t).classList.toggle('hidden', t.toLowerCase() !== tab);
+    });
+  }
+
+  function toggleLayout() {
+    splitV = !splitV;
+    const ws = document.getElementById('workspace');
+    const pp = document.getElementById('previewPane');
+    const btn = document.getElementById('layoutBtn');
+    ws.classList.toggle('split-v', splitV);
+    pp.classList.toggle('split-border', splitV);
+    btn.classList.toggle('active', splitV);
+    btn.textContent = splitV ? '◼ 좌우 분할' : '⬛ 상하 분할';
+    if (splitV) {
+      ['Html','Css','Js'].forEach(t => document.getElementById('pane'+t).classList.remove('hidden'));
+      document.querySelectorAll('.editor-pane').forEach((p,i) => p.style.display = i === 0 ? '' : 'none');
+    }
+  }
+
+  function runCode() {
+    const html = document.getElementById('codeHtml').value;
+    const css  = document.getElementById('codeCss').value;
+    const js   = document.getElementById('codeJs').value;
+    const doc  = \`<!DOCTYPE html><html><head><style>\${css}</style></head><body>\${html}<script>\${js}<\\/script></body></html>\`;
+    const iframe = document.getElementById('preview');
+    iframe.srcdoc = doc;
+  }
+
+  function clearAll() {
+    if (!confirm('코드를 모두 초기화할까요?')) return;
+    document.getElementById('codeHtml').value = '';
+    document.getElementById('codeCss').value  = '';
+    document.getElementById('codeJs').value   = '';
+    document.getElementById('preview').srcdoc = '';
+    document.getElementById('exampleSelect').value = '';
+  }
+
+  function loadExample(key) {
+    if (!key) return;
+    const ex = EXAMPLES[key];
+    if (!ex) return;
+    document.getElementById('codeHtml').value = ex.html;
+    document.getElementById('codeCss').value  = ex.css;
+    document.getElementById('codeJs').value   = ex.js;
+    runCode();
+  }
+
+  // Tab 키를 들여쓰기로 사용
+  document.querySelectorAll('textarea.code').forEach(ta => {
+    ta.addEventListener('keydown', e => {
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        const s = ta.selectionStart, end = ta.selectionEnd;
+        ta.value = ta.value.substring(0, s) + '  ' + ta.value.substring(end);
+        ta.selectionStart = ta.selectionEnd = s + 2;
+      }
+    });
+  });
+
+  // 초기 예제 로드
+  loadExample('hello');
+</script>
+</body>
+</html>
+`, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+      }
+
       return html(renderNotFoundPage(), 404);
     } catch (e) {
       return json({ error: "server_error", detail: String(e?.message || e) }, 500);
@@ -1371,7 +1990,7 @@ ${settings.adsense_code || ""}
 </head>
 <body>
 <header class="header"><div class="header-in"><a href="/" class="brand">${escapeHtml(title)}</a><nav class="nav"><a href="/">홈</a><a href="/admin" class="pill">관리자</a><button class="menu-toggle" onclick="openMenu()">☰</button></nav></div></header>
-<div style="background:#fff;border-bottom:1px solid #e8e8eb;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none"><div style="max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap"><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">카테고리</span>${cats.map(c=>`<a href="/?cat=${encodeURIComponent(c)}" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap${activeCat===c?';color:#0071e3;border-bottom-color:#0071e3;font-weight:700':''}">${escapeHtml(c)}</a>`).join('')}</div></div></div>
+<div style="background:#fff;border-bottom:1px solid #e8e8eb;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none"><div style="max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap"><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">카테고리</span>${cats.map(c=>`<a href="/?cat=${encodeURIComponent(c)}" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap${activeCat===c?';color:#0071e3;border-bottom-color:#0071e3;font-weight:700':''}">${escapeHtml(c)}</a>`).join('')}</div><div style="width:1px;background:#e8e8eb;margin:8px 4px;align-self:stretch"></div><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">도구</span><a href="/calc" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">💰 복리계산기</a><a href="/lotto-gen" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">🎱 로또번호추천</a><a href="/code" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">💻 코드연습</a></div></div></div>
 <div class="layout">
   <aside class="sidebar">
     <div class="profile">
@@ -1605,7 +2224,7 @@ ${settings.adsense_code || ""}
 </head>
 <body>
 <header class="header"><div class="header-in"><a href="/" class="brand">${escapeHtml(blogName)}</a><nav class="nav"><a href="/">홈</a><a href="/admin" class="pill">관리자</a><button class="menu-toggle" onclick="openMenu()">☰</button></nav></div></header>
-<div style="background:#fff;border-bottom:1px solid #e8e8eb;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none"><div style="max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap"><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">카테고리</span>${(settings.categories||"").split(",").map(c=>c.trim()).filter(Boolean).map(c=>`<a href="/?cat=${encodeURIComponent(c)}" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;border-bottom:2px solid transparent;white-space:nowrap">${escapeHtml(c)}</a>`).join('')}</div></div></div>
+<div style="background:#fff;border-bottom:1px solid #e8e8eb;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none"><div style="max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap"><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">카테고리</span>${(settings.categories||"").split(",").map(c=>c.trim()).filter(Boolean).map(c=>`<a href="/?cat=${encodeURIComponent(c)}" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;border-bottom:2px solid transparent;white-space:nowrap">${escapeHtml(c)}</a>`).join('')}</div><div style="width:1px;background:#e8e8eb;margin:8px 4px;align-self:stretch"></div><div style="display:flex;align-items:center"><span style="font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px">도구</span><a href="/calc" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">💰 복리계산기</a><a href="/lotto-gen" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">🎱 로또번호추천</a><a href="/code" style="display:inline-flex;align-items:center;padding:9px 12px;font-size:.8rem;color:#86868b;text-decoration:none;font-weight:500;white-space:nowrap">💻 코드연습</a></div></div></div>
 <div class="layout">
   <aside class="sidebar">
     <div class="profile">
