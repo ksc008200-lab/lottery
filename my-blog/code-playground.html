@@ -4,74 +4,104 @@
   <meta charset="UTF-8">
   <meta name="google-adsense-account" content="ca-pub-3425189666333844">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>코드연습창 — HTML/CSS/JS 온라인 에디터 | 비숑 웰니스</title>
-  <meta name="description" content="브라우저에서 바로 HTML, CSS, JavaScript를 작성하고 실시간으로 결과를 확인하세요. 설치 없이 사용 가능한 무료 온라인 코드 에디터.">
-  <link rel="canonical" href="https://bichonbuff.com/code-playground.html">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
+  <title>코드연습창 — HTML/CSS/JS 배우기 | 비숑버프</title>
+  <meta name="description" content="브라우저에서 HTML, CSS, JavaScript를 배우고 바로 실습해보세요. 강의 + 에디터 + 실시간 미리보기.">
+  <link rel="canonical" href="https://bichonbuff.com/code">
   <style>
-    :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--dark:#1c1c1e;--green:#30d158}
+    :root{--bg:#fff;--bg2:#f5f5f7;--line:#d2d2d7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--dark:#1c1c1e;--dark2:#2c2c2e;--dark3:#3a3a3c;--green:#30d158;--orange:#ff9f0a;--red:#ff453a}
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',system-ui,sans-serif;background:#f8f8fa;color:var(--txt);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;height:100vh;overflow:hidden}
 
     /* 헤더 */
-    .header{background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid rgba(0,0,0,.08);flex-shrink:0}
-    .header-in{max-width:100%;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .brand{font-weight:800;font-size:1.1rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none;flex-shrink:0}
-    .nav{display:flex;gap:16px}
-    .nav a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:500}
+    .header{background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:.5px solid rgba(0,0,0,.08);flex-shrink:0}
+    .header-in{padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;font-size:1.05rem;letter-spacing:-.03em;color:var(--txt);text-decoration:none}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:500;margin-left:16px}
     .nav a:hover{color:var(--txt)}
 
-    /* 상단 카테고리/도구 바 */
-    .topbar{background:#fff;border-bottom:1px solid var(--line2);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex-shrink:0}
-    .topbar::-webkit-scrollbar{display:none}
-    .topbar-in{max-width:100%;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap}
-    .topbar-group{display:flex;align-items:center}
-    .topbar-label{font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px}
-    .topbar-group a{display:inline-flex;align-items:center;gap:4px;padding:9px 12px;font-size:.8rem;color:var(--muted);text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s}
-    .topbar-group a:hover{color:var(--accent);border-bottom-color:var(--accent)}
-    .topbar-group a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
-    .topbar-div{width:1px;background:var(--line2);margin:8px 4px}
+    /* 모드 탭바 */
+    .modebar{background:#fff;border-bottom:1px solid var(--line2);display:flex;align-items:center;padding:0 16px;gap:4px;flex-shrink:0}
+    .mode-tab{padding:10px 16px;font-size:.84rem;font-weight:600;color:var(--muted);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;font-family:inherit}
+    .mode-tab:hover{color:var(--txt)}
+    .mode-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+    .mode-sep{width:1px;height:20px;background:var(--line2);margin:0 8px}
 
     /* 에디터 툴바 */
-    .editor-toolbar{background:var(--dark);display:flex;align-items:center;gap:8px;padding:8px 16px;flex-shrink:0}
-    .toolbar-title{font-size:.88rem;font-weight:700;color:#fff;flex:1}
-    .run-btn{display:inline-flex;align-items:center;gap:6px;background:var(--green);color:#000;border:none;padding:7px 16px;border-radius:8px;font-size:.85rem;font-weight:700;cursor:pointer;transition:opacity .15s;font-family:inherit}
+    .editor-toolbar{background:var(--dark);display:flex;align-items:center;gap:8px;padding:7px 14px;flex-shrink:0}
+    .toolbar-title{font-size:.85rem;font-weight:700;color:#ebebf5;flex:1}
+    .run-btn{background:var(--green);color:#000;border:none;padding:6px 14px;border-radius:7px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit}
     .run-btn:hover{opacity:.85}
-    .clear-btn{display:inline-flex;align-items:center;gap:6px;background:#3a3a3c;color:#ebebf5;border:none;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit}
+    .clear-btn{background:var(--dark3);color:#ebebf5;border:none;padding:6px 12px;border-radius:7px;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit}
     .clear-btn:hover{background:#48484a}
+    .example-select{background:var(--dark3);color:#ebebf5;border:none;padding:6px 10px;border-radius:7px;font-size:.78rem;cursor:pointer;font-family:inherit;outline:none}
 
-    /* 탭 */
-    .tab-bar{background:#2c2c2e;display:flex;align-items:center;flex-shrink:0;border-bottom:1px solid #3a3a3c}
-    .ed-tab{padding:8px 18px;font-size:.82rem;font-weight:600;color:#8e8e93;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;font-family:inherit}
+    /* 코드탭 */
+    .tab-bar{background:var(--dark2);display:flex;align-items:center;flex-shrink:0;border-bottom:1px solid #3a3a3c}
+    .ed-tab{padding:7px 16px;font-size:.8rem;font-weight:600;color:#8e8e93;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;font-family:inherit}
     .ed-tab:hover{color:#ebebf5}
     .ed-tab.active{color:#fff;border-bottom-color:var(--accent)}
 
-    /* 에디터 영역 */
-    .workspace{flex:1;display:grid;grid-template-rows:1fr 1fr;overflow:hidden}
-    .workspace.split-v{grid-template-rows:1fr;grid-template-columns:1fr 1fr}
-
+    /* 에디터 */
+    .workspace{flex:1;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
     .editor-pane{display:flex;flex-direction:column;background:var(--dark);overflow:hidden}
     .editor-pane.hidden{display:none}
-    textarea.code{flex:1;background:#1c1c1e;color:#e8e8f0;border:none;padding:14px 16px;font-family:'Fira Code','Cascadia Code','Consolas',monospace;font-size:.9rem;line-height:1.65;resize:none;outline:none;tab-size:2;-moz-tab-size:2;overflow:auto}
+    textarea.code{flex:1;background:#1c1c1e;color:#e8e8f0;border:none;padding:14px 16px;font-family:'Fira Code','Cascadia Code','Consolas',monospace;font-size:.88rem;line-height:1.65;resize:none;outline:none;tab-size:2}
     textarea.code::selection{background:rgba(0,113,227,.4)}
-
-    .preview-pane{background:#fff;display:flex;flex-direction:column;border-top:2px solid var(--accent)}
-    .preview-pane.split-border{border-top:none;border-left:2px solid var(--accent)}
-    .preview-label{background:#f0f0f5;padding:6px 14px;font-size:.75rem;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;border-bottom:1px solid var(--line2);flex-shrink:0}
+    .preview-pane{background:#fff;display:flex;flex-direction:column;border-left:2px solid var(--accent)}
+    .preview-label{background:#f0f0f5;padding:5px 14px;font-size:.72rem;font-weight:700;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;border-bottom:1px solid var(--line2);flex-shrink:0}
     iframe#preview{flex:1;border:none;background:#fff}
 
-    /* 레이아웃 전환 버튼 */
-    .layout-btn{background:#3a3a3c;color:#ebebf5;border:none;padding:6px 10px;border-radius:6px;font-size:.75rem;cursor:pointer;font-family:inherit}
-    .layout-btn:hover{background:#48484a}
-    .layout-btn.active{background:var(--accent);color:#fff}
+    /* ── 강의 모드 ── */
+    .learn-page{flex:1;display:none;overflow:hidden}
+    .learn-page.active{display:grid;grid-template-columns:340px 1fr}
 
-    /* 예제 드롭다운 */
-    .example-select{background:#3a3a3c;color:#ebebf5;border:none;padding:7px 10px;border-radius:8px;font-size:.8rem;cursor:pointer;font-family:inherit;outline:none}
+    /* 강의 내용 패널 */
+    .learn-panel{background:#fff;overflow-y:auto;border-right:1px solid var(--line2);display:flex;flex-direction:column}
+    .learn-nav{display:flex;background:var(--bg2);border-bottom:1px solid var(--line2);flex-shrink:0}
+    .learn-nav-btn{flex:1;padding:10px 6px;font-size:.78rem;font-weight:700;color:var(--muted);border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;transition:all .15s;font-family:inherit}
+    .learn-nav-btn:hover{color:var(--txt)}
+    .learn-nav-btn.active{color:var(--accent);border-bottom-color:var(--accent);background:#fff}
+    .lesson{display:none;padding:20px;flex:1;overflow-y:auto}
+    .lesson.active{display:block}
+    .lesson h2{font-size:1.1rem;font-weight:800;margin-bottom:4px;letter-spacing:-.03em}
+    .lesson .subtitle{font-size:.8rem;color:var(--muted);margin-bottom:20px}
+    .lesson h3{font-size:.92rem;font-weight:700;margin:20px 0 8px;padding-left:10px;border-left:3px solid var(--accent)}
+    .lesson p{font-size:.84rem;color:#3a3a3c;line-height:1.8;margin-bottom:10px}
+    .lesson ul{font-size:.84rem;color:#3a3a3c;line-height:1.9;padding-left:20px;margin-bottom:10px}
+    .code-block{background:#1c1c1e;color:#e8e8f0;padding:14px 16px;border-radius:10px;font-family:'Fira Code','Consolas',monospace;font-size:.8rem;line-height:1.7;margin:10px 0 16px;overflow-x:auto;white-space:pre}
+    .keyword{color:#ff7ab2}
+    .tag{color:#ff8170}
+    .attr{color:#78c2b3}
+    .value{color:#fc6a5d}
+    .comment{color:#7f8c98}
+    .prop{color:#41a1c0}
+    .str{color:#fc6a5d}
+    .num{color:#d9c97c}
+    .fn{color:#dac5e4}
+    .tip{background:#e8f4fd;border-left:3px solid var(--accent);padding:10px 14px;border-radius:0 8px 8px 0;font-size:.82rem;color:#1d1d1f;margin:12px 0;line-height:1.7}
+    .try-btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:.8rem;font-weight:700;cursor:pointer;margin-top:8px;font-family:inherit;transition:opacity .15s}
+    .try-btn:hover{opacity:.85}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.7rem;font-weight:700;margin-left:6px}
+    .badge-html{background:#fff3e0;color:#e65100}
+    .badge-css{background:#e3f2fd;color:#1565c0}
+    .badge-js{background:#f3e5f5;color:#6a1b9a}
 
-    @media(max-width:640px){
-      .workspace{grid-template-rows:1fr 1fr}
-      .workspace.split-v{grid-template-rows:1fr 1fr;grid-template-columns:1fr}
-      .preview-pane.split-border{border-left:none;border-top:2px solid var(--accent)}
+    /* 강의 에디터 */
+    .learn-editor{display:flex;flex-direction:column;overflow:hidden}
+    .learn-toolbar{background:var(--dark);display:flex;align-items:center;gap:8px;padding:7px 14px;flex-shrink:0}
+    .learn-split{flex:1;display:grid;grid-template-rows:1fr 1fr;overflow:hidden}
+    .mini-editor{background:var(--dark);overflow:hidden;display:flex;flex-direction:column}
+    .mini-label{background:var(--dark2);padding:5px 14px;font-size:.72rem;font-weight:700;color:#8e8e93;letter-spacing:.04em;flex-shrink:0;display:flex;align-items:center;gap:8px}
+    .mini-label span{color:#ebebf5}
+    textarea.mini-code{flex:1;background:#1c1c1e;color:#e8e8f0;border:none;padding:12px 14px;font-family:'Fira Code','Consolas',monospace;font-size:.82rem;line-height:1.6;resize:none;outline:none;tab-size:2}
+    .mini-preview{background:#fff;display:flex;flex-direction:column;border-top:2px solid var(--green)}
+    iframe#learnPreview{flex:1;border:none;background:#fff}
+
+    @media(max-width:800px){
+      .workspace{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
+      .preview-pane{border-left:none;border-top:2px solid var(--accent)}
+      .learn-page.active{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+      .learn-panel{border-right:none;border-bottom:1px solid var(--line2);max-height:50vh}
     }
   </style>
 </head>
@@ -79,108 +109,401 @@
 
 <header class="header">
   <div class="header-in">
-    <a href="index.html" class="brand">비숑 웰니스</a>
+    <a href="/" class="brand">비숑버프</a>
     <nav class="nav">
-      <a href="index.html">홈</a>
-      <a href="about.html">소개</a>
+      <a href="/">홈</a>
+      <a href="/calc">복리계산기</a>
+      <a href="/lotto-gen">로또</a>
     </nav>
   </div>
 </header>
 
-<div class="topbar">
-  <div class="topbar-in">
-    <div class="topbar-group">
-      <span class="topbar-label">카테고리</span>
-      <a href="index.html">전체</a>
-      <a href="index.html">건강정보</a>
-      <a href="index.html">운동</a>
-      <a href="index.html">식단</a>
-      <a href="index.html">영양제</a>
-      <a href="index.html">다이어트</a>
+<!-- 모드 탭바 -->
+<div class="modebar">
+  <button class="mode-tab active" onclick="setMode('editor')">💻 자유 에디터</button>
+  <div class="mode-sep"></div>
+  <button class="mode-tab" onclick="setMode('learn')">📚 강의 모드</button>
+</div>
+
+<!-- ══ 자유 에디터 모드 ══ -->
+<div id="editorMode" style="display:flex;flex-direction:column;flex:1;overflow:hidden">
+  <div class="editor-toolbar">
+    <span class="toolbar-title">💻 코드 에디터</span>
+    <select class="example-select" id="exampleSelect" onchange="loadExample(this.value)">
+      <option value="">예제 불러오기</option>
+      <option value="hello">Hello World</option>
+      <option value="counter">카운터</option>
+      <option value="flexbox">Flexbox</option>
+      <option value="calculator">계산기</option>
+      <option value="clock">디지털 시계</option>
+      <option value="todo">할일 목록</option>
+    </select>
+    <button class="clear-btn" onclick="clearAll()">초기화</button>
+    <button class="run-btn" onclick="runCode()">▶ 실행</button>
+  </div>
+  <div class="tab-bar">
+    <button class="ed-tab active" onclick="switchTab('html',this)">HTML</button>
+    <button class="ed-tab" onclick="switchTab('css',this)">CSS</button>
+    <button class="ed-tab" onclick="switchTab('js',this)">JavaScript</button>
+  </div>
+  <div class="workspace" id="workspace">
+    <div class="editor-pane" id="paneHtml">
+      <textarea class="code" id="codeHtml" spellcheck="false" placeholder="HTML 코드..."></textarea>
     </div>
-    <div class="topbar-div"></div>
-    <div class="topbar-group">
-      <span class="topbar-label">도구</span>
-      <a href="compound-calculator.html">💰 복리계산기</a>
-      <a href="lotto.html">🎱 로또번호</a>
-      <a href="code-playground.html" class="active">💻 코드연습창</a>
+    <div class="editor-pane hidden" id="paneCss">
+      <textarea class="code" id="codeCss" spellcheck="false" placeholder="CSS 코드..."></textarea>
+    </div>
+    <div class="editor-pane hidden" id="paneJs">
+      <textarea class="code" id="codeJs" spellcheck="false" placeholder="JavaScript 코드..."></textarea>
+    </div>
+    <div class="preview-pane" id="previewPane">
+      <div class="preview-label">▶ 미리보기</div>
+      <iframe id="preview" sandbox="allow-scripts allow-modals"></iframe>
     </div>
   </div>
 </div>
 
-<!-- 에디터 툴바 -->
-<div class="editor-toolbar">
-  <span class="toolbar-title">💻 코드연습창</span>
-  <select class="example-select" id="exampleSelect" onchange="loadExample(this.value)">
-    <option value="">예제 불러오기</option>
-    <option value="hello">Hello World</option>
-    <option value="counter">카운터 버튼</option>
-    <option value="flexbox">Flexbox 레이아웃</option>
-    <option value="calculator">간단한 계산기</option>
-    <option value="colorpicker">색상 선택기</option>
-  </select>
-  <button class="layout-btn" id="layoutBtn" onclick="toggleLayout()">⬛ 상하 분할</button>
-  <button class="clear-btn" onclick="clearAll()">초기화</button>
-  <button class="run-btn" onclick="runCode()">▶ 실행</button>
-</div>
+<!-- ══ 강의 모드 ══ -->
+<div class="learn-page" id="learnMode">
+  <!-- 왼쪽: 강의 내용 -->
+  <div class="learn-panel">
+    <div class="learn-nav">
+      <button class="learn-nav-btn active" onclick="switchLesson('html',this)">🟠 HTML</button>
+      <button class="learn-nav-btn" onclick="switchLesson('css',this)">🔵 CSS</button>
+      <button class="learn-nav-btn" onclick="switchLesson('js',this)">🟣 JavaScript</button>
+    </div>
 
-<!-- 탭 -->
-<div class="tab-bar">
-  <button class="ed-tab active" onclick="switchTab('html',this)">HTML</button>
-  <button class="ed-tab" onclick="switchTab('css',this)">CSS</button>
-  <button class="ed-tab" onclick="switchTab('js',this)">JavaScript</button>
-</div>
+    <!-- HTML 강의 -->
+    <div class="lesson active" id="lesson-html">
+      <h2>HTML 기초 <span class="badge badge-html">HyperText Markup Language</span></h2>
+      <p class="subtitle">웹페이지의 뼈대를 만드는 언어입니다.</p>
 
-<!-- 에디터 + 미리보기 -->
-<div class="workspace" id="workspace">
-  <div class="editor-pane" id="paneHtml">
-    <textarea class="code" id="codeHtml" placeholder="HTML 코드를 입력하세요..." spellcheck="false"></textarea>
-  </div>
-  <div class="editor-pane hidden" id="paneCss">
-    <textarea class="code" id="codeCss" placeholder="CSS 코드를 입력하세요..." spellcheck="false"></textarea>
-  </div>
-  <div class="editor-pane hidden" id="paneJs">
-    <textarea class="code" id="codeJs" placeholder="JavaScript 코드를 입력하세요..." spellcheck="false"></textarea>
+      <h3>1. HTML이란?</h3>
+      <p>HTML은 웹페이지의 <strong>구조</strong>를 만드는 언어입니다. 태그(tag)로 내용을 감싸서 의미를 부여합니다.</p>
+      <div class="code-block"><span class="comment">&lt;!-- 기본 구조 --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>페이지 제목<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    화면에 보이는 내용
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></div>
+
+      <h3>2. 제목 태그 (h1~h6)</h3>
+      <p>제목을 표시합니다. h1이 가장 크고, h6이 가장 작습니다.</p>
+      <div class="code-block"><span class="tag">&lt;h1&gt;</span>가장 큰 제목<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>두 번째 제목<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span>세 번째 제목<span class="tag">&lt;/h3&gt;</span></div>
+      <button class="try-btn" onclick="tryLearn('h1')">▶ 직접 해보기</button>
+
+      <h3>3. 문단과 텍스트</h3>
+      <div class="code-block"><span class="tag">&lt;p&gt;</span>일반 문단입니다.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;strong&gt;</span>굵은 글씨<span class="tag">&lt;/strong&gt;</span>
+<span class="tag">&lt;em&gt;</span>기울어진 글씨<span class="tag">&lt;/em&gt;</span>
+<span class="tag">&lt;br&gt;</span> <span class="comment">&lt;!-- 줄바꿈 --&gt;</span></div>
+      <button class="try-btn" onclick="tryLearn('text')">▶ 직접 해보기</button>
+
+      <h3>4. 링크와 이미지</h3>
+      <div class="code-block"><span class="comment">&lt;!-- 링크 --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="value">"https://example.com"</span><span class="tag">&gt;</span>
+  클릭하세요
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- 이미지 --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="value">"이미지URL"</span> <span class="attr">alt=</span><span class="value">"설명"</span><span class="tag">&gt;</span></div>
+      <button class="try-btn" onclick="tryLearn('link')">▶ 직접 해보기</button>
+
+      <h3>5. 목록</h3>
+      <div class="code-block"><span class="comment">&lt;!-- 순서 없는 목록 --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span>항목 1<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>항목 2<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- 순서 있는 목록 --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span>첫 번째<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>두 번째<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></div>
+      <button class="try-btn" onclick="tryLearn('list')">▶ 직접 해보기</button>
+
+      <h3>6. div와 span</h3>
+      <p>레이아웃을 나누는 데 사용하는 컨테이너 태그입니다.</p>
+      <div class="code-block"><span class="tag">&lt;div&gt;</span> <span class="comment">&lt;!-- 블록 요소, 줄 차지 --&gt;</span>
+  내용
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;span&gt;</span> <span class="comment">&lt;!-- 인라인 요소, 줄 안에 --&gt;</span>
+  내용
+<span class="tag">&lt;/span&gt;</span></div>
+
+      <h3>7. 입력 폼</h3>
+      <div class="code-block"><span class="tag">&lt;input</span> <span class="attr">type=</span><span class="value">"text"</span> <span class="attr">placeholder=</span><span class="value">"입력하세요"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="value">"number"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="value">"checkbox"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;button&gt;</span>버튼<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;select&gt;</span>
+  <span class="tag">&lt;option&gt;</span>옵션1<span class="tag">&lt;/option&gt;</span>
+<span class="tag">&lt;/select&gt;</span></div>
+      <button class="try-btn" onclick="tryLearn('form')">▶ 직접 해보기</button>
+
+      <div class="tip">💡 <strong>핵심 정리:</strong> HTML은 여는 태그 &lt;tag&gt; 와 닫는 태그 &lt;/tag&gt; 사이에 내용을 넣습니다. img, br, input 등 일부 태그는 닫는 태그가 없습니다.</div>
+    </div>
+
+    <!-- CSS 강의 -->
+    <div class="lesson" id="lesson-css">
+      <h2>CSS 기초 <span class="badge badge-css">Cascading Style Sheets</span></h2>
+      <p class="subtitle">웹페이지에 색상, 크기, 레이아웃 등 스타일을 입히는 언어입니다.</p>
+
+      <h3>1. CSS 문법</h3>
+      <div class="code-block"><span class="comment">/* 선택자 { 속성: 값; } */</span>
+<span class="prop">h1</span> {
+  <span class="attr">color</span>: <span class="value">red</span>;
+  <span class="attr">font-size</span>: <span class="value">24px</span>;
+}</div>
+      <button class="try-btn" onclick="tryLearn('css-basic')">▶ 직접 해보기</button>
+
+      <h3>2. 색상과 배경</h3>
+      <div class="code-block"><span class="prop">p</span> {
+  <span class="attr">color</span>: <span class="value">#333333</span>;       <span class="comment">/* 글자색 */</span>
+  <span class="attr">background</span>: <span class="value">#f5f5f7</span>;  <span class="comment">/* 배경색 */</span>
+  <span class="attr">background</span>: <span class="value">rgba(0,113,227,.1)</span>; <span class="comment">/* 투명도 */</span>
+}</div>
+      <button class="try-btn" onclick="tryLearn('css-color')">▶ 직접 해보기</button>
+
+      <h3>3. 박스 모델</h3>
+      <p>모든 HTML 요소는 박스입니다. padding(안쪽), border(테두리), margin(바깥쪽)으로 구성됩니다.</p>
+      <div class="code-block"><span class="prop">div</span> {
+  <span class="attr">width</span>: <span class="value">200px</span>;
+  <span class="attr">height</span>: <span class="value">100px</span>;
+  <span class="attr">padding</span>: <span class="value">20px</span>;       <span class="comment">/* 안쪽 여백 */</span>
+  <span class="attr">border</span>: <span class="value">2px solid #333</span>; <span class="comment">/* 테두리 */</span>
+  <span class="attr">margin</span>: <span class="value">10px</span>;        <span class="comment">/* 바깥 여백 */</span>
+  <span class="attr">border-radius</span>: <span class="value">12px</span>; <span class="comment">/* 둥근 모서리 */</span>
+}</div>
+      <button class="try-btn" onclick="tryLearn('css-box')">▶ 직접 해보기</button>
+
+      <h3>4. 텍스트 스타일</h3>
+      <div class="code-block"><span class="prop">p</span> {
+  <span class="attr">font-size</span>: <span class="value">16px</span>;
+  <span class="attr">font-weight</span>: <span class="value">700</span>;    <span class="comment">/* 굵기: 100~900 */</span>
+  <span class="attr">font-family</span>: <span class="value">sans-serif</span>;
+  <span class="attr">line-height</span>: <span class="value">1.8</span>;   <span class="comment">/* 줄 간격 */</span>
+  <span class="attr">text-align</span>: <span class="value">center</span>;
+  <span class="attr">letter-spacing</span>: <span class="value">-.02em</span>;
+}</div>
+
+      <h3>5. Flexbox 레이아웃</h3>
+      <p>요소를 가로/세로로 정렬하는 강력한 레이아웃 시스템입니다.</p>
+      <div class="code-block"><span class="prop">.container</span> {
+  <span class="attr">display</span>: <span class="value">flex</span>;
+  <span class="attr">justify-content</span>: <span class="value">center</span>;  <span class="comment">/* 가로 정렬 */</span>
+  <span class="attr">align-items</span>: <span class="value">center</span>;     <span class="comment">/* 세로 정렬 */</span>
+  <span class="attr">gap</span>: <span class="value">16px</span>;               <span class="comment">/* 간격 */</span>
+  <span class="attr">flex-wrap</span>: <span class="value">wrap</span>;          <span class="comment">/* 줄바꿈 */</span>
+}</div>
+      <button class="try-btn" onclick="tryLearn('css-flex')">▶ 직접 해보기</button>
+
+      <h3>6. 선택자 종류</h3>
+      <div class="code-block"><span class="prop">p</span> { }           <span class="comment">/* 태그 선택자 */</span>
+<span class="prop">.box</span> { }        <span class="comment">/* 클래스 선택자 */</span>
+<span class="prop">#title</span> { }      <span class="comment">/* id 선택자 */</span>
+<span class="prop">p:hover</span> { }     <span class="comment">/* 마우스 올릴 때 */</span>
+<span class="prop">div &gt; p</span> { }    <span class="comment">/* div 바로 안의 p */</span></div>
+
+      <h3>7. 애니메이션</h3>
+      <div class="code-block"><span class="prop">.box</span> {
+  <span class="attr">transition</span>: <span class="value">all 0.3s ease</span>;
+}
+<span class="prop">.box:hover</span> {
+  <span class="attr">transform</span>: <span class="value">scale(1.1)</span>;
+  <span class="attr">background</span>: <span class="value">#0071e3</span>;
+}</div>
+      <button class="try-btn" onclick="tryLearn('css-anim')">▶ 직접 해보기</button>
+
+      <div class="tip">💡 <strong>핵심 정리:</strong> CSS는 선택자로 요소를 고른 뒤, { } 안에 속성: 값; 형태로 스타일을 지정합니다. 클래스(.name)를 잘 활용하면 재사용이 쉬워집니다.</div>
+    </div>
+
+    <!-- JS 강의 -->
+    <div class="lesson" id="lesson-js">
+      <h2>JavaScript 기초 <span class="badge badge-js">JS</span></h2>
+      <p class="subtitle">웹페이지에 동작과 상호작용을 추가하는 프로그래밍 언어입니다.</p>
+
+      <h3>1. 변수 선언</h3>
+      <div class="code-block"><span class="keyword">let</span> name = <span class="str">'홍길동'</span>;    <span class="comment">// 변경 가능</span>
+<span class="keyword">const</span> PI = <span class="num">3.14</span>;        <span class="comment">// 변경 불가</span>
+<span class="keyword">let</span> count = <span class="num">0</span>;
+<span class="keyword">let</span> isOk = <span class="keyword">true</span>;
+
+console.<span class="fn">log</span>(name);       <span class="comment">// 콘솔 출력</span></div>
+
+      <h3>2. 조건문</h3>
+      <div class="code-block"><span class="keyword">let</span> age = <span class="num">20</span>;
+
+<span class="keyword">if</span> (age >= <span class="num">18</span>) {
+  console.<span class="fn">log</span>(<span class="str">'성인입니다'</span>);
+} <span class="keyword">else if</span> (age >= <span class="num">13</span>) {
+  console.<span class="fn">log</span>(<span class="str">'청소년입니다'</span>);
+} <span class="keyword">else</span> {
+  console.<span class="fn">log</span>(<span class="str">'어린이입니다'</span>);
+}</div>
+      <button class="try-btn" onclick="tryLearn('js-if')">▶ 직접 해보기</button>
+
+      <h3>3. 반복문</h3>
+      <div class="code-block"><span class="comment">// for 반복</span>
+<span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="num">0</span>; i < <span class="num">5</span>; i++) {
+  console.<span class="fn">log</span>(i);  <span class="comment">// 0,1,2,3,4</span>
+}
+
+<span class="comment">// 배열 반복</span>
+<span class="keyword">const</span> fruits = [<span class="str">'사과'</span>, <span class="str">'바나나'</span>, <span class="str">'딸기'</span>];
+fruits.<span class="fn">forEach</span>(f => console.<span class="fn">log</span>(f));</div>
+      <button class="try-btn" onclick="tryLearn('js-loop')">▶ 직접 해보기</button>
+
+      <h3>4. 함수</h3>
+      <div class="code-block"><span class="comment">// 함수 선언</span>
+<span class="keyword">function</span> <span class="fn">greet</span>(name) {
+  <span class="keyword">return</span> <span class="str">'안녕, '</span> + name + <span class="str">'!'</span>;
+}
+
+<span class="comment">// 화살표 함수</span>
+<span class="keyword">const</span> <span class="fn">add</span> = (a, b) => a + b;
+
+console.<span class="fn">log</span>(<span class="fn">greet</span>(<span class="str">'철수'</span>));  <span class="comment">// 안녕, 철수!</span>
+console.<span class="fn">log</span>(<span class="fn">add</span>(<span class="num">3</span>, <span class="num">5</span>));      <span class="comment">// 8</span></div>
+
+      <h3>5. DOM 조작</h3>
+      <p>HTML 요소를 JavaScript로 선택하고 변경합니다.</p>
+      <div class="code-block"><span class="comment">// 요소 선택</span>
+<span class="keyword">const</span> el = document.<span class="fn">getElementById</span>(<span class="str">'myId'</span>);
+<span class="keyword">const</span> el2 = document.<span class="fn">querySelector</span>(<span class="str">'.myClass'</span>);
+
+<span class="comment">// 내용 변경</span>
+el.textContent = <span class="str">'새로운 내용'</span>;
+el.style.color = <span class="str">'red'</span>;
+
+<span class="comment">// 클래스 추가/제거</span>
+el.<span class="fn">classList.add</span>(<span class="str">'active'</span>);
+el.<span class="fn">classList.remove</span>(<span class="str">'active'</span>);</div>
+      <button class="try-btn" onclick="tryLearn('js-dom')">▶ 직접 해보기</button>
+
+      <h3>6. 이벤트</h3>
+      <div class="code-block"><span class="keyword">const</span> btn = document.<span class="fn">getElementById</span>(<span class="str">'btn'</span>);
+
+<span class="comment">// 클릭 이벤트</span>
+btn.<span class="fn">addEventListener</span>(<span class="str">'click'</span>, () => {
+  <span class="fn">alert</span>(<span class="str">'버튼 클릭!'</span>);
+});
+
+<span class="comment">// 입력 이벤트</span>
+input.<span class="fn">addEventListener</span>(<span class="str">'input'</span>, (e) => {
+  console.<span class="fn">log</span>(e.target.value);
+});</div>
+      <button class="try-btn" onclick="tryLearn('js-event')">▶ 직접 해보기</button>
+
+      <h3>7. 배열과 객체</h3>
+      <div class="code-block"><span class="comment">// 배열</span>
+<span class="keyword">const</span> arr = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>];
+arr.<span class="fn">push</span>(<span class="num">4</span>);          <span class="comment">// 추가</span>
+arr.<span class="fn">filter</span>(n => n > <span class="num">2</span>); <span class="comment">// [3, 4]</span>
+arr.<span class="fn">map</span>(n => n * <span class="num">2</span>);   <span class="comment">// [2, 4, 6, 8]</span>
+
+<span class="comment">// 객체</span>
+<span class="keyword">const</span> user = {
+  name: <span class="str">'철수'</span>,
+  age: <span class="num">25</span>,
+  <span class="fn">greet</span>() { <span class="keyword">return</span> <span class="str">'안녕!'</span>; }
+};
+console.<span class="fn">log</span>(user.name);  <span class="comment">// 철수</span></div>
+
+      <div class="tip">💡 <strong>핵심 정리:</strong> JavaScript는 HTML 요소를 선택(querySelector)하고, 이벤트(addEventListener)를 통해 사용자의 행동에 반응하며, DOM을 조작해 화면을 바꿉니다.</div>
+    </div>
   </div>
 
-  <div class="preview-pane" id="previewPane">
-    <div class="preview-label">미리보기 (결과)</div>
-    <iframe id="preview" sandbox="allow-scripts allow-modals"></iframe>
+  <!-- 오른쪽: 강의 실습 에디터 -->
+  <div class="learn-editor">
+    <div class="learn-toolbar">
+      <span style="font-size:.85rem;font-weight:700;color:#ebebf5;flex:1">✏️ 실습 에디터</span>
+      <button class="run-btn" onclick="runLearn()">▶ 실행</button>
+    </div>
+    <div class="learn-split">
+      <div class="mini-editor">
+        <div class="mini-label"><span>코드</span> <small style="color:#8e8e93">예제를 수정해보세요</small></div>
+        <textarea class="mini-code" id="learnCode" spellcheck="false"></textarea>
+      </div>
+      <div class="mini-preview">
+        <div class="preview-label">▶ 결과</div>
+        <iframe id="learnPreview" sandbox="allow-scripts allow-modals"></iframe>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
-  let splitV = false;
-  let activeTab = 'html';
-
+  // ── 예제 데이터 ──
   const EXAMPLES = {
     hello: {
-      html: `<h1>안녕하세요! 👋</h1>\n<p>여기에 HTML을 작성하세요.</p>\n<button onclick="greet()">클릭해보세요</button>`,
-      css:  `body {\n  font-family: sans-serif;\n  padding: 20px;\n  background: #f5f5f7;\n}\nh1 { color: #0071e3; }\nbutton {\n  margin-top: 12px;\n  padding: 10px 20px;\n  background: #0071e3;\n  color: #fff;\n  border: none;\n  border-radius: 8px;\n  font-size: 1rem;\n  cursor: pointer;\n}`,
-      js:   `function greet() {\n  alert('반갑습니다! 코드연습창에 오신 것을 환영합니다 🎉');\n}`
+      html:`<h1>안녕하세요! 👋</h1>\n<p>여기에 HTML을 작성해보세요.</p>\n<button onclick="greet()">클릭!</button>`,
+      css:`body{\n  font-family:sans-serif;\n  padding:20px;\n  background:#f5f5f7;\n}\nh1{color:#0071e3;}\nbutton{\n  margin-top:12px;padding:10px 20px;\n  background:#0071e3;color:#fff;\n  border:none;border-radius:8px;\n  font-size:1rem;cursor:pointer;\n}`,
+      js:`function greet(){\n  alert('환영합니다! 🎉');\n}`
     },
     counter: {
-      html: `<div class="counter-wrap">\n  <h2>카운터</h2>\n  <div class="count" id="count">0</div>\n  <div class="btns">\n    <button onclick="change(-1)">−</button>\n    <button onclick="reset()">초기화</button>\n    <button onclick="change(1)">+</button>\n  </div>\n</div>`,
-      css:  `body { font-family: sans-serif; display:flex; justify-content:center; align-items:center; min-height:100vh; margin:0; background:#f5f5f7; }\n.counter-wrap { text-align:center; background:#fff; padding:40px; border-radius:20px; box-shadow:0 4px 20px rgba(0,0,0,.08); }\n.count { font-size:5rem; font-weight:800; color:#0071e3; line-height:1; margin:20px 0; }\n.btns { display:flex; gap:10px; justify-content:center; }\nbutton { padding:12px 24px; font-size:1.2rem; border:none; border-radius:10px; background:#0071e3; color:#fff; cursor:pointer; font-weight:700; }\nbutton:hover { opacity:.85; }`,
-      js:   `let n = 0;\nfunction change(d) {\n  n += d;\n  document.getElementById('count').textContent = n;\n}\nfunction reset() {\n  n = 0;\n  document.getElementById('count').textContent = 0;\n}`
+      html:`<div class="wrap">\n  <h2>카운터</h2>\n  <div class="num" id="num">0</div>\n  <div class="btns">\n    <button onclick="ch(-1)">−</button>\n    <button onclick="ch(1)">+</button>\n  </div>\n</div>`,
+      css:`body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#f5f5f7}\n.wrap{text-align:center;background:#fff;padding:40px;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.08)}\n.num{font-size:5rem;font-weight:800;color:#0071e3;margin:16px 0}\n.btns{display:flex;gap:10px;justify-content:center}\nbutton{padding:12px 28px;font-size:1.3rem;border:none;border-radius:10px;background:#0071e3;color:#fff;cursor:pointer;font-weight:700}`,
+      js:`let n=0;\nfunction ch(d){n+=d;document.getElementById('num').textContent=n;}`
     },
     flexbox: {
-      html: `<div class="container">\n  <div class="box">1</div>\n  <div class="box">2</div>\n  <div class="box">3</div>\n  <div class="box wide">4 (넓음)</div>\n  <div class="box">5</div>\n</div>`,
-      css:  `body { font-family: sans-serif; padding: 20px; background: #f5f5f7; }\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 12px;\n}\n.box {\n  background: #0071e3;\n  color: #fff;\n  padding: 20px;\n  border-radius: 10px;\n  font-weight: 700;\n  font-size: 1.1rem;\n  flex: 1 1 100px;\n  text-align: center;\n}\n.wide { flex: 2 1 200px; background: #30d158; }`,
-      js:   `// Flexbox 예제입니다.\n// CSS의 flex 속성을 변경해보세요!`
+      html:`<div class="container">\n  <div class="box">1</div>\n  <div class="box">2</div>\n  <div class="box">3</div>\n  <div class="box wide">4 (넓음)</div>\n  <div class="box">5</div>\n</div>`,
+      css:`body{font-family:sans-serif;padding:20px;background:#f5f5f7}\n.container{\n  display:flex;\n  flex-wrap:wrap;\n  gap:12px;\n}\n.box{\n  background:#0071e3;color:#fff;\n  padding:20px;border-radius:10px;\n  font-weight:700;font-size:1.1rem;\n  flex:1 1 100px;text-align:center;\n}\n.wide{flex:2 1 200px;background:#30d158;}`,
+      js:`// CSS의 flex 속성을 바꿔보세요!`
     },
     calculator: {
-      html: `<div class="calc">\n  <input id="disp" readonly>\n  <div class="keys">\n    <button onclick="clr()">C</button>\n    <button onclick="inp('(')">(</button>\n    <button onclick="inp(')')">)</button>\n    <button onclick="inp('/')">÷</button>\n    <button onclick="inp('7')">7</button>\n    <button onclick="inp('8')">8</button>\n    <button onclick="inp('9')">9</button>\n    <button onclick="inp('*')">×</button>\n    <button onclick="inp('4')">4</button>\n    <button onclick="inp('5')">5</button>\n    <button onclick="inp('6')">6</button>\n    <button onclick="inp('-')">−</button>\n    <button onclick="inp('1')">1</button>\n    <button onclick="inp('2')">2</button>\n    <button onclick="inp('3')">3</button>\n    <button onclick="inp('+')">+</button>\n    <button onclick="inp('0')" class="zero">0</button>\n    <button onclick="inp('.')">.</button>\n    <button onclick="calc()" class="eq">=</button>\n  </div>\n</div>`,
-      css:  `body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#1c1c1e;font-family:sans-serif}\n.calc{background:#2c2c2e;border-radius:20px;padding:20px;width:260px}\ninput{width:100%;background:none;border:none;color:#fff;font-size:2rem;font-weight:300;text-align:right;padding:10px 4px 20px;outline:none}\n.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}\nbutton{background:#3a3a3c;color:#fff;border:none;border-radius:12px;padding:18px;font-size:1.1rem;cursor:pointer;font-weight:500}\nbutton:hover{opacity:.8}\n.eq{background:#0071e3;font-weight:700}\n.zero{grid-column:span 2}`,
-      js:   `const d = document.getElementById('disp');\nfunction inp(v){d.value+=v}\nfunction clr(){d.value=''}\nfunction calc(){\n  try{d.value=eval(d.value.replace(/÷/g,'/').replace(/×/g,'*'))}\n  catch{d.value='오류'}\n}`
+      html:`<div class="calc">\n  <input id="d" readonly>\n  <div class="k">\n    <button onclick="cl()">C</button><button onclick="ip('/')">÷</button><button onclick="ip('*')">×</button><button onclick="ip('-')">−</button>\n    <button onclick="ip('7')">7</button><button onclick="ip('8')">8</button><button onclick="ip('9')">9</button><button onclick="ip('+')">+</button>\n    <button onclick="ip('4')">4</button><button onclick="ip('5')">5</button><button onclick="ip('6')">6</button>\n    <button onclick="ip('1')">1</button><button onclick="ip('2')">2</button><button onclick="ip('3')">3</button>\n    <button onclick="ip('0')" class="z">0</button><button onclick="ip('.')">.</button><button onclick="ca()" class="eq">=</button>\n  </div>\n</div>`,
+      css:`body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#1c1c1e}\n.calc{background:#2c2c2e;border-radius:20px;padding:20px;width:240px}\ninput{width:100%;background:none;border:none;color:#fff;font-size:2rem;text-align:right;padding:10px 4px 20px;outline:none}\n.k{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}\nbutton{background:#3a3a3c;color:#fff;border:none;border-radius:10px;padding:16px;font-size:1rem;cursor:pointer;font-weight:500}\n.eq{background:#0071e3;font-weight:700}\n.z{grid-column:span 2}`,
+      js:`const d=document.getElementById('d');\nfunction ip(v){d.value+=v}\nfunction cl(){d.value=''}\nfunction ca(){try{d.value=eval(d.value)}catch{d.value='오류'}}`
     },
-    colorpicker: {
-      html: `<div class="wrap">\n  <h2>색상 선택기</h2>\n  <input type="color" id="picker" value="#0071e3">\n  <div class="preview" id="preview"></div>\n  <p id="hex">#0071e3</p>\n  <p id="rgb">rgb(0, 113, 227)</p>\n</div>`,
-      css:  `body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#f5f5f7}\n.wrap{text-align:center;background:#fff;padding:40px;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.08)}\nh2{margin-bottom:20px;color:#1d1d1f}\n#picker{width:80px;height:80px;border:none;border-radius:50%;cursor:pointer;padding:0}\n.preview{width:200px;height:100px;border-radius:14px;margin:20px auto;transition:background .2s}\np{font-size:1.1rem;font-weight:700;margin:6px 0;color:#1d1d1f}`,
-      js:   `const p=document.getElementById('picker');\nconst prev=document.getElementById('preview');\np.addEventListener('input',()=>{\n  const h=p.value;\n  prev.style.background=h;\n  document.getElementById('hex').textContent=h;\n  const r=parseInt(h.slice(1,3),16);\n  const g=parseInt(h.slice(3,5),16);\n  const b=parseInt(h.slice(5,7),16);\n  document.getElementById('rgb').textContent=\`rgb(\${r}, \${g}, \${b})\`;\n});\np.dispatchEvent(new Event('input'));`
+    clock: {
+      html:`<div class="clock">\n  <div id="time">00:00:00</div>\n  <div id="date"></div>\n</div>`,
+      css:`body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;background:#1c1c1e;font-family:monospace}\n.clock{text-align:center}\n#time{font-size:4rem;font-weight:300;color:#fff;letter-spacing:.05em}\n#date{font-size:1rem;color:#8e8e93;margin-top:10px}`,
+      js:`function update(){\n  const n=new Date();\n  const pad=v=>String(v).padStart(2,'0');\n  document.getElementById('time').textContent=\n    pad(n.getHours())+':'+pad(n.getMinutes())+':'+pad(n.getSeconds());\n  document.getElementById('date').textContent=\n    n.getFullYear()+'.'+(n.getMonth()+1)+'.'+n.getDate();\n}\nupdate();\nsetInterval(update,1000);`
+    },
+    todo: {
+      html:`<div class="app">\n  <h2>할일 목록</h2>\n  <div class="inp">\n    <input id="i" placeholder="할일을 입력하세요" onkeydown="if(event.key==='Enter')add()">\n    <button onclick="add()">추가</button>\n  </div>\n  <ul id="list"></ul>\n</div>`,
+      css:`body{font-family:sans-serif;display:flex;justify-content:center;padding:40px 16px;background:#f5f5f7}\n.app{background:#fff;border-radius:16px;padding:24px;width:100%;max-width:360px;box-shadow:0 4px 20px rgba(0,0,0,.08)}\nh2{margin-bottom:16px;color:#1d1d1f}\n.inp{display:flex;gap:8px;margin-bottom:16px}\ninput{flex:1;border:1px solid #e8e8eb;border-radius:8px;padding:8px 12px;font-size:.9rem;outline:none}\nbutton{background:#0071e3;color:#fff;border:none;border-radius:8px;padding:8px 14px;cursor:pointer;font-weight:600}\nul{list-style:none;padding:0}\nli{padding:10px 12px;border:1px solid #e8e8eb;border-radius:8px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;font-size:.9rem}\nli.done{text-decoration:line-through;color:#aaa}\n.del{background:none;border:none;color:#ff453a;cursor:pointer;font-size:.8rem}`,
+      js:`function add(){\n  const i=document.getElementById('i');\n  if(!i.value.trim())return;\n  const li=document.createElement('li');\n  li.innerHTML=\`<span onclick="this.parentElement.classList.toggle('done')" style="cursor:pointer">\${i.value}</span><button class="del" onclick="this.parentElement.remove()">삭제</button>\`;\n  document.getElementById('list').appendChild(li);\n  i.value='';\n}`
     }
   };
 
+  // 강의 실습 예제
+  const LEARN_EXAMPLES = {
+    h1: `<h1>가장 큰 제목</h1>\n<h2>두 번째 제목</h2>\n<h3>세 번째 제목</h3>\n<p>일반 문단입니다.</p>`,
+    text: `<p>일반 문단입니다.</p>\n<p><strong>굵은 글씨</strong>와 <em>기울어진 글씨</em></p>\n<p>줄바꿈은<br>이렇게 합니다.</p>`,
+    link: `<a href="https://bichonbuff.com" target="_blank">비숑버프 방문하기</a>\n<br><br>\n<img src="https://via.placeholder.com/200x100" alt="예시 이미지">`,
+    list: `<h3>좋아하는 음식</h3>\n<ul>\n  <li>피자</li>\n  <li>파스타</li>\n  <li>라멘</li>\n</ul>\n<h3>학습 순서</h3>\n<ol>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ol>`,
+    form: `<input type="text" placeholder="이름 입력"><br><br>\n<input type="number" placeholder="나이"><br><br>\n<input type="checkbox"> 동의합니다<br><br>\n<button>제출</button>`,
+    'css-basic': `<style>\nh1 { color: #0071e3; font-size: 2rem; }\np { color: #555; font-size: 1.1rem; line-height: 1.8; }\n</style>\n<h1>CSS로 스타일 입히기</h1>\n<p>색상과 크기를 바꿔보세요!</p>`,
+    'css-color': `<style>\n.box1 { background: #0071e3; color: white; padding: 20px; margin: 10px; }\n.box2 { background: rgba(0,113,227,.15); color: #0071e3; padding: 20px; margin: 10px; }\n.box3 { background: linear-gradient(135deg, #0071e3, #30d158); color: white; padding: 20px; margin: 10px; }\n</style>\n<div class="box1">단색 배경</div>\n<div class="box2">반투명 배경</div>\n<div class="box3">그라디언트 배경</div>`,
+    'css-box': `<style>\n.box {\n  width: 200px;\n  height: 100px;\n  padding: 20px;\n  border: 2px solid #0071e3;\n  margin: 20px;\n  border-radius: 12px;\n  background: #e8f4fd;\n  box-shadow: 0 4px 12px rgba(0,0,0,.1);\n}\n</style>\n<div class="box">박스 모델 예제<br>padding, border, margin을 바꿔보세요</div>`,
+    'css-flex': `<style>\nbody { font-family: sans-serif; padding: 20px; }\n.flex { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }\n.item { background: #0071e3; color: white; padding: 20px 28px; border-radius: 10px; font-weight: 700; }\n</style>\n<div class="flex">\n  <div class="item">아이템 1</div>\n  <div class="item">아이템 2</div>\n  <div class="item">아이템 3</div>\n</div>`,
+    'css-anim': `<style>\nbody { display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }\n.box {\n  width: 120px; height: 120px;\n  background: #0071e3;\n  border-radius: 16px;\n  display: flex; align-items: center; justify-content: center;\n  color: white; font-weight: 700; font-size: 1rem;\n  cursor: pointer;\n  transition: all 0.3s ease;\n}\n.box:hover {\n  transform: scale(1.15) rotate(5deg);\n  background: #30d158;\n  border-radius: 50%;\n}\n</style>\n<div class="box">호버해보세요</div>`,
+    'js-if': `<style>body{font-family:sans-serif;padding:20px}</style>\n<input type="number" id="age" placeholder="나이 입력" style="padding:8px;border:1px solid #ccc;border-radius:6px;font-size:1rem">\n<button onclick="check()" style="padding:8px 16px;background:#0071e3;color:#fff;border:none;border-radius:6px;cursor:pointer;margin-left:8px">확인</button>\n<p id="result" style="margin-top:16px;font-size:1.1rem;font-weight:700"></p>\n<script>\nfunction check(){\n  const age = parseInt(document.getElementById('age').value);\n  const result = document.getElementById('result');\n  if(age >= 65) result.textContent = '👴 노년입니다';\n  else if(age >= 18) result.textContent = '🙋 성인입니다';\n  else if(age >= 13) result.textContent = '🧒 청소년입니다';\n  else result.textContent = '👶 어린이입니다';\n}\n<\/script>`,
+    'js-loop': `<style>body{font-family:sans-serif;padding:20px}.item{padding:8px 16px;margin:4px;background:#e8f4fd;border-radius:6px;display:inline-block;color:#0071e3;font-weight:600}</style>\n<h3>1~10 숫자</h3>\n<div id="nums"></div>\n<h3>과일 목록</h3>\n<div id="fruits"></div>\n<script>\nconst numsDiv = document.getElementById('nums');\nfor(let i=1; i<=10; i++){\n  numsDiv.innerHTML += '<span class=\"item\">'+i+'</span>';\n}\nconst fruits = ['🍎 사과','🍌 바나나','🍓 딸기','🍊 오렌지','🍇 포도'];\nconst fruitsDiv = document.getElementById('fruits');\nfruits.forEach(f => {\n  fruitsDiv.innerHTML += '<span class=\"item\">'+f+'</span>';\n});\n<\/script>`,
+    'js-dom': `<style>body{font-family:sans-serif;padding:20px}.box{padding:20px;border-radius:12px;background:#e8f4fd;margin:12px 0;font-size:1.1rem;transition:all .3s}</style>\n<div class="box" id="box">저를 클릭해보세요!</div>\n<button onclick="changeText()" style="padding:8px 16px;background:#0071e3;color:#fff;border:none;border-radius:8px;cursor:pointer;margin-right:8px">텍스트 변경</button>\n<button onclick="changeColor()" style="padding:8px 16px;background:#30d158;color:#fff;border:none;border-radius:8px;cursor:pointer">색상 변경</button>\n<script>\nconst box = document.getElementById('box');\nconst colors = ['#e8f4fd','#fff3e0','#f3e5f5','#e8f5e9'];\nlet ci = 0;\nfunction changeText(){\n  box.textContent = '텍스트가 바뀌었어요! ✨ ' + new Date().toLocaleTimeString();\n}\nfunction changeColor(){\n  ci = (ci+1) % colors.length;\n  box.style.background = colors[ci];\n}\n<\/script>`,
+    'js-event': `<style>body{font-family:sans-serif;padding:20px}#result{margin-top:16px;padding:12px;border-radius:8px;background:#f5f5f7;min-height:40px}input{padding:8px 12px;border:1px solid #ccc;border-radius:8px;width:200px;font-size:1rem}button{padding:8px 16px;background:#0071e3;color:#fff;border:none;border-radius:8px;cursor:pointer;margin-left:8px}</style>\n<input type="text" id="inp" placeholder="타이핑해보세요">\n<button id="btn">클릭!</button>\n<div id="result">여기에 결과가 표시됩니다</div>\n<script>\nconst inp = document.getElementById('inp');\nconst btn = document.getElementById('btn');\nconst result = document.getElementById('result');\ninp.addEventListener('input', (e) => {\n  result.textContent = '입력 중: ' + e.target.value;\n});\nbtn.addEventListener('click', () => {\n  result.textContent = '버튼 클릭됨! 입력값: ' + inp.value;\n  result.style.background = '#e8f4fd';\n});\n<\/script>`
+  };
+
+  // ── 모드 전환 ──
+  function setMode(mode) {
+    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('editorMode').style.display = mode === 'editor' ? 'flex' : 'none';
+    document.getElementById('learnMode').classList.toggle('active', mode === 'learn');
+  }
+
+  // ── 에디터: 탭 전환 ──
+  let activeTab = 'html';
   function switchTab(tab, btn) {
     activeTab = tab;
     document.querySelectorAll('.ed-tab').forEach(t => t.classList.remove('active'));
@@ -190,35 +513,17 @@
     });
   }
 
-  function toggleLayout() {
-    splitV = !splitV;
-    const ws = document.getElementById('workspace');
-    const pp = document.getElementById('previewPane');
-    const btn = document.getElementById('layoutBtn');
-    ws.classList.toggle('split-v', splitV);
-    pp.classList.toggle('split-border', splitV);
-    btn.classList.toggle('active', splitV);
-    btn.textContent = splitV ? '◼ 좌우 분할' : '⬛ 상하 분할';
-    if (splitV) {
-      ['Html','Css','Js'].forEach(t => document.getElementById('pane'+t).classList.remove('hidden'));
-      document.querySelectorAll('.editor-pane').forEach((p,i) => p.style.display = i === 0 ? '' : 'none');
-    }
-  }
-
   function runCode() {
-    const html = document.getElementById('codeHtml').value;
-    const css  = document.getElementById('codeCss').value;
-    const js   = document.getElementById('codeJs').value;
-    const doc  = `<!DOCTYPE html><html><head><style>${css}</style></head><body>${html}<script>${js}<\/script></body></html>`;
-    const iframe = document.getElementById('preview');
-    iframe.srcdoc = doc;
+    const h = document.getElementById('codeHtml').value;
+    const c = document.getElementById('codeCss').value;
+    const j = document.getElementById('codeJs').value;
+    document.getElementById('preview').srcdoc =
+      `<!DOCTYPE html><html><head><style>${c}</style></head><body>${h}<script>${j}<\/script></body></html>`;
   }
 
   function clearAll() {
     if (!confirm('코드를 모두 초기화할까요?')) return;
-    document.getElementById('codeHtml').value = '';
-    document.getElementById('codeCss').value  = '';
-    document.getElementById('codeJs').value   = '';
+    ['codeHtml','codeCss','codeJs'].forEach(id => document.getElementById(id).value = '');
     document.getElementById('preview').srcdoc = '';
     document.getElementById('exampleSelect').value = '';
   }
@@ -228,18 +533,39 @@
     const ex = EXAMPLES[key];
     if (!ex) return;
     document.getElementById('codeHtml').value = ex.html;
-    document.getElementById('codeCss').value  = ex.css;
-    document.getElementById('codeJs').value   = ex.js;
+    document.getElementById('codeCss').value = ex.css;
+    document.getElementById('codeJs').value = ex.js;
     runCode();
   }
 
-  // Tab 키를 들여쓰기로 사용
-  document.querySelectorAll('textarea.code').forEach(ta => {
+  // ── 강의: 탭 전환 ──
+  function switchLesson(lang, btn) {
+    document.querySelectorAll('.learn-nav-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.lesson').forEach(l => l.classList.remove('active'));
+    document.getElementById('lesson-'+lang).classList.add('active');
+  }
+
+  // ── 강의: 실습 예제 로드 ──
+  function tryLearn(key) {
+    const code = LEARN_EXAMPLES[key] || '';
+    document.getElementById('learnCode').value = code;
+    runLearn();
+  }
+
+  function runLearn() {
+    const code = document.getElementById('learnCode').value;
+    document.getElementById('learnPreview').srcdoc =
+      `<!DOCTYPE html><html><head><meta charset="utf-8"><style>body{font-family:sans-serif;padding:16px}</style></head><body>${code}</body></html>`;
+  }
+
+  // Tab 키 들여쓰기
+  document.querySelectorAll('textarea').forEach(ta => {
     ta.addEventListener('keydown', e => {
       if (e.key === 'Tab') {
         e.preventDefault();
-        const s = ta.selectionStart, end = ta.selectionEnd;
-        ta.value = ta.value.substring(0, s) + '  ' + ta.value.substring(end);
+        const s = ta.selectionStart;
+        ta.value = ta.value.substring(0, s) + '  ' + ta.value.substring(ta.selectionEnd);
         ta.selectionStart = ta.selectionEnd = s + 2;
       }
     });
@@ -247,6 +573,7 @@
 
   // 초기 예제 로드
   loadExample('hello');
+  tryLearn('h1');
 </script>
 </body>
 </html>
