@@ -299,6 +299,16 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
     .nav a{{color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .15s}}
     .nav a:hover{{color:var(--txt)}}
 
+    /* ── 상단 카테고리/도구 바 ── */
+    .topbar{{background:#fff;border-bottom:1px solid var(--line2);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}}
+    .topbar::-webkit-scrollbar{{display:none}}
+    .topbar-in{{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:stretch;white-space:nowrap}}
+    .topbar-group{{display:flex;align-items:center}}
+    .topbar-label{{font-size:.68rem;font-weight:700;color:#bbb;text-transform:uppercase;letter-spacing:.06em;padding:0 10px 0 4px;white-space:nowrap}}
+    .topbar-group a{{display:inline-flex;align-items:center;gap:4px;padding:9px 12px;font-size:.8rem;color:var(--muted);text-decoration:none;font-weight:500;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}}
+    .topbar-group a:hover{{color:var(--accent);border-bottom-color:var(--accent)}}
+    .topbar-div{{width:1px;background:var(--line2);margin:8px 4px;align-self:stretch}}
+
     /* ── 카테고리 상단 바 ── */
     .cat-bar{{background:#fff;border-bottom:1px solid var(--line2);padding:10px 0}}
     .cat-bar-in{{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--muted)}}
@@ -407,6 +417,28 @@ def build_full_html(title, excerpt, keywords, content, category, thumbnail, slug
     </nav>
   </div>
 </header>
+
+<!-- 상단 카테고리/도구 바 -->
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="topbar-group">
+      <span class="topbar-label">카테고리</span>
+      <a href="index.html">전체</a>
+      <a href="index.html">건강정보</a>
+      <a href="index.html">운동</a>
+      <a href="index.html">식단</a>
+      <a href="index.html">영양제</a>
+      <a href="index.html">다이어트</a>
+    </div>
+    <div class="topbar-div"></div>
+    <div class="topbar-group">
+      <span class="topbar-label">도구</span>
+      <a href="compound-calculator.html">💰 복리계산기</a>
+      <a href="lotto.html">🎱 로또번호</a>
+      <a href="code-playground.html">💻 코드연습창</a>
+    </div>
+  </div>
+</div>
 
 <!-- 카테고리 경로 바 -->
 <div class="cat-bar">
