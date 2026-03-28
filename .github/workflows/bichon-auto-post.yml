@@ -6,6 +6,8 @@ on:
     - cron: '0 22 * * *'
     # 매일 오후 3시 (KST) = UTC 06:00
     - cron: '0 6 * * *'
+    # 매일 밤 11시 (KST) = UTC 14:00
+    - cron: '0 14 * * *'
   workflow_dispatch:
 
 permissions:
