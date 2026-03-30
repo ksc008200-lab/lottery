@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bichonbuff.com/sitemap.xml
+
+#DaumWebMasterTool:9600607d9e8aee2537fe41667b45d69a403361e7d948b8df342f889ef976ffd8:Xp97qRig+I/dWmYtIvUneA==
