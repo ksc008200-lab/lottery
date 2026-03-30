@@ -179,8 +179,9 @@
   <h1 class="page-title">💰 복리계산기</h1>
   <p class="page-desc">원금, 연이율, 기간을 입력하면 복리로 불어나는 미래 자산을 계산합니다.</p>
 
-  <!-- 거치식/적립식 탭 -->
+  <!-- 일복리/거치식/적립식 탭 -->
   <div class="tab-wrap">
+    <button class="tab" id="tabDaily" onclick="switchMode('daily',this)" style="color:#30d158">📅 일복리</button>
     <button class="tab active" onclick="switchMode('lump',this)">거치식 (일시 투자)</button>
     <button class="tab" onclick="switchMode('monthly',this)">적립식 (매월 투자)</button>
   </div>
@@ -303,12 +304,21 @@
   let mode = 'lump';
 
   function switchMode(m, btn) {
-    mode = m;
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    mode = m === 'daily' ? 'lump' : m;
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.remove('active');
+      t.style.color = t.id === 'tabDaily' ? '#30d158' : '';
+    });
     btn.classList.add('active');
+    btn.style.color = m === 'daily' ? '#30d158' : '';
     const mf = document.getElementById('monthlyField');
     if (m === 'monthly') mf.classList.add('show');
     else mf.classList.remove('show');
+    if (m === 'daily') {
+      document.getElementById('compound').value = '365';
+      calculate();
+      calcDaily();
+    }
   }
 
   function fmt(n) {
