@@ -221,27 +221,25 @@
       현재 이율 <strong id="ruleRate">—</strong>% 기준으로 약 <strong id="ruleYears">—</strong>년 후 원금이 2배가 됩니다.
     </div>
   </div>
-</div>
 
-<!-- 일복리 상세 모달 -->
-<div id="dailyModal" onclick="if(event.target===this)this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);overflow-y:auto;padding:20px">
-  <div style="max-width:720px;margin:0 auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.25)">
-    <div style="padding:22px 26px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e8e8eb">
+  <!-- 일복리 상세 카드 (인라인) -->
+  <div id="dailyCard" class="card" style="display:none;border-color:#30d158;border-width:1.5px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
       <div>
-        <div style="font-size:1.1rem;font-weight:800;letter-spacing:-.03em">📅 일복리 (365회/년) 상세 계산</div>
-        <div id="dailySubtitle" style="font-size:.8rem;color:#86868b;margin-top:3px"></div>
+        <div class="card-title" style="color:#30d158;margin-bottom:4px">📅 일복리 (365회/년) 상세 계산</div>
+        <div id="dailySubtitle" style="font-size:.8rem;color:#86868b"></div>
       </div>
-      <button onclick="document.getElementById('dailyModal').style.display='none'" style="background:#f5f5f7;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center">✕</button>
+      <button onclick="document.getElementById('dailyCard').style.display='none'" style="background:#f5f5f7;border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;flex-shrink:0">✕</button>
     </div>
 
     <!-- 요약 -->
-    <div id="dailySummary" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 26px;background:#f5f5f7"></div>
+    <div id="dailySummary" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px"></div>
 
     <!-- 비교 배너 -->
-    <div id="dailyCompare" style="margin:0 26px;padding:12px 16px;background:rgba(48,209,88,.08);border-left:3px solid #30d158;border-radius:0 10px 10px 0;font-size:.85rem;color:#1d1d1f;line-height:1.7"></div>
+    <div id="dailyCompare" style="padding:12px 16px;background:rgba(48,209,88,.08);border-left:3px solid #30d158;border-radius:0 10px 10px 0;font-size:.85rem;color:#1d1d1f;line-height:1.7;margin-bottom:16px"></div>
 
     <!-- 테이블 -->
-    <div style="padding:16px 26px 24px;overflow-x:auto">
+    <div style="overflow-x:auto">
       <div style="font-size:.75rem;font-weight:700;color:#86868b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px" id="dailyTableLabel"></div>
       <table id="dailyTable" style="width:100%;border-collapse:collapse;font-size:.84rem">
         <thead id="dailyThead"></thead>
@@ -460,7 +458,9 @@
       tbody.innerHTML = rows;
     }
 
-    document.getElementById('dailyModal').style.display = 'block';
+    const dc = document.getElementById('dailyCard');
+    dc.style.display = 'block';
+    dc.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   // 초기 자동 계산
