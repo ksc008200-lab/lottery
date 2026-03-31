@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="google-adsense-account" content="ca-pub-3425189666333844">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>비숑 웰니스 — 건강한 삶을 위한 정보</title>
-  <meta name="description" content="운동, 식단, 영양제, 다이어트 등 건강한 삶을 위한 실용적인 웰니스 정보를 제공합니다.">
-  <meta name="keywords" content="건강정보, 운동, 식단, 영양제, 다이어트, 웰니스, 건강관리, 건강한 생활">
+  <title>비숑 웰니스 — 60대 이상 시니어 건강정보</title>
+  <meta name="description" content="60대 이상 시니어를 위한 운동, 식단, 영양제, 만성질환 관리 등 건강한 노후를 위한 전문 건강정보 블로그입니다.">
+  <meta name="keywords" content="시니어 건강, 60대 건강, 노인 건강관리, 시니어 운동, 시니어 식단, 고혈압 관리, 골다공증 예방, 치매 예방, 시니어 영양제">
   <meta name="robots" content="index, follow">
   <meta name="author" content="비숑 웰니스">
   <!-- Open Graph -->
-  <meta property="og:title" content="비숑 웰니스 — 건강한 삶을 위한 정보">
-  <meta property="og:description" content="운동, 식단, 영양제, 다이어트 등 건강한 삶을 위한 실용적인 웰니스 정보를 제공합니다.">
+  <meta property="og:title" content="비숑 웰니스 — 60대 이상 시니어 건강정보">
+  <meta property="og:description" content="60대 이상 시니어를 위한 운동, 식단, 영양제, 만성질환 관리 등 건강한 노후를 위한 전문 건강정보 블로그입니다.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bichonbuff.com/">
   <meta property="og:site_name" content="비숑 웰니스">
@@ -21,8 +21,8 @@
   <meta property="og:locale" content="ko_KR">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="비숑 웰니스 — 건강한 삶을 위한 정보">
-  <meta name="twitter:description" content="운동, 식단, 영양제, 다이어트 등 건강한 삶을 위한 실용적인 웰니스 정보를 제공합니다.">
+  <meta name="twitter:title" content="비숑 웰니스 — 60대 이상 시니어 건강정보">
+  <meta name="twitter:description" content="60대 이상 시니어를 위한 운동, 식단, 영양제, 만성질환 관리 등 건강한 노후를 위한 전문 건강정보 블로그입니다.">
   <meta name="twitter:image" content="https://bichonbuff.com/images/og-default.svg">
   <!-- 네이버 웹마스터 인증 (https://searchadvisor.naver.com 에서 코드 발급 후 교체) -->
   <meta name="naver-site-verification" content="NAVER_VERIFICATION_CODE_HERE">
@@ -84,6 +84,12 @@
     .topbar-group a:hover{color:#0071e3;border-bottom-color:#0071e3}
     .topbar-group a.active{color:#0071e3;border-bottom-color:#0071e3;font-weight:700}
     .topbar-div{width:1px;background:#e8e8eb;margin:8px 4px;align-self:stretch}
+    /* Google Translate */
+    #google_translate_element{display:inline-flex;align-items:center}
+    #google_translate_element .goog-te-gadget{font-size:0}
+    #google_translate_element .goog-te-gadget select{font-size:.78rem;padding:4px 8px;border:1px solid var(--line2);border-radius:8px;background:var(--bg2);color:var(--txt);cursor:pointer;outline:none}
+    .goog-te-banner-frame{display:none!important}
+    body{top:0!important}
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
   <script type="application/ld+json">
@@ -93,7 +99,7 @@
     "name": "비숑 웰니스",
     "alternateName": "Bichon Wellness",
     "url": "https://bichonbuff.com/",
-    "description": "운동, 식단, 영양제, 다이어트 등 건강한 삶을 위한 실용적인 웰니스 정보를 제공합니다.",
+    "description": "60대 이상 시니어를 위한 운동, 식단, 영양제, 만성질환 관리 등 건강한 노후를 위한 전문 건강정보 블로그입니다.",
     "inLanguage": "ko",
     "potentialAction": {
       "@type": "SearchAction",
@@ -129,7 +135,7 @@
     "@type": "Blog",
     "name": "비숑 웰니스",
     "url": "https://bichonbuff.com/",
-    "description": "운동, 식단, 영양제, 다이어트 등 건강한 삶을 위한 실용적인 웰니스 정보를 제공합니다.",
+    "description": "60대 이상 시니어를 위한 운동, 식단, 영양제, 만성질환 관리 등 건강한 노후를 위한 전문 건강정보 블로그입니다.",
     "inLanguage": "ko",
     "publisher": {
       "@type": "Organization",
@@ -146,28 +152,19 @@
     <nav class="nav">
       <a href="index.html">홈</a>
       <a href="about.html">소개</a>
-      <a href="reservation.html">예약</a>
-      <a href="lotto.html">로또 생성기</a>
+      <a href="contact.html">문의</a>
     </nav>
   </div>
 </header>
 <div class="topbar">
   <div class="topbar-in">
-    <div class="topbar-group">
+    <div class="topbar-group" id="topbarCats">
       <span class="topbar-label">카테고리</span>
-      <a href="index.html">전체</a>
-      <a href="index.html">건강정보</a>
-      <a href="index.html">운동</a>
-      <a href="index.html">식단</a>
-      <a href="index.html">영양제</a>
-      <a href="index.html">다이어트</a>
-    </div>
-    <div class="topbar-div"></div>
-    <div class="topbar-group">
-      <span class="topbar-label">도구</span>
-      <a href="compound-calculator.html">💰 복리계산기</a>
-      <a href="lotto.html">🎱 로또번호</a>
-      <a href="code-playground.html">💻 코드연습창</a>
+      <a href="index.html" data-cat="">전체</a>
+      <a href="index.html?cat=시니어 운동" data-cat="시니어 운동">시니어 운동</a>
+      <a href="index.html?cat=시니어 식단" data-cat="시니어 식단">시니어 식단</a>
+      <a href="index.html?cat=영양제 가이드" data-cat="영양제 가이드">영양제 가이드</a>
+      <a href="index.html?cat=만성질환 관리" data-cat="만성질환 관리">만성질환 관리</a>
     </div>
   </div>
 </div>
@@ -178,7 +175,7 @@
       <div class="profile-initials">웰</div>
       <div>
         <div class="profile-name">비숑 웰니스</div>
-        <div class="profile-desc">건강한 삶을 위한<br>실용적인 웰니스 정보</div>
+        <div class="profile-desc">60대 이상 시니어를 위한<br>건강정보 전문 블로그</div>
       </div>
     </div>
     <div class="side-section">
@@ -190,7 +187,7 @@
 
   <main class="main-area">
     <h1 id="pageTitle">전체 글</h1>
-    <p class="sub" id="pageDesc">건강한 삶을 위한 모든 이야기</p>
+    <p class="sub" id="pageDesc">60대 이상 시니어를 위한 건강정보 모음</p>
     <section class="grid" id="postGrid"></section>
   </main>
 </div>
@@ -259,7 +256,7 @@
       desc.textContent = `${category} 관련 글 모음`;
     } else {
       title.textContent = '전체 글';
-      desc.textContent = '건강한 삶을 위한 모든 이야기';
+      desc.textContent = '60대 이상 시니어를 위한 건강정보 모음';
     }
     renderPosts(category);
   }
@@ -270,7 +267,35 @@
   }
 
   renderCategories();
-  renderPosts(null);
+
+  // URL 파라미터로 초기 카테고리 결정
+  const urlCat = new URLSearchParams(location.search).get('cat') || null;
+
+  // topbar active 동기화
+  document.querySelectorAll('#topbarCats a').forEach(a => {
+    const cat = a.dataset.cat;
+    if (cat === (urlCat || '')) a.classList.add('active');
+  });
+
+  // 사이드바 active 동기화
+  if (urlCat) {
+    document.querySelectorAll('.side-cat').forEach(b => {
+      b.classList.toggle('active', b.textContent === urlCat);
+    });
+  }
+
+  renderPosts(urlCat);
 </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ko',
+      includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

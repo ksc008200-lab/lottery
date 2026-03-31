@@ -89,6 +89,12 @@
     .topbar-group a:hover{color:#0071e3;border-bottom-color:#0071e3}
     .topbar-group a.active{color:#0071e3;border-bottom-color:#0071e3;font-weight:700}
     .topbar-div{width:1px;background:#e8e8eb;margin:8px 4px;align-self:stretch}
+    /* Google Translate */
+    #google_translate_element{display:inline-flex;align-items:center}
+    #google_translate_element .goog-te-gadget{font-size:0}
+    #google_translate_element .goog-te-gadget select{font-size:.78rem;padding:4px 8px;border:1px solid var(--line2);border-radius:8px;background:var(--bg2);color:var(--txt);cursor:pointer;outline:none}
+    .goog-te-banner-frame{display:none!important}
+    body{top:0!important}
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
 </head>
@@ -110,18 +116,10 @@
     <div class="topbar-group">
       <span class="topbar-label">카테고리</span>
       <a href="index.html">전체</a>
-      <a href="index.html">건강정보</a>
-      <a href="index.html">운동</a>
-      <a href="index.html">식단</a>
-      <a href="index.html">영양제</a>
-      <a href="index.html">다이어트</a>
-    </div>
-    <div class="topbar-div"></div>
-    <div class="topbar-group">
-      <span class="topbar-label">도구</span>
-      <a href="compound-calculator.html">💰 복리계산기</a>
-      <a href="lotto.html">🎱 로또번호</a>
-      <a href="code-playground.html">💻 코드연습창</a>
+      <a href="index.html?cat=시니어 운동">시니어 운동</a>
+      <a href="index.html?cat=시니어 식단">시니어 식단</a>
+      <a href="index.html?cat=영양제 가이드">영양제 가이드</a>
+      <a href="index.html?cat=만성질환 관리">만성질환 관리</a>
     </div>
   </div>
 </div>
@@ -297,5 +295,16 @@
   }
 </script>
 
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'ko',
+      includedLanguages: 'en,ja,zh-CN,zh-TW,es,fr,de,vi,th,id',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
