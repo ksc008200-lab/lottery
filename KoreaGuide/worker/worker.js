@@ -50,14 +50,14 @@ const CONTENT_POOL = {
 
 // 카테고리 WordPress ID 매핑 (WordPress에서 확인 필요)
 const CATEGORY_IDS = {
-  "Travel Guide": 3,
-  "Living in Korea": 4,
-  "Learn Korean": 5,
+  "Travel Guide": 2,
+  "Living in Korea": 3,
+  "Learn Korean": 4,
 };
 
 export default {
   // 하루 3회 자동 포스팅: 오전 8시, 오후 2시, 저녁 8시 (UTC 기준)
-  async scheduled(event, env, ctx) {
+  async scheduled(_event, env, ctx) {
     ctx.waitUntil(autoPost(env));
   },
 
