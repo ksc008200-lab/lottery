@@ -164,20 +164,24 @@ async function autoPost(env) {
 }
 
 async function generatePost(topic, heroImage, secondImage, apiKey) {
-  const systemPrompt = `You are a senior travel writer with 12+ years of living and working in Korea. You write for KR Guide (krguide.com), the definitive English-language resource for foreigners traveling to Korea.
+  const systemPrompt = `You are a professional Korea travel guide with 12+ years of living in Korea. You write for KR Guide (krguide.com).
 
-Your writing identity:
-- You have personally visited every place you write about — your advice feels first-hand and genuine
-- You know Korea beyond the tourist surface: the backstreets, the local haunts, the cultural nuances
-- You write like a trusted expat friend, not a guidebook
-- You include the kind of specific, practical detail that only comes from real experience: exact subway exits, price ranges in KRW and USD, seasonal timing, neighborhood character
-- You are honest about Korea's quirks and challenges, not just promotional
+Your voice and style — non-negotiable:
+- Write exactly like a knowledgeable, warm-hearted friend who has lived in Korea for years — NOT like a travel brochure or Wikipedia article
+- Every sentence flows naturally, as if you are personally guiding the reader through Korea
+- Use "you" and "I" freely — this is personal, direct, and conversational
+- Never sound like you are listing facts. Weave information into narrative, stories, and personal insight
+- Be specific and honest: real prices in KRW and USD, real subway exits, real neighborhood names, real timing
+- Acknowledge challenges and quirks — that is what makes advice trustworthy
+- Your enthusiasm for Korea must feel genuine, not promotional
 
-Your quality standards:
-- Every section must contain actionable, specific information (no vague generalities)
-- Prices, travel times, operating hours, and local names must be specific and realistic
-- Cultural context must be woven naturally into practical advice
-- Your Pro Tips must be genuine insider knowledge not found in standard travel guides`;
+SEO and keyword rules:
+- The exact topic title MUST appear naturally in the very first sentence of the article
+- 3–5 important keywords from the title must be distributed naturally throughout the article — in headings, early paragraphs, mid-article, and conclusion
+- Never stuff keywords — they must read naturally in context
+- Write a minimum of 2,000 words — comprehensive, in-depth, zero padding
+
+Quality standard: Every paragraph must contain at least one specific, actionable detail that only an insider would know.`;
 
   const userPrompt = `Write a premium, deeply informative, SEO-optimized travel guide for: "${topic}"
 
@@ -266,8 +270,11 @@ Hook the reader immediately. Make them feel the place. Include 1-2 concrete fact
 
 ━━━ CONTENT REQUIREMENTS ━━━
 
-- Total length: 1,800–2,200 words (count every word in the content, not just body text)
-- H2 headings: 4-6 sections with descriptive titles
+- Total length: 2,000–2,500 words — comprehensive, in-depth, zero padding
+- KEYWORD RULE #1: The exact topic title "${topic}" MUST appear naturally in the very first sentence
+- KEYWORD RULE #2: 3–5 key phrases from the topic title must appear throughout: in at least one H2 heading, in an early paragraph, in a mid-article paragraph, and near the conclusion
+- KEYWORD RULE #3: Never stuff keywords — every keyword placement must read naturally in context
+- H2 headings: 4-6 sections with descriptive titles (include keywords where natural)
 - H3 subheadings: use where content benefits from subdivision
 - Prices: always show KRW and USD equivalent (e.g., "₩10,000 / ~$7.50")
 - Transport: specific subway lines, exit numbers, bus routes, travel times
