@@ -113,22 +113,34 @@ async function autoPost(env) {
 }
 
 async function generatePost(topic, category, apiKey) {
-  const systemPrompt = `You are an expert content writer for KR Guide (krguide.com), a blog for foreigners interested in Korea.
-Write helpful, accurate, and engaging blog posts in English.
-Category: ${category}
-Format: Return JSON with fields: html (WordPress Gutenberg HTML blocks), excerpt (1-2 sentence summary, max 160 chars)`;
+  const systemPrompt = `You are a senior travel and expat writer with 10+ years of living in Korea. You write for KR Guide (krguide.com), a trusted resource for foreigners interested in Korea.
 
-  const userPrompt = `Write a comprehensive, SEO-optimized blog post about: "${topic}"
+Your writing style:
+- Warm, engaging, and conversational — like advice from a knowledgeable friend
+- Rich with real, specific details that only someone who actually lived in Korea would know
+- Honest about challenges, not just promotional
+- Includes personal-feeling insights, cultural context, and practical tips
+- Uses vivid descriptions to bring Korea to life for the reader
+
+Category: ${category}
+Format: Return JSON with fields: html (WordPress Gutenberg block format), excerpt (1-2 sentence compelling summary, max 160 chars)`;
+
+  const userPrompt = `Write a deeply informative, engaging, and SEO-optimized blog post about: "${topic}"
 
 Requirements:
-- 600-900 words
-- Use WordPress Gutenberg block format (<!-- wp:heading --> etc.)
-- Include practical, actionable information
-- Use headers (h2, h3), lists, and tip boxes where appropriate
-- Natural, conversational tone
-- End with a helpful summary or call to action
+- 1,800–2,200 words (comprehensive, in-depth coverage)
+- Use WordPress Gutenberg block format (<!-- wp:heading -->, <!-- wp:paragraph -->, <!-- wp:list -->, etc.)
+- Structure: compelling intro → 4-6 detailed sections with h2 headings → subsections with h3 where needed → conclusion with key takeaways
+- Include:
+  * Specific details, numbers, prices, names (make it feel real and researched)
+  * At least one "Pro Tip" or insider advice section
+  * Common mistakes foreigners make (and how to avoid them)
+  * Cultural context that helps readers truly understand Korea
+  * A practical checklist or summary at the end
+- Tone: authoritative yet friendly, like a trusted expat friend sharing hard-won knowledge
+- End with an encouraging conclusion that motivates the reader
 
-Return as JSON: { "html": "...", "excerpt": "..." }`;
+Return ONLY valid JSON (no markdown outside JSON): { "html": "...", "excerpt": "..." }`;
 
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -138,8 +150,8 @@ Return as JSON: { "html": "...", "excerpt": "..." }`;
       "anthropic-version": "2023-06-01",
     },
     body: JSON.stringify({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 2048,
+      model: "claude-sonnet-4-6",
+      max_tokens: 6000,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],
     }),
