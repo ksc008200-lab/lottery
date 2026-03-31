@@ -4,59 +4,46 @@
  * 환경변수 (Cloudflare Dashboard에서 Secret으로 설정):
  *   ANTHROPIC_API_KEY  — Anthropic API 키
  *   WP_APP_PASSWORD    — WordPress 애플리케이션 비밀번호
- *   WP_USERNAME        — WordPress 사용자명 (예: admin_hu20is3)
+ *   WP_USERNAME        — WordPress 사용자명
  *   WP_URL             — WordPress 사이트 URL (예: https://krguide.com)
  */
 
-// 카테고리별 토픽 풀
-const CONTENT_POOL = {
-  "Travel Guide": [
-    "Best Things to Do in Busan — Korea's Second City",
-    "Jeju Island Travel Guide — Complete Visitor's Guide",
-    "Korean Street Food Guide — 20 Must-Try Foods",
-    "Korea Transportation Guide — Subway, Bus, KTX",
-    "Best Day Trips from Seoul",
-    "Gyeongju Travel Guide — Korea's Ancient Capital",
-    "Hiking in Korea — Best Trails for Beginners",
-    "Korea in Spring — Cherry Blossom Guide",
-    "DMZ Tour Guide — Visiting the Korean Demilitarized Zone",
-    "Best Cafes in Seoul — A Neighborhood Guide",
-  ],
-  "Living in Korea": [
-    "How to Open a Bank Account in Korea as a Foreigner",
-    "Getting a SIM Card in Korea — Best Options for Foreigners",
-    "Healthcare in Korea for Foreigners — How It Works",
-    "Finding Housing in Korea — Jeonse, Wolse, and Monthly Rentals",
-    "How to Get a Korean Driver's License",
-    "Cost of Living in Korea — Monthly Budget Guide",
-    "Public Transportation in Korea — T-money and Apps",
-    "Working in Korea — Work Visas and Job Market",
-    "Korean Grocery Shopping Guide for Foreigners",
-    "Shipping and Mail in Korea — Post Office Guide",
-  ],
-  "Learn Korean": [
-    "How to Read Korean (Hangeul) in 1 Hour",
-    "Korean Numbers — Two Systems Explained Simply",
-    "Korean Food Vocabulary — Order Like a Local",
-    "Korean Honorifics — When to Use Formal vs Informal Speech",
-    "Essential Korean Verbs for Everyday Life",
-    "Korean Shopping Phrases — Bargain and Buy with Confidence",
-    "Korean at the Doctor — Medical Vocabulary Guide",
-    "Korean Slang — Popular Words Used by Young Koreans",
-    "Korean Counters — How to Count Objects in Korean",
-    "Top Apps for Learning Korean in 2026",
-  ],
-};
+// ── 단일 카테고리 집중: Travel Guide ──
+const CATEGORY = "Travel Guide";
+const CATEGORY_ID = 2;
 
-// 카테고리 WordPress ID 매핑 (WordPress에서 확인 필요)
-const CATEGORY_IDS = {
-  "Travel Guide": 2,
-  "Living in Korea": 3,
-  "Learn Korean": 4,
-};
+const TOPICS = [
+  "Best Things to Do in Busan — Korea's Second City",
+  "Jeju Island Complete Travel Guide — Everything You Need to Know",
+  "Korean Street Food Guide — 20 Must-Try Foods and Where to Find Them",
+  "Korea Transportation Guide — Subway, Bus, KTX Explained Simply",
+  "Best Day Trips from Seoul — Hidden Gems Within 2 Hours",
+  "Gyeongju Travel Guide — Korea's Ancient Capital",
+  "Hiking in Korea — Best Trails for Every Level",
+  "Korea in Spring — Ultimate Cherry Blossom Guide",
+  "DMZ Tour Guide — Visiting the Korean Demilitarized Zone",
+  "Best Cafes in Seoul — A Neighborhood-by-Neighborhood Guide",
+  "Namsan Seoul Tower — Complete Visitor Guide",
+  "Insadong Travel Guide — Art, Culture & Shopping in Seoul",
+  "Gangnam District Guide — Beyond the K-pop Cliché",
+  "Korean Night Markets — Where Locals Actually Eat",
+  "Sokcho & Seoraksan — Korea's Most Spectacular Mountain Escape",
+];
+
+// 카테고리별 이미지 풀 (Unsplash — Korea 관련 사진)
+const IMAGE_POOL = [
+  { url: "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?auto=format&fit=crop&w=1200&q=80", alt: "Seoul cityscape at night" },
+  { url: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?auto=format&fit=crop&w=1200&q=80", alt: "Busan harbor view" },
+  { url: "https://images.unsplash.com/photo-1517154421773-0855edd8b751?auto=format&fit=crop&w=1200&q=80", alt: "Traditional Korean temple" },
+  { url: "https://images.unsplash.com/photo-1545315003-8275394aead3?auto=format&fit=crop&w=1200&q=80", alt: "Seoul street scene" },
+  { url: "https://images.unsplash.com/photo-1607863264914-71be2a5df21f?auto=format&fit=crop&w=1200&q=80", alt: "Gyeongbokgung Palace Seoul" },
+  { url: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80", alt: "Jeju island landscape" },
+  { url: "https://images.unsplash.com/photo-1583167617681-f12abbc1b5e0?auto=format&fit=crop&w=1200&q=80", alt: "Korean street food market" },
+  { url: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80", alt: "Seoul Han River at dusk" },
+];
 
 export default {
-  // 하루 3회 자동 포스팅: 오전 8시, 오후 2시, 저녁 8시 (UTC 기준)
+  // 하루 3회 자동 포스팅 (KST 오전 8시, 오후 2시, 저녁 8시)
   async scheduled(_event, env, ctx) {
     ctx.waitUntil(autoPost(env));
   },
@@ -70,25 +57,23 @@ export default {
         headers: { "Content-Type": "application/json" },
       });
     }
-    return new Response("KR Guide Auto Post Worker", { status: 200 });
+    return new Response("KR Guide Auto Post Worker — Travel Guide", { status: 200 });
   },
 };
 
 async function autoPost(env) {
   try {
-    // 카테고리 순환 선택
-    const categories = Object.keys(CONTENT_POOL);
-    const hour = new Date().getUTCHours();
-    const category = categories[Math.floor(hour / 8) % categories.length];
-
     // 토픽 랜덤 선택
-    const topics = CONTENT_POOL[category];
-    const topic = topics[Math.floor(Math.random() * topics.length)];
+    const topic = TOPICS[Math.floor(Math.random() * TOPICS.length)];
 
-    console.log(`Generating post: [${category}] ${topic}`);
+    // 이미지 랜덤 선택
+    const heroImage = IMAGE_POOL[Math.floor(Math.random() * IMAGE_POOL.length)];
+    const secondImage = IMAGE_POOL[Math.floor(Math.random() * IMAGE_POOL.length)];
+
+    console.log(`Generating post: [${CATEGORY}] ${topic}`);
 
     // Claude로 글 생성
-    const content = await generatePost(topic, category, env.ANTHROPIC_API_KEY);
+    const content = await generatePost(topic, heroImage, secondImage, env.ANTHROPIC_API_KEY);
     if (!content) throw new Error("Failed to generate content");
 
     // WordPress에 발행
@@ -97,8 +82,7 @@ async function autoPost(env) {
         title: topic,
         content: content.html,
         excerpt: content.excerpt,
-        category: category,
-        categoryId: CATEGORY_IDS[category],
+        categoryId: CATEGORY_ID,
         slug: slugify(topic),
       },
       env
@@ -112,35 +96,92 @@ async function autoPost(env) {
   }
 }
 
-async function generatePost(topic, category, apiKey) {
-  const systemPrompt = `You are a senior travel and expat writer with 10+ years of living in Korea. You write for KR Guide (krguide.com), a trusted resource for foreigners interested in Korea.
+async function generatePost(topic, heroImage, secondImage, apiKey) {
+  const systemPrompt = `You are a senior travel writer with 10+ years of living in Korea. You write for KR Guide (krguide.com), a trusted resource for foreigners traveling to or living in Korea.
 
 Your writing style:
-- Warm, engaging, and conversational — like advice from a knowledgeable friend
-- Rich with real, specific details that only someone who actually lived in Korea would know
+- Warm, engaging, and conversational — like advice from a knowledgeable friend who actually lived there
+- Rich with real, specific details: prices in KRW and USD, exact transport lines, opening hours, neighborhood names
 - Honest about challenges, not just promotional
-- Includes personal-feeling insights, cultural context, and practical tips
-- Uses vivid descriptions to bring Korea to life for the reader
+- Vivid descriptions that make readers feel like they're already there
 
-Category: ${category}
-Format: Return JSON with fields: html (WordPress Gutenberg block format), excerpt (1-2 sentence compelling summary, max 160 chars)`;
+Format: Return JSON with fields:
+- html: WordPress Gutenberg block format (see structure below)
+- excerpt: 1-2 sentence compelling summary, max 155 characters`;
 
-  const userPrompt = `Write a deeply informative, engaging, and SEO-optimized blog post about: "${topic}"
+  const userPrompt = `Write a premium, deeply informative, SEO-optimized blog post about: "${topic}"
 
-Requirements:
-- 1,800–2,200 words (comprehensive, in-depth coverage)
-- Use WordPress Gutenberg block format (<!-- wp:heading -->, <!-- wp:paragraph -->, <!-- wp:list -->, etc.)
-- Structure: compelling intro → 4-6 detailed sections with h2 headings → subsections with h3 where needed → conclusion with key takeaways
-- Include:
-  * Specific details, numbers, prices, names (make it feel real and researched)
-  * At least one "Pro Tip" or insider advice section
-  * Common mistakes foreigners make (and how to avoid them)
-  * Cultural context that helps readers truly understand Korea
-  * A practical checklist or summary at the end
-- Tone: authoritative yet friendly, like a trusted expat friend sharing hard-won knowledge
-- End with an encouraging conclusion that motivates the reader
+IMPORTANT VISUAL STRUCTURE — use exactly this Gutenberg block layout:
 
-Return ONLY valid JSON (no markdown outside JSON): { "html": "...", "excerpt": "..." }`;
+1. HERO IMAGE (full-width, at the very top):
+<!-- wp:image {"align":"full","sizeSlug":"full"} -->
+<figure class="wp-block-image alignfull size-full"><img src="${heroImage.url}" alt="${heroImage.alt}" /></figure>
+<!-- /wp:image -->
+
+2. INTRO paragraph (2-3 sentences, compelling hook)
+
+3. SECTIONS — use H2 for each major section (4-6 sections):
+<!-- wp:heading {"level":2} -->
+<h2>Section Title</h2>
+<!-- /wp:heading -->
+
+4. SUBSECTIONS — use H3 where needed:
+<!-- wp:heading {"level":3} -->
+<h3>Subsection</h3>
+<!-- /wp:heading -->
+
+5. PRO TIP BOX — styled with blue background:
+<!-- wp:group {"style":{"color":{"background":"#e8f4fd"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background-color:#e8f4fd;padding:24px 28px">
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p><strong>💡 Pro Tip</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>[insider tip text here]</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+6. SECOND IMAGE (mid-article):
+<!-- wp:image {"align":"wide","sizeSlug":"large"} -->
+<figure class="wp-block-image alignwide size-large"><img src="${secondImage.url}" alt="${secondImage.alt}" /></figure>
+<!-- /wp:image -->
+
+7. COMMON MISTAKES BOX — styled with amber background:
+<!-- wp:group {"style":{"color":{"background":"#fff8e1"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background-color:#fff8e1;padding:24px 28px">
+<!-- wp:paragraph -->
+<p><strong>⚠️ Common Mistakes to Avoid</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul>[list of mistakes]</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+8. QUICK CHECKLIST — styled with green background:
+<!-- wp:group {"style":{"color":{"background":"#e8f5e9"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background-color:#e8f5e9;padding:24px 28px">
+<!-- wp:paragraph -->
+<p><strong>✅ Quick Checklist</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul>[checklist items]</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+9. ENCOURAGING CONCLUSION paragraph
+
+CONTENT REQUIREMENTS:
+- 1,800–2,200 words total
+- Specific details: prices (KRW + USD), subway lines, neighborhood names, opening hours
+- Cultural context that helps foreigners truly understand Korea
+- At least one "Pro Tip" box with genuine insider knowledge
+- Common mistakes foreigners make
+- Practical checklist at end
+
+Return ONLY valid JSON: { "html": "...", "excerpt": "..." }`;
 
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -151,7 +192,7 @@ Return ONLY valid JSON (no markdown outside JSON): { "html": "...", "excerpt": "
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 6000,
+      max_tokens: 8000,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],
     }),
