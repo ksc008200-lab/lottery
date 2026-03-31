@@ -170,6 +170,9 @@ export default {
       }
 
 
+      if (request.method === "GET" && path === "/index.html") {
+        return Response.redirect(new URL("/", url).toString(), 301);
+      }
       if (request.method === "GET" && path === "/compound-calculator.html") {
         return Response.redirect(new URL("/calc", url).toString(), 301);
       }
@@ -187,8 +190,51 @@ export default {
   <meta name="google-adsense-account" content="ca-pub-3425189666333844">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>복리계산기 — 원금·이율·기간으로 미래 자산 계산 | 비숑 웰니스</title>
-  <meta name="description" content="복리 계산기로 원금, 연이율, 투자 기간을 입력하면 미래 자산과 총 수익을 즉시 계산합니다. 적립식/거치식 모두 지원.">
+  <meta name="description" content="복리 계산기로 원금, 연이율, 투자 기간을 입력하면 미래 자산과 총 수익을 즉시 계산합니다. 거치식/적립식, 일/월/분기/연 복리 모두 지원.">
+  <meta name="keywords" content="복리계산기, 복리 계산, 미래 자산 계산, 투자 수익률, 일복리, 연복리, 월복리, 재테크 계산기">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="비숑 웰니스">
+  <!-- Open Graph -->
+  <meta property="og:title" content="복리계산기 — 원금·이율·기간으로 미래 자산 계산">
+  <meta property="og:description" content="복리 계산기로 원금, 연이율, 투자 기간을 입력하면 미래 자산과 총 수익을 즉시 계산합니다. 거치식/적립식, 일/월/분기/연 복리 모두 지원.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bichonbuff.com/compound-calculator.html">
+  <meta property="og:site_name" content="비숑 웰니스">
+  <meta property="og:image" content="https://bichonbuff.com/images/og-default.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="복리계산기 — 미래 자산 계산기">
+  <meta name="twitter:description" content="원금, 연이율, 기간을 입력하면 복리로 불어나는 미래 자산을 즉시 계산합니다. 일복리 상세 보기 지원.">
+  <meta name="twitter:image" content="https://bichonbuff.com/images/og-default.svg">
   <link rel="canonical" href="https://bichonbuff.com/compound-calculator.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "복리계산기",
+    "description": "원금, 연이율, 투자 기간을 입력하면 미래 자산과 총 수익을 즉시 계산하는 복리 계산기",
+    "url": "https://bichonbuff.com/compound-calculator.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "ko",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
+    "publisher": {"@type": "Organization", "name": "비숑 웰니스", "url": "https://bichonbuff.com/"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://bichonbuff.com/"},
+      {"@type": "ListItem", "position": 2, "name": "도구", "item": "https://bichonbuff.com/"},
+      {"@type": "ListItem", "position": 3, "name": "복리계산기", "item": "https://bichonbuff.com/compound-calculator.html"}
+    ]
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3425189666333844" crossorigin="anonymous"></script>
   <style>
     :root{--bg:#fff;--bg2:#f5f5f7;--line2:#e8e8eb;--muted:#86868b;--txt:#1d1d1f;--accent:#0071e3;--green:#30d158;--radius:14px}
@@ -318,8 +364,9 @@ export default {
   <h1 class="page-title">💰 복리계산기</h1>
   <p class="page-desc">원금, 연이율, 기간을 입력하면 복리로 불어나는 미래 자산을 계산합니다.</p>
 
-  <!-- 거치식/적립식 탭 -->
+  <!-- 일복리/거치식/적립식 탭 -->
   <div class="tab-wrap">
+    <button class="tab" id="tabDaily" onclick="switchMode('daily',this)" style="color:#30d158">📅 일복리</button>
     <button class="tab active" onclick="switchMode('lump',this)">거치식 (일시 투자)</button>
     <button class="tab" onclick="switchMode('monthly',this)">적립식 (매월 투자)</button>
   </div>
@@ -360,6 +407,7 @@ export default {
         <label>복리 주기</label>
         <div class="field-wrap" style="background:var(--bg2)">
           <select id="compound" style="flex:1;border:none;background:none;padding:10px 12px;font-size:.95rem;font-weight:600;color:var(--txt);outline:none;font-family:inherit">
+            <option value="365">일 복리</option>
             <option value="12">월 복리</option>
             <option value="4">분기 복리</option>
             <option value="1" selected>연 복리</option>
@@ -367,7 +415,10 @@ export default {
         </div>
       </div>
     </div>
-    <button class="calc-btn" onclick="calculate()">계산하기</button>
+    <div style="display:flex;gap:10px;margin-top:20px">
+      <button class="calc-btn" style="margin-top:0" onclick="calculate()">계산하기</button>
+      <button class="calc-btn" style="margin-top:0;background:#30d158;flex:0 0 auto;width:auto;padding:14px 20px" onclick="calcDaily()">📅 일복리 상세보기</button>
+    </div>
   </div>
 
   <!-- 결과 카드 -->
@@ -399,6 +450,41 @@ export default {
       현재 이율 <strong id="ruleRate">—</strong>% 기준으로 약 <strong id="ruleYears">—</strong>년 후 원금이 2배가 됩니다.
     </div>
   </div>
+
+  <!-- 일복리 상세 카드 (인라인) -->
+  <div id="dailyCard" class="card" style="display:none;border-color:#30d158;border-width:1.5px;padding:20px 20px 16px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+      <div>
+        <div class="card-title" style="color:#30d158;margin-bottom:3px">📅 일복리 (365회/년) 날짜별 자동계산</div>
+        <div id="dailySubtitle" style="font-size:.8rem;color:#86868b"></div>
+      </div>
+      <button onclick="document.getElementById('dailyCard').style.display='none'" style="background:#f5f5f7;border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;flex-shrink:0">✕</button>
+    </div>
+
+    <!-- 요약 -->
+    <div id="dailySummary" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px"></div>
+
+    <!-- 비교 배너 -->
+    <div id="dailyCompare" style="padding:10px 14px;background:rgba(48,209,88,.08);border-left:3px solid #30d158;border-radius:0 8px 8px 0;font-size:.83rem;color:#1d1d1f;line-height:1.7;margin-bottom:14px"></div>
+
+    <!-- 테이블 툴바 -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:8px">
+      <div id="dailyTableLabel" style="font-size:.75rem;font-weight:700;color:#86868b;text-transform:uppercase;letter-spacing:.05em"></div>
+      <div style="display:flex;gap:6px">
+        <button id="btn365" onclick="setDailyRows(365)" style="padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #30d158;background:#30d158;color:#fff;cursor:pointer">365일</button>
+        <button id="btn1000" onclick="setDailyRows(1000)" style="padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #e8e8eb;background:#fff;color:#86868b;cursor:pointer">1000일</button>
+      </div>
+    </div>
+
+    <!-- 엑셀형 테이블 -->
+    <div style="overflow:auto;max-height:520px;border:1px solid #e8e8eb;border-radius:10px">
+      <table id="dailyTable" style="width:100%;border-collapse:collapse;font-size:.82rem;min-width:560px">
+        <thead id="dailyThead"></thead>
+        <tbody id="dailyTbody"></tbody>
+      </table>
+    </div>
+    <div style="font-size:.75rem;color:#aaa;margin-top:8px;text-align:right" id="dailyRowCount"></div>
+  </div>
 </div>
 
 <footer>
@@ -412,12 +498,21 @@ export default {
   let mode = 'lump';
 
   function switchMode(m, btn) {
-    mode = m;
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    mode = m === 'daily' ? 'lump' : m;
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.remove('active');
+      t.style.color = t.id === 'tabDaily' ? '#30d158' : '';
+    });
     btn.classList.add('active');
+    btn.style.color = m === 'daily' ? '#30d158' : '';
     const mf = document.getElementById('monthlyField');
     if (m === 'monthly') mf.classList.add('show');
     else mf.classList.remove('show');
+    if (m === 'daily') {
+      document.getElementById('compound').value = '365';
+      calculate();
+      calcDaily();
+    }
   }
 
   function fmt(n) {
@@ -479,6 +574,148 @@ export default {
 
     document.getElementById('resultCard').style.display = 'block';
     document.getElementById('resultCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // 일복리 계산 상태 저장
+  let _dailyState = null;
+
+  function calcDaily() {
+    const P = parseFloat(document.getElementById('principal').value) || 0;
+    const M = parseFloat(document.getElementById('monthly').value)   || 0;
+    const r = parseFloat(document.getElementById('rate').value)      / 100;
+    const Y = parseInt(document.getElementById('years').value)       || 1;
+    const nCur = parseInt(document.getElementById('compound').value);
+    const dailyRate = r / 365;
+    const startDate = new Date();
+
+    function fvDaily(d) {
+      const bal = P * Math.pow(1 + dailyRate, d);
+      if (mode !== 'monthly') return bal;
+      const rM = r / 12;
+      const months = Math.floor(d / 30.4375);
+      return bal + (months > 0 && rM > 0 ? M * ((Math.pow(1 + rM, months) - 1) / rM) * (1 + rM) : 0);
+    }
+
+    function fvCurrent(days) {
+      const n = nCur;
+      const yrs = days / 365;
+      if (mode !== 'monthly') return P * Math.pow(1 + r / n, n * yrs);
+      const fvL = P * Math.pow(1 + r / n, n * yrs);
+      const rM = r / 12;
+      const months = Math.floor(days / 30.4375);
+      return fvL + (rM > 0 && months > 0 ? M * ((Math.pow(1 + rM, months) - 1) / rM) * (1 + rM) : 0);
+    }
+
+    const totalPaid365 = mode === 'lump' ? P : P + M * 12 * Math.min(Y, 1);
+    const final365 = fvDaily(365);
+    const finalCur365 = fvCurrent(365);
+    const diff = final365 - finalCur365;
+    const nLabel = {365:'일복리',12:'월복리',4:'분기복리',1:'연복리'}[nCur] || '연복리';
+
+    document.getElementById('dailySubtitle').textContent =
+      \`원금 \${fmt(P)} · 연 \${(r*100).toFixed(1)}% · 일 복리 (\${mode==='monthly'?'적립식':'거치식'})\`;
+
+    document.getElementById('dailySummary').innerHTML = \`
+      <div style="background:#f5f5f7;border-radius:10px;padding:12px 14px">
+        <div style="font-size:.7rem;color:#86868b;font-weight:600;margin-bottom:4px">365일 후 자산</div>
+        <div style="font-size:1.25rem;font-weight:800;color:#0071e3;letter-spacing:-.03em">\${fmt(final365)}</div>
+      </div>
+      <div style="background:#f5f5f7;border-radius:10px;padding:12px 14px">
+        <div style="font-size:.7rem;color:#86868b;font-weight:600;margin-bottom:4px">납입 원금</div>
+        <div style="font-size:1.25rem;font-weight:800;letter-spacing:-.03em">\${fmt(P)}</div>
+      </div>
+      <div style="background:#f5f5f7;border-radius:10px;padding:12px 14px">
+        <div style="font-size:.7rem;color:#86868b;font-weight:600;margin-bottom:4px">1년 수익</div>
+        <div style="font-size:1.25rem;font-weight:800;color:#30d158;letter-spacing:-.03em">\${fmt(final365 - P)}</div>
+      </div>\`;
+
+    const sign = diff >= 0 ? '+' : '';
+    document.getElementById('dailyCompare').innerHTML =
+      \`📊 <strong>\${nLabel}</strong> 대비 일복리 365일 시 <strong style="color:\${diff>=0?'#30d158':'#ff453a'}">\${sign}\${fmt(Math.abs(diff))}</strong> \${diff>=0?'▲더 많음':'▼더 적음'} &nbsp;|&nbsp; 일 이자율 <strong>\${(dailyRate*100).toFixed(6)}%</strong>\`;
+
+    // 상태 저장 후 테이블 렌더
+    _dailyState = { P, r, Y, M, dailyRate, startDate, fvDaily };
+    renderDailyTable(365);
+
+    const dc = document.getElementById('dailyCard');
+    dc.style.display = 'block';
+    dc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function setDailyRows(n) {
+    if (!_dailyState) return;
+    document.getElementById('btn365').style.cssText  = n===365
+      ? 'padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #30d158;background:#30d158;color:#fff;cursor:pointer'
+      : 'padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #e8e8eb;background:#fff;color:#86868b;cursor:pointer';
+    document.getElementById('btn1000').style.cssText = n===1000
+      ? 'padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #30d158;background:#30d158;color:#fff;cursor:pointer'
+      : 'padding:5px 14px;font-size:.78rem;font-weight:700;border-radius:8px;border:1.5px solid #e8e8eb;background:#fff;color:#86868b;cursor:pointer';
+    renderDailyTable(n);
+  }
+
+  function renderDailyTable(maxDays) {
+    const { P, r, dailyRate, startDate, fvDaily } = _dailyState;
+
+    document.getElementById('dailyTableLabel').textContent = \`날짜별 잔액 추이\`;
+    document.getElementById('dailyRowCount').textContent = \`총 \${maxDays}행 표시 중\`;
+
+    // 헤더 스타일
+    const thBase = 'position:sticky;top:0;background:#1d1d1f;color:#fff;font-size:.75rem;font-weight:700;padding:9px 12px;white-space:nowrap;z-index:2;border-right:1px solid #333';
+    const thR    = thBase + ';text-align:right';
+    const thL    = thBase + ';text-align:left';
+
+    document.getElementById('dailyThead').innerHTML = \`<tr>
+      <th style="\${thL};min-width:46px">No.</th>
+      <th style="\${thL};min-width:90px">날짜</th>
+      <th style="\${thR};min-width:110px">잔액</th>
+      <th style="\${thR};min-width:100px">당일 이자</th>
+      <th style="\${thR};min-width:110px">누적 수익</th>
+      <th style="\${thR};min-width:72px">수익률</th>
+    </tr>\`;
+
+    // 행 스타일
+    const tdBase = 'padding:6px 12px;border-bottom:1px solid #f0f0f2;white-space:nowrap;font-size:.81rem';
+    const tdR    = tdBase + ';text-align:right';
+    const tdL    = tdBase + ';text-align:left';
+
+    const today = new Date(startDate);
+    let rows = '';
+    let prev = P;
+
+    for (let d = 1; d <= maxDays; d++) {
+      const bal     = fvDaily(d);
+      const dayInt  = bal - prev;
+      const cum     = bal - P;
+      const pct     = ((bal / P - 1) * 100).toFixed(4);
+
+      // 날짜 계산
+      const dt = new Date(today);
+      dt.setDate(dt.getDate() + d);
+      const dateStr = \`\${dt.getFullYear()}.\${String(dt.getMonth()+1).padStart(2,'0')}.\${String(dt.getDate()).padStart(2,'0')}\`;
+
+      // 하이라이트: 7일마다 연하게, 30일마다 진하게, 365일마다 파랗게
+      const is365 = d % 365 === 0;
+      const is30  = !is365 && d % 30 === 0;
+      const is7   = !is365 && !is30 && d % 7 === 0;
+      const bg = is365 ? '#e8f0fe' : is30 ? '#f0fff4' : is7 ? '#fafafa' : '#fff';
+      const fw = is365 || is30 ? '700' : '400';
+
+      rows += \`<tr style="background:\${bg}">
+        <td style="\${tdL};color:#aaa;font-size:.73rem">\${d}</td>
+        <td style="\${tdL};color:#555;font-size:.78rem">\${dateStr}</td>
+        <td style="\${tdR};font-weight:\${fw};color:\${is365?'#0071e3':'#1d1d1f'}">\${fmtEx(bal)}</td>
+        <td style="\${tdR};color:#30d158">+\${fmtEx(dayInt)}</td>
+        <td style="\${tdR};color:#0071e3">\${fmtEx(cum)}</td>
+        <td style="\${tdR};color:\${parseFloat(pct)>0?'#30d158':'#ff453a'}">\${pct}%</td>
+      </tr>\`;
+      prev = bal;
+    }
+    document.getElementById('dailyTbody').innerHTML = rows;
+  }
+
+  // 엑셀용 상세 포맷 (원 단위까지)
+  function fmtEx(n) {
+    return Math.round(n).toLocaleString('ko-KR') + '원';
   }
 
   // 초기 자동 계산
