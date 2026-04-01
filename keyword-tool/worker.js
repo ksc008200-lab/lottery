@@ -13,11 +13,156 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS });
-    if (url.pathname === "/api/keywords") return handleKeywords(url);
-    if (url.pathname === "/api/suggest")  return handleSuggest(url);
+    if (url.pathname === "/api/keywords")  return handleKeywords(url);
+    if (url.pathname === "/api/suggest")   return handleSuggest(url);
+    if (url.pathname === "/api/seasonal")  return handleSeasonal(url);
     return new Response(getDashboardHTML(), { headers: { "Content-Type": "text/html;charset=UTF-8" } });
   },
 };
+
+// ── 절기/시즌 키워드 데이터베이스 (검증된 고트래픽 키워드) ─────────────────
+const SEASONAL_DB = [
+  // ── 1월 ──
+  { month:1, days:[1,7],  tags:["new year","새해","신년"],
+    en:["new year travel korea","new year in korea 2026","korea new year traditions","seoul new year countdown",
+        "korea new year fireworks","new year eve korea","korea winter festival","korean new year customs",
+        "best place new year korea","korea winter trip january"],
+    ko:["한국 새해 여행","서울 새해 카운트다운","한국 신년 풍습","한국 겨울 축제 추천",
+        "설날 준비물","새해 맞이 여행지","한국 겨울 여행 1월","새해 인사말 영어로"] },
+
+  // ── 2월 (설날 가변 + 발렌타인) ──
+  { month:2, days:[1,28], tags:["valentine","설날","lunar new year"],
+    en:["valentine's day korea","korean valentine's day customs","pepero vs valentine korea",
+        "lunar new year korea travel","seollal korea guide","korean new year food",
+        "korea february travel","winter in korea february","korean red envelope tradition",
+        "seollal holiday korea for foreigners"],
+    ko:["설날 한국 풍습","발렌타인데이 한국","한국 설날 음식","설날 연휴 여행지",
+        "설날 세뱃돈 문화","한국 2월 여행","설날 인사말","한국 겨울 2월 추천"] },
+
+  // ── 3월 (삼일절 + 화이트데이 + 벚꽃 시작) ──
+  { month:3, days:[1,31], tags:["white day","삼일절","봄 시작","spring"],
+    en:["white day korea","korea spring cherry blossom forecast","cherry blossom korea march",
+        "korea spring 2026","spring flowers korea","korea march travel","independence movement day korea",
+        "best spring destinations korea","korea spring hiking","cherry blossom season start"],
+    ko:["화이트데이 한국","한국 봄 여행","벚꽃 개화 시기 2026","삼일절 의미",
+        "화이트데이 선물 추천","한국 3월 여행지","봄꽃 명소 추천","벚꽃 언제 피나"] },
+
+  // ── 4월 (벚꽃 절정 + 부활절) ──
+  { month:4, days:[1,30], tags:["cherry blossom","벚꽃","부활절","easter"],
+    en:["cherry blossom korea april","best cherry blossom spots korea","seoul cherry blossom 2026",
+        "korea cherry blossom festival","easter in korea","yeouido cherry blossom","jinhae cherry blossom",
+        "cherry blossom hanbok photo","korea spring festival april","korea april travel guide"],
+    ko:["벚꽃 명소 한국","서울 벚꽃 명소","진해 군항제 2026","여의도 벚꽃 축제",
+        "부활절 한국 행사","한국 봄 축제 4월","벚꽃 데이트 코스","한국 4월 여행 추천"] },
+
+  // ── 5월 (어린이날 + 어버이날 + 스승의날) ──
+  { month:5, days:[1,31], tags:["children's day","어린이날","어버이날","parents day"],
+    en:["children's day korea","korea family travel may","korea rose festival","buddha's birthday korea",
+        "korea may travel guide","korea golden week","family trip korea","korea may holiday",
+        "korea spring travel best","korea parents day tradition"],
+    ko:["어린이날 가볼만한곳","어버이날 선물 추천","한국 5월 여행","스승의날 문화",
+        "가족 여행지 추천","한국 장미 축제","부처님 오신날 한국","황금연휴 여행지"] },
+
+  // ── 6월 (현충일 + 여름 시작) ──
+  { month:6, days:[1,30], tags:["summer","여름","memorial day","현충일"],
+    en:["korea summer travel","korea beach june","korea june travel guide","korea summer festivals",
+        "busan beach summer","korea rainy season tips","korea memorial day","jeju summer travel",
+        "korea summer food","korea summer activities for foreigners"],
+    ko:["한국 여름 여행","한국 해수욕장 추천","여름 축제 한국","장마철 여행 팁",
+        "부산 해수욕장 추천","한국 여름 음식","현충일 의미","6월 한국 여행"] },
+
+  // ── 7월 (여름 성수기) ──
+  { month:7, days:[1,31], tags:["summer peak","여름 성수기","boryeong mud"],
+    en:["korea summer vacation","boryeong mud festival 2026","korea july travel","korea summer heat tips",
+        "best beaches korea summer","korea waterpark","hangang summer night","korea camping summer",
+        "korea summer festival july","jeju water activities"],
+    ko:["보령 머드 축제 2026","한국 여름 휴가지","한강 물놀이","한국 워터파크 추천",
+        "여름 캠핑 한국","제주 물놀이","한국 7월 여행","여름 한국 피서지 추천"] },
+
+  // ── 8월 (광복절 + 한여름) ──
+  { month:8, days:[1,31], tags:["independence day","광복절","late summer"],
+    en:["korea independence day","korea august travel","late summer korea","korea summer ending trip",
+        "korea traditional games","korea august festivals","busan sea festival","korea summer discount",
+        "jeju august guide","korea end of summer travel"],
+    ko:["광복절 의미","한국 8월 여행","여름 끝 여행지","한국 전통 놀이",
+        "부산 바다 축제","제주 8월 여행","한국 여름 할인","늦여름 한국 여행"] },
+
+  // ── 9월 (추석 + 가을 시작) ──
+  { month:9, days:[1,30], tags:["chuseok","추석","autumn","단풍 시작"],
+    en:["chuseok korea","korean thanksgiving","chuseok holiday korea travel","korea autumn start",
+        "chuseok food guide","korea september travel","korean harvest festival","chuseok for foreigners",
+        "korea fall foliage forecast","chuseok traditions explained"],
+    ko:["추석 풍습","추석 연휴 여행지","한국 추석 음식","외국인 추석 체험",
+        "한국 가을 여행 9월","추석 차례 방법","단풍 시기 예측","한국 9월 여행 추천"] },
+
+  // ── 10월 (단풍 절정 + 핼러윈) ──
+  { month:10, days:[1,31], tags:["fall foliage","단풍","halloween","핼러윈"],
+    en:["korea fall foliage","best autumn leaves korea","korea october travel","naejangsan autumn",
+        "seoraksan fall foliage","halloween in korea","itaewon halloween","korea autumn hiking",
+        "korea red leaves spots","korea october festival"],
+    ko:["한국 단풍 명소","내장산 단풍","설악산 단풍 시기","한국 핼러윈",
+        "이태원 핼러윈","한국 가을 등산 추천","단풍 드라이브 코스","10월 한국 여행"] },
+
+  // ── 11월 (빼빼로데이 + 수능) ──
+  { month:11, days:[1,30], tags:["pepero day","빼빼로데이","수능"],
+    en:["pepero day korea","november in korea","korea november travel","korea college entrance exam",
+        "pepero day customs korea","korea late autumn","korea november festival","korean snack culture",
+        "korea winter approaching","seoul november guide"],
+    ko:["빼빼로데이 유래","빼빼로 선물 아이디어","수능 날짜 2026","한국 11월 여행",
+        "늦가을 한국 여행지","빼빼로데이 뭐하나","한국 겨울 준비","서울 11월 추천"] },
+
+  // ── 12월 (크리스마스 + 연말) ──
+  { month:12, days:[1,31], tags:["christmas","크리스마스","연말","year end"],
+    en:["christmas in korea","korea christmas traditions","seoul christmas lights","korea winter travel december",
+        "korea christmas market","new year countdown korea","korea year end party","korea winter illumination",
+        "best christmas spots korea","korea december travel guide"],
+    ko:["한국 크리스마스 문화","서울 크리스마스 명소","한국 겨울 여행 12월","크리스마스 한국 풍습",
+        "연말 한국 여행","서울 빛축제","크리스마스 데이트 코스 서울","한국 겨울 일루미네이션"] },
+];
+
+// ── 오늘 날짜 기준 시즌 키워드 자동 선택 ────────────────────────────────────
+function getSeasonalKeywords(dateStr) {
+  const today = dateStr ? new Date(dateStr) : new Date();
+  const month = today.getMonth() + 1;
+
+  // 현재 월 + 앞뒤 1개월 데이터 포함 (미리 준비)
+  const relevant = SEASONAL_DB.filter(s => {
+    const diff = ((s.month - month + 12) % 12);
+    return diff <= 1 || diff >= 11; // 이번달 + 다음달 + 지난달
+  });
+
+  const all = [];
+  relevant.forEach(s => {
+    s.en.forEach(k => all.push({ keyword: k, lang: "en", tags: s.tags, month: s.month }));
+    s.ko.forEach(k => all.push({ keyword: k, lang: "ko", tags: s.tags, month: s.month }));
+  });
+
+  // 현재 월이 가장 앞으로, 다음달 그 다음
+  all.sort((a, b) => {
+    const da = (a.month - month + 12) % 12;
+    const db = (b.month - month + 12) % 12;
+    return da - db;
+  });
+
+  // 중복 제거 후 50개
+  const seen = new Set();
+  return all.filter(k => {
+    if (seen.has(k.keyword)) return false;
+    seen.add(k.keyword);
+    return true;
+  }).slice(0, 50).map((k, i) => ({
+    rank: i + 1,
+    keyword: k.keyword,
+    lang: k.lang,
+    tags: k.tags,
+    month: k.month,
+    monthLabel: `${k.month}월`,
+    isCurrentMonth: k.month === month,
+    potential: "HIGH",
+    source: "seasonal",
+    intent: k.lang === "ko" ? "📅 시즌/절기" : "📅 Seasonal",
+  }));
+}
 
 // ── 영문 확장 씨드 ──────────────────────────────────────────────────────────
 const EN_ALPHA = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -104,6 +249,18 @@ async function handleKeywords(url) {
 }
 
 // ── /api/suggest ─────────────────────────────────────────────────────────
+async function handleSeasonal(url) {
+  const dateStr = url.searchParams.get("date") || null;
+  const keywords = getSeasonalKeywords(dateStr);
+  const today = dateStr ? new Date(dateStr) : new Date();
+  return json({
+    date: today.toISOString().slice(0, 10),
+    month: today.getMonth() + 1,
+    total: keywords.length,
+    keywords,
+  });
+}
+
 async function handleSuggest(url) {
   const query  = url.searchParams.get("q");
   const source = url.searchParams.get("source") || "google";
@@ -281,6 +438,25 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .header h1 span{color:#e8a020}
 .header-sub{font-size:.8rem;color:#64748b;margin-top:3px}
 .version{font-size:.72rem;background:rgba(232,160,32,.15);border:1px solid rgba(232,160,32,.3);color:#e8a020;padding:3px 10px;border-radius:100px;font-weight:700}
+.tabs{display:flex;gap:4px;margin-bottom:24px;background:#1e293b;padding:6px;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+.tab{flex:1;text-align:center;padding:10px 16px;border-radius:8px;font-size:.88rem;font-weight:700;cursor:pointer;transition:.18s;color:#64748b;border:none;background:transparent}
+.tab.on{background:#e8a020;color:#0f172a}
+.tab:hover:not(.on){background:rgba(255,255,255,.06);color:#94a3b8}
+.season-header{background:#1e293b;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.season-today{font-size:.85rem;color:#94a3b8}
+.season-today strong{color:#e8a020;font-size:1rem}
+.season-badge{background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3);color:#a78bfa;font-size:.75rem;font-weight:700;padding:4px 12px;border-radius:100px}
+.season-filters{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.season-card{background:#1e293b;border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;margin-bottom:8px;transition:.18s}
+.season-card:hover{background:#243044;border-color:rgba(232,160,32,.2)}
+.season-rank{font-size:.78rem;font-weight:800;color:#334155;width:28px;text-align:center;flex-shrink:0}
+.season-kw{flex:1;font-size:.93rem;color:#e2e8f0;font-weight:500}
+.season-month{font-size:.72rem;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.25);color:#818cf8;padding:2px 8px;border-radius:5px;white-space:nowrap}
+.season-month.cur{background:rgba(232,160,32,.12);border-color:rgba(232,160,32,.3);color:#e8a020}
+.season-tag{font-size:.68rem;background:rgba(20,184,166,.1);border:1px solid rgba(20,184,166,.25);color:#2dd4bf;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.season-lang{font-size:.68rem;font-weight:700;padding:2px 7px;border-radius:5px}
+.lang-en{background:rgba(66,133,244,.1);color:#4285f4;border:1px solid rgba(66,133,244,.25)}
+.lang-ko{background:rgba(3,199,90,.1);color:#03c75a;border:1px solid rgba(3,199,90,.25)}
 .main{max-width:1280px;margin:0 auto;padding:28px 24px}
 .search-box{background:#1e293b;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:24px 28px;margin-bottom:28px}
 .search-row{display:flex;gap:10px;flex-wrap:wrap}
@@ -345,6 +521,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <div class="main">
+  <!-- 탭 -->
+  <div class="tabs">
+    <button class="tab on" onclick="switchTab('search',this)">🔍 키워드 검색</button>
+    <button class="tab" onclick="switchTab('seasonal',this)">📅 시즌 추천</button>
+  </div>
+
+  <!-- 검색 탭 -->
+  <div id="tabSearch">
   <div class="search-box">
     <div class="search-row">
       <input class="search-input" id="qi" type="text"
@@ -362,10 +546,32 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     </div>
   </div>
   <div id="results"></div>
+  </div><!-- /tabSearch -->
+
+  <!-- 시즌 탭 -->
+  <div id="tabSeasonal" style="display:none">
+    <div class="season-header">
+      <div class="season-today">오늘 기준 시즌 키워드 자동 추천 — <strong id="todayLabel"></strong></div>
+      <span class="season-badge">📅 검증된 고트래픽 시즌 키워드 50개</span>
+    </div>
+    <div class="season-filters">
+      <button class="filter-btn on" onclick="sfilt('all',this)">전체</button>
+      <button class="filter-btn" onclick="sfilt('current',this)">🔥 이번달</button>
+      <button class="filter-btn" onclick="sfilt('en',this)">🇺🇸 영어</button>
+      <button class="filter-btn" onclick="sfilt('ko',this)">🇰🇷 한국어</button>
+    </div>
+    <div id="seasonList"></div>
+    <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+      <button class="export-btn" onclick="csvSeasonal()">📥 CSV 내보내기</button>
+      <button class="export-btn" onclick="copyAllSeasonal()">📋 전체 복사</button>
+    </div>
+  </div><!-- /tabSeasonal -->
+
 </div>
 
 <script>
 let all = [];
+let seasonAll = [];
 
 async function search() {
   const q = document.getElementById('qi').value.trim();
@@ -478,6 +684,69 @@ function csv() {
 }
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 document.getElementById('qi').addEventListener('keydown', e=>{ if(e.key==='Enter') search(); });
+
+// ── 탭 전환 ──────────────────────────────────────────────────────────────────
+function switchTab(tab, btn) {
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('tabSearch').style.display   = tab === 'search'   ? '' : 'none';
+  document.getElementById('tabSeasonal').style.display = tab === 'seasonal' ? '' : 'none';
+  if (tab === 'seasonal' && !seasonAll.length) loadSeasonal();
+}
+
+// ── 시즌 키워드 로드 ──────────────────────────────────────────────────────────
+async function loadSeasonal() {
+  document.getElementById('seasonList').innerHTML =
+    '<div class="loading"><div class="spin"></div><div>시즌 키워드 분석 중...</div></div>';
+  try {
+    const res  = await fetch('/api/seasonal');
+    const data = await res.json();
+    seasonAll  = data.keywords || [];
+    const d = new Date();
+    document.getElementById('todayLabel').textContent =
+      d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일';
+    renderSeasonal(seasonAll);
+  } catch(e) {
+    document.getElementById('seasonList').innerHTML = '<div class="empty">❌ 오류 발생</div>';
+  }
+}
+
+function renderSeasonal(kws) {
+  if (!kws.length) { document.getElementById('seasonList').innerHTML = '<div class="empty">결과 없음</div>'; return; }
+  document.getElementById('seasonList').innerHTML = kws.map((k,i) => \`
+    <div class="season-card">
+      <span class="season-rank">\${i+1}</span>
+      <span class="season-kw">\${esc(k.keyword)}</span>
+      <span class="season-lang \${k.lang==='en'?'lang-en':'lang-ko'}">\${k.lang==='en'?'EN':'KO'}</span>
+      <span class="season-month \${k.isCurrentMonth?'cur':''}">\${k.monthLabel}</span>
+      \${k.tags.slice(0,2).map(t=>\`<span class="season-tag">\${esc(t)}</span>\`).join('')}
+      <button class="copy-btn" onclick="cp('\${esc(k.keyword)}',this)">복사</button>
+    </div>\`).join('');
+}
+
+function sfilt(type, btn) {
+  document.querySelectorAll('.season-filters .filter-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  let f = seasonAll;
+  if (type==='current') f = seasonAll.filter(k=>k.isCurrentMonth);
+  else if(type==='en')  f = seasonAll.filter(k=>k.lang==='en');
+  else if(type==='ko')  f = seasonAll.filter(k=>k.lang==='ko');
+  renderSeasonal(f);
+}
+
+function csvSeasonal() {
+  const rows = [['순위','키워드','언어','월','태그','잠재력']];
+  seasonAll.forEach(k => rows.push([k.rank, k.keyword, k.lang, k.monthLabel, k.tags.join('+'), k.potential]));
+  const c = rows.map(r=>r.map(v=>\`"\${v}"\`).join(',')).join('\\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['\\uFEFF'+c],{type:'text/csv;charset=utf-8'}));
+  a.download='seasonal-keywords.csv'; a.click();
+}
+
+function copyAllSeasonal() {
+  const text = seasonAll.map(k=>k.keyword).join('\\n');
+  navigator.clipboard.writeText(text).then(()=>alert('시즌 키워드 '+seasonAll.length+'개 복사됨!'));
+}
 </script>
 </body>
 </html>`;
