@@ -133,7 +133,11 @@ function slugify(text) {
 
 export default {
   async scheduled(_event, env, ctx) {
-    ctx.waitUntil(autoPost(env));
+    ctx.waitUntil((async () => {
+      await autoPost(env);
+      await autoPost(env);
+      await autoPost(env);
+    })());
   },
 
   async fetch(request, env) {
