@@ -130,6 +130,37 @@ export default {
       });
     }
 
+    if (url.pathname === "/api/hit") {
+      const origin = request.headers.get("Origin") || "*";
+      const corsHeaders = {
+        "Access-Control-Allow-Origin": origin,
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
+      };
+      if (request.method === "OPTIONS") {
+        return new Response(null, { status: 204, headers: corsHeaders });
+      }
+      if (request.method === "POST") {
+        const current = parseInt((await env.ANALYTICS.get("page_views")) || "0", 10);
+        const updated = current + 1;
+        await env.ANALYTICS.put("page_views", String(updated));
+        return new Response(JSON.stringify({ views: updated }), {
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+    }
+
+    if (url.pathname === "/api/views") {
+      const origin = request.headers.get("Origin") || "*";
+      const views = parseInt((await env.ANALYTICS.get("page_views")) || "0", 10);
+      return new Response(JSON.stringify({ views }), {
+        headers: {
+          "Access-Control-Allow-Origin": origin,
+          "Content-Type": "application/json",
+        },
+      });
+    }
+
     if (url.pathname === "/deploy-homepage" && request.method === "POST") {
       const token = url.searchParams.get("token");
       if (token !== "krguide-home-2026") {
@@ -567,7 +598,7 @@ const HOMEPAGE_TEMPLATE = `<!-- wp:html -->
     </div>
     <div class="krg-hero-stats">
       <div class="krg-stat"><span class="krg-stat-num">200+</span><span class="krg-stat-label">In-Depth Guides</span></div>
-      <div class="krg-stat"><span class="krg-stat-num">50K+</span><span class="krg-stat-label">Monthly Readers</span></div>
+      <div class="krg-stat"><span class="krg-stat-num" id="krg-visit-count">—</span><span class="krg-stat-label">Total Visitors</span></div>
       <div class="krg-stat"><span class="krg-stat-num">15+</span><span class="krg-stat-label">Topics Covered</span></div>
     </div>
   </div>
@@ -683,6 +714,21 @@ const HOMEPAGE_TEMPLATE = `<!-- wp:html -->
     </div>
   </div>
 </section>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<script>
+(function(){
+  const WORKER = 'https://krguide-auto-post.jssmn21.workers.dev';
+  fetch(WORKER + '/api/hit', { method: 'POST' })
+    .then(r => r.json())
+    .then(d => {
+      const el = document.getElementById('krg-visit-count');
+      if (el && d.views) el.textContent = d.views.toLocaleString();
+    })
+    .catch(() => {});
+})();
+</script>
 <!-- /wp:html -->
 
 <!-- wp:html -->

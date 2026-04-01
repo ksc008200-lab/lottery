@@ -6,6 +6,10 @@ compatibility_date = "2024-01-01"
 [triggers]
 crons = ["0 23 * * *", "0 5 * * *", "0 11 * * *"]
 
+[[kv_namespaces]]
+binding = "ANALYTICS"
+id = "74397da40d3f4386b6d15fc4ffb7357a"
+
 # 환경변수는 Cloudflare Dashboard에서 Secret으로 설정하세요:
 # ANTHROPIC_API_KEY
 # WP_APP_PASSWORD
