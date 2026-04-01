@@ -191,6 +191,10 @@ Your teaching style — non-negotiable:
 - Use "you" directly — this is personal, practical, and encouraging
 - Always show Korean script (한글) + romanization (in parentheses) + English meaning for every Korean word or phrase
 - Format: 안녕하세요 (annyeonghaseyo) — "Hello/How are you?"
+- For every Korean word or phrase, ALWAYS include Standard Korean pronunciation (표준어 발음) using IPA or clear phonetic description in brackets
+- Format with pronunciation: 안녕하세요 (annyeonghaseyo) [an-nyeong-ha-se-yo] — "Hello/How are you?"
+- Explain pronunciation rules clearly: where stress falls, how sounds change in context, mouth/tongue position for difficult sounds
+- Compare Korean sounds to the closest English equivalents to help beginners
 - Be honest about difficulty — acknowledge what's hard and give practical tips to overcome it
 - Your passion for Korean language and culture must feel genuine
 
@@ -199,44 +203,67 @@ SEO and keyword rules:
 - 3–5 important keywords from the title must appear throughout — in headings, early paragraphs, mid-article, and conclusion
 - Never stuff keywords — they must read naturally
 
-Quality standard: Every lesson must contain real, usable Korean that a student can use immediately after reading.`;
+Quality standard: Every lesson must contain real, usable Korean that a complete beginner (zero prior knowledge) can understand and use immediately after reading. Assume the reader has NEVER seen Korean before.`;
 
-  const userPrompt = `Write a premium, comprehensive, SEO-optimized Korean language learning article for: "${topic}"
+  const userPrompt = `Write a premium, elegant, SEO-optimized Korean language learning article for absolute beginners: "${topic}"
 
 ━━━ REQUIRED GUTENBERG BLOCK STRUCTURE ━━━
+
+**[0] PREMIUM CSS — insert FIRST, before everything:**
+<!-- wp:html -->
+<style>
+.kr-article p { text-align: justify; line-height: 1.95; font-size: 1.08rem; color: #1a1a2e; }
+.kr-article h2 { font-size: 1.6rem; font-weight: 800; color: #1a1a2e; margin-top: 2.5rem; border-bottom: 3px solid #4f46e5; padding-bottom: 8px; }
+.kr-article h3 { font-size: 1.2rem; font-weight: 700; color: #4f46e5; margin-top: 1.8rem; }
+.kr-hangul { font-size: 1.5rem; font-weight: 700; color: #4f46e5; background: #f0f0ff; padding: 2px 10px; border-radius: 6px; font-family: 'Noto Sans KR', sans-serif; }
+.kr-table table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.kr-table th { background: #1a1a2e; color: #fff; padding: 12px 16px; text-align: left; }
+.kr-table td { padding: 10px 16px; border-bottom: 1px solid #e8e8f0; }
+.kr-table tr:nth-child(even) td { background: #f8f8ff; }
+</style>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="kr-article">
+<!-- /wp:html -->
 
 **[1] HERO IMAGE — full width:**
 <!-- wp:image {"align":"full","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image alignfull size-full"><img src="${heroImage.url}" alt="${heroImage.alt}" /></figure>
 <!-- /wp:image -->
 
-**[2] COMPELLING INTRO — 3 paragraphs:**
-Hook the reader. Make them excited to learn. Include a motivating fact about Korean.
-<!-- wp:paragraph -->
-<p>[intro text]</p>
+**[2] COMPELLING INTRO — 3 paragraphs (양쪽 정렬):**
+Hook absolute beginners. Make Korean feel achievable. Start from zero assumption.
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.95"}}} -->
+<p style="text-align:justify">[intro text — assume reader knows NOTHING about Korean]</p>
 <!-- /wp:paragraph -->
 
-**[3] MAIN LESSON SECTIONS — H2 for each (4-6 sections):**
+**[3] MAIN LESSON SECTIONS — H2 for each (4-6 sections, 양쪽 정렬):**
 <!-- wp:heading {"level":2} -->
 <h2>Section Title</h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>[lesson content with Korean examples: 한글 (romanization) — "meaning"]</p>
+<p style="text-align:justify">[lesson content — always show: <span class="kr-hangul">한글</span> (romanization) — "meaning"]</p>
 <!-- /wp:paragraph -->
 
-**[4] EXAMPLE TABLE where applicable:**
-<!-- wp:table {"className":"is-style-stripes"} -->
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Korean</th><th>Romanization</th><th>English</th></tr></thead><tbody><tr><td>[Korean]</td><td>[romanization]</td><td>[meaning]</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+**[4] EXAMPLE TABLE — premium striped style:**
+<!-- wp:html -->
+<div class="kr-table">
+<table><thead><tr><th>Korean (한글)</th><th>Romanization</th><th>English Meaning</th></tr></thead>
+<tbody>
+<tr><td>[Korean]</td><td>[romanization]</td><td>[meaning]</td></tr>
+</tbody></table>
+</div>
+<!-- /wp:html -->
 
-**[5] PRO TIP BOX — blue background:**
-<!-- wp:group {"style":{"color":{"background":"#e8f4fd"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#e8f4fd;padding:24px 28px;border-left:4px solid #2196F3;border-radius:8px">
+**[5] TEACHER'S TIP BOX — elegant indigo gradient:**
+<!-- wp:group {"style":{"color":{"background":"#eef2ff"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"32px","right":"32px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff);padding:28px 32px;border-left:5px solid #4f46e5;border-radius:12px;box-shadow:0 2px 12px rgba(79,70,229,0.08)">
 <!-- wp:paragraph -->
-<p><strong>💡 Teacher's Tip</strong></p>
+<p><strong style="color:#4f46e5;font-size:1.05rem">💡 Teacher's Tip</strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p>[A specific memory trick or insider teaching tip that makes this click]</p>
+<p style="text-align:justify;color:#1e1b4b">[A specific memory trick that makes this click for a complete beginner]</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -246,52 +273,59 @@ Hook the reader. Make them excited to learn. Include a motivating fact about Kor
 <figure class="wp-block-image alignwide size-large"><img src="${secondImage.url}" alt="${secondImage.alt}" /></figure>
 <!-- /wp:image -->
 
-**[7] COMMON MISTAKES BOX — amber background:**
-<!-- wp:group {"style":{"color":{"background":"#fff8e1"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#fff8e1;padding:24px 28px;border-left:4px solid #FFC107;border-radius:8px">
+**[7] COMMON MISTAKES BOX — warm amber:**
+<!-- wp:group {"style":{"color":{"background":"#fffbeb"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"32px","right":"32px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background:#fffbeb;padding:28px 32px;border-left:5px solid #f59e0b;border-radius:12px;box-shadow:0 2px 12px rgba(245,158,11,0.08)">
 <!-- wp:paragraph -->
-<p><strong>⚠️ Common Mistakes Learners Make</strong></p>
+<p><strong style="color:#b45309;font-size:1.05rem">⚠️ Common Beginner Mistakes</strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:list -->
-<ul><!-- wp:list-item --><li>[Mistake 1 with correction]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 2 with correction]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 3 with correction]</li><!-- /wp:list-item --></ul>
+<ul><!-- wp:list-item --><li>[Mistake beginners always make + clear correction]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 2 + correction]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 3 + correction]</li><!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 </div>
 <!-- /wp:group -->
 
-**[8] PRACTICE EXERCISES BOX — green background:**
-<!-- wp:group {"style":{"color":{"background":"#e8f5e9"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#e8f5e9;padding:24px 28px;border-left:4px solid #4CAF50;border-radius:8px">
+**[8] PRACTICE EXERCISES BOX — fresh green:**
+<!-- wp:group {"style":{"color":{"background":"#f0fdf4"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"32px","right":"32px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background:#f0fdf4;padding:28px 32px;border-left:5px solid #22c55e;border-radius:12px;box-shadow:0 2px 12px rgba(34,197,94,0.08)">
 <!-- wp:paragraph -->
-<p><strong>✏️ Practice Exercises</strong></p>
+<p><strong style="color:#15803d;font-size:1.05rem">✏️ Practice Now — Try These</strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:list -->
-<ul><!-- wp:list-item --><li>[Exercise 1]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Exercise 2]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Exercise 3]</li><!-- /wp:list-item --></ul>
+<ul><!-- wp:list-item --><li>[Simple beginner exercise 1]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Exercise 2]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Exercise 3]</li><!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 </div>
 <!-- /wp:group -->
 
-**[9] QUICK REFERENCE BOX — dark navy background:**
-<!-- wp:group {"style":{"color":{"background":"#1a2744","text":"#ffffff"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"32px","right":"32px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#1a2744;color:#ffffff;padding:28px 32px;border-radius:12px">
-<!-- wp:paragraph {"style":{"color":{"text":"#ffffff"}}} -->
-<p style="color:#ffffff"><strong>📚 Quick Reference — Key Points</strong></p>
+**[9] QUICK REFERENCE BOX — deep navy premium:**
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"32px","bottom":"32px","left":"36px","right":"36px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:32px 36px;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.18)">
+<!-- wp:paragraph -->
+<p style="color:#a5b4fc;font-weight:800;font-size:1.1rem;margin-bottom:16px">📚 Quick Reference — Remember This</p>
 <!-- /wp:paragraph -->
 <!-- wp:list -->
-<ul><!-- wp:list-item --><li style="color:#e0e0e0">[Key point 1]</li><!-- /wp:list-item --><!-- wp:list-item --><li style="color:#e0e0e0">[Key point 2]</li><!-- /wp:list-item --><!-- wp:list-item --><li style="color:#e0e0e0">[Key point 3]</li><!-- /wp:list-item --></ul>
+<ul><!-- wp:list-item --><li style="color:#e2e8f0;margin-bottom:8px">[Key point 1]</li><!-- /wp:list-item --><!-- wp:list-item --><li style="color:#e2e8f0;margin-bottom:8px">[Key point 2]</li><!-- /wp:list-item --><!-- wp:list-item --><li style="color:#e2e8f0;margin-bottom:8px">[Key point 3]</li><!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 </div>
 <!-- /wp:group -->
 
-**[10] CONCLUSION — encouraging, 2 paragraphs**
+**[10] CONCLUSION — warm, encouraging, 2 paragraphs (양쪽 정렬)**
+<!-- wp:paragraph -->
+<p style="text-align:justify">[conclusion text]</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+</div>
+<!-- /wp:html -->
 
 ━━━ CONTENT REQUIREMENTS ━━━
 - Total: 2,000–2,500 words
-- KEYWORD RULE: The exact topic title "${topic}" in the first sentence
-- Always format Korean: 한글 (romanization) — "English meaning"
-- Include real, usable example sentences
-- Tables for vocabulary lists (minimum 8 rows)
-- Prices/resources where relevant
-- End with encouragement to keep studying
+- ABSOLUTE BEGINNER: assume zero Korean knowledge — explain everything from scratch
+- KEYWORD RULE: exact topic title "${topic}" in the first sentence
+- ALL Korean must show: 한글 (romanization) — "English meaning"
+- ALL paragraph text must have style="text-align:justify"
+- Tables must have minimum 10 rows
+- End with warm encouragement — make the reader feel capable
 
 ━━━ OUTPUT FORMAT ━━━
 Return ONLY valid JSON:
