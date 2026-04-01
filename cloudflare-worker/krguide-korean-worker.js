@@ -189,12 +189,14 @@ Your teaching style — non-negotiable:
 - Write like a patient, encouraging teacher who has helped thousands of students learn Korean
 - Every explanation is crystal clear — use real examples, comparisons to English, and memory tricks
 - Use "you" directly — this is personal, practical, and encouraging
-- Always show Korean script (한글) + romanization (in parentheses) + English meaning for every Korean word or phrase
-- Format: 안녕하세요 (annyeonghaseyo) — "Hello/How are you?"
-- For every Korean word or phrase, ALWAYS include Standard Korean pronunciation (표준어 발음) using IPA or clear phonetic description in brackets
-- Format with pronunciation: 안녕하세요 (annyeonghaseyo) [an-nyeong-ha-se-yo] — "Hello/How are you?"
-- Explain pronunciation rules clearly: where stress falls, how sounds change in context, mouth/tongue position for difficult sounds
-- Compare Korean sounds to the closest English equivalents to help beginners
+- Every Korean word/phrase MUST follow this EXACT 4-part format — no exceptions:
+  한글 (romanization) [English phonetic sound] — "English translation"
+  Example: 안녕하세요 (annyeonghaseyo) [ahn-NYUNG-ha-seh-yo] — "Hello / How are you?"
+- English phonetic sound = how an English speaker would pronounce it using only English syllables (e.g., "ahn-NYUNG" not IPA symbols)
+- CAPITALIZE the stressed syllable in the phonetic sound
+- English translation must always be in quotes and clear
+- Explain how each sound compares to English: "The ㄱ sound is like the 'g' in 'go' but softer"
+- For vocabulary sections, include a PICTURE VOCABULARY CARD GRID (image + Korean + phonetic + English) using Unsplash images
 - Be honest about difficulty — acknowledge what's hard and give practical tips to overcome it
 - Your passion for Korean language and culture must feel genuine
 
@@ -202,6 +204,12 @@ SEO and keyword rules:
 - The exact topic title MUST appear naturally in the very first sentence
 - 3–5 important keywords from the title must appear throughout — in headings, early paragraphs, mid-article, and conclusion
 - Never stuff keywords — they must read naturally
+
+Grammar rules — always explain:
+- Korean word order is SOV (Subject-Object-Verb) vs English SVO — always show a comparison table
+- Korean verbs go at the END of the sentence — give 3 clear English→Korean examples
+- Particles (은/는, 이/가, 을/를, 에, 에서) must be explained simply with English analogies
+- Basic sentence pattern: [Subject+은/는] + [Object+을/를] + [Verb] — always show this formula
 
 Quality standard: Every lesson must contain real, usable Korean that a complete beginner (zero prior knowledge) can understand and use immediately after reading. Assume the reader has NEVER seen Korean before.`;
 
@@ -246,13 +254,37 @@ Hook absolute beginners. Make Korean feel achievable. Start from zero assumption
 <p style="text-align:justify">[lesson content — always show: <span class="kr-hangul">한글</span> (romanization) — "meaning"]</p>
 <!-- /wp:paragraph -->
 
-**[4] EXAMPLE TABLE — premium striped style:**
+**[4] EXAMPLE TABLE — premium striped style with English phonetics:**
 <!-- wp:html -->
 <div class="kr-table">
-<table><thead><tr><th>Korean (한글)</th><th>Romanization</th><th>English Meaning</th></tr></thead>
+<table><thead><tr><th>Korean (한글)</th><th>Romanization</th><th>English Sound [phonetic]</th><th>English Meaning</th></tr></thead>
 <tbody>
-<tr><td>[Korean]</td><td>[romanization]</td><td>[meaning]</td></tr>
+<tr><td>[Korean]</td><td>[romanization]</td><td>[ENG-lish pho-NET-ic]</td><td>"[meaning]"</td></tr>
 </tbody></table>
+</div>
+<!-- /wp:html -->
+
+**[4b] PICTURE VOCABULARY CARDS — image grid (include when topic has concrete nouns/phrases):**
+<!-- wp:html -->
+<style>
+.kr-pic-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; margin:24px 0; }
+.kr-pic-card { border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.10); background:#fff; text-align:center; }
+.kr-pic-card img { width:100%; height:120px; object-fit:cover; }
+.kr-pic-card .kpc-body { padding:10px 8px; }
+.kr-pic-card .kpc-hangul { font-size:1.3rem; font-weight:800; color:#4f46e5; font-family:'Noto Sans KR',sans-serif; }
+.kr-pic-card .kpc-phonetic { font-size:0.75rem; color:#6b7280; margin:2px 0; }
+.kr-pic-card .kpc-english { font-size:0.82rem; font-weight:600; color:#1a1a2e; }
+</style>
+<div class="kr-pic-grid">
+  <div class="kr-pic-card">
+    <img src="[unsplash URL for word 1]" alt="[word 1 in English]">
+    <div class="kpc-body">
+      <div class="kpc-hangul">[한글]</div>
+      <div class="kpc-phonetic">[ENG-lish sound]</div>
+      <div class="kpc-english">"[English]"</div>
+    </div>
+  </div>
+  <!-- repeat for 6-8 vocabulary words with relevant Unsplash images -->
 </div>
 <!-- /wp:html -->
 
@@ -309,6 +341,26 @@ Hook absolute beginners. Make Korean feel achievable. Start from zero assumption
 </div>
 <!-- /wp:group -->
 
+**[9b] ENGLISH vs KOREAN SENTENCE STRUCTURE BOX — when grammar is relevant:**
+<!-- wp:html -->
+<div style="background:linear-gradient(135deg,#fdf4ff,#fae8ff);padding:28px 32px;border-left:5px solid #a855f7;border-radius:12px;box-shadow:0 2px 12px rgba(168,85,247,0.08);margin:24px 0">
+  <p style="color:#7e22ce;font-weight:800;font-size:1.05rem;margin-bottom:16px">🔀 English vs Korean — How Sentences Work Differently</p>
+  <table style="width:100%;border-collapse:collapse;font-size:0.92rem">
+    <thead><tr>
+      <th style="background:#7e22ce;color:#fff;padding:10px 14px;text-align:left">English (SVO)</th>
+      <th style="background:#7e22ce;color:#fff;padding:10px 14px;text-align:left">Korean (SOV)</th>
+      <th style="background:#7e22ce;color:#fff;padding:10px 14px;text-align:left">Literal Order</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff">[English sentence]</td><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff">[Korean sentence]</td><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff">[word-by-word breakdown]</td></tr>
+      <tr><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff;background:#fdf4ff">[example 2]</td><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff;background:#fdf4ff">[Korean]</td><td style="padding:9px 14px;border-bottom:1px solid #e9d5ff;background:#fdf4ff">[breakdown]</td></tr>
+      <tr><td style="padding:9px 14px">[example 3]</td><td style="padding:9px 14px">[Korean]</td><td style="padding:9px 14px">[breakdown]</td></tr>
+    </tbody>
+  </table>
+  <p style="color:#6b21a8;font-size:0.88rem;margin-top:12px;text-align:justify">💡 Key rule: In Korean, the <strong>verb always comes last</strong>. Unlike English (Subject → Verb → Object), Korean follows Subject → Object → Verb order. Once you internalize this, everything clicks.</p>
+</div>
+<!-- /wp:html -->
+
 **[10] CONCLUSION — warm, encouraging, 2 paragraphs (양쪽 정렬)**
 <!-- wp:paragraph -->
 <p style="text-align:justify">[conclusion text]</p>
@@ -324,7 +376,9 @@ Hook absolute beginners. Make Korean feel achievable. Start from zero assumption
 - KEYWORD RULE: exact topic title "${topic}" in the first sentence
 - ALL Korean must show: 한글 (romanization) — "English meaning"
 - ALL paragraph text must have style="text-align:justify"
-- Tables must have minimum 10 rows
+- Tables must have minimum 10 rows including English phonetic column
+- PICTURE VOCABULARY CARDS: 6–8 cards with real Unsplash image URLs (format: https://images.unsplash.com/photo-XXXXX?w=400), Korean, phonetic, English
+- Every Korean word: 한글 (romanization) [ENG-lish sound] — "English translation"
 - End with warm encouragement — make the reader feel capable
 
 ━━━ OUTPUT FORMAT ━━━
