@@ -8,12 +8,12 @@
 <style>
   @font-face {
     font-family: 'Noto Sans KR';
-    src: url('http://127.0.0.1:8080/fonts/NotoSansKR-Regular.otf') format('opentype');
+    src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
     font-weight: 300 700;
   }
   @font-face {
     font-family: 'Noto Serif KR';
-    src: url('http://127.0.0.1:8080/fonts/NotoSansKR-Regular.otf') format('opentype');
+    src: url('./fonts/NotoSansKR-Regular.otf') format('opentype');
     font-weight: 400 700;
   }
 </style>
@@ -467,8 +467,8 @@
 
   h3.kr { font-family: 'Noto Sans KR', sans-serif; color: var(--muted); font-size: 14px; font-weight: 400; border: none; margin-top: 0; padding: 0; }
 
-  p { margin-bottom: 16px; font-size: 15px; color: var(--text); }
-  p.kr { font-family: 'Noto Sans KR', sans-serif; color: var(--muted); font-size: 14px; font-style: italic; border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 24px; }
+  p { margin-bottom: 16px; font-size: 16px; color: var(--text); }
+  p.kr { font-family: 'Noto Sans KR', sans-serif; color: var(--muted); font-size: 13px; font-style: italic; border-left: 3px solid var(--accent); padding-left: 16px; margin-bottom: 24px; }
 
   /* ── CARDS ── */
   .card {
@@ -551,11 +551,14 @@
   .phil-desc { font-size: 13px; color: rgba(255,255,255,0.75); }
 
   /* ── TABLE ── */
+  .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 24px 0; }
+
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 24px 0;
+    margin: 0;
     font-size: 14px;
+    min-width: 320px;
   }
 
   thead tr { background: var(--blue); color: white; }
@@ -564,7 +567,7 @@
   tbody tr:hover { background: #e8f0fb; }
   tbody td { padding: 14px 16px; border-bottom: 1px solid var(--border); }
 
-  .hangul-cell { font-family: 'Noto Serif KR', serif; font-size: 24px; color: var(--blue); font-weight: 700; }
+  .hangul-cell { font-family: 'Noto Serif KR', serif; font-size: 20px; color: var(--blue); font-weight: 700; }
   .sound-cell { font-family: 'Lora', serif; font-weight: 600; color: var(--dark); }
 
   /* ── TIP BOX ── */
@@ -580,10 +583,10 @@
   }
 
   .tip-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
-  .tip-content { font-size: 14px; }
+  .tip-content { font-size: 15px; flex: 1; min-width: 0; }
   .tip-content strong { color: var(--dark); display: block; margin-bottom: 6px; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
-  .tip-content p { margin: 0; color: var(--text); }
-  .tip-content p.kr { border: none; padding: 0; margin-top: 8px; font-size: 13px; }
+  .tip-content p { margin: 0; color: var(--text); font-size: 15px; }
+  .tip-content p.kr { border: none; padding: 0; margin-top: 8px; font-size: 12px; }
 
   /* ── QUOTE ── */
   blockquote {
@@ -951,7 +954,7 @@
     <span class="toc-part-line"></span>
     <span class="toc-part-kr">Ch 31–35</span>
   </div>
-  <a href="#ch31" style="text-decoration:none;color:inherit;"><div class="toc-item"><div class="toc-num">31</div><div><div class="toc-title">The "Uri" Culture — Korea's Heart of We</div><div class="toc-title-kr">"우리" 문화 — 한국인의 마음 속 '우리'</div></div></div></a>
+  <a href="#ch31" style="text-decoration:none;color:inherit;"><div class="toc-item"><div class="toc-num">31</div><div><div class="toc-title">The "Uri" Culture — Korea's Heart of We</div><div class="toc-title-kr">"우리" 문화 — 한국인의 마음속 '우리'</div></div></div></a>
   <a href="#ch32" style="text-decoration:none;color:inherit;"><div class="toc-item"><div class="toc-num">32</div><div><div class="toc-title">Speaking Without a Subject — Korea's Silent "I"</div><div class="toc-title-kr">주어 없이 말하는 문화 — 한국어의 침묵하는 "나"</div></div></div></a>
   <a href="#ch33" style="text-decoration:none;color:inherit;"><div class="toc-item"><div class="toc-num">33</div><div><div class="toc-title">Hanja Culture &amp; Pure Korean — The Two Roots of Every Word</div><div class="toc-title-kr">한자 문화권 &amp; 고유어·한자어 — 모든 단어의 두 뿌리</div></div></div></a>
   <a href="#ch34" style="text-decoration:none;color:inherit;"><div class="toc-item"><div class="toc-num">34</div><div><div class="toc-title">千字文 &amp; Hanja as Meaning-Keys — Know the Characters, Master Korean</div><div class="toc-title-kr">천자문 &amp; 뜻글자 — 한자를 알면 한국어가 매우 쉬워진다</div></div></div></a>
@@ -1040,7 +1043,7 @@
       <div class="phil-box"><div class="phil-symbol">혀</div><div class="phil-name">Tongue Tip</div><div class="phil-name-kr">혀끝</div><div class="phil-desc">ㄴ ㄷ ㅌ ㄹ</div></div>
       <div class="phil-box"><div class="phil-symbol">입</div><div class="phil-name">Lips</div><div class="phil-name-kr">입술</div><div class="phil-desc">ㅁ ㅂ ㅍ</div></div>
       <div class="phil-box"><div class="phil-symbol">치</div><div class="phil-name">Teeth</div><div class="phil-name-kr">치아</div><div class="phil-desc">ㅅ ㅈ ㅊ</div></div>
-      <div class="phil-box"><div class="phil-symbol">ㄹ</div><div class="phil-name">Liquid</div><div class="phil-name-kr">유음</div><div class="phil-desc">ㄹ (r/l)</div></div>
+      <div class="phil-box"><div class="phil-symbol">된</div><div class="phil-name">Tense</div><div class="phil-name-kr">된소리</div><div class="phil-desc">ㄲ ㄸ ㅃ ㅆ ㅉ</div></div>
     </div>
 
     <div class="letter-grid">
@@ -1105,7 +1108,7 @@
     <h3>Building Syllable Blocks</h3>
     <h3 class="kr">음절 블록 만들기</h3>
     <p>In Korean, every syllable is grouped into a <strong>block</strong>. The consonant and vowel do not go in a line — they are arranged together into a compact square shape.</p>
-    <p class="kr">한국어에서 모든 음절은 <strong>블록</strong>으로 묶입니다. 자음과 모음이 한 줄로 가지 않고, 콤팩트한 사각형 모양으로 배열됩니다.</p>
+    <p class="kr">한국어에서 모든 음절은 <strong>블록</strong>으로 묶입니다. 자음과 모음이 한 줄로 늘어서지 않고, 작은 네모 블록 안에 모여 배열됩니다.</p>
 
     <div class="combine-row"><div class="combine-piece">ㄱ</div><div class="combine-arrow">+</div><div class="combine-piece">ㅏ</div><div class="combine-arrow">=</div><div class="combine-result">가</div><div class="combine-sound">ga · "go"</div></div>
     <div class="combine-row"><div class="combine-piece">ㄴ</div><div class="combine-arrow">+</div><div class="combine-piece">ㅣ</div><div class="combine-arrow">=</div><div class="combine-result">니</div><div class="combine-sound">ni · "knee"</div></div>
@@ -1239,6 +1242,19 @@
         <tr><td>3</td><td class="hangul-cell">셋</td><td>set</td><td>8</td><td class="hangul-cell">여덟</td><td>yeo-deol</td></tr>
         <tr><td>4</td><td class="hangul-cell">넷</td><td>net</td><td>9</td><td class="hangul-cell">아홉</td><td>a-hop</td></tr>
         <tr><td>5</td><td class="hangul-cell">다섯</td><td>da-seot</td><td>10</td><td class="hangul-cell">열</td><td>yeol</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Ordinal Numbers · 서수 (순서)</h3>
+    <table>
+      <thead><tr><th>Order</th><th>한글</th><th>Pronunciation</th><th>Order</th><th>한글</th><th>Pronunciation</th></tr></thead>
+      <tbody>
+        <tr><td>1st</td><td class="hangul-cell">첫째</td><td>cheot-jjae</td><td>7th</td><td class="hangul-cell">일곱째</td><td>il-gop-jjae</td></tr>
+        <tr><td>2nd</td><td class="hangul-cell">둘째</td><td>dul-jjae</td><td>8th</td><td class="hangul-cell">여덟째</td><td>yeo-deol-jjae</td></tr>
+        <tr><td>3rd</td><td class="hangul-cell">셋째</td><td>set-jjae</td><td>9th</td><td class="hangul-cell">아홉째</td><td>a-hop-jjae</td></tr>
+        <tr><td>4th</td><td class="hangul-cell">넷째</td><td>net-jjae</td><td>10th</td><td class="hangul-cell">열째</td><td>yeol-jjae</td></tr>
+        <tr><td>5th</td><td class="hangul-cell">다섯째</td><td>da-seot-jjae</td><td>11th</td><td class="hangul-cell">열한째</td><td>yeol-han-jjae</td></tr>
+        <tr><td>6th</td><td class="hangul-cell">여섯째</td><td>yeo-seot-jjae</td><td>20th</td><td class="hangul-cell">스무째</td><td>seu-mu-jjae</td></tr>
       </tbody>
     </table>
 
@@ -1508,12 +1524,7 @@
     <h3>The Speech Level Spectrum · 말투 스펙트럼</h3>
     <h3 class="kr">한국어는 누구에게 말하느냐에 따라 완전히 달라집니다!</h3>
 
-    <div class="tip">
-      💡 <strong>The Big Picture First!</strong><br>
-      Korean has two major worlds: <strong>존댓말</strong> (respectful speech — used toward people <em>above</em> you) and <strong>반말</strong> (informal speech — used toward people <em>below</em> you, OR very close friends). Inside 존댓말 there are two levels depending on how formal the situation is.
-      <br><br>
-      <span class="kr">한국어에는 두 세계가 있어요: <strong>존댓말</strong>(위 사람을 높여 말하는 것)과 <strong>반말</strong>(아랫사람에게 하는 말, 또는 아주 친한 사이). 존댓말 안에서도 상황에 따라 두 가지로 나뉩니다.</span>
-    </div>
+    <div class="tip"><div class="tip-icon">💡</div><div class="tip-content"><strong>The Big Picture First!</strong><p>Korean has two major worlds: <strong>존댓말</strong> (respectful speech — used toward people <em>above</em> you) and <strong>반말</strong> (informal speech — used toward people <em>below</em> you, OR very close friends). Inside 존댓말 there are two levels depending on how formal the situation is.</p><p class="kr">한국어에는 두 세계가 있어요: <strong>존댓말</strong>(위 사람을 높여 말하는 것)과 <strong>반말</strong>(아랫사람에게 하는 말, 또는 아주 친한 사이). 존댓말 안에서도 상황에 따라 두 가지로 나뉩니다.</p></div></div>
 
     <!-- THREE LEVELS -->
     <div class="philosophy-grid" style="grid-template-columns: repeat(3,1fr);">
@@ -1626,7 +1637,7 @@
         </tr>
         <tr>
           <td>Let's go!</td>
-          <td class="hangul-cell">가겠습니다<br><span style="font-size:11px; color:#888;">ga-gess-seum-ni-da</span></td>
+          <td class="hangul-cell">갑시다!<br><span style="font-size:11px; color:#888;">gap-si-da!</span></td>
           <td class="hangul-cell">가요!<br><span style="font-size:11px; color:#888;">ga-yo!</span></td>
           <td class="hangul-cell">가자!<br><span style="font-size:11px; color:#888;">ga-ja!</span></td>
         </tr>
@@ -2087,7 +2098,7 @@
     <h3 style="margin-top:32px;">🖼️ Vocabulary Spotlight · 단어 그림 보기</h3>
     <p style="color:#666; margin-bottom:16px;">Here are key words from this chapter with pictures — study them and you'll speak naturally!</p>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; margin:16px 0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; margin:16px 0;">
       <div class="card" style="text-align:center; padding:16px 12px;">
         <div style="font-size:48px;">🇰🇷</div>
         <div class="hangul-cell" style="font-size:20px; display:block; margin:8px 0;">한국어</div>
@@ -2364,7 +2375,7 @@
 
     <!-- VOCAB WITH PICTURES: LOCATIONS -->
     <h4 style="margin-top:24px;">🖼️ Location Vocabulary · 장소 단어</h4>
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:12px; margin:16px 0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; margin:16px 0;">
       <div class="card" style="text-align:center; padding:12px 8px;">
         <div style="font-size:36px;">🏠</div>
         <div class="hangul-cell" style="font-size:17px; display:block; margin:5px 0;">집</div>
@@ -3445,7 +3456,7 @@
 
     <!-- TRANSPORT TYPES WITH PICTURES -->
     <h3>Types of Transport · 교통수단</h3>
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:14px; margin:20px 0;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; margin:20px 0;">
       <div class="card" style="text-align:center; padding:16px 10px; border-top:3px solid #1A4A8A;">
         <div style="font-size:42px;">🚇</div>
         <div class="hangul-cell" style="font-size:19px; display:block; margin:6px 0;">지하철</div>
@@ -7303,7 +7314,7 @@
   <div class="chapter-header" data-char="우리">
     <div class="chapter-label">Chapter 31 · 제31장</div>
     <h2>The "Uri" Culture — Korea's Heart of We</h2>
-    <div class="kr-title">"우리" 문화 — 한국인의 마음 속 '우리'</div>
+    <div class="kr-title">"우리" 문화 — 한국인의 마음속 '우리'</div>
   </div>
   <div class="chapter-body">
 
@@ -7352,7 +7363,7 @@
     <p class="kr">한국은 세계에서 가장 <strong>집단주의적</strong> 사회 중 하나입니다. 서구 문화가 개인을 강조하는 반면 — "나는 이것을 했다", "이것은 내 것이다" — 한국 문화는 역사적으로 집단을 강조해왔습니다. 가족, 씨족, 나라.</p>
 
     <p>This collective identity was shaped by centuries of Confucian philosophy (<strong>유교 · Confucianism</strong>), which placed enormous value on:</p>
-    <p class="kr">이러한 집단 정체성은 수 세기에 걸친 유교 철학(<strong>유교</strong>)에 의해 형성되었습니다. 유교는 다음에 엄청난 가치를 부여했습니다:</p>
+    <p class="kr">이러한 집단 정체성은 수 세기에 걸친 유교 철학(<strong>유교</strong>)에 의해 형성되었습니다. 유교는 다음과 같은 덕목에 큰 가치를 두었습니다:</p>
 
     <table>
       <thead>
@@ -7880,7 +7891,7 @@
           <div style="font-size:22px; margin-bottom:6px;">漢</div>
           <div style="font-weight:800; color:#c62828; font-size:14px;">한자어</div>
           <div style="font-size:11px; color:#555; margin-top:4px;">Sino-Korean<br>~60%</div>
-          <div style="font-size:11px; color:#888; margin-top:6px;">학교, 사랑(愛), 전화<br>문화, 경제, 사회</div>
+          <div style="font-size:11px; color:#888; margin-top:6px;">학교, 애정(愛情), 전화<br>문화, 경제, 사회</div>
         </div>
         <div style="background:#e8f5e9; border-radius:10px; padding:14px;">
           <div style="font-size:22px; margin-bottom:6px;">🌍</div>
@@ -7960,12 +7971,12 @@
     <div class="vocab-table">
       <div class="vocab-header"><span>한자</span><span>훈·음</span><span>한국어 예시 (2개 이상)</span></div>
       <div class="vocab-row"><span><strong>學 학</strong></span><span>배울 학</span><span>학교(學校) · 학생(學生) · 학원(學院) · 대학(大學)</span></div>
-      <div class="vocab-row"><span><strong>校 교</strong></span><span>학교 교</span><span>학교(學校) · 교장(校長) · 교실(校室)</span></div>
+      <div class="vocab-row"><span><strong>校 교</strong></span><span>학교 교</span><span>학교(學校) · 교장(校長) · 교실(敎室)</span></div>
       <div class="vocab-row"><span><strong>國 국</strong></span><span>나라 국</span><span>한국(韓國) · 국제(國際) · 국민(國民) · 외국(外國)</span></div>
       <div class="vocab-row"><span><strong>語 어</strong></span><span>말씀 어</span><span>한국어(韓國語) · 영어(英語) · 언어(言語)</span></div>
       <div class="vocab-row"><span><strong>人 인</strong></span><span>사람 인</span><span>한국인(韓國人) · 외국인(外國人) · 인간(人間)</span></div>
       <div class="vocab-row"><span><strong>大 대</strong></span><span>클 대</span><span>대학(大學) · 대통령(大統領) · 대한민국(大韓民國)</span></div>
-      <div class="vocab-row"><span><strong>小 소</strong></span><span>작을 소</span><span>소학교(小學校) · 소설(小說) · 소수(小數)</span></div>
+      <div class="vocab-row"><span><strong>小 소</strong></span><span>작을 소</span><span>초등학교(初等學校) · 소설(小說) · 소수(小數)</span></div>
       <div class="vocab-row"><span><strong>中 중</strong></span><span>가운데 중</span><span>중학교(中學校) · 중국(中國) · 중심(中心)</span></div>
       <div class="vocab-row"><span><strong>高 고</strong></span><span>높을 고</span><span>고등학교(高等學校) · 고속(高速) · 고온(高溫)</span></div>
       <div class="vocab-row"><span><strong>先 선</strong></span><span>먼저 선</span><span>선생(先生) · 선배(先輩) · 우선(優先)</span></div>
@@ -9005,10 +9016,10 @@
     <h3 class="kr">The Wave That Nobody Predicted</h3>
 
     <p>In the late 1990s, South Korea was recovering from a devastating financial crisis. The government made a bold bet: invest in <strong>문화 콘텐츠 (cultural content)</strong> as a national export industry. Nobody imagined what would happen next.</p>
-    <p class="kr">1990년대 후반, 한국은 참혹한 금융 위기에서 회복하고 있었습니다. 정부는 대담한 도박을 했습니다. <strong>문화 콘텐츠</strong>를 국가 수출 산업으로 육성하는 것. 그 다음에 무슨 일이 일어날지 아무도 상상하지 못했습니다.</p>
+    <p class="kr">1990년대 후반, 한국은 참혹한 금융 위기에서 회복하고 있었습니다. 정부는 대담한 결단을 내렸습니다. <strong>문화 콘텐츠</strong>를 국가 수출 산업으로 육성하는 것. 그 다음에 무슨 일이 일어날지 아무도 상상하지 못했습니다.</p>
 
     <p><strong>한류 (韓流 · Hallyu)</strong> — literally "Korean Wave" — is the global phenomenon of Korean cultural exports: music, drama, film, food, beauty, fashion, and language. What began as Asian regional popularity in the early 2000s has become a genuinely global cultural force, reshaping what the world listens to, watches, eats, and wears.</p>
-    <p class="kr"><strong>한류(韓流)</strong> — 문자 그대로 "한국의 물결" — 는 한국 문화 수출의 세계적 현상입니다. 음악, 드라마, 영화, 음식, 뷰티, 패션, 언어. 2000년대 초반 아시아 지역 인기로 시작된 것이 진정한 글로벌 문화 세력이 되어, 세계가 듣고, 보고, 먹고, 입는 것을 재형성하고 있습니다.</p>
+    <p class="kr"><strong>한류(韓流)</strong> — 문자 그대로 "한국의 물결" — 는 한국 문화 수출의 세계적 현상입니다. 음악, 드라마, 영화, 음식, 뷰티, 패션, 언어. 2000년대 초반 아시아 지역 인기로 시작된 것이 진정한 글로벌 문화 세력이 되어, 세계가 듣고, 보고, 먹고, 입는 방식을 새롭게 바꾸고 있습니다.</p>
 
     <blockquote>
       <p>"한국은 총 없이 세계를 정복했다."<br>
