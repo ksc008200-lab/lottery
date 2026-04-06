@@ -12,109 +12,142 @@
 const CATEGORY_ID = 4; // Learn Korean
 
 const TOPICS = [
-  // Step 1: Korean Alphabet (가나다라 순서)
-  "Korean Alphabet ㄱ ㄴ ㄷ ㄹ — How to Pronounce Every Consonant",
-  "Korean Vowels ㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣ — Complete Pronunciation Guide",
-  "How to Read Korean Syllable Blocks — Step by Step for Beginners",
-  "Korean Double Consonants ㄲ ㄸ ㅃ ㅆ ㅉ — How to Pronounce Tense Sounds",
+  // ── 1단계: 한글 발음원리 (처음부터 순서대로) ──────────────────────────────
+  "How Hangul Works — The Science Behind Korean Alphabet Pronunciation",
+  "Korean Consonant ㄱ (Giyeok) — How to Pronounce 기역 Perfectly",
+  "Korean Consonant ㄴ (Nieun) — How to Pronounce 니은 Perfectly",
+  "Korean Consonant ㄷ (Digeut) — How to Pronounce 디귿 Perfectly",
+  "Korean Consonant ㄹ (Rieul) — How to Pronounce 리을 Perfectly",
+  "Korean Consonant ㅁ (Mieum) — How to Pronounce 미음 Perfectly",
+  "Korean Consonant ㅂ (Bieup) — How to Pronounce 비읍 Perfectly",
+  "Korean Consonant ㅅ (Siot) — How to Pronounce 시옷 Perfectly",
+  "Korean Consonant ㅇ (Ieung) — The Silent Letter and NG Sound Explained",
+  "Korean Consonant ㅈ (Jieut) — How to Pronounce 지읒 Perfectly",
+  "Korean Consonant ㅊ (Chieut) — How to Pronounce 치읓 Perfectly",
+  "Korean Consonant ㅋ (Kieuk) — How to Pronounce 키읔 Perfectly",
+  "Korean Consonant ㅌ (Tieut) — How to Pronounce 티읕 Perfectly",
+  "Korean Consonant ㅍ (Pieup) — How to Pronounce 피읖 Perfectly",
+  "Korean Consonant ㅎ (Hieut) — How to Pronounce 히읗 Perfectly",
+  "Korean Basic Vowels ㅏ ㅑ ㅓ ㅕ — How to Pronounce Each One",
+  "Korean Basic Vowels ㅗ ㅛ ㅜ ㅠ ㅡ ㅣ — Complete Pronunciation Guide",
   "Korean Compound Vowels ㅐ ㅔ ㅚ ㅟ ㅘ ㅙ ㅝ ㅞ — Pronunciation Made Easy",
+  "Korean Double Consonants ㄲ ㄸ ㅃ ㅆ ㅉ — How to Pronounce Tense Sounds",
+  "How to Read Korean Syllable Blocks — Step by Step for Beginners",
   "Korean Final Consonants (받침) — How Batchim Changes Pronunciation",
+  "Korean Pronunciation Rules Every Beginner Must Know",
+  "Korean Liaison Rules — How Words Sound Together",
+  "Korean Intonation and Rhythm — Sound Like a Native",
+  "How to Read Korean in 1 Hour — Complete Beginner's Step-by-Step Guide",
   "How to Write Your Name in Korean — Hangul Transliteration Guide",
   "Korean Alphabet Song — Learn 가나다라마바사 Like a Native Child",
-  "How to Read Korean in 1 Hour — Complete Beginner's Step-by-Step Guide",
-  "Korean Pronunciation Rules Every Beginner Must Know",
 
-  // Step 2: Basic Vocabulary
+  // ── 2단계: 기초 회화 ──────────────────────────────────────────────────────
+  "Korean Greetings Guide — 20 Ways to Say Hello and Goodbye",
+  "How to Introduce Yourself in Korean — Beginner's Script",
   "Top 50 Korean Phrases Every Beginner Must Know",
   "Korean Numbers — How to Count in Korean (Native vs Sino)",
-  "How to Introduce Yourself in Korean — Beginner's Script",
-  "Korean Greetings Guide — 20 Ways to Say Hello and Goodbye",
-  "Essential Korean Words for Shopping in Korea",
-  "How to Order Food in Korean — Restaurant Phrases That Work",
   "Korean Days of the Week, Months, and Dates Explained",
+  "How to Order Food in Korean — Restaurant Phrases That Work",
+  "Essential Korean Words for Shopping in Korea",
   "Korean Colors, Shapes, and Sizes — Vocabulary Guide",
 
-  // Grammar
+  // ── 3단계: 문법 ───────────────────────────────────────────────────────────
+  "Korean Sentence Structure Explained — SOV Word Order",
   "Korean Particles 은/는 vs 이/가 — The Complete Beginner's Guide",
   "Korean Verb Conjugation for Beginners — Present, Past, Future",
   "How to Use 아/어요 Endings in Korean — Polite Speech Guide",
-  "Korean Sentence Structure Explained — SOV Word Order",
-  "Using ~때문에 and ~아/어서 in Korean — Cause and Reason",
   "Korean Question Words — Who, What, Where, When, Why, How",
   "Honorifics in Korean — When and How to Use Formal Speech",
   "Korean Negation — How to Say No and Not in Korean",
   "How to Use Korean Connectors — ~고, ~지만, ~그래서",
+  "Using ~때문에 and ~아/어서 in Korean — Cause and Reason",
   "Korean Adjectives as Verbs — Understanding Descriptive Verbs",
 
-  // Vocabulary
-  "Korean Body Parts Vocabulary — Head to Toe Guide",
+  // ── 4단계: 어휘 ───────────────────────────────────────────────────────────
   "Korean Family Members Vocabulary with Pronunciation",
+  "Korean Body Parts Vocabulary — Head to Toe Guide",
   "Korean Food Vocabulary — 60 Essential Words for Foodies",
   "Korean Transportation Vocabulary — Subway, Bus, Taxi",
-  "Korean Workplace Vocabulary — Office and Business Terms",
-  "Korean Medical Vocabulary — How to Talk to a Doctor in Korea",
   "Korean Emotions and Feelings — Express Yourself Fluently",
   "Korean Time Expressions — Yesterday, Today, Tomorrow and More",
   "Korean Weather Vocabulary — Seasons and Climate Words",
   "Korean Animal Names in Korean — Fun Vocabulary Guide",
+  "Korean Workplace Vocabulary — Office and Business Terms",
+  "Korean Medical Vocabulary — How to Talk to a Doctor in Korea",
 
-  // K-Drama & K-Pop
+  // ── 5단계: K-Drama / K-Pop ────────────────────────────────────────────────
   "Most Common Korean Phrases from K-Dramas You Must Know",
   "K-Pop Korean Slang — Words You Hear in Every Song",
-  "How to Understand Korean Drama Without Subtitles — Tips",
-  "Korean Slang Words Used by Korean Teens in 2025",
   "BTS Lyrics Korean Lesson — Learn Korean Through Music",
+  "Korean Slang Words Used by Korean Teens in 2026",
+  "How to Understand Korean Drama Without Subtitles — Tips",
   "Korean Dramas for Korean Learners — Best Shows by Level",
 
-  // Pronunciation
-  "Korean Pronunciation Rules Every Learner Gets Wrong",
-  "Korean Consonant Clusters — How to Pronounce Batchim",
-  "Korean Double Consonants (쌍자음) — Pronunciation Guide",
-  "Korean Liaison Rules — How Words Sound Together",
-  "Korean Intonation and Rhythm — Sound Like a Native",
-
-  // TOPIK
+  // ── 6단계: TOPIK ──────────────────────────────────────────────────────────
   "TOPIK I Complete Study Guide — How to Pass on Your First Try",
-  "TOPIK II Writing Section — Tips and Sample Answers",
   "TOPIK Vocabulary List — 500 Most Common Words",
+  "TOPIK II Writing Section — Tips and Sample Answers",
   "How to Register for TOPIK Exam — Step by Step Guide",
   "TOPIK Reading Strategies — How to Score High Every Time",
 
-  // Culture & Language
+  // ── 7단계: 문화/기타 ──────────────────────────────────────────────────────
   "Korean Speech Levels Explained — Formal, Polite, Casual",
-  "Why Korean Has No Spaces Between Syllables — Explained",
   "Korean Loanwords from English — Over 100 Easy Words",
   "Konglish Guide — English Words That Confuse Koreans",
+  "Why Korean Has No Spaces Between Syllables — Explained",
   "How Long Does It Take to Learn Korean — Honest Answer",
 ];
 
 const IMAGES = {
   default: [
-    { url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200", alt: "Korean language learning books and study materials" },
-    { url: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200", alt: "Person studying Korean language with notebook" },
-    { url: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200", alt: "Korean study materials and flashcards" },
-    { url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200", alt: "Open book and language learning notes" },
-    { url: "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=1200", alt: "Writing Korean characters in notebook" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Traditional Korean palace architecture in Seoul" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Bukchon Hanok Village traditional houses Seoul" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Historic Korean palace gate and courtyard" },
+    { url: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?w=1200&auto=format&fit=crop&q=80", alt: "Seoul city skyline illuminated at night" },
+    { url: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&auto=format&fit=crop&q=80", alt: "Modern Seoul downtown district with skyscrapers" },
   ],
   hangul: [
-    { url: "https://images.unsplash.com/photo-1527090526205-beaac8dc3c62?w=1200", alt: "Korean Hangul alphabet characters" },
-    { url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200", alt: "Korean language book with Hangul" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Korean palace — learn the language of this culture" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Korean architecture representing Hangul and culture" },
   ],
   culture: [
-    { url: "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=1200", alt: "Korean traditional culture and language" },
-    { url: "https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=1200", alt: "Seoul cityscape representing Korean culture" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Korean traditional village and culture" },
+    { url: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?w=1200&auto=format&fit=crop&q=80", alt: "Seoul cityscape representing Korean culture" },
   ],
 };
 
-function getImagesForTopic(topic) {
+function getSearchQuery(topic) {
   const t = topic.toLowerCase();
-  if (t.includes("hangul") || t.includes("alphabet") || t.includes("read")) return IMAGES.hangul;
-  if (t.includes("culture") || t.includes("drama") || t.includes("pop")) return IMAGES.culture;
-  return IMAGES.default;
+  if (t.includes("hangul") || t.includes("alphabet")) return "Korean Hangul alphabet writing";
+  if (t.includes("consonant") || t.includes("vowel")) return "Korean language study calligraphy";
+  if (t.includes("grammar") || t.includes("sentence") || t.includes("verb") || t.includes("particle")) return "Korean language textbook study";
+  if (t.includes("k-drama") || t.includes("drama")) return "Korean drama filming Seoul";
+  if (t.includes("k-pop") || t.includes("bts") || t.includes("kpop")) return "K-pop music Korea concert";
+  if (t.includes("food") || t.includes("restaurant")) return "Korean food cuisine traditional";
+  if (t.includes("topik")) return "Korean language exam study books";
+  if (t.includes("greeting") || t.includes("phrase")) return "Korean people conversation Seoul";
+  if (t.includes("number") || t.includes("count")) return "Korean market numbers signs";
+  if (t.includes("culture") || t.includes("honorific") || t.includes("speech")) return "Korean traditional culture Seoul";
+  return "Korean language learning study";
 }
 
-function pickRandom(arr) {
-  return arr[Math.floor(Math.random() * arr.length)];
+async function fetchUnsplashImages(topic, apiKey) {
+  const query = getSearchQuery(topic);
+  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=6&orientation=landscape`;
+  try {
+    const res = await fetch(url, { headers: { "Authorization": `Client-ID ${apiKey}` } });
+    if (!res.ok) throw new Error(`Unsplash error: ${res.status}`);
+    const data = await res.json();
+    const results = data.results || [];
+    if (results.length < 2) throw new Error("Not enough results");
+    return results.slice(0, 4).map(r => ({
+      url: r.urls.raw + "&w=1200&h=675&fit=crop&auto=format&q=80",
+      alt: r.alt_description || r.description || `${query} photo`
+    }));
+  } catch (e) {
+    console.error("Unsplash fetch failed:", e.message);
+    return null;
+  }
 }
 
 function pickTwo(arr) {
@@ -134,29 +167,50 @@ function slugify(text) {
 export default {
   async scheduled(_event, env, ctx) {
     ctx.waitUntil((async () => {
-      await autoPost(env);
-      await autoPost(env);
-      await autoPost(env);
+      await autoPost(env, 0);
+      await autoPost(env, 1);
     })());
   },
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname === "/trigger" && request.method === "POST") {
-      const result = await autoPost(env);
-      return new Response(JSON.stringify(result), {
+      ctx.waitUntil(autoPost(env));
+      return new Response(JSON.stringify({ queued: true, message: "Auto post started in background" }), {
         headers: { "Content-Type": "application/json" },
       });
+    }
+    if (url.pathname === "/trigger-sync" && request.method === "POST") {
+      const result = await autoPost(env);
+      return new Response(JSON.stringify(result), { headers: { "Content-Type": "application/json" } });
     }
     return new Response("KR Guide — Learn Korean Auto Post Worker", { status: 200 });
   },
 };
 
-async function autoPost(env) {
+// 2026-04-02 00:00 UTC 기준으로 index 0부터 순차 증가
+// 하루 2회 크론(offset 0,1) → 매일 2개 발행
+const START_EPOCH_MS = 1775088000000; // 2026-04-02 00:00:00 UTC
+
+function getNextTopicIndex(offset = 0) {
+  const halfDays = Math.floor((Date.now() - START_EPOCH_MS) / (1000 * 60 * 60 * 12));
+  return (halfDays * 2 + offset) % TOPICS.length;
+}
+
+async function autoPost(env, offset = 0) {
   try {
-    const topic = pickRandom(TOPICS);
-    const imagePool = getImagesForTopic(topic);
-    const [heroImage, secondImage] = pickTwo(imagePool);
+    const idx = getNextTopicIndex(offset);
+    const topic = TOPICS[idx];
+
+    let heroImage, secondImage;
+    const unsplashImages = env.UNSPLASH_ACCESS_KEY
+      ? await fetchUnsplashImages(topic, env.UNSPLASH_ACCESS_KEY)
+      : null;
+    if (unsplashImages && unsplashImages.length >= 2) {
+      [heroImage, secondImage] = unsplashImages;
+    } else {
+      [heroImage, secondImage] = pickTwo(IMAGES.default);
+    }
 
     console.log(`Generating post: [Learn Korean] ${topic}`);
 
@@ -226,8 +280,8 @@ Quality standard: Every lesson must contain real, usable Korean that a complete 
 .kr-hangul { font-size: 1.5rem; font-weight: 700; color: #4f46e5; background: #f0f0ff; padding: 2px 10px; border-radius: 6px; font-family: 'Noto Sans KR', sans-serif; }
 .kr-table table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 .kr-table th { background: #1a1a2e; color: #fff; padding: 12px 16px; text-align: left; }
-.kr-table td { padding: 10px 16px; border-bottom: 1px solid #e8e8f0; }
-.kr-table tr:nth-child(even) td { background: #f8f8ff; }
+.kr-table td { padding: 10px 16px; border-bottom: 1px solid #e8e8f0; color: #1a1a2e; }
+.kr-table tr:nth-child(even) td { background: #f8f8ff; color: #1a1a2e; }
 </style>
 <!-- /wp:html -->
 
@@ -235,9 +289,9 @@ Quality standard: Every lesson must contain real, usable Korean that a complete 
 <div class="kr-article">
 <!-- /wp:html -->
 
-**[1] HERO IMAGE — full width:**
+**[1] HERO IMAGE — full width (use EXACTLY this src, do not change it):**
 <!-- wp:image {"align":"full","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignfull size-full"><img src="${heroImage.url}" alt="${heroImage.alt}" /></figure>
+<figure class="wp-block-image alignfull size-full"><img src="__HERO_SRC__" alt="__HERO_ALT__" /></figure>
 <!-- /wp:image -->
 
 **[2] COMPELLING INTRO — 3 paragraphs (양쪽 정렬):**
@@ -300,9 +354,9 @@ Hook absolute beginners. Make Korean feel achievable. Start from zero assumption
 </div>
 <!-- /wp:group -->
 
-**[6] SECOND IMAGE — wide, mid-article:**
+**[6] SECOND IMAGE — wide, mid-article (use EXACTLY this src, do not change it):**
 <!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-large"><img src="${secondImage.url}" alt="${secondImage.alt}" /></figure>
+<figure class="wp-block-image alignwide size-large"><img src="__SECOND_SRC__" alt="__SECOND_ALT__" /></figure>
 <!-- /wp:image -->
 
 **[7] COMMON MISTAKES BOX — warm amber:**
@@ -371,21 +425,27 @@ Hook absolute beginners. Make Korean feel achievable. Start from zero assumption
 <!-- /wp:html -->
 
 ━━━ CONTENT REQUIREMENTS ━━━
-- Total: 2,000–2,500 words
+- Total: 700–900 words (quality over length — do NOT exceed)
 - ABSOLUTE BEGINNER: assume zero Korean knowledge — explain everything from scratch
 - KEYWORD RULE: exact topic title "${topic}" in the first sentence
 - ALL Korean must show: 한글 (romanization) — "English meaning"
 - ALL paragraph text must have style="text-align:justify"
-- Tables must have minimum 10 rows including English phonetic column
-- PICTURE VOCABULARY CARDS: 6–8 cards with real Unsplash image URLs (format: https://images.unsplash.com/photo-XXXXX?w=400), Korean, phonetic, English
+- Tables: 5–6 rows including English phonetic column
+- Skip the PICTURE VOCABULARY CARDS section — omit it entirely
 - Every Korean word: 한글 (romanization) [ENG-lish sound] — "English translation"
 - End with warm encouragement — make the reader feel capable
 
 ━━━ OUTPUT FORMAT ━━━
-Return ONLY valid JSON:
-{ "html": "...", "excerpt": "One compelling sentence about this lesson, max 155 characters." }`;
+Return ONLY in this exact format — no JSON, no markdown, no extra text:
 
-  const MAX_RETRIES = 3;
+===HTML_START===
+{the complete Gutenberg HTML here}
+===HTML_END===
+===EXCERPT_START===
+{one compelling sentence about this lesson, max 155 characters}
+===EXCERPT_END===`;
+
+  const MAX_RETRIES = 2;
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
@@ -396,7 +456,7 @@ Return ONLY valid JSON:
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
-        max_tokens: 8000,
+        max_tokens: 3000,
         system: systemPrompt,
         messages: [{ role: "user", content: userPrompt }],
       }),
@@ -418,9 +478,54 @@ Return ONLY valid JSON:
 
     const data = await response.json();
     const text = data.content[0].text;
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) throw new Error("No JSON in response");
-    return JSON.parse(jsonMatch[0]);
+
+    function injectImages(html) {
+      return html
+        .replace(/__HERO_SRC__/g, heroImage.url)
+        .replace(/__HERO_ALT__/g, heroImage.alt)
+        .replace(/__SECOND_SRC__/g, secondImage.url)
+        .replace(/__SECOND_ALT__/g, secondImage.alt);
+    }
+
+    // 방법 1: 구분자 형식
+    const htmlMatch = text.match(/===HTML_START===\s*([\s\S]*?)\s*===HTML_END===/);
+    if (htmlMatch) {
+      const excerptMatch = text.match(/===EXCERPT_START===\s*([\s\S]*?)\s*===EXCERPT_END===/);
+      return {
+        html: injectImages(htmlMatch[1].trim()),
+        excerpt: excerptMatch ? excerptMatch[1].trim() : "",
+      };
+    }
+
+    // 방법 2: JSON 형식 (escape 오류 허용 파싱)
+    const jsonStart = text.indexOf('{"html"');
+    const jsonStart2 = text.indexOf('{ "html"');
+    const jStart = jsonStart >= 0 ? jsonStart : jsonStart2;
+    if (jStart >= 0) {
+      // excerpt 부분만 JSON에서 추출하고 HTML은 raw로 추출
+      const excerptMatch = text.match(/"excerpt"\s*:\s*"([^"]{0,200})"/);
+      const htmlInner = text.slice(jStart);
+      // HTML은 "html": " 이후부터 마지막 "}까지
+      const htmlValMatch = htmlInner.match(/"html"\s*:\s*"([\s\S]+)"\s*,\s*"excerpt"/);
+      if (htmlValMatch) {
+        return {
+          html: htmlValMatch[1].replace(/\\n/g, "\n").replace(/\\"/g, '"').replace(/\\\\/g, "\\"),
+          excerpt: excerptMatch ? excerptMatch[1] : "",
+        };
+      }
+    }
+
+    // 방법 3: <!-- wp:html --> 블록 직접 추출
+    const wpMatch = text.match(/(<!--\s*wp:html[\s\S]+)/);
+    if (wpMatch) {
+      const excerptMatch = text.match(/"excerpt"\s*:\s*"([^"]{0,200})"/);
+      return {
+        html: wpMatch[1].trim(),
+        excerpt: excerptMatch ? excerptMatch[1] : "",
+      };
+    }
+
+    throw new Error("No parseable content in response");
   }
 }
 

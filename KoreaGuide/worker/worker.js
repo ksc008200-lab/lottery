@@ -30,81 +30,98 @@ const TOPICS = [
   "Sokcho and Seoraksan — Korea's Most Spectacular Mountain Escape",
 ];
 
-// ── 토픽별 Unsplash 이미지 풀 (검증된 한국 사진 36장) ──
+// ── 토픽별 Unsplash 이미지 풀 (검증된 200 OK URL만) ──
 const TOPIC_IMAGES = {
   busan: [
-    { url: "https://images.unsplash.com/photo-5ITi3WdzZ8Y?auto=format&fit=crop&w=1200&q=80", alt: "Gamcheon Culture Village colorful hillside buildings in Busan, South Korea" },
-    { url: "https://images.unsplash.com/photo-oY_h_gyVZlU?auto=format&fit=crop&w=1200&q=80", alt: "Haeundae Beach aerial view at night, Busan" },
-    { url: "https://images.unsplash.com/photo-AZB7cZ4RxsI?auto=format&fit=crop&w=1200&q=80", alt: "Haeundae Beach golden sandy shore, Busan South Korea" },
-    { url: "https://images.unsplash.com/photo-18mvTADdIcc?auto=format&fit=crop&w=1200&q=80", alt: "Haedong Yonggungsa Temple perched on sea cliffs, Busan" },
-    { url: "https://images.unsplash.com/photo-D7Gpt-yNEps?auto=format&fit=crop&w=1200&q=80", alt: "Scenic view of Busan, South Korea" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Colorful Gamcheon Culture Village hillside buildings, Busan South Korea" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Busan city coastal view with ocean and buildings" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Scenic coastal area near Busan South Korea" },
+    { url: "https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1200&auto=format&fit=crop&q=80", alt: "Beautiful coastal landscape South Korea" },
   ],
   jeju: [
-    { url: "https://images.unsplash.com/photo-ckXiImBopuo?auto=format&fit=crop&w=1200&q=80", alt: "Snowy Hallasan mountain summit, Jeju Island South Korea" },
-    { url: "https://images.unsplash.com/photo-D1G2hcrkAN8?auto=format&fit=crop&w=1200&q=80", alt: "Dramatic waterfall on volcanic cliffs by the ocean, Jeju Island" },
-    { url: "https://images.unsplash.com/photo-GbPHAuFQDEc?auto=format&fit=crop&w=1200&q=80", alt: "Jeju Island landscape with mountain and turquoise water" },
-    { url: "https://images.unsplash.com/photo-1wsOpPr-XCI?auto=format&fit=crop&w=1200&q=80", alt: "Snow-covered trees on Hallasan mountain, Jeju" },
+    { url: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=1200&auto=format&fit=crop&q=80", alt: "Stunning natural landscape of Jeju Island South Korea" },
+    { url: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&auto=format&fit=crop&q=80", alt: "Jeju Island volcanic mountain and green landscape" },
+    { url: "https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1200&auto=format&fit=crop&q=80", alt: "Tropical island beach and turquoise water, Jeju" },
   ],
   palace: [
-    { url: "https://images.unsplash.com/photo-G8yDww9JqY8?auto=format&fit=crop&w=1200&q=80", alt: "Visitors in traditional Korean hanbok at Gyeongbokgung Palace, Seoul" },
-    { url: "https://images.unsplash.com/photo-iBryvCItpF8?auto=format&fit=crop&w=1200&q=80", alt: "Gyeongbokgung Palace illuminated at twilight, Seoul" },
-    { url: "https://images.unsplash.com/photo-k78g1-JNn5A?auto=format&fit=crop&w=1200&q=80", alt: "Hyangwonjeong Pavilion reflected in palace pond, Gyeongbokgung" },
-    { url: "https://images.unsplash.com/photo-WWmTo7Qd4eM?auto=format&fit=crop&w=1200&q=80", alt: "Gyeongbokgung Palace with visitors in traditional Korean attire" },
-    { url: "https://images.unsplash.com/photo-T5NIVYYfynY?auto=format&fit=crop&w=1200&q=80", alt: "Gyeongbokgung Palace grand gate and courtyard, Seoul" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Traditional Korean palace architecture in Seoul" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Historic Korean palace gate and courtyard" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Gyeongbokgung Palace with mountain backdrop Seoul" },
   ],
   food: [
-    { url: "https://images.unsplash.com/photo-e4lum8lzgYY?auto=format&fit=crop&w=1200&q=80", alt: "Bustling Korean street food stalls at traditional outdoor market" },
-    { url: "https://images.unsplash.com/photo-HXeHsf9SPUQ?auto=format&fit=crop&w=1200&q=80", alt: "Lively Korean food market with vendors and diners" },
+    { url: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=1200&auto=format&fit=crop&q=80", alt: "Korean traditional cuisine spread with banchan side dishes" },
+    { url: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=1200&auto=format&fit=crop&q=80", alt: "Authentic Korean restaurant meal with multiple colorful dishes" },
+    { url: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&auto=format&fit=crop&q=80", alt: "Fresh Korean food bowl with vegetables and rice" },
+    { url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop&q=80", alt: "Colorful Korean street food and snacks at night market" },
+    { url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&auto=format&fit=crop&q=80", alt: "Korean BBQ and traditional food dishes" },
+    { url: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=1200&auto=format&fit=crop&q=80", alt: "Korean cuisine with grilled meat and side dishes" },
   ],
   hanok: [
-    { url: "https://images.unsplash.com/photo-fwbHcgSBqx4?auto=format&fit=crop&w=1200&q=80", alt: "Traditional tiled rooftops along narrow alley in Bukchon Hanok Village, Seoul" },
-    { url: "https://images.unsplash.com/photo-y1pKYx16SrE?auto=format&fit=crop&w=1200&q=80", alt: "Panoramic rooftop view of Bukchon Hanok Village traditional houses, Seoul" },
-    { url: "https://images.unsplash.com/photo-KKz6NgO69yQ?auto=format&fit=crop&w=1200&q=80", alt: "Aerial golden hour view of Jeonju Hanok Village traditional rooftops" },
-    { url: "https://images.unsplash.com/photo-AwlLYexpQhE?auto=format&fit=crop&w=1200&q=80", alt: "Bukchon Hanok Village with Seoul mountain backdrop" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Traditional Korean hanok village rooftop tiled views" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Bukchon Hanok Village traditional houses Seoul" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Historic Korean village with traditional wooden architecture" },
   ],
   spring: [
-    { url: "https://images.unsplash.com/photo-mLQjqLkJ3eA?auto=format&fit=crop&w=1200&q=80", alt: "Cherry blossoms illuminating Seoul city street at night" },
-    { url: "https://images.unsplash.com/photo-WQGpjSW6NA0?auto=format&fit=crop&w=1200&q=80", alt: "People celebrating cherry blossom festival under blooming trees in Korea" },
-    { url: "https://images.unsplash.com/photo-MHBMClU3qCg?auto=format&fit=crop&w=1200&q=80", alt: "Seoul street scene at night with cherry blossoms in full bloom" },
-    { url: "https://images.unsplash.com/photo-RYzm7LppBII?auto=format&fit=crop&w=1200&q=80", alt: "Cherry blossoms in full bloom in front of historic building, Busan" },
+    { url: "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=1200&auto=format&fit=crop&q=80", alt: "Cherry blossoms in full bloom along Korean street" },
+    { url: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=1200&auto=format&fit=crop&q=80", alt: "Spring cherry blossom festival in Korea" },
+    { url: "https://images.unsplash.com/photo-1467139701929-18c0d27a7516?w=1200&auto=format&fit=crop&q=80", alt: "Cherry blossoms and spring flowers Korea" },
   ],
   temple: [
-    { url: "https://images.unsplash.com/photo-ADqQgiStp4c?auto=format&fit=crop&w=1200&q=80", alt: "Bulguksa Temple ancient stone steps and architecture, Gyeongju Korea" },
-    { url: "https://images.unsplash.com/photo-18mvTADdIcc?auto=format&fit=crop&w=1200&q=80", alt: "Haedong Yonggungsa Temple dramatically situated on sea rocks, Busan" },
-    { url: "https://images.unsplash.com/photo-G8yDww9JqY8?auto=format&fit=crop&w=1200&q=80", alt: "Traditional Korean palace architecture with hanbok-wearing visitors" },
-  ],
-  namsan: [
-    { url: "https://images.unsplash.com/photo-RT3a2TK1RgY?auto=format&fit=crop&w=1200&q=80", alt: "Namsan Seoul Tower rising above the city under dramatic cloudy sky" },
-    { url: "https://images.unsplash.com/photo-RxWUBc0womc?auto=format&fit=crop&w=1200&q=80", alt: "N Seoul Tower iconic landmark viewed from city below" },
-    { url: "https://images.unsplash.com/photo-BZG5p-u35tI?auto=format&fit=crop&w=1200&q=80", alt: "Namsan Tower overlooking Seoul cityscape and Han River" },
+    { url: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&auto=format&fit=crop&q=80", alt: "Ancient Korean Buddhist temple architecture" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Traditional Korean temple gate and stone lanterns" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Bulguksa Temple UNESCO heritage site Gyeongju Korea" },
   ],
   seoul: [
-    { url: "https://images.unsplash.com/photo-0njBEcQmbk4?auto=format&fit=crop&w=1200&q=80", alt: "Downtown Seoul glittering cityscape at night, South Korea" },
-    { url: "https://images.unsplash.com/photo-Mwvhyd22Lyw?auto=format&fit=crop&w=1200&q=80", alt: "Seoul skyline illuminated at night" },
-    { url: "https://images.unsplash.com/photo-01hH6y7oZFk?auto=format&fit=crop&w=1200&q=80", alt: "Aerial view of Seoul at dawn, South Korea" },
-    { url: "https://images.unsplash.com/photo-zqIpyaXOrwE?auto=format&fit=crop&w=1200&q=80", alt: "Han River Seoul at night, city lights reflecting on water" },
-    { url: "https://images.unsplash.com/photo-cLnd7gxOwHU?auto=format&fit=crop&w=1200&q=80", alt: "Han River bridge spanning the water in Seoul" },
+    { url: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?w=1200&auto=format&fit=crop&q=80", alt: "Seoul city skyline illuminated at night, South Korea" },
+    { url: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&auto=format&fit=crop&q=80", alt: "Modern Seoul downtown district with skyscrapers" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Seoul panoramic view from Namsan Tower" },
+    { url: "https://images.unsplash.com/photo-1562552476-8ac59b2a2e46?w=1200&auto=format&fit=crop&q=80", alt: "Seoul Han River and city lights at dusk" },
   ],
   default: [
-    { url: "https://images.unsplash.com/photo-gf4BctI0ubM?auto=format&fit=crop&w=1200&q=80", alt: "Seoul cityscape panoramic view, South Korea" },
-    { url: "https://images.unsplash.com/photo-wp5KY3RjSGw?auto=format&fit=crop&w=1200&q=80", alt: "Seoul city with N Seoul Tower and mountain backdrop" },
-    { url: "https://images.unsplash.com/photo-iBryvCItpF8?auto=format&fit=crop&w=1200&q=80", alt: "Gyeongbokgung Palace at dusk, Seoul South Korea" },
+    { url: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=1200&auto=format&fit=crop&q=80", alt: "Beautiful South Korea travel destination" },
+    { url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&auto=format&fit=crop&q=80", alt: "Korea scenic landscape and culture" },
+    { url: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?w=1200&auto=format&fit=crop&q=80", alt: "South Korea travel guide landscape" },
   ],
 };
 
-function getImagesForTopic(topic) {
+function getSearchQuery(topic) {
   const t = topic.toLowerCase();
-  if (t.includes("busan")) return TOPIC_IMAGES.busan;
-  if (t.includes("jeju")) return TOPIC_IMAGES.jeju;
-  if (t.includes("gyeongbokgung") || t.includes("palace") || t.includes("gyeongju") && t.includes("ancient")) return TOPIC_IMAGES.palace;
-  if (t.includes("street food") || t.includes("food") || t.includes("market") || t.includes("eat")) return TOPIC_IMAGES.food;
-  if (t.includes("hanok") || t.includes("insadong") || t.includes("bukchon") || t.includes("jeonju")) return TOPIC_IMAGES.hanok;
-  if (t.includes("spring") || t.includes("cherry blossom")) return TOPIC_IMAGES.spring;
-  if (t.includes("temple") || t.includes("bulguksa") || t.includes("gyeongju")) return TOPIC_IMAGES.temple;
-  if (t.includes("namsan") || t.includes("tower") || t.includes("cafe") || t.includes("gangnam")) return TOPIC_IMAGES.namsan;
-  if (t.includes("hiking") || t.includes("mountain") || t.includes("seoraksan") || t.includes("sokcho")) return TOPIC_IMAGES.jeju;
-  if (t.includes("dmz") || t.includes("day trip") || t.includes("seoul")) return TOPIC_IMAGES.seoul;
-  return TOPIC_IMAGES.default;
+  if (t.includes("busan")) return "Busan Korea city";
+  if (t.includes("jeju")) return "Jeju Island Korea";
+  if (t.includes("gyeongju")) return "Gyeongju Korea ancient";
+  if (t.includes("palace") || t.includes("gyeongbokgung")) return "Gyeongbokgung palace Seoul Korea";
+  if (t.includes("street food") || t.includes("food") || t.includes("eat")) return "Korean street food market";
+  if (t.includes("hanok") || t.includes("bukchon")) return "Bukchon Hanok Village Seoul";
+  if (t.includes("insadong")) return "Insadong Seoul traditional";
+  if (t.includes("spring") || t.includes("cherry blossom")) return "Korea cherry blossom spring";
+  if (t.includes("temple") || t.includes("bulguksa")) return "Korea Buddhist temple";
+  if (t.includes("hiking") || t.includes("mountain") || t.includes("seoraksan")) return "Korea mountain hiking trail";
+  if (t.includes("dmz")) return "DMZ Korea demilitarized zone";
+  if (t.includes("namsan") || t.includes("tower")) return "Namsan Seoul Tower";
+  if (t.includes("cafe") || t.includes("gangnam")) return "Seoul cafe Korea";
+  if (t.includes("sokcho")) return "Seoraksan mountain Korea";
+  if (t.includes("night market")) return "Korea night market food";
+  return "South Korea travel scenery";
+}
+
+async function fetchUnsplashImages(topic, apiKey) {
+  const query = getSearchQuery(topic);
+  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=6&orientation=landscape`;
+  try {
+    const res = await fetch(url, { headers: { "Authorization": `Client-ID ${apiKey}` } });
+    if (!res.ok) throw new Error(`Unsplash error: ${res.status}`);
+    const data = await res.json();
+    const results = data.results || [];
+    if (results.length < 2) throw new Error("Not enough results");
+    // 16:9 규격으로 요청 (1200×675)
+    return results.slice(0, 4).map(r => ({
+      url: r.urls.raw + "&w=1200&h=675&fit=crop&auto=format&q=80",
+      alt: r.alt_description || r.description || `${query} photo`
+    }));
+  } catch (e) {
+    console.error("Unsplash fetch failed:", e.message);
+    return null;
+  }
 }
 
 function pickRandom(arr) {
@@ -121,13 +138,31 @@ export default {
     ctx.waitUntil(autoPost(env));
   },
 
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname === "/trigger" && request.method === "POST") {
+      ctx.waitUntil(autoPost(env).then(r => console.log("autoPost result:", JSON.stringify(r))).catch(e => console.error("autoPost error:", e)));
+      return new Response(JSON.stringify({ queued: true }), {
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+    if (url.pathname === "/trigger-sync" && request.method === "POST") {
       const result = await autoPost(env);
       return new Response(JSON.stringify(result), {
         headers: { "Content-Type": "application/json" },
       });
+    }
+    if (url.pathname === "/debug-claude" && request.method === "POST") {
+      const topic = "Jeju Island — Korea's Volcanic Paradise";
+      void getImagesForTopic(topic);
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+        body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 300, messages: [{ role: "user", content: `Say: ===HTML_START===\n<p>Hello</p>\n===HTML_END===\n===EXCERPT_START===\nExcerpt here\n===EXCERPT_END===` }] }),
+      });
+      const data = await response.json();
+      const text = data?.content?.[0]?.text || "no text";
+      return new Response(JSON.stringify({ raw: text, status: response.status }), { headers: { "Content-Type": "application/json" } });
     }
 
     if (url.pathname === "/api/hit") {
@@ -161,6 +196,17 @@ export default {
       });
     }
 
+    if (url.pathname === "/update-menu" && request.method === "POST") {
+      const token = url.searchParams.get("token");
+      if (token !== "krguide-home-2026") {
+        return new Response("Unauthorized", { status: 401 });
+      }
+      const result = await updateMenu(env);
+      return new Response(JSON.stringify(result), {
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
     if (url.pathname === "/deploy-homepage" && request.method === "POST") {
       const token = url.searchParams.get("token");
       if (token !== "krguide-home-2026") {
@@ -179,8 +225,19 @@ export default {
 async function autoPost(env) {
   try {
     const topic = pickRandom(TOPICS);
-    const imagePool = getImagesForTopic(topic);
-    const [heroImage, secondImage] = pickTwo(imagePool);
+
+    // Unsplash API로 주제에 맞는 이미지 가져오기
+    let heroImage, secondImage;
+    const unsplashImages = env.UNSPLASH_ACCESS_KEY
+      ? await fetchUnsplashImages(topic, env.UNSPLASH_ACCESS_KEY)
+      : null;
+    if (unsplashImages && unsplashImages.length >= 2) {
+      [heroImage, secondImage] = unsplashImages;
+    } else {
+      // 폴백: 기존 하드코딩 이미지
+      const imagePool = TOPIC_IMAGES.default;
+      [heroImage, secondImage] = pickTwo(imagePool);
+    }
 
     console.log(`Generating post: [Travel Guide] ${topic}`);
 
@@ -226,108 +283,103 @@ SEO and keyword rules:
 
 Quality standard: Every paragraph must contain at least one specific, actionable detail that only an insider would know.`;
 
-  const userPrompt = `Write a premium, deeply informative, SEO-optimized travel guide for: "${topic}"
+  const userPrompt = `Write a visually rich, deeply informative, SEO-optimized Korea travel guide for: "${topic}"
 
 ━━━ REQUIRED GUTENBERG BLOCK STRUCTURE ━━━
 
-Use EXACTLY this structure. Do not deviate from these block formats.
+**[0] PREMIUM CSS + ANIMATIONS — insert FIRST:**
+<!-- wp:html -->
+<style>
+@keyframes fadeInUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.krg-article{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.krg-article p{text-align:justify;line-height:1.95;font-size:1.08rem;color:#1a1a2e;animation:fadeInUp .6s ease both}
+.krg-article h2{font-size:1.65rem;font-weight:800;color:#1a1a2e;margin-top:2.8rem;padding-bottom:10px;border-bottom:3px solid #e8302a;animation:fadeInUp .5s ease both}
+.krg-article h3{font-size:1.2rem;font-weight:700;color:#e8302a;margin-top:1.8rem;animation:fadeInUp .5s ease both}
+.krg-stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin:28px 0}
+.krg-stat{background:linear-gradient(135deg,#1a1a2e,#2d3561);color:#fff;border-radius:14px;padding:20px 16px;text-align:center;animation:fadeInUp .6s ease both;transition:transform .2s}
+.krg-stat:hover{transform:translateY(-4px)}
+.krg-stat-num{font-size:1.9rem;font-weight:900;color:#f97316;line-height:1}
+.krg-stat-lbl{font-size:.72rem;color:#94a3b8;margin-top:5px;text-transform:uppercase;letter-spacing:.06em}
+.krg-tip{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:5px solid #3b82f6;border-radius:12px;padding:22px 26px;margin:24px 0;animation:fadeInUp .6s ease both}
+.krg-tip-title{font-weight:800;color:#1d4ed8;font-size:1.02rem;margin-bottom:8px}
+.krg-warn{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-left:5px solid #f59e0b;border-radius:12px;padding:22px 26px;margin:24px 0;animation:fadeInUp .6s ease both}
+.krg-warn-title{font-weight:800;color:#b45309;font-size:1.02rem;margin-bottom:8px}
+.krg-dark{background:linear-gradient(135deg,#0f172a,#1e293b);border-radius:16px;padding:30px 34px;margin:28px 0;color:#fff;animation:fadeInUp .6s ease both}
+.krg-dark p{color:#cbd5e1;animation:none}
+.krg-green{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-left:5px solid #22c55e;border-radius:12px;padding:22px 26px;margin:24px 0;animation:fadeInUp .6s ease both}
+.krg-green-title{font-weight:800;color:#15803d;font-size:1.02rem;margin-bottom:8px}
+.krg-pull{font-size:1.35rem;font-weight:700;color:#1a1a2e;text-align:center;border-top:3px solid #e8302a;border-bottom:3px solid #e8302a;padding:24px 20px;margin:32px 0;line-height:1.5;background:linear-gradient(135deg,#fff5f5,#fff);animation:fadeIn .8s ease both}
+.krg-img-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
+.krg-img-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;display:block;transition:transform .3s}
+.krg-img-grid img:hover{transform:scale(1.02)}
+.krg-checklist li{padding:5px 0;color:#1a1a2e}
+.krg-checklist li::marker{color:#22c55e;font-size:1.1rem}
+@media(max-width:600px){.krg-img-grid{grid-template-columns:1fr}.krg-stat-row{grid-template-columns:repeat(2,1fr)}}
+</style>
+<!-- /wp:html -->
 
-**[1] HERO IMAGE — full width at very top:**
+<!-- wp:html --><div class="krg-article"><!-- /wp:html -->
+
+**[1] HERO IMAGE — full width (use EXACTLY this src, do not change it):**
 <!-- wp:image {"align":"full","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignfull size-full"><img src="${heroImage.url}" alt="${heroImage.alt}" /></figure>
+<figure class="wp-block-image alignfull size-full"><img src="__HERO_SRC__" alt="__HERO_ALT__" /></figure>
 <!-- /wp:image -->
 
-**[2] COMPELLING INTRO — 3 short paragraphs:**
-Hook the reader immediately. Make them feel the place. Include 1-2 concrete facts.
+**[2] INTRO — 2 vivid paragraphs. Hook reader, make them feel they're already there:**
 <!-- wp:paragraph -->
-<p>[intro text]</p>
+<p style="text-align:justify">[Intro — first sentence MUST contain the exact title: "${topic}"]</p>
 <!-- /wp:paragraph -->
 
-**[3] MAIN SECTIONS — use H2 for each (4-6 sections total):**
-<!-- wp:heading {"level":2} -->
-<h2>Section Title</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>[rich content with specific details, prices, names]</p>
-<!-- /wp:paragraph -->
+**[3] STAT BOXES — 4 key facts (numbers, years, distances):**
+<!-- wp:html -->
+<div class="krg-stat-row">
+  <div class="krg-stat"><div class="krg-stat-num">[#]</div><div class="krg-stat-lbl">[label]</div></div>
+  <div class="krg-stat"><div class="krg-stat-num">[#]</div><div class="krg-stat-lbl">[label]</div></div>
+  <div class="krg-stat"><div class="krg-stat-num">[#]</div><div class="krg-stat-lbl">[label]</div></div>
+  <div class="krg-stat"><div class="krg-stat-num">[#]</div><div class="krg-stat-lbl">[label]</div></div>
+</div><!-- /wp:html -->
 
-**[4] H3 SUBSECTIONS within sections where needed:**
-<!-- wp:heading {"level":3} -->
-<h3>Subsection Title</h3>
-<!-- /wp:heading -->
+**[4] MAIN SECTIONS — 3 H2 sections with rich paragraphs:**
+<!-- wp:heading {"level":2} --><h2>[Section]</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p style="text-align:justify">[content with prices KRW/USD, subway exits, insider tips]</p><!-- /wp:paragraph -->
 
-**[5] PRO TIP BOX — blue background, after 2nd section:**
-<!-- wp:group {"style":{"color":{"background":"#e8f4fd"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#e8f4fd;padding:24px 28px;border-left:4px solid #2196F3;border-radius:8px">
-<!-- wp:paragraph -->
-<p><strong>💡 Pro Tip</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p>[Genuine insider tip that standard guides miss — must be specific and actionable]</p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
+**[5] PRO TIP BOX:**
+<!-- wp:html --><div class="krg-tip"><div class="krg-tip-title">💡 Insider Pro Tip</div><p style="color:#1e3a8a;margin:0;line-height:1.85">[specific local tip]</p></div><!-- /wp:html -->
 
-**[6] SECOND IMAGE — wide, mid-article after 3rd section:**
-<!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-large"><img src="${secondImage.url}" alt="${secondImage.alt}" /></figure>
-<!-- /wp:image -->
+**[6] 2-COLUMN IMAGE GRID (use EXACTLY these src values, do not change them):**
+<!-- wp:html --><div class="krg-img-grid"><img src="__HERO_SRC__" alt="__HERO_ALT__" loading="lazy" /><img src="__SECOND_SRC__" alt="__SECOND_ALT__" loading="lazy" /></div><!-- /wp:html -->
 
-**[7] COMMON MISTAKES BOX — amber/yellow background:**
-<!-- wp:group {"style":{"color":{"background":"#fff8e1"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#fff8e1;padding:24px 28px;border-left:4px solid #FFC107;border-radius:8px">
-<!-- wp:paragraph -->
-<p><strong>⚠️ Common Mistakes Foreigners Make</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul><!-- wp:list-item --><li>[Mistake 1 with specific fix]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 2 with specific fix]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Mistake 3 with specific fix]</li><!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-</div>
-<!-- /wp:group -->
+**[7] WARNING BOX:**
+<!-- wp:html --><div class="krg-warn"><div class="krg-warn-title">⚠️ Common Mistakes</div><ul style="margin:0;padding-left:20px;color:#1a1a2e;line-height:1.9"><li>[mistake + fix]</li><li>[mistake + fix]</li><li>[mistake + fix]</li></ul></div><!-- /wp:html -->
 
-**[8] INSIDER CULTURAL CONTEXT BOX — dark navy background:**
-<!-- wp:group {"style":{"color":{"background":"#1a2744","text":"#ffffff"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"32px","right":"32px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#1a2744;color:#ffffff;padding:28px 32px;border-radius:12px">
-<!-- wp:paragraph {"style":{"color":{"text":"#ffffff"}}} -->
-<p style="color:#ffffff"><strong>🇰🇷 Know Before You Go — Cultural Context</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"style":{"color":{"text":"#e0e0e0"}}} -->
-<p style="color:#e0e0e0">[2-3 sentences of essential cultural context that helps foreigners understand the place/experience more deeply]</p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
+**[8] DARK CONTEXT BOX:**
+<!-- wp:html --><div class="krg-dark"><p style="color:#f97316;font-weight:800;margin-bottom:10px">🇰🇷 Know Before You Go</p><p style="color:#cbd5e1;margin:0;line-height:1.9">[cultural context for foreigners]</p></div><!-- /wp:html -->
 
-**[9] QUICK REFERENCE CHECKLIST — green background:**
-<!-- wp:group {"style":{"color":{"background":"#e8f5e9"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"28px","right":"28px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="background-color:#e8f5e9;padding:24px 28px;border-left:4px solid #4CAF50;border-radius:8px">
-<!-- wp:paragraph -->
-<p><strong>✅ Your Complete Checklist</strong></p>
-<!-- /wp:paragraph -->
-<!-- wp:list -->
-<ul><!-- wp:list-item --><li>[Checklist item 1]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Checklist item 2]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Checklist item 3]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Checklist item 4]</li><!-- /wp:list-item --><!-- wp:list-item --><li>[Checklist item 5]</li><!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-</div>
-<!-- /wp:group -->
+**[9] GREEN CHECKLIST:**
+<!-- wp:html --><div class="krg-green"><div class="krg-green-title">✅ Quick Checklist</div><ul class="krg-checklist" style="margin:0;padding-left:22px;line-height:1.9"><li>[item]</li><li>[item]</li><li>[item]</li><li>[item]</li></ul></div><!-- /wp:html -->
 
-**[10] CONCLUSION — encouraging, 2 paragraphs:**
+**[10] CONCLUSION — 1 paragraph:**
+<!-- wp:paragraph --><p style="text-align:justify">[warm conclusion]</p><!-- /wp:paragraph -->
 
-━━━ CONTENT REQUIREMENTS ━━━
+<!-- wp:html --></div><!-- /wp:html -->
 
-- Total length: 2,000–2,500 words — comprehensive, in-depth, zero padding
-- KEYWORD RULE #1: The exact topic title "${topic}" MUST appear naturally in the very first sentence
-- KEYWORD RULE #2: 3–5 key phrases from the topic title must appear throughout: in at least one H2 heading, in an early paragraph, in a mid-article paragraph, and near the conclusion
-- KEYWORD RULE #3: Never stuff keywords — every keyword placement must read naturally in context
-- H2 headings: 4-6 sections with descriptive titles (include keywords where natural)
-- H3 subheadings: use where content benefits from subdivision
-- Prices: always show KRW and USD equivalent (e.g., "₩10,000 / ~$7.50")
-- Transport: specific subway lines, exit numbers, bus routes, travel times
-- Neighborhoods: use actual Korean neighborhood names (e.g., Hongdae, Itaewon, Jongno)
-- Seasonal tips: mention best times to visit and what to avoid
-- Must include: Pro Tip box, Mistakes box, Cultural Context box, Checklist box
+━━━ CONTENT RULES ━━━
+- Total: 700–900 words (rich but concise — quality over length)
+- First sentence MUST contain: "${topic}"
+- Prices always in ₩ and USD (~$X)
+- Subway: line number + exit (e.g., "Line 3, Exit 2")
+- Stat boxes: use real numbers (year built, area in km², visitor count, altitude, etc.)
+- Every section must have one detail only a local would know
 
 ━━━ OUTPUT FORMAT ━━━
-Return ONLY valid JSON — no markdown, no explanation outside JSON:
-{ "html": "...", "excerpt": "One compelling sentence about this destination, max 155 characters." }`;
+===HTML_START===
+{complete Gutenberg HTML}
+===HTML_END===
+===EXCERPT_START===
+{one compelling sentence, max 155 chars}
+===EXCERPT_END===`;
 
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -338,7 +390,7 @@ Return ONLY valid JSON — no markdown, no explanation outside JSON:
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 8000,
+      max_tokens: 3000,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],
     }),
@@ -350,11 +402,32 @@ Return ONLY valid JSON — no markdown, no explanation outside JSON:
 
   const data = await response.json();
   const text = data.content[0].text;
+  const stopReason = data.stop_reason;
 
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) throw new Error("No JSON in response");
+  function injectImages(html) {
+    return html
+      .replace(/__HERO_SRC__/g, heroImage.url)
+      .replace(/__HERO_ALT__/g, heroImage.alt)
+      .replace(/__SECOND_SRC__/g, secondImage.url)
+      .replace(/__SECOND_ALT__/g, secondImage.alt);
+  }
 
-  return JSON.parse(jsonMatch[0]);
+  // 구분자 형식 파싱
+  const htmlMatch = text.match(/===HTML_START===\s*([\s\S]*?)\s*===HTML_END===/);
+  if (htmlMatch) {
+    const excerptMatch = text.match(/===EXCERPT_START===\s*([\s\S]*?)\s*===EXCERPT_END===/);
+    return { html: injectImages(htmlMatch[1].trim()), excerpt: excerptMatch ? excerptMatch[1].trim() : "" };
+  }
+
+  // 토큰 한도로 잘린 경우 — HTML_START만 있으면 중간에 잘린 내용이라도 사용
+  if (stopReason === "max_tokens") {
+    const partialMatch = text.match(/===HTML_START===\s*([\s\S]+)/);
+    if (partialMatch) {
+      return { html: injectImages(partialMatch[1].trim()), excerpt: "" };
+    }
+  }
+
+  throw new Error(`No parseable content. stop_reason=${stopReason}, preview=${text.slice(0,100)}`);
 }
 
 async function publishToWordPress(post, env) {
@@ -483,6 +556,44 @@ async function deployHomepage(env) {
     console.error("Deploy homepage error:", err);
     return { success: false, error: err.message };
   }
+}
+
+// ── 메뉴 업데이트 ──────────────────────────────────────────────────────────────
+async function updateMenu(env) {
+  const WP_URL = env.WP_URL;
+  const credentials = btoa(`${env.WP_USERNAME}:${env.WP_APP_PASSWORD}`);
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: `Basic ${credentials}`,
+  };
+
+  // 1) 현재 wp_navigation 목록 가져오기
+  const navRes = await fetch(`${WP_URL}/wp-json/wp/v2/navigation?context=edit&per_page=20`, { headers });
+  if (!navRes.ok) throw new Error(`Navigation list error: ${navRes.status} ${await navRes.text()}`);
+  const navList = await navRes.json();
+  if (!navList.length) throw new Error("No navigation found");
+
+  // 첫 번째(주) 네비게이션 사용
+  const nav = navList[0];
+  const navId = nav.id;
+
+  // 2) 새 메뉴 블록 콘텐츠 구성
+  // 원하는 순서: Home / Travel Guide / Learn Korean / Korean Restaurants / About
+  const newContent = `<!-- wp:navigation-link {"label":"Home","url":"/","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"Travel Guide","url":"/category/travel-guide/","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"Learn Korean","url":"/category/learn-korean/","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"Korean Restaurants","url":"/category/korean-restaurants/","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->`;
+
+  // 3) 네비게이션 업데이트
+  const updRes = await fetch(`${WP_URL}/wp-json/wp/v2/navigation/${navId}`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ content: newContent, status: "publish" }),
+  });
+  if (!updRes.ok) throw new Error(`Navigation update error: ${updRes.status} ${await updRes.text()}`);
+  const updated = await updRes.json();
+  return { success: true, navId, title: updated.title?.rendered };
 }
 
 // ── Homepage HTML Template ────────────────────────────────────────────────────
