@@ -799,6 +799,44 @@
     .chapter-body { padding: 32px; }
     .philosophy-grid { grid-template-columns: 1fr; }
   }
+
+  /* ── VOCAB TABLE ── */
+  .vocab-table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .vocab-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    gap: 16px;
+  }
+  .vocab-header.three-col {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .vocab-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 9px 16px;
+    gap: 16px;
+    border-top: 1px solid var(--border);
+    align-items: center;
+  }
+  .vocab-row.three-col {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .vocab-row:nth-child(odd) { background: #f8fafc; }
+  .vocab-row:nth-child(even) { background: #fff; }
+  .vocab-row span:first-child { color: var(--blue); }
 </style>
 </head>
 <body>
@@ -7369,19 +7407,19 @@
     <h3 class="kr">"우리"가 담긴 핵심 표현들</h3>
 
     <div class="vocab-table">
-      <div class="vocab-header">
+      <div class="vocab-header three-col">
         <span>한국어</span><span>직역 (Literal)</span><span>실제 의미 (Real Meaning)</span>
       </div>
-      <div class="vocab-row"><span><strong>우리나라</strong> uri-na-ra</span><span>our country</span><span>Korea (used by Koreans to refer to their own nation)</span></div>
-      <div class="vocab-row"><span><strong>우리 엄마</strong> uri eomma</span><span>our mom</span><span>my mom</span></div>
-      <div class="vocab-row"><span><strong>우리 아빠</strong> uri appa</span><span>our dad</span><span>my dad</span></div>
-      <div class="vocab-row"><span><strong>우리 집</strong> uri jip</span><span>our house</span><span>my home / my place</span></div>
-      <div class="vocab-row"><span><strong>우리 학교</strong> uri hak-gyo</span><span>our school</span><span>my school</span></div>
-      <div class="vocab-row"><span><strong>우리 회사</strong> uri hoe-sa</span><span>our company</span><span>my company / where I work</span></div>
-      <div class="vocab-row"><span><strong>우리 남편</strong> uri nam-pyeon</span><span>our husband</span><span>my husband</span></div>
-      <div class="vocab-row"><span><strong>우리 팀</strong> uri tim</span><span>our team</span><span>my team</span></div>
-      <div class="vocab-row"><span><strong>우리끼리</strong> uri-kki-ri</span><span>just among us</span><span>between us / privately</span></div>
-      <div class="vocab-row"><span><strong>우리 사이</strong> uri sa-i</span><span>our relationship</span><span>the bond between us</span></div>
+      <div class="vocab-row three-col"><span><strong>우리나라</strong> uri-na-ra</span><span>our country</span><span>Korea (used by Koreans to refer to their own nation)</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 엄마</strong> uri eomma</span><span>our mom</span><span>my mom</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 아빠</strong> uri appa</span><span>our dad</span><span>my dad</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 집</strong> uri jip</span><span>our house</span><span>my home / my place</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 학교</strong> uri hak-gyo</span><span>our school</span><span>my school</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 회사</strong> uri hoe-sa</span><span>our company</span><span>my company / where I work</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 남편</strong> uri nam-pyeon</span><span>our husband</span><span>my husband</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 팀</strong> uri tim</span><span>our team</span><span>my team</span></div>
+      <div class="vocab-row three-col"><span><strong>우리끼리</strong> uri-kki-ri</span><span>just among us</span><span>between us / privately</span></div>
+      <div class="vocab-row three-col"><span><strong>우리 사이</strong> uri sa-i</span><span>our relationship</span><span>the bond between us</span></div>
     </div>
 
     <div class="culture-note">
@@ -7487,7 +7525,7 @@
       <div class="example-title">정 in Sentences</div>
       <div class="dialogue">
         <div class="line"><span class="speaker">A:</span> <span class="korean">그 사람이랑 많이 싸웠는데 왜 헤어지기가 싫지?</span></div>
-        <div class="line"><span class="speaker">A:</span> <span class="romanization">Geu sa-ra-mi-rang ma-ni ssa-wo-nneunde wae he-eo-ji-gi ga si-reo-ji?</span></div>
+        <div class="line"><span class="speaker">A:</span> <span class="romanization">Geu sa-ra-mi-rang ma-ni ssa-won-neun-de wae he-eo-ji-gi-ga sil-chi?</span></div>
         <div class="line"><span class="translation">"We fought a lot, so why do I hate saying goodbye?"</span></div>
         <div class="line"><span class="speaker">B:</span> <span class="korean">정이 들었잖아.</span></div>
         <div class="line"><span class="speaker">B:</span> <span class="romanization">Jeong-i deu-reot-ja-na.</span></div>
@@ -7687,13 +7725,13 @@
     <p class="kr">가장 흔한 경우입니다. 내가 행동의 주체이고 문맥이 명확할 때, 그냥 나/저를 생략합니다.</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>생략 전 (Unnatural)</span><span>생략 후 (Natural)</span><span>뜻</span></div>
-      <div class="vocab-row"><span>나는 지금 바빠.</span><span><strong>지금 바빠.</strong></span><span>I'm busy right now.</span></div>
-      <div class="vocab-row"><span>나는 한국어 공부해.</span><span><strong>한국어 공부해.</strong></span><span>I'm studying Korean.</span></div>
-      <div class="vocab-row"><span>나는 이거 싫어.</span><span><strong>이거 싫어.</strong></span><span>I don't like this.</span></div>
-      <div class="vocab-row"><span>저는 괜찮아요.</span><span><strong>괜찮아요.</strong></span><span>I'm fine.</span></div>
-      <div class="vocab-row"><span>나는 몰랐어.</span><span><strong>몰랐어.</strong></span><span>I didn't know.</span></div>
-      <div class="vocab-row"><span>나는 갈게.</span><span><strong>갈게.</strong></span><span>I'll go.</span></div>
+      <div class="vocab-header three-col"><span>생략 전 (Unnatural)</span><span>생략 후 (Natural)</span><span>뜻</span></div>
+      <div class="vocab-row three-col"><span>나는 지금 바빠.</span><span><strong>지금 바빠.</strong></span><span>I'm busy right now.</span></div>
+      <div class="vocab-row three-col"><span>나는 한국어 공부해.</span><span><strong>한국어 공부해.</strong></span><span>I'm studying Korean.</span></div>
+      <div class="vocab-row three-col"><span>나는 이거 싫어.</span><span><strong>이거 싫어.</strong></span><span>I don't like this.</span></div>
+      <div class="vocab-row three-col"><span>저는 괜찮아요.</span><span><strong>괜찮아요.</strong></span><span>I'm fine.</span></div>
+      <div class="vocab-row three-col"><span>나는 몰랐어.</span><span><strong>몰랐어.</strong></span><span>I didn't know.</span></div>
+      <div class="vocab-row three-col"><span>나는 갈게.</span><span><strong>갈게.</strong></span><span>I'll go.</span></div>
     </div>
 
     <h3 style="color:#e67e22;">② "너/당신" 생략 — Dropping "You"</h3>
@@ -7701,13 +7739,13 @@
     <p class="kr">상대방에게 하는 질문이나 명령에는 거의 "너" 또는 "당신"을 포함하지 않습니다.</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>생략 전 (Stiff)</span><span>생략 후 (Natural)</span><span>뜻</span></div>
-      <div class="vocab-row"><span>너는 밥 먹었어?</span><span><strong>밥 먹었어?</strong></span><span>Did you eat?</span></div>
-      <div class="vocab-row"><span>당신은 어디 가요?</span><span><strong>어디 가요?</strong></span><span>Where are you going?</span></div>
-      <div class="vocab-row"><span>너는 뭐 해?</span><span><strong>뭐 해?</strong></span><span>What are you doing?</span></div>
-      <div class="vocab-row"><span>너는 이름이 뭐야?</span><span><strong>이름이 뭐야?</strong></span><span>What's your name?</span></div>
-      <div class="vocab-row"><span>너는 괜찮아?</span><span><strong>괜찮아?</strong></span><span>Are you okay?</span></div>
-      <div class="vocab-row"><span>너는 여기 앉아.</span><span><strong>여기 앉아.</strong></span><span>Sit here.</span></div>
+      <div class="vocab-header three-col"><span>생략 전 (Stiff)</span><span>생략 후 (Natural)</span><span>뜻</span></div>
+      <div class="vocab-row three-col"><span>너는 밥 먹었어?</span><span><strong>밥 먹었어?</strong></span><span>Did you eat?</span></div>
+      <div class="vocab-row three-col"><span>당신은 어디 가요?</span><span><strong>어디 가요?</strong></span><span>Where are you going?</span></div>
+      <div class="vocab-row three-col"><span>너는 뭐 해?</span><span><strong>뭐 해?</strong></span><span>What are you doing?</span></div>
+      <div class="vocab-row three-col"><span>너는 이름이 뭐야?</span><span><strong>이름이 뭐야?</strong></span><span>What's your name?</span></div>
+      <div class="vocab-row three-col"><span>너는 괜찮아?</span><span><strong>괜찮아?</strong></span><span>Are you okay?</span></div>
+      <div class="vocab-row three-col"><span>너는 여기 앉아.</span><span><strong>여기 앉아.</strong></span><span>Sit here.</span></div>
     </div>
 
     <div class="culture-note">
@@ -7798,11 +7836,11 @@
     <p class="kr">주어를 <em>써야</em> 할 때, 격식에 따라 두 가지 선택이 있습니다:</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>단어</span><span>사용 상황</span><span>예문</span></div>
-      <div class="vocab-row"><span><strong>나 (na)</strong></span><span>informal — friends, younger people, close relationships</span><span>나 배고파. (I'm hungry.)</span></div>
-      <div class="vocab-row"><span><strong>저 (jeo)</strong></span><span>formal — elders, strangers, professional settings</span><span>저 학생이에요. (I'm a student.)</span></div>
-      <div class="vocab-row"><span><strong>나는 / 내가</strong></span><span>나 + topic marker / subject marker (informal)</span><span>나는 몰라. / 내가 할게.</span></div>
-      <div class="vocab-row"><span><strong>저는 / 제가</strong></span><span>저 + topic marker / subject marker (formal)</span><span>저는 한국인이에요. / 제가 했어요.</span></div>
+      <div class="vocab-header three-col"><span>단어</span><span>사용 상황</span><span>예문</span></div>
+      <div class="vocab-row three-col"><span><strong>나 (na)</strong></span><span>informal — friends, younger people, close relationships</span><span>나 배고파. (I'm hungry.)</span></div>
+      <div class="vocab-row three-col"><span><strong>저 (jeo)</strong></span><span>formal — elders, strangers, professional settings</span><span>저 학생이에요. (I'm a student.)</span></div>
+      <div class="vocab-row three-col"><span><strong>나는 / 내가</strong></span><span>나 + topic marker / subject marker (informal)</span><span>나는 몰라. / 내가 할게.</span></div>
+      <div class="vocab-row three-col"><span><strong>저는 / 제가</strong></span><span>저 + topic marker / subject marker (formal)</span><span>저는 한국인이에요. / 제가 했어요.</span></div>
     </div>
 
     <div class="culture-note">
@@ -7981,18 +8019,18 @@
 
     <div class="vocab-table">
       <div class="vocab-header"><span>한자어</span><span>한자 분해</span><span>글자별 의미</span><span>전체 뜻</span></div>
-      <div class="vocab-row"><span><strong>학교 (學校)</strong></span><span>學 + 校</span><span>배울 학 + 학교 교</span><span>school</span></div>
-      <div class="vocab-row"><span><strong>전화 (電話)</strong></span><span>電 + 話</span><span>번개 전(電氣) + 말 화</span><span>telephone (electric talk)</span></div>
-      <div class="vocab-row"><span><strong>도서관 (圖書館)</strong></span><span>圖 + 書 + 館</span><span>그림 도 + 글 서 + 건물 관</span><span>library (picture·book·hall)</span></div>
-      <div class="vocab-row"><span><strong>의사 (醫師)</strong></span><span>醫 + 師</span><span>의술 의 + 스승 사</span><span>doctor (medicine master)</span></div>
-      <div class="vocab-row"><span><strong>음악 (音樂)</strong></span><span>音 + 樂</span><span>소리 음 + 즐길 락</span><span>music (sound·joy)</span></div>
-      <div class="vocab-row"><span><strong>경제 (經濟)</strong></span><span>經 + 濟</span><span>다스릴 경 + 건널 제</span><span>economy (manage·cross)</span></div>
-      <div class="vocab-row"><span><strong>문화 (文化)</strong></span><span>文 + 化</span><span>글 문 + 될 화</span><span>culture (writing·become)</span></div>
-      <div class="vocab-row"><span><strong>사회 (社會)</strong></span><span>社 + 會</span><span>모일 사 + 모일 회</span><span>society (gathering·gathering)</span></div>
-      <div class="vocab-row"><span><strong>철학 (哲學)</strong></span><span>哲 + 學</span><span>밝을 철 + 배울 학</span><span>philosophy (wisdom·learning)</span></div>
-      <div class="vocab-row"><span><strong>국제 (國際)</strong></span><span>國 + 際</span><span>나라 국 + 사이 제</span><span>international (nation·between)</span></div>
-      <div class="vocab-row"><span><strong>대학 (大學)</strong></span><span>大 + 學</span><span>클 대 + 배울 학</span><span>university (great learning)</span></div>
-      <div class="vocab-row"><span><strong>병원 (病院)</strong></span><span>病 + 院</span><span>병 병 + 집 원</span><span>hospital (illness house)</span></div>
+      <div class="vocab-row three-col"><span><strong>학교 (學校)</strong></span><span>學 + 校</span><span>배울 학 + 학교 교</span><span>school</span></div>
+      <div class="vocab-row three-col"><span><strong>전화 (電話)</strong></span><span>電 + 話</span><span>번개 전(電氣) + 말 화</span><span>telephone (electric talk)</span></div>
+      <div class="vocab-row three-col"><span><strong>도서관 (圖書館)</strong></span><span>圖 + 書 + 館</span><span>그림 도 + 글 서 + 건물 관</span><span>library (picture·book·hall)</span></div>
+      <div class="vocab-row three-col"><span><strong>의사 (醫師)</strong></span><span>醫 + 師</span><span>의술 의 + 스승 사</span><span>doctor (medicine master)</span></div>
+      <div class="vocab-row three-col"><span><strong>음악 (音樂)</strong></span><span>音 + 樂</span><span>소리 음 + 즐길 락</span><span>music (sound·joy)</span></div>
+      <div class="vocab-row three-col"><span><strong>경제 (經濟)</strong></span><span>經 + 濟</span><span>다스릴 경 + 건널 제</span><span>economy (manage·cross)</span></div>
+      <div class="vocab-row three-col"><span><strong>문화 (文化)</strong></span><span>文 + 化</span><span>글 문 + 될 화</span><span>culture (writing·become)</span></div>
+      <div class="vocab-row three-col"><span><strong>사회 (社會)</strong></span><span>社 + 會</span><span>모일 사 + 모일 회</span><span>society (gathering·gathering)</span></div>
+      <div class="vocab-row three-col"><span><strong>철학 (哲學)</strong></span><span>哲 + 學</span><span>밝을 철 + 배울 학</span><span>philosophy (wisdom·learning)</span></div>
+      <div class="vocab-row three-col"><span><strong>국제 (國際)</strong></span><span>國 + 際</span><span>나라 국 + 사이 제</span><span>international (nation·between)</span></div>
+      <div class="vocab-row three-col"><span><strong>대학 (大學)</strong></span><span>大 + 學</span><span>클 대 + 배울 학</span><span>university (great learning)</span></div>
+      <div class="vocab-row three-col"><span><strong>병원 (病院)</strong></span><span>病 + 院</span><span>병 병 + 집 원</span><span>hospital (illness house)</span></div>
     </div>
 
     <h3>꼭 알아야 할 한자 50자 — 50 Must-Know Hanja Characters</h3>
@@ -8002,37 +8040,37 @@
     <p class="kr">한자를 쓸 줄 몰라도 됩니다. 이 50가지 구성 요소를 인식하는 것만으로도 수백 개의 어휘를 해독하는 데 도움이 됩니다.</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>한자</span><span>훈·음</span><span>한국어 예시 (2개 이상)</span></div>
-      <div class="vocab-row"><span><strong>學 학</strong></span><span>배울 학</span><span>학교(學校) · 학생(學生) · 학원(學院) · 대학(大學)</span></div>
-      <div class="vocab-row"><span><strong>校 교</strong></span><span>학교 교</span><span>학교(學校) · 교장(校長) · 교실(敎室)</span></div>
-      <div class="vocab-row"><span><strong>國 국</strong></span><span>나라 국</span><span>한국(韓國) · 국제(國際) · 국민(國民) · 외국(外國)</span></div>
-      <div class="vocab-row"><span><strong>語 어</strong></span><span>말씀 어</span><span>한국어(韓國語) · 영어(英語) · 언어(言語)</span></div>
-      <div class="vocab-row"><span><strong>人 인</strong></span><span>사람 인</span><span>한국인(韓國人) · 외국인(外國人) · 인간(人間)</span></div>
-      <div class="vocab-row"><span><strong>大 대</strong></span><span>클 대</span><span>대학(大學) · 대통령(大統領) · 대한민국(大韓民國)</span></div>
-      <div class="vocab-row"><span><strong>小 소</strong></span><span>작을 소</span><span>초등학교(初等學校) · 소설(小說) · 소수(小數)</span></div>
-      <div class="vocab-row"><span><strong>中 중</strong></span><span>가운데 중</span><span>중학교(中學校) · 중국(中國) · 중심(中心)</span></div>
-      <div class="vocab-row"><span><strong>高 고</strong></span><span>높을 고</span><span>고등학교(高等學校) · 고속(高速) · 고온(高溫)</span></div>
-      <div class="vocab-row"><span><strong>先 선</strong></span><span>먼저 선</span><span>선생(先生) · 선배(先輩) · 우선(優先)</span></div>
-      <div class="vocab-row"><span><strong>生 생</strong></span><span>날 생 / 살 생</span><span>학생(學生) · 선생(先生) · 생일(生日) · 생활(生活)</span></div>
-      <div class="vocab-row"><span><strong>日 일</strong></span><span>날 일 / 해 일</span><span>생일(生日) · 일본(日本) · 일요일(日曜日)</span></div>
-      <div class="vocab-row"><span><strong>月 월</strong></span><span>달 월</span><span>월요일(月曜日) · 월급(月給) · 세월(歲月)</span></div>
-      <div class="vocab-row"><span><strong>年 년/연</strong></span><span>해 년</span><span>년도(年度) · 작년(昨年) · 내년(來年) · 청년(靑年)</span></div>
-      <div class="vocab-row"><span><strong>水 수</strong></span><span>물 수</span><span>수영(水泳) · 수도(水道) · 홍수(洪水)</span></div>
-      <div class="vocab-row"><span><strong>火 화</strong></span><span>불 화</span><span>화요일(火曜日) · 화재(火災) · 화산(火山)</span></div>
-      <div class="vocab-row"><span><strong>山 산</strong></span><span>뫼 산</span><span>산(山) · 산업(産業) · 부산(釜山)</span></div>
-      <div class="vocab-row"><span><strong>心 심</strong></span><span>마음 심</span><span>심리(心理) · 관심(關心) · 중심(中心)</span></div>
-      <div class="vocab-row"><span><strong>力 력/역</strong></span><span>힘 력</span><span>능력(能力) · 노력(努力) · 매력(魅力)</span></div>
-      <div class="vocab-row"><span><strong>文 문</strong></span><span>글 문</span><span>문화(文化) · 문법(文法) · 작문(作文) · 문서(文書)</span></div>
-      <div class="vocab-row"><span><strong>化 화</strong></span><span>될 화</span><span>문화(文化) · 변화(變化) · 현대화(現代化)</span></div>
-      <div class="vocab-row"><span><strong>時 시</strong></span><span>때 시</span><span>시간(時間) · 시대(時代) · 동시(同時)</span></div>
-      <div class="vocab-row"><span><strong>間 간</strong></span><span>사이 간</span><span>시간(時間) · 인간(人間) · 공간(空間)</span></div>
-      <div class="vocab-row"><span><strong>長 장</strong></span><span>길 장 / 어른 장</span><span>교장(校長) · 성장(成長) · 장점(長點)</span></div>
-      <div class="vocab-row"><span><strong>電 전</strong></span><span>번개 전</span><span>전화(電話) · 전기(電氣) · 전자(電子)</span></div>
-      <div class="vocab-row"><span><strong>話 화</strong></span><span>말씀 화</span><span>전화(電話) · 대화(對話) · 회화(會話)</span></div>
-      <div class="vocab-row"><span><strong>愛 애</strong></span><span>사랑 애</span><span>애인(愛人) · 사랑(← 순우리말!) · 애정(愛情)</span></div>
-      <div class="vocab-row"><span><strong>情 정</strong></span><span>뜻 정 / 정 정</span><span>감정(感情) · 우정(友情) · 애정(愛情)</span></div>
-      <div class="vocab-row"><span><strong>友 우</strong></span><span>벗 우</span><span>친구(親舊) · 우정(友情) · 우방(友邦)</span></div>
-      <div class="vocab-row"><span><strong>家 가</strong></span><span>집 가</span><span>가족(家族) · 국가(國家) · 작가(作家) · 가정(家庭)</span></div>
+      <div class="vocab-header three-col"><span>한자</span><span>훈·음</span><span>한국어 예시 (2개 이상)</span></div>
+      <div class="vocab-row three-col"><span><strong>學 학</strong></span><span>배울 학</span><span>학교(學校) · 학생(學生) · 학원(學院) · 대학(大學)</span></div>
+      <div class="vocab-row three-col"><span><strong>校 교</strong></span><span>학교 교</span><span>학교(學校) · 교장(校長) · 교실(敎室)</span></div>
+      <div class="vocab-row three-col"><span><strong>國 국</strong></span><span>나라 국</span><span>한국(韓國) · 국제(國際) · 국민(國民) · 외국(外國)</span></div>
+      <div class="vocab-row three-col"><span><strong>語 어</strong></span><span>말씀 어</span><span>한국어(韓國語) · 영어(英語) · 언어(言語)</span></div>
+      <div class="vocab-row three-col"><span><strong>人 인</strong></span><span>사람 인</span><span>한국인(韓國人) · 외국인(外國人) · 인간(人間)</span></div>
+      <div class="vocab-row three-col"><span><strong>大 대</strong></span><span>클 대</span><span>대학(大學) · 대통령(大統領) · 대한민국(大韓民國)</span></div>
+      <div class="vocab-row three-col"><span><strong>小 소</strong></span><span>작을 소</span><span>초등학교(初等學校) · 소설(小說) · 소수(小數)</span></div>
+      <div class="vocab-row three-col"><span><strong>中 중</strong></span><span>가운데 중</span><span>중학교(中學校) · 중국(中國) · 중심(中心)</span></div>
+      <div class="vocab-row three-col"><span><strong>高 고</strong></span><span>높을 고</span><span>고등학교(高等學校) · 고속(高速) · 고온(高溫)</span></div>
+      <div class="vocab-row three-col"><span><strong>先 선</strong></span><span>먼저 선</span><span>선생(先生) · 선배(先輩) · 우선(優先)</span></div>
+      <div class="vocab-row three-col"><span><strong>生 생</strong></span><span>날 생 / 살 생</span><span>학생(學生) · 선생(先生) · 생일(生日) · 생활(生活)</span></div>
+      <div class="vocab-row three-col"><span><strong>日 일</strong></span><span>날 일 / 해 일</span><span>생일(生日) · 일본(日本) · 일요일(日曜日)</span></div>
+      <div class="vocab-row three-col"><span><strong>月 월</strong></span><span>달 월</span><span>월요일(月曜日) · 월급(月給) · 세월(歲月)</span></div>
+      <div class="vocab-row three-col"><span><strong>年 년/연</strong></span><span>해 년</span><span>년도(年度) · 작년(昨年) · 내년(來年) · 청년(靑年)</span></div>
+      <div class="vocab-row three-col"><span><strong>水 수</strong></span><span>물 수</span><span>수영(水泳) · 수도(水道) · 홍수(洪水)</span></div>
+      <div class="vocab-row three-col"><span><strong>火 화</strong></span><span>불 화</span><span>화요일(火曜日) · 화재(火災) · 화산(火山)</span></div>
+      <div class="vocab-row three-col"><span><strong>山 산</strong></span><span>뫼 산</span><span>산(山) · 산업(産業) · 부산(釜山)</span></div>
+      <div class="vocab-row three-col"><span><strong>心 심</strong></span><span>마음 심</span><span>심리(心理) · 관심(關心) · 중심(中心)</span></div>
+      <div class="vocab-row three-col"><span><strong>力 력/역</strong></span><span>힘 력</span><span>능력(能力) · 노력(努力) · 매력(魅力)</span></div>
+      <div class="vocab-row three-col"><span><strong>文 문</strong></span><span>글 문</span><span>문화(文化) · 문법(文法) · 작문(作文) · 문서(文書)</span></div>
+      <div class="vocab-row three-col"><span><strong>化 화</strong></span><span>될 화</span><span>문화(文化) · 변화(變化) · 현대화(現代化)</span></div>
+      <div class="vocab-row three-col"><span><strong>時 시</strong></span><span>때 시</span><span>시간(時間) · 시대(時代) · 동시(同時)</span></div>
+      <div class="vocab-row three-col"><span><strong>間 간</strong></span><span>사이 간</span><span>시간(時間) · 인간(人間) · 공간(空間)</span></div>
+      <div class="vocab-row three-col"><span><strong>長 장</strong></span><span>길 장 / 어른 장</span><span>교장(校長) · 성장(成長) · 장점(長點)</span></div>
+      <div class="vocab-row three-col"><span><strong>電 전</strong></span><span>번개 전</span><span>전화(電話) · 전기(電氣) · 전자(電子)</span></div>
+      <div class="vocab-row three-col"><span><strong>話 화</strong></span><span>말씀 화</span><span>전화(電話) · 대화(對話) · 회화(會話)</span></div>
+      <div class="vocab-row three-col"><span><strong>愛 애</strong></span><span>사랑 애</span><span>애인(愛人) · 사랑(← 순우리말!) · 애정(愛情)</span></div>
+      <div class="vocab-row three-col"><span><strong>情 정</strong></span><span>뜻 정 / 정 정</span><span>감정(感情) · 우정(友情) · 애정(愛情)</span></div>
+      <div class="vocab-row three-col"><span><strong>友 우</strong></span><span>벗 우</span><span>친구(親舊) · 우정(友情) · 우방(友邦)</span></div>
+      <div class="vocab-row three-col"><span><strong>家 가</strong></span><span>집 가</span><span>가족(家族) · 국가(國家) · 작가(作家) · 가정(家庭)</span></div>
     </div>
 
     <h3>고유어란 무엇인가 — What Are Pure Korean (고유어) Words?</h3>
@@ -8081,14 +8119,14 @@
 
     <div class="vocab-table">
       <div class="vocab-header"><span>개념</span><span>고유어 (Native)</span><span>한자어 (Sino-Korean)</span><span>뉘앙스 차이</span></div>
-      <div class="vocab-row"><span>love</span><span><strong>사랑</strong> (warm, emotional)</span><span>애정 愛情 (formal, deeper)</span><span>사랑 = everyday; 애정 = literary/formal</span></div>
-      <div class="vocab-row"><span>water</span><span><strong>물</strong> (natural, everyday)</span><span>수분 水分 (moisture, academic)</span><span>물 = drink water; 수분 = hydration levels</span></div>
-      <div class="vocab-row"><span>fire</span><span><strong>불</strong> (visceral, immediate)</span><span>화재 火災 (fire incident/disaster)</span><span>불 = campfire, stove; 화재 = emergency/news</span></div>
-      <div class="vocab-row"><span>sky</span><span><strong>하늘</strong> (poetic, emotional)</span><span>천공 天空 (celestial, literary)</span><span>하늘 always wins in daily life; 천공 = poetry</span></div>
-      <div class="vocab-row"><span>person</span><span><strong>사람</strong> (warm, human)</span><span>인간 人間 (humanity, philosophical)</span><span>사람 = that person; 인간 = humankind</span></div>
-      <div class="vocab-row"><span>name</span><span><strong>이름</strong> (everyday)</span><span>성명 姓名 (formal, official)</span><span>이름 = "What's your name?"; 성명 = official documents</span></div>
-      <div class="vocab-row"><span>heart/mind</span><span><strong>마음</strong> (deep, soulful)</span><span>심리 心理 (psychology, academic)</span><span>마음 = emotional heart; 심리 = mental state</span></div>
-      <div class="vocab-row"><span>number</span><span><strong>하나/둘/셋</strong> (native counting)</span><span>일/이/삼 一二三 (Sino-Korean counting)</span><span>Both systems used — different contexts!</span></div>
+      <div class="vocab-row three-col"><span>love</span><span><strong>사랑</strong> (warm, emotional)</span><span>애정 愛情 (formal, deeper)</span><span>사랑 = everyday; 애정 = literary/formal</span></div>
+      <div class="vocab-row three-col"><span>water</span><span><strong>물</strong> (natural, everyday)</span><span>수분 水分 (moisture, academic)</span><span>물 = drink water; 수분 = hydration levels</span></div>
+      <div class="vocab-row three-col"><span>fire</span><span><strong>불</strong> (visceral, immediate)</span><span>화재 火災 (fire incident/disaster)</span><span>불 = campfire, stove; 화재 = emergency/news</span></div>
+      <div class="vocab-row three-col"><span>sky</span><span><strong>하늘</strong> (poetic, emotional)</span><span>천공 天空 (celestial, literary)</span><span>하늘 always wins in daily life; 천공 = poetry</span></div>
+      <div class="vocab-row three-col"><span>person</span><span><strong>사람</strong> (warm, human)</span><span>인간 人間 (humanity, philosophical)</span><span>사람 = that person; 인간 = humankind</span></div>
+      <div class="vocab-row three-col"><span>name</span><span><strong>이름</strong> (everyday)</span><span>성명 姓名 (formal, official)</span><span>이름 = "What's your name?"; 성명 = official documents</span></div>
+      <div class="vocab-row three-col"><span>heart/mind</span><span><strong>마음</strong> (deep, soulful)</span><span>심리 心理 (psychology, academic)</span><span>마음 = emotional heart; 심리 = mental state</span></div>
+      <div class="vocab-row three-col"><span>number</span><span><strong>하나/둘/셋</strong> (native counting)</span><span>일/이/삼 一二三 (Sino-Korean counting)</span><span>Both systems used — different contexts!</span></div>
     </div>
 
     <div class="culture-note">
@@ -8103,17 +8141,17 @@
     <p class="kr"><strong>외래어(外來語)</strong>는 외국어에서 온 차용어로, 현대에는 압도적으로 영어에서 왔습니다. 한국어 음운에 맞게 한글로 표기하며 분명히 "외국어" 느낌이 납니다.</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>외래어</span><span>원어</span><span>뜻</span></div>
-      <div class="vocab-row"><span><strong>컴퓨터</strong></span><span>computer</span><span>computer</span></div>
-      <div class="vocab-row"><span><strong>스마트폰</strong></span><span>smartphone</span><span>smartphone (핸드폰 is also used)</span></div>
-      <div class="vocab-row"><span><strong>커피</strong></span><span>coffee</span><span>coffee</span></div>
-      <div class="vocab-row"><span><strong>버스</strong></span><span>bus</span><span>bus</span></div>
-      <div class="vocab-row"><span><strong>아파트</strong></span><span>apartment</span><span>apartment building</span></div>
-      <div class="vocab-row"><span><strong>아이스크림</strong></span><span>ice cream</span><span>ice cream</span></div>
-      <div class="vocab-row"><span><strong>인터넷</strong></span><span>internet</span><span>internet</span></div>
-      <div class="vocab-row"><span><strong>콘텐츠</strong></span><span>contents</span><span>content (media)</span></div>
-      <div class="vocab-row"><span><strong>파이팅</strong></span><span>fighting</span><span>Go for it! / You've got this! (Korean usage)</span></div>
-      <div class="vocab-row"><span><strong>셀카</strong></span><span>self + camera</span><span>selfie (Korean portmanteau)</span></div>
+      <div class="vocab-header three-col"><span>외래어</span><span>원어</span><span>뜻</span></div>
+      <div class="vocab-row three-col"><span><strong>컴퓨터</strong></span><span>computer</span><span>computer</span></div>
+      <div class="vocab-row three-col"><span><strong>스마트폰</strong></span><span>smartphone</span><span>smartphone (핸드폰 is also used)</span></div>
+      <div class="vocab-row three-col"><span><strong>커피</strong></span><span>coffee</span><span>coffee</span></div>
+      <div class="vocab-row three-col"><span><strong>버스</strong></span><span>bus</span><span>bus</span></div>
+      <div class="vocab-row three-col"><span><strong>아파트</strong></span><span>apartment</span><span>apartment building</span></div>
+      <div class="vocab-row three-col"><span><strong>아이스크림</strong></span><span>ice cream</span><span>ice cream</span></div>
+      <div class="vocab-row three-col"><span><strong>인터넷</strong></span><span>internet</span><span>internet</span></div>
+      <div class="vocab-row three-col"><span><strong>콘텐츠</strong></span><span>contents</span><span>content (media)</span></div>
+      <div class="vocab-row three-col"><span><strong>파이팅</strong></span><span>fighting</span><span>Go for it! / You've got this! (Korean usage)</span></div>
+      <div class="vocab-row three-col"><span><strong>셀카</strong></span><span>self + camera</span><span>selfie (Korean portmanteau)</span></div>
     </div>
 
     <h3>한국어 어휘 분류 연습 — Classify the Word!</h3>
@@ -8122,15 +8160,15 @@
     <div class="example-box">
       <div class="example-title">단어를 분류해보세요 · Classify each word</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>단어</span><span>분류</span><span>이유</span></div>
-        <div class="vocab-row"><span>하늘</span><span>고유어 ✅</span><span>Native Korean — no Chinese character origin, ancient word</span></div>
-        <div class="vocab-row"><span>학교</span><span>한자어 ✅</span><span>學校 — from Chinese, each syllable = one character</span></div>
-        <div class="vocab-row"><span>커피</span><span>외래어 ✅</span><span>From English "coffee" — phonetic transcription</span></div>
-        <div class="vocab-row"><span>사랑</span><span>고유어 ✅</span><span>Pure Korean — one of the oldest emotional words, no Hanja equivalent</span></div>
-        <div class="vocab-row"><span>병원</span><span>한자어 ✅</span><span>病院 — 병(illness) + 원(hall/institution)</span></div>
-        <div class="vocab-row"><span>아파트</span><span>외래어 ✅</span><span>From English "apartment" — transcribed phonetically</span></div>
-        <div class="vocab-row"><span>밥</span><span>고유어 ✅</span><span>Native Korean — rice/meal, fundamental daily word</span></div>
-        <div class="vocab-row"><span>문화</span><span>한자어 ✅</span><span>文化 — 문(writing) + 화(become/transform)</span></div>
+        <div class="vocab-header three-col"><span>단어</span><span>분류</span><span>이유</span></div>
+        <div class="vocab-row three-col"><span>하늘</span><span>고유어 ✅</span><span>Native Korean — no Chinese character origin, ancient word</span></div>
+        <div class="vocab-row three-col"><span>학교</span><span>한자어 ✅</span><span>學校 — from Chinese, each syllable = one character</span></div>
+        <div class="vocab-row three-col"><span>커피</span><span>외래어 ✅</span><span>From English "coffee" — phonetic transcription</span></div>
+        <div class="vocab-row three-col"><span>사랑</span><span>고유어 ✅</span><span>Pure Korean — one of the oldest emotional words, no Hanja equivalent</span></div>
+        <div class="vocab-row three-col"><span>병원</span><span>한자어 ✅</span><span>病院 — 병(illness) + 원(hall/institution)</span></div>
+        <div class="vocab-row three-col"><span>아파트</span><span>외래어 ✅</span><span>From English "apartment" — transcribed phonetically</span></div>
+        <div class="vocab-row three-col"><span>밥</span><span>고유어 ✅</span><span>Native Korean — rice/meal, fundamental daily word</span></div>
+        <div class="vocab-row three-col"><span>문화</span><span>한자어 ✅</span><span>文化 — 문(writing) + 화(become/transform)</span></div>
       </div>
     </div>
 
@@ -8385,17 +8423,17 @@
     <p class="kr">천자문의 각 사자구절은 압축된 수업입니다. 한국어 단어와 연결되는 10개의 핵심 구절을 살펴봅니다:</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>천자문 구절</span><span>훈독 · 뜻</span><span>이 글자들이 만드는 한국어</span></div>
-      <div class="vocab-row"><span><strong>天地玄黃</strong> 천지현황</span><span>하늘·땅·검다·누르다</span><span>천국 · 지구 · 현대(현) · 황색(황)</span></div>
-      <div class="vocab-row"><span><strong>宇宙洪荒</strong> 우주홍황</span><span>집·집(우주)·크다·거칠다</span><span>우주(宇宙) · 홍수(洪水)</span></div>
-      <div class="vocab-row"><span><strong>日月盈昃</strong> 일월영측</span><span>해·달·차다·기울다</span><span>일요일 · 월요일 · 생일 · 매일</span></div>
-      <div class="vocab-row"><span><strong>寒來暑往</strong> 한래서왕</span><span>춥다·오다·덥다·가다</span><span>한국(한랭) · 내일(來) · 서울(서) · 왕복(往復)</span></div>
-      <div class="vocab-row"><span><strong>金生麗水</strong> 금생여수</span><span>금·나다·아름답다·물</span><span>금요일 · 생일 · 미려(美麗) · 수영</span></div>
-      <div class="vocab-row"><span><strong>仁義禮智</strong> 인의예지</span><span>어질다·옳다·예절·지혜</span><span>인간 · 의미 · 예절(禮節) · 지식(知識)</span></div>
-      <div class="vocab-row"><span><strong>父母兄弟</strong> 부모형제</span><span>아버지·어머니·형·아우</span><span>부모(父母) · 형제(兄弟) · 부모님 · 자매(姉妹)</span></div>
-      <div class="vocab-row"><span><strong>心動神疲</strong> 심동신피</span><span>마음·움직이다·신·지치다</span><span>심리 · 운동(運動) · 신경(神經) · 피로(疲勞)</span></div>
-      <div class="vocab-row"><span><strong>言語助者</strong> 언어조자</span><span>말·말씀·돕다·사람</span><span>언어(言語) · 한국어(語) · 조력자(助力者)</span></div>
-      <div class="vocab-row"><span><strong>學優登仕</strong> 학우등사</span><span>배우다·뛰어나다·오르다·벼슬</span><span>학교 · 우수(優秀) · 등산(登山) · 사회(社會)</span></div>
+      <div class="vocab-header three-col"><span>천자문 구절</span><span>훈독 · 뜻</span><span>이 글자들이 만드는 한국어</span></div>
+      <div class="vocab-row three-col"><span><strong>天地玄黃</strong> 천지현황</span><span>하늘·땅·검다·누르다</span><span>천국 · 지구 · 현대(현) · 황색(황)</span></div>
+      <div class="vocab-row three-col"><span><strong>宇宙洪荒</strong> 우주홍황</span><span>집·집(우주)·크다·거칠다</span><span>우주(宇宙) · 홍수(洪水)</span></div>
+      <div class="vocab-row three-col"><span><strong>日月盈昃</strong> 일월영측</span><span>해·달·차다·기울다</span><span>일요일 · 월요일 · 생일 · 매일</span></div>
+      <div class="vocab-row three-col"><span><strong>寒來暑往</strong> 한래서왕</span><span>춥다·오다·덥다·가다</span><span>한국(한랭) · 내일(來) · 서울(서) · 왕복(往復)</span></div>
+      <div class="vocab-row three-col"><span><strong>金生麗水</strong> 금생여수</span><span>금·나다·아름답다·물</span><span>금요일 · 생일 · 미려(美麗) · 수영</span></div>
+      <div class="vocab-row three-col"><span><strong>仁義禮智</strong> 인의예지</span><span>어질다·옳다·예절·지혜</span><span>인간 · 의미 · 예절(禮節) · 지식(知識)</span></div>
+      <div class="vocab-row three-col"><span><strong>父母兄弟</strong> 부모형제</span><span>아버지·어머니·형·아우</span><span>부모(父母) · 형제(兄弟) · 부모님 · 자매(姉妹)</span></div>
+      <div class="vocab-row three-col"><span><strong>心動神疲</strong> 심동신피</span><span>마음·움직이다·신·지치다</span><span>심리 · 운동(運動) · 신경(神經) · 피로(疲勞)</span></div>
+      <div class="vocab-row three-col"><span><strong>言語助者</strong> 언어조자</span><span>말·말씀·돕다·사람</span><span>언어(言語) · 한국어(語) · 조력자(助力者)</span></div>
+      <div class="vocab-row three-col"><span><strong>學優登仕</strong> 학우등사</span><span>배우다·뛰어나다·오르다·벼슬</span><span>학교 · 우수(優秀) · 등산(登山) · 사회(社會)</span></div>
     </div>
 
     <h3>한자를 알면 한국어가 쉬워지는 이유 — The Multiplier Effect</h3>
@@ -8405,19 +8443,19 @@
     <p class="kr">숫자로 구체적으로 알아봅시다. 한 시간을 들여 <strong>生(날 생 · "생명/태어남")</strong>을 배운다고 합시다. 얻는 것은 다음과 같습니다:</p>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>한국어 단어</span><span>한자</span><span>뜻</span></div>
-      <div class="vocab-row"><span><strong>생일</strong></span><span>生日</span><span>birthday (life + day)</span></div>
-      <div class="vocab-row"><span><strong>생활</strong></span><span>生活</span><span>daily life (life + live)</span></div>
-      <div class="vocab-row"><span><strong>생각</strong></span><span>生覺 (고유어 혼합)</span><span>thought / idea</span></div>
-      <div class="vocab-row"><span><strong>생선</strong></span><span>生鮮</span><span>fresh fish (fresh/live + fresh)</span></div>
-      <div class="vocab-row"><span><strong>생명</strong></span><span>生命</span><span>life (life + fate/life)</span></div>
-      <div class="vocab-row"><span><strong>학생</strong></span><span>學生</span><span>student (learn + person)</span></div>
-      <div class="vocab-row"><span><strong>선생</strong></span><span>先生</span><span>teacher (first/before + life)</span></div>
-      <div class="vocab-row"><span><strong>인생</strong></span><span>人生</span><span>human life (person + life)</span></div>
-      <div class="vocab-row"><span><strong>발생</strong></span><span>發生</span><span>occurrence, happening (burst + life)</span></div>
-      <div class="vocab-row"><span><strong>위생</strong></span><span>衛生</span><span>hygiene, sanitation (guard + life)</span></div>
-      <div class="vocab-row"><span><strong>신생아</strong></span><span>新生兒</span><span>newborn (new + life + child)</span></div>
-      <div class="vocab-row"><span><strong>재생</strong></span><span>再生</span><span>regeneration, replay (again + life)</span></div>
+      <div class="vocab-header three-col"><span>한국어 단어</span><span>한자</span><span>뜻</span></div>
+      <div class="vocab-row three-col"><span><strong>생일</strong></span><span>生日</span><span>birthday (life + day)</span></div>
+      <div class="vocab-row three-col"><span><strong>생활</strong></span><span>生活</span><span>daily life (life + live)</span></div>
+      <div class="vocab-row three-col"><span><strong>생각</strong></span><span>生覺 (고유어 혼합)</span><span>thought / idea</span></div>
+      <div class="vocab-row three-col"><span><strong>생선</strong></span><span>生鮮</span><span>fresh fish (fresh/live + fresh)</span></div>
+      <div class="vocab-row three-col"><span><strong>생명</strong></span><span>生命</span><span>life (life + fate/life)</span></div>
+      <div class="vocab-row three-col"><span><strong>학생</strong></span><span>學生</span><span>student (learn + person)</span></div>
+      <div class="vocab-row three-col"><span><strong>선생</strong></span><span>先生</span><span>teacher (first/before + life)</span></div>
+      <div class="vocab-row three-col"><span><strong>인생</strong></span><span>人生</span><span>human life (person + life)</span></div>
+      <div class="vocab-row three-col"><span><strong>발생</strong></span><span>發生</span><span>occurrence, happening (burst + life)</span></div>
+      <div class="vocab-row three-col"><span><strong>위생</strong></span><span>衛生</span><span>hygiene, sanitation (guard + life)</span></div>
+      <div class="vocab-row three-col"><span><strong>신생아</strong></span><span>新生兒</span><span>newborn (new + life + child)</span></div>
+      <div class="vocab-row three-col"><span><strong>재생</strong></span><span>再生</span><span>regeneration, replay (again + life)</span></div>
     </div>
 
     <p><strong>One character. Twelve words unlocked.</strong> This is the multiplier effect of learning Hanja through the 천자문 system.</p>
@@ -8431,18 +8469,18 @@
 
     <div class="vocab-table">
       <div class="vocab-header"><span>한자</span><span>훈음 (한국식)</span><span>뜻</span><span>소리</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">天</span><span><strong>하늘 천</strong></span><span>하늘 (sky/heaven)</span><span>천 (cheon)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">地</span><span><strong>땅 지</strong></span><span>땅 (earth/ground)</span><span>지 (ji)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">人</span><span><strong>사람 인</strong></span><span>사람 (person)</span><span>인 (in)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">山</span><span><strong>뫼 산</strong></span><span>산 (mountain)</span><span>산 (san)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">水</span><span><strong>물 수</strong></span><span>물 (water)</span><span>수 (su)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">火</span><span><strong>불 화</strong></span><span>불 (fire)</span><span>화 (hwa)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">木</span><span><strong>나무 목</strong></span><span>나무 (tree/wood)</span><span>목 (mok)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">金</span><span><strong>쇠 금 / 성 김</strong></span><span>금속, 금요일 (metal, gold, Friday)</span><span>금 (geum)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">日</span><span><strong>날 일</strong></span><span>해, 날 (sun, day)</span><span>일 (il)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">月</span><span><strong>달 월</strong></span><span>달 (moon, month)</span><span>월 (wol)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">心</span><span><strong>마음 심</strong></span><span>마음 (heart, mind)</span><span>심 (sim)</span></div>
-      <div class="vocab-row"><span style="font-size:24px; font-weight:800; color:var(--blue);">學</span><span><strong>배울 학</strong></span><span>배우다 (to learn)</span><span>학 (hak)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">天</span><span><strong>하늘 천</strong></span><span>하늘 (sky/heaven)</span><span>천 (cheon)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">地</span><span><strong>땅 지</strong></span><span>땅 (earth/ground)</span><span>지 (ji)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">人</span><span><strong>사람 인</strong></span><span>사람 (person)</span><span>인 (in)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">山</span><span><strong>뫼 산</strong></span><span>산 (mountain)</span><span>산 (san)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">水</span><span><strong>물 수</strong></span><span>물 (water)</span><span>수 (su)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">火</span><span><strong>불 화</strong></span><span>불 (fire)</span><span>화 (hwa)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">木</span><span><strong>나무 목</strong></span><span>나무 (tree/wood)</span><span>목 (mok)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">金</span><span><strong>쇠 금 / 성 김</strong></span><span>금속, 금요일 (metal, gold, Friday)</span><span>금 (geum)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">日</span><span><strong>날 일</strong></span><span>해, 날 (sun, day)</span><span>일 (il)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">月</span><span><strong>달 월</strong></span><span>달 (moon, month)</span><span>월 (wol)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">心</span><span><strong>마음 심</strong></span><span>마음 (heart, mind)</span><span>심 (sim)</span></div>
+      <div class="vocab-row three-col"><span style="font-size:24px; font-weight:800; color:var(--blue);">學</span><span><strong>배울 학</strong></span><span>배우다 (to learn)</span><span>학 (hak)</span></div>
     </div>
 
     <div class="culture-note">
@@ -8593,14 +8631,14 @@
 
     <div class="vocab-table">
       <div class="vocab-header"><span>뜻</span><span>표준어 (Seoul)</span><span>경상 (Busan)</span><span>전라 (Jeonju)</span><span>충청 (Daejeon)</span><span>제주</span></div>
-      <div class="vocab-row"><span>What are you doing?</span><span>뭐 해요?</span><span><strong>뭐 하노?</strong></span><span><strong>뭐 하냐?</strong></span><span><strong>뭐 혀유?</strong></span><span><strong>뭐 ㅎ엄수과?</strong></span></div>
-      <div class="vocab-row"><span>Where are you going?</span><span>어디 가요?</span><span><strong>어데 가노?</strong></span><span><strong>어디 가냐?</strong></span><span><strong>어디 가유?</strong></span><span><strong>어디 감수과?</strong></span></div>
-      <div class="vocab-row"><span>I don't know.</span><span>모르겠어요.</span><span><strong>모르겠다 아이가.</strong></span><span><strong>모르겄소.</strong></span><span><strong>모르겠슈.</strong></span><span><strong>모릅네다.</strong></span></div>
-      <div class="vocab-row"><span>Come here.</span><span>여기 와요.</span><span><strong>이리 온나.</strong></span><span><strong>이리 와봐라.</strong></span><span><strong>이리 와유.</strong></span><span><strong>이디 와봅서.</strong></span></div>
-      <div class="vocab-row"><span>Delicious!</span><span>맛있어요!</span><span><strong>맛있다 아이가!</strong></span><span><strong>맛나네잉!</strong></span><span><strong>맛있슈!</strong></span><span><strong>맛나수다!</strong></span></div>
-      <div class="vocab-row"><span>Really?</span><span>정말요?</span><span><strong>진짜가?</strong></span><span><strong>그랴?</strong></span><span><strong>정말유?</strong></span><span><strong>진짜마씀?</strong></span></div>
-      <div class="vocab-row"><span>Grandmother</span><span>할머니</span><span><strong>할매</strong></span><span><strong>할매</strong></span><span><strong>할매</strong></span><span><strong>할망</strong></span></div>
-      <div class="vocab-row"><span>Grandfather</span><span>할아버지</span><span><strong>할배</strong></span><span><strong>할배</strong></span><span><strong>할배</strong></span><span><strong>하르방</strong></span></div>
+      <div class="vocab-row three-col"><span>What are you doing?</span><span>뭐 해요?</span><span><strong>뭐 하노?</strong></span><span><strong>뭐 하냐?</strong></span><span><strong>뭐 혀유?</strong></span><span><strong>뭐 ㅎ엄수과?</strong></span></div>
+      <div class="vocab-row three-col"><span>Where are you going?</span><span>어디 가요?</span><span><strong>어데 가노?</strong></span><span><strong>어디 가냐?</strong></span><span><strong>어디 가유?</strong></span><span><strong>어디 감수과?</strong></span></div>
+      <div class="vocab-row three-col"><span>I don't know.</span><span>모르겠어요.</span><span><strong>모르겠다 아이가.</strong></span><span><strong>모르겄소.</strong></span><span><strong>모르겠슈.</strong></span><span><strong>모릅네다.</strong></span></div>
+      <div class="vocab-row three-col"><span>Come here.</span><span>여기 와요.</span><span><strong>이리 온나.</strong></span><span><strong>이리 와봐라.</strong></span><span><strong>이리 와유.</strong></span><span><strong>이디 와봅서.</strong></span></div>
+      <div class="vocab-row three-col"><span>Delicious!</span><span>맛있어요!</span><span><strong>맛있다 아이가!</strong></span><span><strong>맛나네잉!</strong></span><span><strong>맛있슈!</strong></span><span><strong>맛나수다!</strong></span></div>
+      <div class="vocab-row three-col"><span>Really?</span><span>정말요?</span><span><strong>진짜가?</strong></span><span><strong>그랴?</strong></span><span><strong>정말유?</strong></span><span><strong>진짜마씀?</strong></span></div>
+      <div class="vocab-row three-col"><span>Grandmother</span><span>할머니</span><span><strong>할매</strong></span><span><strong>할매</strong></span><span><strong>할매</strong></span><span><strong>할망</strong></span></div>
+      <div class="vocab-row three-col"><span>Grandfather</span><span>할아버지</span><span><strong>할배</strong></span><span><strong>할배</strong></span><span><strong>할배</strong></span><span><strong>하르방</strong></span></div>
     </div>
 
     <h3>경상도 사투리 깊이 파기 — Gyeongsang Dialect: Korea's Most Famous Saturi</h3>
@@ -8612,17 +8650,17 @@
     <div class="example-box">
       <div class="example-title">경상도 사투리 핵심 표현</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>사투리</span><span>표준어</span><span>뜻</span></div>
-        <div class="vocab-row"><span><strong>머하노?</strong></span><span>뭐 해요?</span><span>What are you doing?</span></div>
-        <div class="vocab-row"><span><strong>와?</strong></span><span>왜요?</span><span>Why? (much stronger tone)</span></div>
-        <div class="vocab-row"><span><strong>맞다 아이가!</strong></span><span>맞잖아요!</span><span>Isn't that right! / Exactly!</span></div>
-        <div class="vocab-row"><span><strong>우야노?</strong></span><span>어떻게 해요?</span><span>What do I do? / What shall we do?</span></div>
-        <div class="vocab-row"><span><strong>됐다 아이가.</strong></span><span>됐잖아.</span><span>It's done / It's fine (isn't it).</span></div>
-        <div class="vocab-row"><span><strong>니 뭐꼬?</strong></span><span>너 누구야?</span><span>Who are you? (sounds intense!)</span></div>
-        <div class="vocab-row"><span><strong>내가 할게.</strong></span><span>제가 할게요.</span><span>I'll do it. (more assertive feel)</span></div>
-        <div class="vocab-row"><span><strong>억수로 맛있다!</strong></span><span>엄청 맛있어요!</span><span>Incredibly delicious! ("억수로" = extremely)</span></div>
-        <div class="vocab-row"><span><strong>가시나</strong></span><span>여자아이 / 그 여자</span><span>girl / that woman (regional term)</span></div>
-        <div class="vocab-row"><span><strong>마 됐다.</strong></span><span>그냥 됐어.</span><span>Just forget it. / Never mind. (casual dismissal)</span></div>
+        <div class="vocab-header three-col"><span>사투리</span><span>표준어</span><span>뜻</span></div>
+        <div class="vocab-row three-col"><span><strong>머하노?</strong></span><span>뭐 해요?</span><span>What are you doing?</span></div>
+        <div class="vocab-row three-col"><span><strong>와?</strong></span><span>왜요?</span><span>Why? (much stronger tone)</span></div>
+        <div class="vocab-row three-col"><span><strong>맞다 아이가!</strong></span><span>맞잖아요!</span><span>Isn't that right! / Exactly!</span></div>
+        <div class="vocab-row three-col"><span><strong>우야노?</strong></span><span>어떻게 해요?</span><span>What do I do? / What shall we do?</span></div>
+        <div class="vocab-row three-col"><span><strong>됐다 아이가.</strong></span><span>됐잖아.</span><span>It's done / It's fine (isn't it).</span></div>
+        <div class="vocab-row three-col"><span><strong>니 뭐꼬?</strong></span><span>너 누구야?</span><span>Who are you? (sounds intense!)</span></div>
+        <div class="vocab-row three-col"><span><strong>내가 할게.</strong></span><span>제가 할게요.</span><span>I'll do it. (more assertive feel)</span></div>
+        <div class="vocab-row three-col"><span><strong>억수로 맛있다!</strong></span><span>엄청 맛있어요!</span><span>Incredibly delicious! ("억수로" = extremely)</span></div>
+        <div class="vocab-row three-col"><span><strong>가시나</strong></span><span>여자아이 / 그 여자</span><span>girl / that woman (regional term)</span></div>
+        <div class="vocab-row three-col"><span><strong>마 됐다.</strong></span><span>그냥 됐어.</span><span>Just forget it. / Never mind. (casual dismissal)</span></div>
       </div>
     </div>
 
@@ -8632,15 +8670,15 @@
     <div class="example-box">
       <div class="example-title">전라도 사투리 핵심 표현</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>사투리</span><span>표준어</span><span>뜻</span></div>
-        <div class="vocab-row"><span><strong>워메!</strong></span><span>어머!</span><span>Oh my! / Wow! (surprise/shock)</span></div>
-        <div class="vocab-row"><span><strong>~잖능가</strong></span><span>~잖아요</span><span>isn't it? / don't you know?</span></div>
-        <div class="vocab-row"><span><strong>~디야</strong></span><span>~더라</span><span>I heard / I saw (reported speech)</span></div>
-        <div class="vocab-row"><span><strong>그랴</strong></span><span>그래요</span><span>Yes / Right / I see</span></div>
-        <div class="vocab-row"><span><strong>겁나</strong></span><span>엄청 / 매우</span><span>very / extremely ("겁나 맛있어" = super delicious)</span></div>
-        <div class="vocab-row"><span><strong>시방</strong></span><span>지금</span><span>right now (archaic feel)</span></div>
-        <div class="vocab-row"><span><strong>~했당께</strong></span><span>~했잖아</span><span>I told you / I did it (confirmation)</span></div>
-        <div class="vocab-row"><span><strong>거시기</strong></span><span>그것 / 저것 / 뭐라고</span><span>thingamajig / that thing / what's-it-called (filler word unique to Jeolla)</span></div>
+        <div class="vocab-header three-col"><span>사투리</span><span>표준어</span><span>뜻</span></div>
+        <div class="vocab-row three-col"><span><strong>워메!</strong></span><span>어머!</span><span>Oh my! / Wow! (surprise/shock)</span></div>
+        <div class="vocab-row three-col"><span><strong>~잖능가</strong></span><span>~잖아요</span><span>isn't it? / don't you know?</span></div>
+        <div class="vocab-row three-col"><span><strong>~디야</strong></span><span>~더라</span><span>I heard / I saw (reported speech)</span></div>
+        <div class="vocab-row three-col"><span><strong>그랴</strong></span><span>그래요</span><span>Yes / Right / I see</span></div>
+        <div class="vocab-row three-col"><span><strong>겁나</strong></span><span>엄청 / 매우</span><span>very / extremely ("겁나 맛있어" = super delicious)</span></div>
+        <div class="vocab-row three-col"><span><strong>시방</strong></span><span>지금</span><span>right now (archaic feel)</span></div>
+        <div class="vocab-row three-col"><span><strong>~했당께</strong></span><span>~했잖아</span><span>I told you / I did it (confirmation)</span></div>
+        <div class="vocab-row three-col"><span><strong>거시기</strong></span><span>그것 / 저것 / 뭐라고</span><span>thingamajig / that thing / what's-it-called (filler word unique to Jeolla)</span></div>
       </div>
     </div>
 
@@ -8655,13 +8693,13 @@
     <div class="example-box">
       <div class="example-title">충청도 사투리 핵심 표현</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>사투리</span><span>표준어</span><span>뜻</span></div>
-        <div class="vocab-row"><span><strong>~유 / ~슈</strong></span><span>~요</span><span>polite ending (characteristic Chungcheong feature)</span></div>
-        <div class="vocab-row"><span><strong>그려</strong></span><span>그래요</span><span>Yes, that's right (gentle agreement)</span></div>
-        <div class="vocab-row"><span><strong>밥 먹었슈?</strong></span><span>밥 먹었어요?</span><span>Did you eat?</span></div>
-        <div class="vocab-row"><span><strong>~했다네유</strong></span><span>~했다네요</span><span>I heard that (soft hearsay)</span></div>
-        <div class="vocab-row"><span><strong>거기유</strong></span><span>저기요</span><span>Excuse me / Hey there</span></div>
-        <div class="vocab-row"><span><strong>아따</strong></span><span>아이고 / 어머</span><span>Oh dear / Goodness (mild exclamation)</span></div>
+        <div class="vocab-header three-col"><span>사투리</span><span>표준어</span><span>뜻</span></div>
+        <div class="vocab-row three-col"><span><strong>~유 / ~슈</strong></span><span>~요</span><span>polite ending (characteristic Chungcheong feature)</span></div>
+        <div class="vocab-row three-col"><span><strong>그려</strong></span><span>그래요</span><span>Yes, that's right (gentle agreement)</span></div>
+        <div class="vocab-row three-col"><span><strong>밥 먹었슈?</strong></span><span>밥 먹었어요?</span><span>Did you eat?</span></div>
+        <div class="vocab-row three-col"><span><strong>~했다네유</strong></span><span>~했다네요</span><span>I heard that (soft hearsay)</span></div>
+        <div class="vocab-row three-col"><span><strong>거기유</strong></span><span>저기요</span><span>Excuse me / Hey there</span></div>
+        <div class="vocab-row three-col"><span><strong>아따</strong></span><span>아이고 / 어머</span><span>Oh dear / Goodness (mild exclamation)</span></div>
       </div>
     </div>
 
@@ -8674,16 +8712,16 @@
     <div class="example-box">
       <div class="example-title">제주어 vs 표준어</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>제주어</span><span>표준어</span><span>뜻</span></div>
-        <div class="vocab-row"><span><strong>혼저옵서예</strong></span><span>어서 오세요</span><span>Welcome! (greeting to guests)</span></div>
-        <div class="vocab-row"><span><strong>어멍</strong></span><span>어머니</span><span>mother</span></div>
-        <div class="vocab-row"><span><strong>아방</strong></span><span>아버지</span><span>father</span></div>
-        <div class="vocab-row"><span><strong>하르방</strong></span><span>할아버지</span><span>grandfather</span></div>
-        <div class="vocab-row"><span><strong>할망</strong></span><span>할머니</span><span>grandmother</span></div>
-        <div class="vocab-row"><span><strong>이디</strong></span><span>여기</span><span>here</span></div>
-        <div class="vocab-row"><span><strong>겨울</strong></span><span>겨울</span><span>winter (same! one of few shared words)</span></div>
-        <div class="vocab-row"><span><strong>삼춘</strong></span><span>아저씨/아주머니</span><span>any adult in the community (not just uncle)</span></div>
-        <div class="vocab-row"><span><strong>~수다 / ~마씀</strong></span><span>~입니다 / ~예요</span><span>formal sentence endings unique to Jeju</span></div>
+        <div class="vocab-header three-col"><span>제주어</span><span>표준어</span><span>뜻</span></div>
+        <div class="vocab-row three-col"><span><strong>혼저옵서예</strong></span><span>어서 오세요</span><span>Welcome! (greeting to guests)</span></div>
+        <div class="vocab-row three-col"><span><strong>어멍</strong></span><span>어머니</span><span>mother</span></div>
+        <div class="vocab-row three-col"><span><strong>아방</strong></span><span>아버지</span><span>father</span></div>
+        <div class="vocab-row three-col"><span><strong>하르방</strong></span><span>할아버지</span><span>grandfather</span></div>
+        <div class="vocab-row three-col"><span><strong>할망</strong></span><span>할머니</span><span>grandmother</span></div>
+        <div class="vocab-row three-col"><span><strong>이디</strong></span><span>여기</span><span>here</span></div>
+        <div class="vocab-row three-col"><span><strong>겨울</strong></span><span>겨울</span><span>winter (same! one of few shared words)</span></div>
+        <div class="vocab-row three-col"><span><strong>삼춘</strong></span><span>아저씨/아주머니</span><span>any adult in the community (not just uncle)</span></div>
+        <div class="vocab-row three-col"><span><strong>~수다 / ~마씀</strong></span><span>~입니다 / ~예요</span><span>formal sentence endings unique to Jeju</span></div>
       </div>
     </div>
 
@@ -8993,19 +9031,19 @@
     <h3 class="kr">Words You Will Hear in Korean Media and Conversation</h3>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>단어</span><span>한자</span><span>뜻</span></div>
-      <div class="vocab-row"><span><strong>역사</strong></span><span>歷史</span><span>history</span></div>
-      <div class="vocab-row"><span><strong>왕조</strong></span><span>王朝</span><span>dynasty (king + dynasty)</span></div>
-      <div class="vocab-row"><span><strong>건국</strong></span><span>建國</span><span>founding of a nation</span></div>
-      <div class="vocab-row"><span><strong>전쟁</strong></span><span>戰爭</span><span>war</span></div>
-      <div class="vocab-row"><span><strong>독립</strong></span><span>獨立</span><span>independence (alone + stand)</span></div>
-      <div class="vocab-row"><span><strong>통일</strong></span><span>統一</span><span>unification</span></div>
-      <div class="vocab-row"><span><strong>분단</strong></span><span>分斷</span><span>division / separation (of Korea)</span></div>
-      <div class="vocab-row"><span><strong>민주주의</strong></span><span>民主主義</span><span>democracy (people + master + ism)</span></div>
-      <div class="vocab-row"><span><strong>경제 성장</strong></span><span>經濟成長</span><span>economic growth</span></div>
-      <div class="vocab-row"><span><strong>한류</strong></span><span>韓流</span><span>Korean Wave — the global spread of Korean culture</span></div>
-      <div class="vocab-row"><span><strong>광복</strong></span><span>光復</span><span>liberation — literally "return of light"</span></div>
-      <div class="vocab-row"><span><strong>조상</strong></span><span>祖上</span><span>ancestors (origin + above)</span></div>
+      <div class="vocab-header three-col"><span>단어</span><span>한자</span><span>뜻</span></div>
+      <div class="vocab-row three-col"><span><strong>역사</strong></span><span>歷史</span><span>history</span></div>
+      <div class="vocab-row three-col"><span><strong>왕조</strong></span><span>王朝</span><span>dynasty (king + dynasty)</span></div>
+      <div class="vocab-row three-col"><span><strong>건국</strong></span><span>建國</span><span>founding of a nation</span></div>
+      <div class="vocab-row three-col"><span><strong>전쟁</strong></span><span>戰爭</span><span>war</span></div>
+      <div class="vocab-row three-col"><span><strong>독립</strong></span><span>獨立</span><span>independence (alone + stand)</span></div>
+      <div class="vocab-row three-col"><span><strong>통일</strong></span><span>統一</span><span>unification</span></div>
+      <div class="vocab-row three-col"><span><strong>분단</strong></span><span>分斷</span><span>division / separation (of Korea)</span></div>
+      <div class="vocab-row three-col"><span><strong>민주주의</strong></span><span>民主主義</span><span>democracy (people + master + ism)</span></div>
+      <div class="vocab-row three-col"><span><strong>경제 성장</strong></span><span>經濟成長</span><span>economic growth</span></div>
+      <div class="vocab-row three-col"><span><strong>한류</strong></span><span>韓流</span><span>Korean Wave — the global spread of Korean culture</span></div>
+      <div class="vocab-row three-col"><span><strong>광복</strong></span><span>光復</span><span>liberation — literally "return of light"</span></div>
+      <div class="vocab-row three-col"><span><strong>조상</strong></span><span>祖上</span><span>ancestors (origin + above)</span></div>
     </div>
 
     <h3>Quick Quiz · 빠른 퀴즈</h3>
@@ -9140,14 +9178,14 @@
     <div class="example-box">
       <div class="example-title">BTS 핵심 앨범 & 노래 — Key Albums & Songs</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>작품</span><span>연도</span><span>의미</span></div>
-        <div class="vocab-row"><span><strong>화양연화 (花樣年華)</strong><br>The Most Beautiful Moment in Life</span><span>2015</span><span>청춘의 아름답고 불안한 순간 — The beautiful, anxious moment of youth</span></div>
-        <div class="vocab-row"><span><strong>WINGS</strong></span><span>2016</span><span>헤르만 헤세 소설 『데미안』에서 영감 — Inspired by Hesse's "Demian"</span></div>
-        <div class="vocab-row"><span><strong>LOVE YOURSELF</strong> 시리즈</span><span>2017–18</span><span>UN 연설 "Speak Yourself" 기반 — self-love campaign</span></div>
-        <div class="vocab-row"><span><strong>MAP OF THE SOUL</strong></span><span>2019–20</span><span>칼 융 심리학 기반 — Based on Carl Jung's psychology</span></div>
-        <div class="vocab-row"><span><strong>Dynamite</strong></span><span>2020</span><span>첫 전 영어 싱글 · 빌보드 핫 100 1위 — First all-English single, Billboard #1</span></div>
-        <div class="vocab-row"><span><strong>Butter</strong></span><span>2021</span><span>빌보드 핫 100 10주 1위 — 10 weeks at #1 on Billboard Hot 100</span></div>
-        <div class="vocab-row"><span><strong>Yet To Come</strong></span><span>2022</span><span>부산 세계박람회 유치 응원 콘서트 — Busan concert for World Expo bid</span></div>
+        <div class="vocab-header three-col"><span>작품</span><span>연도</span><span>의미</span></div>
+        <div class="vocab-row three-col"><span><strong>화양연화 (花樣年華)</strong><br>The Most Beautiful Moment in Life</span><span>2015</span><span>청춘의 아름답고 불안한 순간 — The beautiful, anxious moment of youth</span></div>
+        <div class="vocab-row three-col"><span><strong>WINGS</strong></span><span>2016</span><span>헤르만 헤세 소설 『데미안』에서 영감 — Inspired by Hesse's "Demian"</span></div>
+        <div class="vocab-row three-col"><span><strong>LOVE YOURSELF</strong> 시리즈</span><span>2017–18</span><span>UN 연설 "Speak Yourself" 기반 — self-love campaign</span></div>
+        <div class="vocab-row three-col"><span><strong>MAP OF THE SOUL</strong></span><span>2019–20</span><span>칼 융 심리학 기반 — Based on Carl Jung's psychology</span></div>
+        <div class="vocab-row three-col"><span><strong>Dynamite</strong></span><span>2020</span><span>첫 전 영어 싱글 · 빌보드 핫 100 1위 — First all-English single, Billboard #1</span></div>
+        <div class="vocab-row three-col"><span><strong>Butter</strong></span><span>2021</span><span>빌보드 핫 100 10주 1위 — 10 weeks at #1 on Billboard Hot 100</span></div>
+        <div class="vocab-row three-col"><span><strong>Yet To Come</strong></span><span>2022</span><span>부산 세계박람회 유치 응원 콘서트 — Busan concert for World Expo bid</span></div>
       </div>
     </div>
 
@@ -9189,16 +9227,16 @@
     <h3 class="kr">K-Drama: Stories That Broke Borders</h3>
 
     <div class="vocab-table">
-      <div class="vocab-header"><span>드라마</span><span>연도</span><span>왜 세계를 사로잡았나</span></div>
-      <div class="vocab-row"><span><strong>겨울연가</strong> Winter Sonata</span><span>2002</span><span>한류 1파 촉발 — 배용준 "욘사마" 신드롬, 일본·아시아 열풍</span></div>
-      <div class="vocab-row"><span><strong>대장금</strong> Jewel in the Palace</span><span>2003</span><span>한국 음식·역사 세계화 — 54개국 방영, 한식 세계화의 시작</span></div>
-      <div class="vocab-row"><span><strong>별에서 온 그대</strong> My Love from the Star</span><span>2013</span><span>중국 폭발적 인기 — 치맥(치킨+맥주) 문화 수출</span></div>
-      <div class="vocab-row"><span><strong>태양의 후예</strong> Descendants of the Sun</span><span>2016</span><span>아시아 전역 동시 방영 · 군인 로맨스 장르 개척</span></div>
-      <div class="vocab-row"><span><strong>도깨비</strong> Goblin</span><span>2016</span><span>한국 전통 신화·판타지·로맨스 융합 — 캐나다 로케이션으로 관광 유발</span></div>
-      <div class="vocab-row"><span><strong>사랑의 불시착</strong> Crash Landing on You</span><span>2019</span><span>남북한 로맨스 — 넷플릭스로 전 세계 팬덤 형성</span></div>
-      <div class="vocab-row"><span><strong>오징어 게임</strong> Squid Game</span><span>2021</span><span>넷플릭스 94개국 1위 · 역대 최다 시청 · 한국어 학습 76% 급증</span></div>
-      <div class="vocab-row"><span><strong>이상한 변호사 우영우</strong> Extraordinary Attorney Woo</span><span>2022</span><span>자폐 스펙트럼·법정 드라마 · 넷플릭스 글로벌 TOP10</span></div>
-      <div class="vocab-row"><span><strong>더 글로리</strong> The Glory</span><span>2022</span><span>학교폭력 복수 스릴러 · 넷플릭스 전 세계 1위</span></div>
+      <div class="vocab-header three-col"><span>드라마</span><span>연도</span><span>왜 세계를 사로잡았나</span></div>
+      <div class="vocab-row three-col"><span><strong>겨울연가</strong> Winter Sonata</span><span>2002</span><span>한류 1파 촉발 — 배용준 "욘사마" 신드롬, 일본·아시아 열풍</span></div>
+      <div class="vocab-row three-col"><span><strong>대장금</strong> Jewel in the Palace</span><span>2003</span><span>한국 음식·역사 세계화 — 54개국 방영, 한식 세계화의 시작</span></div>
+      <div class="vocab-row three-col"><span><strong>별에서 온 그대</strong> My Love from the Star</span><span>2013</span><span>중국 폭발적 인기 — 치맥(치킨+맥주) 문화 수출</span></div>
+      <div class="vocab-row three-col"><span><strong>태양의 후예</strong> Descendants of the Sun</span><span>2016</span><span>아시아 전역 동시 방영 · 군인 로맨스 장르 개척</span></div>
+      <div class="vocab-row three-col"><span><strong>도깨비</strong> Goblin</span><span>2016</span><span>한국 전통 신화·판타지·로맨스 융합 — 캐나다 로케이션으로 관광 유발</span></div>
+      <div class="vocab-row three-col"><span><strong>사랑의 불시착</strong> Crash Landing on You</span><span>2019</span><span>남북한 로맨스 — 넷플릭스로 전 세계 팬덤 형성</span></div>
+      <div class="vocab-row three-col"><span><strong>오징어 게임</strong> Squid Game</span><span>2021</span><span>넷플릭스 94개국 1위 · 역대 최다 시청 · 한국어 학습 76% 급증</span></div>
+      <div class="vocab-row three-col"><span><strong>이상한 변호사 우영우</strong> Extraordinary Attorney Woo</span><span>2022</span><span>자폐 스펙트럼·법정 드라마 · 넷플릭스 글로벌 TOP10</span></div>
+      <div class="vocab-row three-col"><span><strong>더 글로리</strong> The Glory</span><span>2022</span><span>학교폭력 복수 스릴러 · 넷플릭스 전 세계 1위</span></div>
     </div>
 
     <h3>K-영화 — 스크린의 혁명</h3>
@@ -9284,15 +9322,15 @@
     <div class="example-box">
       <div class="example-title">K-문화에서 배우는 한국어 표현</div>
       <div class="vocab-table">
-        <div class="vocab-header"><span>표현</span><span>출처</span><span>뜻</span></div>
-        <div class="vocab-row"><span><strong>아이고!</strong></span><span>드라마·일상</span><span>Oh my! / Goodness! (universal Korean exclamation)</span></div>
-        <div class="vocab-row"><span><strong>대박!</strong></span><span>예능·SNS</span><span>Jackpot! / Awesome! / No way!</span></div>
-        <div class="vocab-row"><span><strong>파이팅!</strong></span><span>K팝·스포츠</span><span>Go for it! / You've got this! / Fighting!</span></div>
-        <div class="vocab-row"><span><strong>오빠!</strong></span><span>드라마·K팝</span><span>Older brother (girl → boy) / used by female fans to male idols</span></div>
-        <div class="vocab-row"><span><strong>눈물이 난다</strong></span><span>발라드·드라마</span><span>Tears are falling / I'm moved to tears</span></div>
-        <div class="vocab-row"><span><strong>사랑해</strong></span><span>모든 K-문화</span><span>I love you — the phrase the world learned first</span></div>
-        <div class="vocab-row"><span><strong>헐!</strong></span><span>예능·드라마</span><span>Whoa! / No way! / I can't believe it!</span></div>
-        <div class="vocab-row"><span><strong>진짜?</strong></span><span>일상·드라마</span><span>Really? For real?</span></div>
+        <div class="vocab-header three-col"><span>표현</span><span>출처</span><span>뜻</span></div>
+        <div class="vocab-row three-col"><span><strong>아이고!</strong></span><span>드라마·일상</span><span>Oh my! / Goodness! (universal Korean exclamation)</span></div>
+        <div class="vocab-row three-col"><span><strong>대박!</strong></span><span>예능·SNS</span><span>Jackpot! / Awesome! / No way!</span></div>
+        <div class="vocab-row three-col"><span><strong>파이팅!</strong></span><span>K팝·스포츠</span><span>Go for it! / You've got this! / Fighting!</span></div>
+        <div class="vocab-row three-col"><span><strong>오빠!</strong></span><span>드라마·K팝</span><span>Older brother (girl → boy) / used by female fans to male idols</span></div>
+        <div class="vocab-row three-col"><span><strong>눈물이 난다</strong></span><span>발라드·드라마</span><span>Tears are falling / I'm moved to tears</span></div>
+        <div class="vocab-row three-col"><span><strong>사랑해</strong></span><span>모든 K-문화</span><span>I love you — the phrase the world learned first</span></div>
+        <div class="vocab-row three-col"><span><strong>헐!</strong></span><span>예능·드라마</span><span>Whoa! / No way! / I can't believe it!</span></div>
+        <div class="vocab-row three-col"><span><strong>진짜?</strong></span><span>일상·드라마</span><span>Really? For real?</span></div>
       </div>
     </div>
 
