@@ -3,18 +3,18 @@
 
 ## 🔤 기초 (Foundations)
 
-* [Ch1: Hangul Birth — 한글의 탄생](pages/01-hangul-birth.md)
-* [Ch2: Consonants — 자음](pages/02-consonants.md)
-* [Ch3: Vowels — 모음](pages/03-vowels.md)
-* [Ch4: Batchim — 받침](pages/04-batchim.md)
-* [Ch5: Numbers — 숫자](pages/05-numbers.md)
+* [Ch01: Hangul Birth — 한글의 탄생](pages/01-hangul-birth.md)
+* [Ch02: Consonants — 자음](pages/02-consonants.md)
+* [Ch03: Vowels — 모음](pages/03-vowels.md)
+* [Ch04: Batchim — 받침](pages/04-batchim.md)
+* [Ch05: Numbers — 숫자](pages/05-numbers.md)
 
 ## 📖 핵심 문법 (Core Grammar)
 
-* [Ch6: Vocabulary 200 — 필수 단어](pages/06-vocabulary-200.md)
-* [Ch7: Sentence Structure — 문장 구조](pages/07-sentence-structure.md)
-* [Ch8: Verb Conjugation — 동사 활용](pages/08-verb-conjugation.md)
-* [Ch9: Conversations — 실생활 대화](pages/09-conversations.md)
+* [Ch06: Vocabulary 200 — 필수 단어](pages/06-vocabulary-200.md)
+* [Ch07: Sentence Structure — 문장 구조](pages/07-sentence-structure.md)
+* [Ch08: Verb Conjugation — 동사 활용](pages/08-verb-conjugation.md)
+* [Ch09: Conversations — 실생활 대화](pages/09-conversations.md)
 * [Ch10: 존댓말 & 반말 — Korean Respect](pages/10-honorifics.md)
 * [Ch11: Tenses — 시제](pages/11-tenses.md)
 * [Ch12: Grammar Patterns — 문법 패턴](pages/12-grammar-patterns.md)

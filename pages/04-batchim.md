@@ -1,4 +1,4 @@
-# Ch4: Batchim — 받침
+# Ch04: Batchim — 받침
 
 id="ch4">
 

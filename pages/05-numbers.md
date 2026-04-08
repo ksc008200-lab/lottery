@@ -1,4 +1,4 @@
-# Ch5: Numbers — 숫자
+# Ch05: Numbers — 숫자
 
 id="ch5">
 

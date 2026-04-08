@@ -1,4 +1,4 @@
-# Ch2: Consonants — 자음
+# Ch02: Consonants — 자음
 
 id="ch2">
 

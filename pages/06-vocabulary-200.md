@@ -1,4 +1,4 @@
-# Ch6: Vocabulary 200 — 필수 단어
+# Ch06: Vocabulary 200 — 필수 단어
 
 id="ch6">
 

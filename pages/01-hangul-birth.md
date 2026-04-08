@@ -1,4 +1,4 @@
-# Ch1: Hangul Birth — 한글의 탄생
+# Ch01: Hangul Birth — 한글의 탄생
 
 id="ch1">
 

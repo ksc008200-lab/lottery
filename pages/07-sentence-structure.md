@@ -1,4 +1,4 @@
-# Ch7: Sentence Structure — 문장 구조
+# Ch07: Sentence Structure — 문장 구조
 
 id="ch7">
 

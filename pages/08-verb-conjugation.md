@@ -1,4 +1,4 @@
-# Ch8: Verb Conjugation — 동사 활용
+# Ch08: Verb Conjugation — 동사 활용
 
 id="ch8">
 

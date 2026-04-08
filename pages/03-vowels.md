@@ -1,4 +1,4 @@
-# Ch3: Vowels — 모음
+# Ch03: Vowels — 모음
 
 id="ch3">
 
