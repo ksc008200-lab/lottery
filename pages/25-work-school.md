@@ -1,6 +1,5 @@
 # Ch25: Work & School — 직장 & 학교
 
-id="ch25">
 
 ## Work & School — Korean Workplace & Campus Life!
 

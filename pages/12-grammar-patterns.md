@@ -1,6 +1,5 @@
 # Ch12: Grammar Patterns — 문법 패턴
 
-id="ch12">
 
 ## Grammar Patterns
 

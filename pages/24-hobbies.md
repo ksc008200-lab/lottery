@@ -1,6 +1,5 @@
 # Ch24: Hobbies & Free Time — 취미 & 여가
 
-id="ch24">
 
 ## Hobbies & Free Time — What Do You Do for Fun?
 

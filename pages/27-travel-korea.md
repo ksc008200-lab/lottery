@@ -1,6 +1,5 @@
 # Ch27: Travel in Korea — 한국 여행
 
-id="ch27">
 
 ## Travel in Korea — Explore Every Corner!
 

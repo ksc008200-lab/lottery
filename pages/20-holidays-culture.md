@@ -1,6 +1,5 @@
 # Ch20: Holidays & Culture — 명절 & 문화
 
-id="ch20">
 
 ## Korean Holidays & Culture — Celebrate Korea!
 

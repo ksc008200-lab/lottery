@@ -1,6 +1,5 @@
 # Ch16: Shopping & Money — 쇼핑 & 돈
 
-id="ch16">
 
 ## Shopping & Money — Shop Like a Korean!
 

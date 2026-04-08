@@ -1,6 +1,5 @@
 # Ch23: K-pop & Entertainment — K팝
 
-id="ch23">
 
 ## K-pop & Korean Entertainment — Hallyu Wave!
 

@@ -1,6 +1,5 @@
 # Ch17: Transportation — 교통 & 길 찾기
 
-id="ch17">
 
 ## Transportation & Directions — Navigate Korea!
 

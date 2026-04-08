@@ -1,6 +1,5 @@
 # Ch13: Particles — 조사
 
-id="ch13">
 
 ## Particles — The Magic Glue of Korean!
 

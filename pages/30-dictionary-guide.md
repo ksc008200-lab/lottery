@@ -1,6 +1,5 @@
 # Ch30: Dictionary Guide — 사전 찾는 법
 
-id="ch30">
 
 ## How to Use a Korean Dictionary
 사전 찾는 법 · sa-jeon chat-neun beop

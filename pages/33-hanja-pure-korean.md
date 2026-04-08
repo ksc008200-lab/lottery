@@ -1,6 +1,5 @@
 # Ch33: Hanja & Pure Korean — 한자어 & 고유어
 
-id="ch33">
 
 ## Hanja Culture & Pure Korean — The Two Roots of Every Word
 한자 문화권 & 고유어 · 한자어 — 모든 단어의 두 뿌리

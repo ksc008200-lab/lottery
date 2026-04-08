@@ -1,6 +1,5 @@
 # Ch32: No Subject Culture — 주어 생략
 
-id="ch32">
 
 ## Speaking Without a Subject — Korea's Silent "I"
 주어 없이 말하는 문화 — 한국어의 침묵하는 "나"

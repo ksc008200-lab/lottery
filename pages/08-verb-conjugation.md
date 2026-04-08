@@ -1,6 +1,5 @@
 # Ch08: Verb Conjugation — 동사 활용
 
-id="ch8">
 
 ## Verb Conjugation — One Verb, Infinite Power!
 동사 활용 — 동사 하나로 무한한 표현!

@@ -1,6 +1,5 @@
 # Ch35: Seoul Standard & Dialects — 사투리
 
-id="ch35">
 
 ## Seoul Standard Korean & Regional Dialects — One Language, Many Voices
 표준어 & 사투리 — 하나의 언어, 수많은 목소리

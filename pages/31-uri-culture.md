@@ -1,6 +1,5 @@
 # Ch31: "우리" Culture — 우리 문화
 
-id="ch31">
 
 ## The "Uri" Culture — Korea's Heart of We
 "우리" 문화 — 한국인의 마음속 '우리'

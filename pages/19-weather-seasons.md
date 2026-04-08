@@ -1,6 +1,5 @@
 # Ch19: Weather & Seasons — 날씨 & 계절
 
-id="ch19">
 
 ## Weather & Seasons — Talk Like a Korean!
 

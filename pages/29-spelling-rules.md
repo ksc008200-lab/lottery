@@ -1,6 +1,5 @@
 # Ch29: Spelling Rules — 맞춤법
 
-id="ch29">
 
 ## Korean Spelling Rules
 맞춤법 · mat-chum-beop — Write Korean Correctly!

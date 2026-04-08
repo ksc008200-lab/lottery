@@ -1,6 +1,5 @@
 # Ch21: Adjectives — 형용사
 
-id="ch21">
 
 ## Adjectives — Describe Everything in Korean!
 

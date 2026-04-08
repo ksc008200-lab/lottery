@@ -1,6 +1,5 @@
 # Ch15: Food & Restaurants — 음식 & 식당
 
-id="ch15">
 
 ## Korean Food & Restaurants — Eat Like a Local!
 

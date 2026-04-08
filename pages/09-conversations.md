@@ -1,6 +1,5 @@
 # Ch09: Conversations — 실생활 대화
 
-id="ch9">
 
 ## Real Life Conversations — Speak from Day One!
 실생활 대화 — 첫날부터 말하기!

@@ -1,6 +1,5 @@
 # Ch18: Family — 가족 & 관계
 
-id="ch18">
 
 ## Family & Relationships — Korean Family Culture!
 

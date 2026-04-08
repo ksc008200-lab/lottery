@@ -1,6 +1,5 @@
 # Ch07: Sentence Structure — 문장 구조
 
-id="ch7">
 
 ## Sentence Structure — Korean Speaks Backwards!
 문장 구조 — 한국어는 거꾸로 말한다!

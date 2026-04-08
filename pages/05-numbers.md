@@ -1,6 +1,5 @@
 # Ch05: Numbers — 숫자
 
-id="ch5">
 
 ## Numbers — Counting in Korean
 숫자 — 한국어로 세기

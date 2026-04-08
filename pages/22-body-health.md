@@ -1,6 +1,5 @@
 # Ch22: Body & Health — 신체 & 건강
 
-id="ch22">
 
 ## Body & Health — Stay Safe in Korea!
 

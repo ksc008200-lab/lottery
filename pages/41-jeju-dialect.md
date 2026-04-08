@@ -1,6 +1,5 @@
 # Ch41: Jeju Dialect — 제주 방언
 
-id="ch41">
 
 Chapter 41
 Jeju Dialect — The Secret Language of Jeju Island

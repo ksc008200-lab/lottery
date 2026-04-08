@@ -1,6 +1,5 @@
 # Ch26: Love & Dating — 사랑 & 연애
 
-id="ch26">
 
 ## Love & Dating — Korean Romance Culture!
 

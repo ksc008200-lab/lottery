@@ -1,6 +1,5 @@
 # Ch28: Slang & Internet — 슬랭 & MZ세대
 
-id="ch28">
 
 ## Korean Slang & Internet Language
 한국어 슬랭 & 인터넷 언어 · han-gug-eo seul-laeng & in-teo-net eon-eo

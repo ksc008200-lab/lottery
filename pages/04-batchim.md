@@ -1,6 +1,5 @@
 # Ch04: Batchim — 받침
 
-id="ch4">
 
 ## Batchim — The Secret Sound at the Bottom
 받침 — 음절 아래 숨겨진 소리

@@ -1,6 +1,5 @@
 # Ch14: Question Words — 의문사
 
-id="ch14">
 
 ## Question Words — Ask Anything in Korean!
 

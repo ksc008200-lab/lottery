@@ -1,6 +1,5 @@
 # Ch10: 존댓말 & 반말 — Korean Respect
 
-id="ch10">
 
 ## 존댓말 & 반말 — The Art of Korean Respect
 존댓말 & 반말 — 한국어 존경의 예술

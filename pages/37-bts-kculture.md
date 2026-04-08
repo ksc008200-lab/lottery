@@ -1,6 +1,5 @@
 # Ch37: BTS & K-Culture — 한류
 
-id="ch37">
 
 ## BTS & K-Culture — The Korean Wave That Swept the World
 한류 & K-문화 — 세계를 휩쓴 한국의 물결

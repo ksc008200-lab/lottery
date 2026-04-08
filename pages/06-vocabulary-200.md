@@ -1,7 +1,5 @@
 # Ch06: Vocabulary 200 — 필수 단어
 
-**10개 카테고리 × 20단어 = 200 필수 단어** | From people to numbers — everything you need to start speaking Korean!
-
 ### 🧑 People & Relationships · 사람과 관계
 | 한글 | 발음 | English |
 | --- | --- | --- |
