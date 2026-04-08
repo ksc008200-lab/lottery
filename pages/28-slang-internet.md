@@ -69,6 +69,7 @@ Same feeling as ㅠㅠ
 | 소확행 | so-hwak-haeng | Small but certain happiness | 커피 한 잔이 나의 소확행 = Coffee is my little joy |
 | 워라밸 | wo-ra-bael | Work-Life Balance | 워라밸이 중요해 = Work-life balance matters |
 | 빌런 | bil-reon | Villain / strange person | 지하철 빌런 = Subway weirdo |
+
 ### 📱 SNS & 소셜 미디어 단어 · Social Media Vocabulary
 ❤️
 좋아요
@@ -187,6 +188,7 @@ MZ세대 = **M**illennials (1981–1996) + **Z**eneration (1997–2010). They've
 | 쩐다 | jjeonda | That's sick! / Insane! (very slang) |
 | 레알 | re-al | For real / seriously (from Spanish "real") |
 | 꿀잼 / 노잼 | kkul-jaem / no-jaem | Honey fun (super fun) / No fun (boring) |
+
 ### 💬 실제 카카오톡 대화 · Real KakaoTalk Chat
 
 Here's what Korean texting actually looks like:

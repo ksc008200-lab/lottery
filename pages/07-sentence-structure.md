@@ -28,6 +28,7 @@ Korean: Subject → Object → **Verb LAST!**    (나는 피자를 **먹어요
 | 친구와 | chin-gu-wa | "with a friend" |
 | 도 | do | Also / Too |
 | 나도 | na-do | "me too" |
+
 ### Building Sentences Level by Level · 단계별 문장 만들기
 ⭐나는 학생이에요.   na-neun hak-saeng-i-e-yo   → I am a student.
 ⭐⭐나는 커피를 마셔요.   na-neun keo-pi-reul ma-syeo-yo   → I drink coffee.

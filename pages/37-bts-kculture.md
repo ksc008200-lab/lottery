@@ -136,6 +136,7 @@ K팝 팬덤은 참여형 문화입니다. 팬들은 공식 이름(ARMY·BLINK·S
 | **오징어 게임** Squid Game | 2021 | 넷플릭스 94개국 1위 · 역대 최다 시청 · 한국어 학습 76% 급증 |
 | **이상한 변호사 우영우** Extraordinary Attorney Woo | 2022 | 자폐 스펙트럼·법정 드라마 · 넷플릭스 글로벌 TOP10 |
 | **더 글로리** The Glory | 2022 | 학교폭력 복수 스릴러 · 넷플릭스 전 세계 1위 |
+
 ### K-영화 — 스크린의 혁명
 
 ### Korean Cinema: Art That Broke Hollywood
@@ -166,6 +167,7 @@ K-뷰티 핵심 어휘
 | **쿠션 파운데이션** | cushion foundation — Korean invention, now worldwide |
 | **글로우** | glow — the dewy, lit-from-within skin ideal |
 | **피부 결** | skin texture — smoothness and evenness |
+
 ### K-푸드 — 세계의 식탁 위에 오른 한국 음식
 
 ### From Kimchi to the World's Tables
@@ -218,6 +220,7 @@ K-문화에서 배우는 한국어 표현
 | **사랑해** | 모든 K-문화 | I love you — the phrase the world learned first |
 | **헐!** | 예능·드라마 | Whoa! / No way! / I can't believe it! |
 | **진짜?** | 일상·드라마 | Really? For real? |
+
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** What does BTS (방탄소년단) literally mean?

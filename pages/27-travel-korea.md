@@ -16,6 +16,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 🌋 | **제주도** | Jeju Island · je-ju-do | 화산섬 · Volcanic island | 한라산 mountain · lava tubes · tangerine farms · stunning coastlines |
 | 🏙️ | **전주** | Jeonju · jeon-ju | 전통 문화 · Traditional culture | 한옥마을 hanok village · 비빔밥 origin city · Joseon Dynasty charm |
 | 🎭 | **인천** | Incheon · in-cheon | 관문 · Gateway to Korea | 인천국제공항 (world's best airport) · Chinatown · island hopping |
+
 ### 🏨 At the Hotel · 호텔에서
 
 | 한글 | 발음 | English |
@@ -28,6 +29,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 방이 너무 추워요 / 더워요. | bang-i neo-mu chu-wo-yo / deo-wo-yo. | The room is too cold / hot. |
 | 체크아웃이 몇 시예요? | che-keu-a-ut-i myeot si-ye-yo? | What time is checkout? |
 | 짐을 맡겨도 돼요? | jim-eul mat-gyeo-do dwae-yo? | Can I leave my luggage here? |
+
 ### 🗺️ Tourist Vocabulary · 관광 단어
 🏯 궁 / 궁궐
 gung / gung-gwol
@@ -81,6 +83,7 @@ Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing)
 | 사진 찍어도 돼요? | sa-jin jjig-eo-do dwae-yo? | Can I take a photo? |
 | 같이 사진 찍어요! | ga-chi sa-jin jjig-eo-yo! | Let's take a photo together! |
 | 정말 잘 어울려요! | jeong-mal jal eo-ul-lyeo-yo! | It really suits you! |
+
 ### 💬 Travel Dialog · 여행 대화
 🗺️ Planning a Trip · 여행 계획
 **A:** 이번 주말에 뭐 해요?

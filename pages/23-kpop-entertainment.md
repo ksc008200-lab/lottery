@@ -82,6 +82,7 @@ title track
 | 팬사인회 | paen-sa-in-hoe | Fan signing event |
 | 응원봉 | eung-won-bong | Light stick (official fan lightstick) |
 | 사생팬 | sa-saeng-paen | Sasaeng (overly obsessive fan) |
+
 ### 📺 K-Drama Vocabulary · K드라마 단어
 😭 막장 드라마
 mak-jang deu-ra-ma
@@ -121,6 +122,7 @@ binge-watching from episode 1
 | 잡지마. 가지마. | jap-ji-ma. ga-ji-ma. | Don't hold me. Don't go. (tearful!) |
 | 우리 사귀는 거야? | u-ri sa-gwi-neun geo-ya? | Are we dating? (the moment!) |
 | 사랑해. | sa-rang-hae. | I love you. ❤️ |
+
 ### 📱 Internet & SNS Korean · 인터넷 & SNS 한국어
 
 | 한글 / 줄임말 | 발음 | Full form / Meaning |

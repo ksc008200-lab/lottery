@@ -95,6 +95,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | Really? | 정말요? | **진짜가?** | **그랴?** | **정말유?** | **진짜마씀?** |
 | Grandmother | 할머니 | **할매** | **할매** | **할매** | **할망** |
 | Grandfather | 할아버지 | **할배** | **할배** | **할배** | **하르방** |
+
 ### 경상도 사투리 깊이 파기 — Gyeongsang Dialect: Korea's Most Famous Saturi
 
 ### The "Ppalli-Ppalli" Dialect With a Heart
@@ -116,6 +117,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **억수로 맛있다!** | 엄청 맛있어요! | Incredibly delicious! ("억수로" = extremely) |
 | **가시나** | 여자아이 / 그 여자 | girl / that woman (regional term) |
 | **마 됐다.** | 그냥 됐어. | Just forget it. / Never mind. (casual dismissal) |
+
 ### 전라도 사투리 — Jeolla Dialect: Warm, Lyrical, Musical
 
 ### The "Soft South" of Korean
@@ -148,6 +150,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **~했다네유** | ~했다네요 | I heard that (soft hearsay) |
 | **거기유** | 저기요 | Excuse me / Hey there |
 | **아따** | 아이고 / 어머 | Oh dear / Goodness (mild exclamation) |
+
 ### 제주어 — Jeju Language: A World Apart
 
 ### UNESCO-Listed: A Language Dying With Its Elders
@@ -168,6 +171,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **겨울** | 겨울 | winter (same! one of few shared words) |
 | **삼춘** | 아저씨/아주머니 | any adult in the community (not just uncle) |
 | **~수다 / ~마씀** | ~입니다 / ~예요 | formal sentence endings unique to Jeju |
+
 ### 사투리의 사회적 의미 — The Social Power of Dialect
 
 ### Pride, Prejudice, and Belonging

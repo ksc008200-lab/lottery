@@ -54,6 +54,7 @@ As a foreigner learning Korean → always start with **해요체 (~요)**. It's 
 먹어**요** → 먹어  |  가**요** → 가  |  좋아**요** → 좋아  |  해**요** → 해
 
 해요체 → 습니다체: 먹어요 → 먹습니다  |  가요 → 갑니다  |  해요 → 합니다
+
 ### Side-by-Side Comparison · 나란히 비교
 
 | Situation | 습니다체 (Formal) | 해요체 (Everyday ⭐) | 반말 (Informal) |
@@ -65,6 +66,7 @@ As a foreigner learning Korean → always start with **해요체 (~요)**. It's 
 | Did you eat? | 드셨습니까? deu-syeoss-seum-ni-kka? | 밥 먹었어요? bap meog-eoss-eo-yo? | 밥 먹었어? bap meog-eoss-eo? |
 | Let's go! | 갑시다! gap-si-da! | 가요! ga-yo! | 가자! ga-ja! |
 | I miss you | 보고 싶습니다 bo-go sip-seum-ni-da | 보고 싶어요 bo-go sip-eo-yo | 보고 싶어 bo-go sip-eo |
+
 ### Korean Has Separate Honorific Words! · 별도의 높임말이 있어요!
 🌟 Important! Korean has TWO ways to show respect
 **① Speech level** — changing the verb ending (습니다 / ~요 / 반말)
@@ -87,6 +89,7 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 | To be sick | 아프다 | a-peu-da | 편찮으시다 | pyeon-chan-eu-si-da |
 | To give (honored person gives) | 주다 | ju-da | 주시다 | ju-si-da |
 | To give (I give to honored person) | 주다 | ju-da | 드리다 | deu-ri-da |
+
 #### ② Honorific Nouns · 높임말 명사 (separate words for people!)
 
 | Meaning | 일반 (Normal) | 발음 | 높임말 (Honorific) | 발음 |
@@ -97,11 +100,13 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 | Meal / Rice | 밥 | bap | 진지 | jin-ji |
 | Words / Speech | 말 | mal | 말씀 | mal-sseum |
 | Person (counting) | 사람 | sa-ram | 분 | bun |
+
 #### ③ The Honorific Suffix ~(으)시~ · 높임 접미사
 
 Add **~(으)시~** to a verb stem to show that the *subject* of the sentence deserves respect:
 
 가다 → 가**시**다  |  오다 → 오**시**다  |  하다 → 하**시**다  |  읽다 → 읽**으시**다
+
 **Example:** 선생님이 오**셨**어요. (seon-saeng-nim-i o-**syeoss**-eo-yo) — The teacher has come. (showing respect to teacher)
 
 #### 💬 Honorific in Action · 높임말 실전
@@ -110,6 +115,7 @@ Add **~(으)시~** to a verb stem to show that the *subject* of the sentence des
 | :---: | :---: | :---: | :---: |
 | Talking to grandfather | 할아버지 밥 먹었어? | 할아버지, 진지 드셨어요? | hal-a-beo-ji, jin-ji deu-syeoss-eo-yo? *Grandfather, have you eaten?* |
 | Asking where teacher is | 선생님 어디 있어요? | 선생님 어디 계세요? | seon-saeng-nim eo-di gye-se-yo? *Where is the teacher?* (있다 → 계시다) |
+
 ### K-pop 반말 Slang · K-pop 반말 슬랭
 
 | 한글 | Pronunciation | English |

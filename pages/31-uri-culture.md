@@ -78,6 +78,7 @@ You visit a Korean friend's home at dinner time. No one says anything. But you n
 | **눈치를 주다** | to give a hint / to signal indirectly |
 | **눈치를 보다** | to watch for cues / to read others carefully |
 | **눈치 챙겨!** | Read the room! (informal) |
+
 ### 빨리빨리 (Ppalli-ppalli) — The Culture of Speed
 
 ### 빨리빨리 — 속도의 문화
@@ -127,6 +128,7 @@ B: Jeong-i deu-reot-ja-na.
 | **정이 없다** | cold, detached (said of a person) |
 | **정 때문에** | because of the bond we share |
 | **정 떼기 힘들다** | it's hard to cut ties because of 정 |
+
 ### 눈치 · 체면 (Chemyeon) — Face and Dignity
 
 ### 체면 — 체면 차리기

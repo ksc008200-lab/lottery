@@ -19,6 +19,7 @@ a/eo-yo
 | 마시다 | ma-si-da | 마셨어요 | ma-syeoss-eo-yo | I drank |
 | 보다 | bo-da | 봤어요 | bwass-eo-yo | I saw |
 | 공부하다 | gong-bu-ha-da | 공부했어요 | gong-bu-haess-eo-yo | I studied |
+
 ### Future Tense · 미래형
 
 | 기본형 | Pronunciation | 미래형 | Pronunciation | English |
@@ -27,6 +28,7 @@ a/eo-yo
 | 먹다 | meok-da | 먹을 거예요 | meog-eul geo-ye-yo | I will eat |
 | 오다 | o-da | 올 거예요 | ol geo-ye-yo | I will come |
 | 공부하다 | gong-bu-ha-da | 공부할 거예요 | gong-bu-hal geo-ye-yo | I will study |
+
 ### Time Expression Helpers · 시간 표현 도우미
 
 | ⏪ Past 한글 | 발음 | English |

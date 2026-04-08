@@ -188,6 +188,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 | **독학 獨學** | self-study (alone + learning) |
 | **장학금 奬學金** | scholarship (encourage + learning + money) |
 | **유학 留學** | studying abroad (stay + learning) |
+
 ### 천자문 구절로 배우는 한자 — Learning Hanja Through 천자문 Verses
 
 ### Classic Verses and the Korean Words They Unlock
@@ -208,6 +209,7 @@ Each four-character verse of the 천자문 is a compressed lesson. Here are ten 
 | **心動神疲** 심동신피 | 마음·움직이다·신·지치다 | 심리 · 운동(運動) · 신경(神經) · 피로(疲勞) |
 | **言語助者** 언어조자 | 말·말씀·돕다·사람 | 언어(言語) · 한국어(語) · 조력자(助力者) |
 | **學優登仕** 학우등사 | 배우다·뛰어나다·오르다·벼슬 | 학교 · 우수(優秀) · 등산(登山) · 사회(社會) |
+
 ### 한자를 알면 한국어가 쉬워지는 이유 — The Multiplier Effect
 
 ### Learn 1 Hanja → Unlock 10+ Korean Words
@@ -230,6 +232,7 @@ Let's be concrete about the math. Say you spend one hour learning the character 
 | **위생** | 衛生 | hygiene, sanitation (guard + life) |
 | **신생아** | 新生兒 | newborn (new + life + child) |
 | **재생** | 再生 | regeneration, replay (again + life) |
+
 **One character. Twelve words unlocked.** This is the multiplier effect of learning Hanja through the 천자문 system.
 
 **글자 하나. 열두 개 단어 해금.** 이것이 천자문 시스템으로 한자를 배울 때의 배수 효과입니다.

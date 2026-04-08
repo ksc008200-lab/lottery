@@ -24,6 +24,7 @@
 | 직원 | ji-gwon | employee / staff |
 | 손님 | son-nim | guest / customer |
 | 이웃 | i-ut | neighbor |
+
 ### 🌍 Places · 장소
 
 | 한글 | 발음 | English |
@@ -48,6 +49,7 @@
 | 경찰서 | gyeong-chal-seo | police station |
 | 우체국 | u-che-guk | post office |
 | 박물관 | bang-mul-gwan | museum |
+
 ### 🍚 Food & Drink · 음식과 음료
 
 | 한글 | 발음 | English |
@@ -72,6 +74,7 @@
 | 떡볶이 | tteok-bok-gi | tteokbokki |
 | 치킨 | chi-kin | fried chicken |
 | 삼겹살 | sam-gyeop-sal | grilled pork belly |
+
 ### 🌈 Colors · 색깔
 
 | 한글 | 발음 | English |
@@ -96,6 +99,7 @@
 | 자주색 | ja-ju-saek | crimson |
 | 청록색 | cheong-rok-saek | teal |
 | 살구색 | sal-gu-saek | peach |
+
 ### 📅 Time · 시간
 
 | 한글 | 발음 | English |
@@ -120,6 +124,7 @@
 | 시간 | si-gan | hour / time |
 | 분 | bun | minute |
 | 년 | nyeon | year |
+
 ### 🏠 Objects & Home · 사물과 집
 
 | 한글 | 발음 | English |
@@ -144,6 +149,7 @@
 | 시계 | si-gye | clock / watch |
 | 우산 | u-san | umbrella |
 | 사진 | sa-jin | photo |
+
 ### 🌿 Nature & Weather · 자연과 날씨
 
 | 한글 | 발음 | English |
@@ -168,6 +174,7 @@
 | 더위 | deo-wi | heat |
 | 추위 | chu-wi | cold |
 | 날씨 | nal-ssi | weather |
+
 ### 🏃 Essential Verbs · 필수 동사
 
 | 한글 | 발음 | English |
@@ -192,6 +199,7 @@
 | 좋아하다 | jo-a-ha-da | to like |
 | 공부하다 | gong-bu-ha-da | to study |
 | 일하다 | il-ha-da | to work |
+
 ### 💬 Essential Adjectives · 필수 형용사
 
 | 한글 | 발음 | English |
@@ -216,6 +224,7 @@
 | 잘생기다 | jal-saeng-gi-da | handsome |
 | 재미있다 | jae-mi-it-da | fun / interesting |
 | 피곤하다 | pi-gon-ha-da | tired |
+
 ### ❓ Question Words & Numbers · 의문사와 숫자
 
 | 한글 | 발음 | English |

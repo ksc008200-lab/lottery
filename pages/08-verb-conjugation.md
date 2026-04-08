@@ -25,6 +25,7 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 | 마시다 | ma-si-da | to drink | 마셔요 | ma-syeo-yo |
 | 공부하다 | gong-bu-ha-da | to study | 공부해요 | gong-bu-hae-yo |
 | 사랑하다 | sa-rang-ha-da | to love | 사랑해요 | sa-rang-hae-yo |
+
 ### 3 Essential Tenses · 핵심 3가지 시제
 
 | Tense | 한글 | Pronunciation | Meaning |

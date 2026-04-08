@@ -56,6 +56,7 @@ Exception: 6월 = 유월 (yu-wol) · 10월 = 시월 (si-wol) — these drop the 
 | November | 11월 | si-bil-wol |
 | June ⚠️ | 6월 | yu-wol |
 | December | 12월 | si-bi-wol |
+
 ### 🖼️ Weather Vocabulary · 날씨 단어
 ☀️
 맑아요
@@ -131,6 +132,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 | 영상 25도예요. | yeong-sang i-sip-o do-ye-yo. | It's 25 degrees above zero. |
 | 날씨 예보가 어때요? | nal-ssi ye-bo-ga eo-ttae-yo? | What's the weather forecast? |
 | 내일 비가 올 것 같아요. | nae-il bi-ga ol geot ga-ta-yo. | I think it will rain tomorrow. |
+
 ### 🗓️ Seasonal Activities · 계절별 활동
 🌸 봄 (Spring) — bom
 - 벚꽃 구경 (beot-kkot gu-gyeong) — cherry blossom viewing

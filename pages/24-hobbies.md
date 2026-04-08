@@ -68,6 +68,7 @@ yoga
 | ~하는 것을 좋아해요 | 요리하는 것을 좋아해요 | I like cooking (doing it) |
 | ~에 관심이 있어요 | 사진에 관심이 있어요 | I'm interested in photography |
 | ~을/를 배우고 싶어요 | 기타를 배우고 싶어요 | I want to learn guitar |
+
 ### ⚽ Sports · 스포츠
 ⚽
 축구

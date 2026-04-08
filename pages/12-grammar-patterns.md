@@ -45,6 +45,7 @@ Verb stem + (으)ㄹ 수 있어요
 | 수영 할 수 있어요 | su-yeong hal su iss-eo-yo | I can swim |
 | 운전 할 수 없어요 | un-jeon hal su eobs-eo-yo | I cannot drive |
 | 기타 칠 수 있어요 | gi-ta chil su iss-eo-yo | I can play guitar |
+
 #### 🎨 Skill Vocabulary · 능력 단어
 🏊 수영
 su-yeong
@@ -125,6 +126,7 @@ Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 | 알아요 | 알지 않아요 | 몰라요 | I don't know |
 | 좋아해요 | 좋아하지 않아요 | 안 좋아해요 | I don't like |
 | 마셔요 | 마시지 않아요 | 안 마셔요 | I don't drink |
+
 ### Pattern 5 · ~(으)면 좋겠어요 · I wish / It would be nice if ___
 
 | 한글 | 발음 | English |
@@ -133,6 +135,7 @@ Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 | 한국에 가면 좋겠어요 | han-gu-ge ga-myeon jo-kess-eo-yo | I wish I could go to Korea |
 | 복권이 당첨되면 좋겠어요 | bok-gweon-i dang-cheom-doe-myeon jo-kess-eo-yo | I wish I'd win the lottery |
 | 시험이 쉬우면 좋겠어요 | si-heom-i swi-u-myeon jo-kess-eo-yo | I wish the exam were easy |
+
 ### Pattern 6 · ~는 것 같아요 · It seems like / I think ___
 🔧 Formula — Soft Opinions (Polite Korean way!)
 Koreans rarely state opinions as hard facts. They soften with ~것 같아요 (geot ga-ta-yo).
@@ -144,6 +147,7 @@ It's like saying "I think..." or "It seems..."
 | 비가 오는 것 같아요 | bi-ga o-neun geot ga-ta-yo | It seems like it's raining |
 | 그 사람이 피곤한 것 같아요 | geu sa-ram-i pi-gon-han geot ga-ta-yo | That person seems tired |
 | 가격이 비싼 것 같아요 | ga-gyeok-i bi-ssan geot ga-ta-yo | The price seems expensive |
+
 ### Pattern 7 · ~고 있어요 · I am ___-ing (right now!)
 🔧 Formula — Present Progressive
 Verb stem + 고 있어요

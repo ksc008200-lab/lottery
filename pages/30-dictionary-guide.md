@@ -69,6 +69,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | 도와줬어 | 돕다 | to help |
 | 불러요 | 부르다 | to call / to sing |
 | 힘들었어 | 힘들다 | to be difficult/tough |
+
 ### 📖 사전 항목 읽는 법 · How to Read a Dictionary Entry
 
 네이버 사전에서 먹다를 검색하면 이런 항목이 나와요:
@@ -86,6 +87,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | ① ② ③ | 여러 가지 의미 | 문맥에 맞는 의미 선택 |
 | 예문 | 실제 사용 예시 | 가장 중요! 꼭 읽어보기 |
 | 🔊 발음 버튼 | 원어민 발음 듣기 | 네이버/다음 사전에서 지원 |
+
 ### 🔤 가나다순 · Korean Alphabetical Order
 
 종이 사전이나 목록에서 단어를 찾을 때 필요해요:
@@ -109,6 +111,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | 사진 속 글자 | ❌ | ✅ 카메라 번역 지원 |
 | 예문 학습 | ✅ 예문 풍부 | ❌ 없음 |
 | 슬랭/신조어 | △ 느린 업데이트 | ✅ 빠른 업데이트 |
+
 ### 💎 사전 활용 꿀팁 · Pro Dictionary Tips
 🔊 발음 반드시 듣기
 한국어는 발음이 표기와 다를 때가 많아요. 네이버 사전에서 스피커 아이콘 클릭!

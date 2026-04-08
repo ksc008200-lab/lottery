@@ -92,6 +92,7 @@ The key insight: **each Hanja character carries a meaning**, so once you learn t
 | **국제 (國際)** | 國 + 際 | 나라 국 + 사이 제 | international (nation·between) |
 | **대학 (大學)** | 大 + 學 | 클 대 + 배울 학 | university (great learning) |
 | **병원 (病院)** | 病 + 院 | 병 병 + 집 원 | hospital (illness house) |
+
 ### 꼭 알아야 할 한자 50자 — 50 Must-Know Hanja Characters
 
 ### Learn These and Unlock Thousands of Korean Words
@@ -132,6 +133,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 | **情 정** | 뜻 정 / 정 정 | 감정(感情) · 우정(友情) · 애정(愛情) |
 | **友 우** | 벗 우 | 친구(親舊) · 우정(友情) · 우방(友邦) |
 | **家 가** | 집 가 | 가족(家族) · 국가(國家) · 작가(作家) · 가정(家庭) |
+
 ### 고유어란 무엇인가 — What Are Pure Korean (고유어) Words?
 
 ### The Original Korean — Words That Predate Chinese Influence
@@ -148,6 +150,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 | **💛 감정 · Emotions** | 사랑 (love) · 기쁨 (joy) · 슬픔 (sadness) · 두려움 (fear) · 그리움 (longing) · 설렘 (excitement) · 아픔 (heartache) |
 | **🏠 일상 · Daily Life** | 밥 (rice/meal) · 집 (home) · 길 (road) · 옷 (clothes) · 일 (work) · 말 (speech) · 글 (writing) · 힘 (strength) |
 | **🎨 의성어 · Sound Words** | 반짝반짝 (twinkling) · 보슬보슬 (drizzling) · 살살 (gently) · 쿵쿵 (thud thud) · 졸졸 (babbling) · 깡충깡충 (hopping) |
+
 ### 같은 개념, 두 개의 단어 — Same Concept, Two Words
 
 ### The Native vs Sino-Korean Pair: Subtle Differences in Nuance
@@ -190,6 +193,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 | **콘텐츠** | contents | content (media) |
 | **파이팅** | fighting | Go for it! / You've got this! (Korean usage) |
 | **셀카** | self + camera | selfie (Korean portmanteau) |
+
 ### 한국어 어휘 분류 연습 — Classify the Word!
 
 ### Is It 고유어, 한자어, or 외래어?
@@ -205,6 +209,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 | 아파트 | 외래어 ✅ | From English "apartment" — transcribed phonetically |
 | 밥 | 고유어 ✅ | Native Korean — rice/meal, fundamental daily word |
 | 문화 | 한자어 ✅ | 文化 — 문(writing) + 화(become/transform) |
+
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** 전화 (電話) means "telephone." What do the two characters literally mean?

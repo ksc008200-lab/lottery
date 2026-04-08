@@ -66,6 +66,7 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 | 많이 (many/much) | 천천히 (slowly) |
 | 같이 (together) | 특히 (especially) |
 | 일찍이 (early) | 확실히 (certainly) |
+
 ### 😵 헷갈리는 맞춤법 쌍 · Confusing Pairs
 
 | 틀린 표현 ❌ | 올바른 표현 ✅ | 설명 |
@@ -80,6 +81,7 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 | 금새 | 금세 ✅ | 금세 = 금방, 곧 |
 | 어의없다 | 어이없다 ✅ | 어이 = 기가 막힘 (어의=왕의 의사) |
 | 오랫만에 | 오랜만에 ✅ | 오랜만 = 오랜 시간 만에 |
+
 ### 📏 띄어쓰기 · Spacing Rules
 
 Korean spacing is one of the hardest parts even for natives. Key rules:

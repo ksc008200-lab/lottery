@@ -116,6 +116,7 @@ exchange / refund
 | 선물 포장 해주세요. | seon-mul po-jang hae-ju-se-yo. | Please gift-wrap it. |
 | 영수증 주세요. | yeong-su-jeung ju-se-yo. | Please give me a receipt. |
 | 환불 되나요? | hwan-bul doe-na-yo? | Can I get a refund? |
+
 #### 👕 Clothing & Colors · 옷 & 색깔
 
 | Size 사이즈 | 한글 | 발음 |

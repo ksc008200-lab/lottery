@@ -50,6 +50,7 @@ Korea is very walkable!
 | 종착역이에요. | jong-chak-yeok-i-e-yo. | This is the last stop. |
 | T-머니 카드 어디서 사요? | T-meo-ni ka-deu eo-di-seo sa-yo? | Where do I buy a T-money card? |
 | 출구가 어디예요? | chul-gu-ga eo-di-ye-yo? | Where is the exit? |
+
 ### 🚕 Taxi Phrases · 택시 표현
 🚕 Taking a Taxi · 택시 타기
 **You:** 이 주소로 가주세요.
@@ -124,6 +125,7 @@ intersection
 | 근처 | geun-cheo | near / nearby | 역 근처 |
 | 사이 | sa-i | between | 은행 사이 |
 | 맞은편 | maj-eun-pyeon | across / opposite | 맞은편에 있어요 |
+
 ### 💬 Asking for Directions · 길 물어보기 대화
 🗺️ Finding Gyeongbokgung Palace
 **You:** 저기요, 경복궁이 어디예요?
