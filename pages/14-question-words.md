@@ -7,8 +7,7 @@
 The ability to *ask questions* is what makes conversation real. Once you know these 7 question words, you can ask about anything — people, places, times, reasons, and methods. Every great conversation starts with a question! 🗣️
 
 ### The 7 Essential Question Words · 7가지 핵심 의문사
-🙋
-누가
+🙋 누가
 nu-ga
 WHO
 누가 했어요? — Who did it?
@@ -19,20 +18,17 @@ mwo / mu-eot
 WHAT
 뭐예요? — What is it?
 
-📍
-어디
+📍 어디
 eo-di
 WHERE
 어디예요? — Where is it?
 
-🕐
-언제
+🕐 언제
 eon-je
 WHEN
 언제예요? — When is it?
 
-🤔
-왜
+🤔 왜
 wae
 WHY
 왜요? — Why?
@@ -43,8 +39,7 @@ eo-tteo-ke
 HOW
 어떻게 해요? — How do you do it?
 
-🔢
-얼마 / 몇
+🔢 얼마 / 몇
 eol-ma / myeot
 HOW MUCH / MANY
 얼마예요? — How much is it?
@@ -121,7 +116,6 @@ Fill in the correct question word:
 📌 얼마 vs 몇
 얼마 (eol-ma) = How much? → **price / amount**
 몇 (myeot) = How many? → **countable number**
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
@@ -133,43 +127,35 @@ Fill in the correct question word:
 ### 🖼️ Feelings Vocabulary · 기분 단어
 
 Great to use with 어때요? — How do you feel?
-😊
-행복해요
+😊 행복해요
 haeng-bok-hae-yo
 I'm happy
 
-😢
-슬퍼요
+😢 슬퍼요
 seul-peo-yo
 I'm sad
 
-😴
-피곤해요
+😴 피곤해요
 pi-gon-hae-yo
 I'm tired
 
-😡
-화나요
+😡 화나요
 hwa-na-yo
 I'm angry
 
-😰
-무서워요
+😰 무서워요
 mu-seo-wo-yo
 I'm scared
 
-🤩
-신나요
+🤩 신나요
 sin-na-yo
 I'm excited
 
-😮
-놀라요
+😮 놀라요
 nol-la-yo
 I'm surprised
 
-🤢
-아파요
+🤢 아파요
 a-pa-yo
 I'm sick / it hurts
 

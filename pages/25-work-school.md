@@ -37,28 +37,23 @@ developer / programmer
 yo-ri-sa
 chef / cook
 
-👮
-경찰관
+👮 경찰관
 gyeong-chal-gwan
 police officer
 
-🎨
-디자이너
+🎨 디자이너
 di-ja-i-neo
 designer
 
-📰
-기자
+📰 기자
 gi-ja
 journalist / reporter
 
-🏦
-사업가
+🏦 사업가
 sa-eop-ga
 businessman / entrepreneur
 
-🎤
-가수
+🎤 가수
 ga-su
 singer
 
@@ -99,53 +94,43 @@ a) singer   b) lawyer   c) teacher   d) doctor   e) developer
 정답: 1-d, 2-c, 3-e, 4-b, 5-a
 
 ### 🏫 School Life · 학교 생활
-🏫
-초등학교
+🏫 초등학교
 cho-deung-hak-gyo
 elementary school
 
-🏫
-중학교
+🏫 중학교
 jung-hak-gyo
 middle school
 
-🏫
-고등학교
+🏫 고등학교
 go-deung-hak-gyo
 high school
 
-🎓
-대학교
+🎓 대학교
 dae-hak-gyo
 university
 
-📝
-수업
+📝 수업
 su-eob
 class / lesson
 
-📋
-시험
+📋 시험
 si-heom
 exam / test
 
-📓
-숙제
+📓 숙제
 suk-je
 homework
 
-🏆
-성적
+🏆 성적
 seong-jeok
 grade / score
 
-🏠
-학원
+🏠 학원
 hak-won
 private academy / hagwon
 
-🎓
-졸업
+🎓 졸업
 jol-eop
 graduation
 

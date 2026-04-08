@@ -25,26 +25,22 @@ a pretty person
 an interesting book
 
 ### 📐 Size & Shape · 크기 & 모양
-🐘
-커요
+🐘 커요
 keo-yo
 big / large
 큰 코끼리 — big elephant
 
-🐭
-작아요
+🐭 작아요
 ja-ga-yo
 small
 작은 쥐 — small mouse
 
-🦒
-길어요
+🦒 길어요
 gil-eo-yo
 long / tall
 긴 목 — long neck
 
-🐧
-짧아요
+🐧 짧아요
 jjal-ba-yo
 short
 짧은 날개 — short wings
@@ -54,24 +50,20 @@ short
 mu-geo-wo-yo
 heavy
 
-🪶
-가벼워요
+🪶 가벼워요
 ga-byeo-wo-yo
 light (weight)
 
 ### 😍 Appearance · 외모
-💅
-예뻐요
+💅 예뻐요
 ye-ppeo-yo
 pretty (of women)
 
-🤵
-잘생겼어요
+🤵 잘생겼어요
 jal-saeng-gyeoss-eo-yo
 handsome (of men)
 
-🥰
-귀여워요
+🥰 귀여워요
 gwi-yeo-wo-yo
 cute
 
@@ -80,44 +72,36 @@ cute
 meoss-iss-eo-yo
 cool / stylish
 
-👣
-키가 커요
+👣 키가 커요
 ki-ga keo-yo
 tall (person)
 
-🤏
-날씬해요
+🤏 날씬해요
 nal-ssin-hae-yo
 slim / slender
 
 ### 🧠 Personality · 성격
-😁
-친절해요
+😁 친절해요
 chin-jeol-hae-yo
 kind
 
-😊
-착해요
+😊 착해요
 chak-ae-yo
 good-natured / sweet
 
-🎉
-활발해요
+🎉 활발해요
 hwal-bal-hae-yo
 outgoing / lively
 
-📚
-똑똑해요
+📚 똑똑해요
 ttok-ttok-ae-yo
 smart / clever
 
-😬
-부끄러워요
+😬 부끄러워요
 bu-kkeu-reo-wo-yo
 shy / embarrassed
 
-😤
-고집이 세요
+😤 고집이 세요
 go-jib-i se-yo
 stubborn
 

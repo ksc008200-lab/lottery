@@ -47,23 +47,19 @@ Verb stem + (으)ㄹ 수 있어요
 | 기타 칠 수 있어요 | gi-ta chil su iss-eo-yo | I can play guitar |
 
 #### 🎨 Skill Vocabulary · 능력 단어
-🏊
-수영
+🏊 수영
 su-yeong
 swimming
 
-🍳
-요리
+🍳 요리
 yo-ri
 cooking
 
-🎸
-기타
+🎸 기타
 gi-ta
 guitar
 
-🚗
-운전
+🚗 운전
 un-jeon
 driving
 
@@ -72,18 +68,15 @@ driving
 chuk-gu
 soccer
 
-🎨
-그림
+🎨 그림
 geu-rim
 drawing/painting
 
-💃
-춤
+💃 춤
 chum
 dance
 
-📸
-사진
+📸 사진
 sa-jin
 photo
 
@@ -161,43 +154,37 @@ Verb stem + 고 있어요
 *go iss-eo-yo* = am/is/are currently doing ___
 
 #### 🎨 Action Vocabulary · 동작 단어
-📚
-공부하다
+📚 공부하다
 gong-bu-ha-da
 to study
 공부하고 있어요
 I am studying
 
-🍜
-먹다
+🍜 먹다
 meok-da
 to eat
 먹고 있어요
 I am eating
 
-🎵
-듣다
+🎵 듣다
 deut-da
 to listen
 듣고 있어요
 I am listening
 
-📱
-보다
+📱 보다
 bo-da
 to watch
 보고 있어요
 I am watching
 
-🏃
-달리다
+🏃 달리다
 dal-li-da
 to run
 달리고 있어요
 I am running
 
-😴
-자다
+😴 자다
 ja-da
 to sleep
 자고 있어요
@@ -252,15 +239,13 @@ love
 사랑하고 싶어요
 I want to love
 
-🏫
-학교
+🏫 학교
 hak-gyo
 school
 학교 가야 해요
 I have to go to school
 
-🍚
-밥
+🍚 밥
 bap
 rice / meal
 밥 먹고 싶어요
@@ -273,8 +258,7 @@ weather
 날씨가 좋은 것 같아요
 The weather seems nice
 
-💰
-돈
+💰 돈
 don
 money
 돈이 없어요

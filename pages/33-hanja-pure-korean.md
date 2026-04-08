@@ -20,8 +20,7 @@ And then there is a third layer — **외래어 (外來語 · loanwords)**, main
 그리고 세 번째 층이 있습니다 — 주로 영어에서 온 **외래어(外來語)**로, 근현대화를 통해 대거 유입되었습니다.
 한국어 어휘의 세 층위 · The Three Layers of Korean Vocabulary
 
-🌿
-고유어
+🌿 고유어
 Pure Korean
 ~35%
 하늘, 바람, 사랑
@@ -34,8 +33,7 @@ Sino-Korean
 학교, 애정(愛情), 전화
 문화, 경제, 사회
 
-🌍
-외래어
+🌍 외래어
 Loanwords
 ~5%
 컴퓨터, 버스

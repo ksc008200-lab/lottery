@@ -13,32 +13,27 @@ sa-rang
 love
 사랑해요 · I love you
 
-💘
-좋아하다
+💘 좋아하다
 jo-a-ha-da
 to like / have feelings for
 좋아해요 · I like you
 
-🥺
-그리워하다
+🥺 그리워하다
 geu-ri-wo-ha-da
 to miss someone
 보고 싶어요 · I miss you
 
-💑
-사귀다
+💑 사귀다
 sa-gwi-da
 to date / go out with
 사귀어요? · Are we dating?
 
-💍
-결혼하다
+💍 결혼하다
 gyeol-hon-ha-da
 to marry / get married
 결혼해요? · Will you marry me?
 
-💔
-헤어지다
+💔 헤어지다
 he-eo-ji-da
 to break up
 헤어졌어요 · We broke up
@@ -76,8 +71,7 @@ ka-ka-o-tok (ka-tok)
 KakaoTalk is THE messaging app in Korea. Couples chat on 카톡 constantly! Not replying quickly = danger zone. "읽씹" (read but no reply) = very bad sign! 😱
 
 ### 😍 Compliments & Flirting · 칭찬 & 설레임
-🥰
-예뻐요 / 잘생겼어요
+🥰 예뻐요 / 잘생겼어요
 ye-ppeo-yo / jal-saeng-gyeoss-eo-yo
 You're pretty / handsome
 
@@ -86,23 +80,19 @@ You're pretty / handsome
 mae-ryeok iss-eo-yo
 You're charming / attractive
 
-💫
-설레요
+💫 설레요
 seol-le-yo
 My heart flutters (for you)
 
-😊
-웃음이 예뻐요
+😊 웃음이 예뻐요
 us-eum-i ye-ppeo-yo
 Your smile is beautiful
 
-🫶
-네 옆에 있고 싶어요
+🫶 네 옆에 있고 싶어요
 ne yeob-e it-go sip-eo-yo
 I want to be beside you
 
-🌹
-취향저격이에요
+🌹 취향저격이에요
 chwi-hyang-jeo-gyeok-i-e-yo
 You're exactly my type!
 

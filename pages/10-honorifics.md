@@ -19,8 +19,7 @@ Ends: **습니다 / 습니까?**
 TV news · Presentations · Business · Military · Official meetings
 Stiff & formal — shows high respect
 
-🏪
-해요체
+🏪 해요체
 hae-yo-che
 
 **존댓말 · Everyday Polite ⭐**
@@ -28,8 +27,7 @@ Ends: **~요**
 Most commonly used! Shops · School · Strangers · Coworkers
 Polite but warm & friendly — 밥 먹었어요?
 
-👫
-반말
+👫 반말
 ban-mal
 
 **Informal Speech**

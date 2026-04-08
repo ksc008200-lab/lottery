@@ -47,33 +47,27 @@ jeul-geo-un chu-seok doe-se-yo — Have a joyful Chuseok!
 | After eating | 잘 먹었습니다 | jal meog-eoss-seum-ni-da | I ate well (said after meals) |
 
 ### 🗓️ Other Korean Holidays & Special Days · 기타 기념일
-🌹
-삼일절 · 3월 1일
+🌹 삼일절 · 3월 1일
 sam-il-jeol
 Independence Movement Day — commemorates the March 1st, 1919 independence movement against Japanese rule
 
-👶
-어린이날 · 5월 5일
+👶 어린이날 · 5월 5일
 eo-rin-i-nal
 Children's Day — kids get presents, families visit amusement parks. Very popular!
 
-💐
-어버이날 · 5월 8일
+💐 어버이날 · 5월 8일
 eo-beo-i-nal
 Parents' Day — give carnations (카네이션) to parents. Very touching day in Korea!
 
-📚
-스승의 날 · 5월 15일
+📚 스승의 날 · 5월 15일
 seu-seung-ui nal
 Teacher's Day — give carnations to teachers. Respect for educators is deeply embedded in Korean culture!
 
-💛
-빼빼로 데이 · 11월 11일
+💛 빼빼로 데이 · 11월 11일
 ppae-ppae-ro de-i
 Pepero Day — give Pepero snack sticks to friends & loved ones. 11/11 looks like 4 Pepero sticks!
 
-🎄
-크리스마스 · 12월 25일
+🎄 크리스마스 · 12월 25일
 keu-ri-seu-ma-seu
 Christmas — public holiday in Korea! Couples-oriented (like Valentine's Day). Lights & festivities in Seoul!
 

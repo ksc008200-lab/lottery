@@ -7,39 +7,32 @@
 "What's your hobby?" is one of the first questions Koreans ask when getting to know someone. It breaks the ice instantly and leads to natural, flowing conversation. This chapter gives you all the vocabulary to talk about what you love to do — and discover what others enjoy too! 🎯
 
 ### Popular Hobbies · 인기 있는 취미
-📚
-독서
+📚 독서
 dok-seo
 reading
 독서를 좋아해요
 
-🎵
-음악 감상
+🎵 음악 감상
 eum-ak gam-sang
 listening to music
 
-🎮
-게임
+🎮 게임
 ge-im
 gaming
 
-🎨
-그림 그리기
+🎨 그림 그리기
 geu-rim geu-ri-gi
 drawing / painting
 
-🏃
-달리기
+🏃 달리기
 dal-li-gi
 running
 
-🍳
-요리
+🍳 요리
 yo-ri
 cooking
 
-📸
-사진 찍기
+📸 사진 찍기
 sa-jin jjik-gi
 photography
 
@@ -48,23 +41,19 @@ photography
 yeo-haeng
 traveling
 
-🎬
-영화 보기
+🎬 영화 보기
 yeong-hwa bo-gi
 watching movies
 
-🎸
-악기 연주
+🎸 악기 연주
 ak-gi yeon-ju
 playing instruments
 
-💃
-춤추기
+💃 춤추기
 chum-chu-gi
 dancing
 
-🧘
-요가
+🧘 요가
 yo-ga
 yoga
 
@@ -86,8 +75,7 @@ yoga
 chuk-gu
 soccer / football
 
-🏀
-농구
+🏀 농구
 nong-gu
 basketball
 
@@ -96,13 +84,11 @@ basketball
 ya-gu
 baseball
 
-🏸
-배드민턴
+🏸 배드민턴
 bae-deu-min-ton
 badminton
 
-🏊
-수영
+🏊 수영
 su-yeong
 swimming
 
@@ -111,13 +97,11 @@ swimming
 gol-peu
 golf
 
-🥋
-태권도
+🥋 태권도
 tae-gwon-do
 taekwondo
 
-🧗
-등산
+🧗 등산
 deung-san
 hiking / mountain climbing
 

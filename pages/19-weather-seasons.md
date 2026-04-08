@@ -7,8 +7,7 @@
 Koreans talk about weather constantly — it's the perfect small talk topic. Korea has 4 beautifully distinct seasons: cherry blossoms in spring 🌸, hot humid summers ☀️, breathtaking autumn foliage 🍁, and cold snowy winters ❄️. Learning weather vocabulary opens up endless conversations!
 
 ### The Four Seasons · 사계절
-🌸
-봄
+🌸 봄
 bom
 Spring · 3월~5월
 Cherry blossoms!
@@ -23,8 +22,7 @@ Hot & very humid
 장마 (rainy season)
 30~38°C
 
-🍁
-가을
+🍁 가을
 ga-eul
 Autumn · 9월~11월
 Cool & clear
@@ -85,13 +83,11 @@ It's snowing
 ba-ram-i bul-eo-yo
 It's windy
 
-🥵
-더워요
+🥵 더워요
 deo-wo-yo
 It's hot
 
-🥶
-추워요
+🥶 추워요
 chu-wo-yo
 It's cold
 
@@ -100,13 +96,11 @@ It's cold
 tta-tteu-tae-yo
 It's warm
 
-🍂
-선선해요
+🍂 선선해요
 seon-seon-hae-yo
 It's cool (pleasant)
 
-💧
-습해요
+💧 습해요
 seu-pae-yo
 It's humid
 

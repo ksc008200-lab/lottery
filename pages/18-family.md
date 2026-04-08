@@ -7,59 +7,49 @@
 Korea has a deeply Confucian family structure — every relationship has a specific term. Unlike English where "uncle" covers many relatives, Korean has *different words* depending on whether it's your mother's side or father's side, older or younger. It sounds complex, but it shows how much Koreans value family bonds! 👨‍👩‍👧‍👦
 
 ### Immediate Family · 직계 가족
-👴
-할아버지
+👴 할아버지
 hal-a-beo-ji
 grandfather
 
-👵
-할머니
+👵 할머니
 hal-meo-ni
 grandmother
 
-👨
-아버지 / 아빠
+👨 아버지 / 아빠
 a-beo-ji / a-ppa
 father / dad
 
-👩
-어머니 / 엄마
+👩 어머니 / 엄마
 eo-meo-ni / eom-ma
 mother / mom
 
-🧑
-형 / 오빠
+🧑 형 / 오빠
 hyeong / o-ppa
 older brother
 형 = said by males
 오빠 = said by females
 
-👧
-누나 / 언니
+👧 누나 / 언니
 nu-na / eon-ni
 older sister
 누나 = said by males
 언니 = said by females
 
-👦
-남동생
+👦 남동생
 nam-dong-saeng
 younger brother
 남 = male · 동생 = younger sibling
 
-👧
-여동생
+👧 여동생
 yeo-dong-saeng
 younger sister
 여 = female · 동생 = younger sibling
 
-👶
-아들 / 딸
+👶 아들 / 딸
 a-deul / ttal
 son / daughter
 
-💑
-남편 / 아내
+💑 남편 / 아내
 nam-pyeon / a-nae
 husband / wife
 
@@ -106,33 +96,27 @@ Koreans use family terms to address strangers too! It creates warmth and closene
 정답: 1. 이모 2. 삼촌 3. 오빠 4. 누나 5. 할머니 6. 시어머니
 
 ### 💑 Relationship Status · 관계 상태
-💘
-남자친구
+💘 남자친구
 nam-ja-chin-gu
 boyfriend
 
-💝
-여자친구
+💝 여자친구
 yeo-ja-chin-gu
 girlfriend
 
-💍
-약혼자
+💍 약혼자
 yak-hon-ja
 fiancé/fiancée
 
-👫
-친구
+👫 친구
 chin-gu
 friend (same age)
 
-🤝
-선배 / 후배
+🤝 선배 / 후배
 seon-bae / hu-bae
 senior / junior
 
-👔
-직장 동료
+👔 직장 동료
 jik-jang dong-nyo
 coworker
 

@@ -49,13 +49,11 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 | 온몸이 아파요. | on-mom-i a-pa-yo. | My whole body hurts. |
 
 ### 🌡️ Symptoms & Conditions · 증상
-🤒
-열이 나요
+🤒 열이 나요
 yeol-i na-yo
 I have a fever
 
-🤧
-콧물이 나요
+🤧 콧물이 나요
 kon-mul-i na-yo
 I have a runny nose
 
@@ -64,28 +62,23 @@ I have a runny nose
 gi-chim-i na-yo
 I'm coughing
 
-🤢
-토할 것 같아요
+🤢 토할 것 같아요
 to-hal geot ga-ta-yo
 I feel like vomiting
 
-😵
-어지러워요
+😵 어지러워요
 eo-ji-reo-wo-yo
 I feel dizzy
 
-😴
-피곤해요
+😴 피곤해요
 pi-gon-hae-yo
 I'm exhausted
 
-😣
-소화가 안 돼요
+😣 소화가 안 돼요
 so-hwa-ga an dwae-yo
 I have indigestion
 
-🩹
-다쳤어요
+🩹 다쳤어요
 da-chyeoss-eo-yo
 I got hurt / injured
 
@@ -134,33 +127,27 @@ Translate into Korean:
 (ha-ru se beon, sik-hu-e deu-se-yo.) — Three times a day, after meals.
 
 ### 💪 Healthy Living Vocabulary · 건강 생활 단어
-🏃
-운동하다
+🏃 운동하다
 un-dong-ha-da
 to exercise
 
-😴
-잘 자다
+😴 잘 자다
 jal ja-da
 to sleep well
 
-🥗
-잘 먹다
+🥗 잘 먹다
 jal meok-da
 to eat well
 
-💧
-물 많이 마시다
+💧 물 많이 마시다
 mul man-i ma-si-da
 drink lots of water
 
-🧘
-스트레스
+🧘 스트레스
 seu-teu-re-seu
 stress
 
-🚭
-금연
+🚭 금연
 geum-yeon
 no smoking
 

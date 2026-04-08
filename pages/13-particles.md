@@ -39,14 +39,12 @@ New info · emphasis · "who/what does it"
 [Subject] + [Object + 을/를] + [Verb]
 
 **을** (eul) → after consonant  |  **를** (reul) → after vowel
-🍎
-사과**를** 먹어요
+🍎 사과**를** 먹어요
 sa-gwa-**reul** meog-eo-yo
 I eat an apple
 사과 ends in vowel → 를
 
-📚
-책**을** 읽어요
+📚 책**을** 읽어요
 chaek-**eul** ilg-eo-yo
 I read a book
 책 ends in consonant → 을
@@ -57,8 +55,7 @@ keo-pi-**reul** ma-syeo-yo
 I drink coffee
 커피 ends in vowel → 를
 
-🎵
-음악**을** 들어요
+🎵 음악**을** 들어요
 eum-ag-**eul** deul-eo-yo
 I listen to music
 음악 ends in consonant → 을
@@ -102,13 +99,11 @@ Where action HAPPENS · From a place
 | 으로/로 | eu-ro / ro | Direction / By means of | 버스로 가요 | I go by bus |
 
 #### 🖼️ Location Vocabulary · 장소 단어
-🏠
-집
+🏠 집
 jip
 home / house
 
-🏫
-학교
+🏫 학교
 hak-gyo
 school
 
@@ -117,28 +112,23 @@ school
 ka-pe
 café
 
-🏥
-병원
+🏥 병원
 byeong-won
 hospital
 
-🛒
-마트
+🛒 마트
 ma-teu
 supermarket
 
-📚
-도서관
+📚 도서관
 do-seo-gwan
 library
 
-🚉
-역
+🚉 역
 yeok
 station
 
-🏦
-은행
+🏦 은행
 eun-haeng
 bank
 

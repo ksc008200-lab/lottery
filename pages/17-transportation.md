@@ -7,26 +7,22 @@
 Seoul's subway covers the entire city, buses go everywhere, and KTX high-speed trains connect all major cities. Once you learn these phrases, you can travel anywhere in Korea independently. 🚇🚌🚅
 
 ### Types of Transport · 교통수단
-🚇
-지하철
+🚇 지하철
 ji-ha-cheol
 subway / metro
 Fastest in cities · T-money card
 
-🚌
-버스
+🚌 버스
 beo-seu
 bus
 City bus · Express bus · T-money
 
-🚕
-택시
+🚕 택시
 taek-si
 taxi
 Cheap & safe · Kakao Taxi app
 
-🚅
-기차 / KTX
+🚅 기차 / KTX
 gi-cha / KTX
 train / KTX
 Seoul↔Busan in 2.5 hrs!
@@ -37,8 +33,7 @@ bi-haeng-gi
 airplane
 Domestic flights available
 
-🚶
-걸어서
+🚶 걸어서
 geol-eo-seo
 on foot / walking
 Korea is very walkable!
@@ -101,23 +96,19 @@ right
 dol-a-ga-da
 turn around
 
-🔼
-위 / 올라가다
+🔼 위 / 올라가다
 wi / ol-la-ga-da
 up / go up
 
-🔽
-아래 / 내려가다
+🔽 아래 / 내려가다
 a-rae / nae-ryeo-ga-da
 down / go down
 
-🚦
-신호등
+🚦 신호등
 sin-ho-deung
 traffic light
 
-🔀
-사거리
+🔀 사거리
 sa-geo-ri
 intersection
 

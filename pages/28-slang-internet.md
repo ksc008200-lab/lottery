@@ -10,26 +10,22 @@ Korean slang evolves FAST — especially on social media, gaming, and K-pop comm
 ### ⌨️ 인터넷 줄임말 · Internet Abbreviations
 
 Koreans love shortcuts! These appear constantly in chats, comments, and texts:
-😂
-ㅋㅋ
+😂 ㅋㅋ
 kk
 Haha / LOL
 More ㅋ = funnier!
 
-😊
-ㅎㅎ
+😊 ㅎㅎ
 hh
 Hehe / soft laugh
 Warmer than ㅋㅋ
 
-😢
-ㅠㅠ
+😢 ㅠㅠ
 uu
 Crying / sad
 = TT (eyes crying!)
 
-👍
-ㅇㅇ
+👍 ㅇㅇ
 oo
 Yes / okay / yep
 Short for 응응
@@ -40,20 +36,17 @@ nn
 No / nope
 Short for 노노
 
-🚀
-ㄱㄱ
+🚀 ㄱㄱ
 gg
 Let's go! / Go go!
 Short for 고고
 
-😲
-ㅎㄷㄷ
+😲 ㅎㄷㄷ
 h-d-d
 Scary / intense
 Short for 후덜덜
 
-😭
-ㅜㅜ
+😭 ㅜㅜ
 uu
 Crying / sad
 Same feeling as ㅠㅠ
@@ -82,38 +75,31 @@ Same feeling as ㅠㅠ
 jo-a-yo
 Like
 
-💬
-댓글
+💬 댓글
 daet-geul
 Comment
 
-👥
-팔로우
+👥 팔로우
 pal-ro-u
 Follow
 
-🔔
-구독
+🔔 구독
 gu-dok
 Subscribe
 
-📤
-공유
+📤 공유
 gong-yu
 Share
 
-🔴
-라이브
+🔴 라이브
 ra-i-beu
 Live stream
 
-📸
-스토리
+📸 스토리
 seu-to-ri
 Story
 
-🎬
-릴스
+🎬 릴스
 ril-seu
 Reels
 
@@ -122,8 +108,7 @@ Reels
 ge-si-mul
 Post
 
-📨
-DM / 디엠
+📨 DM / 디엠
 di-em
 Direct Message
 
@@ -132,8 +117,7 @@ Direct Message
 hae-si-tae-geu
 Hashtag
 
-🌊
-바이럴
+🌊 바이럴
 ba-i-reol
 Viral
 
@@ -245,16 +229,13 @@ Used same as in English
 Crying / sad / cute sad
 ㅠㅠ in text = 😭 in emoji
 
-💀
-So funny I'm dead
+💀 So funny I'm dead
 Same as English usage
 
-🥹
-Touched / moved
+🥹 Touched / moved
 When something is 감동적 (moving)
 
-👍
-Okay / good / ㅇㅋ
+👍 Okay / good / ㅇㅋ
 ㅇㅋ = OK in Korean
 
 📝 QUIZ — Decode the Korean Text!

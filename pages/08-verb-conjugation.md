@@ -17,7 +17,6 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 ✅ Everything else → add **어요 (eo-yo)**
 
 ✅ **하다 (ha-da)** → always becomes **해요 (hae-yo)**
-
 | 기본형 | Pronunciation | Meaning | 해요체 | Pronunciation |
 | --- | --- | --- | --- | --- |
 | 가다 | ga-da | to go | 가요 | ga-yo |

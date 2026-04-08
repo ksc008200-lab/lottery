@@ -130,18 +130,15 @@ As (role) / By (means)
 학생으로서 / 말로써
 
 ### 📱 맞춤법 체크 도구 · Spelling Check Tools
-🔍
-네이버 맞춤법 검사기
+🔍 네이버 맞춤법 검사기
 search.naver.com → "맞춤법 검사기"
 가장 많이 사용 · Most used
 
-📖
-국립국어원
+📖 국립국어원
 korean.go.kr
 Official Korean language authority
 
-📱
-카카오 맞춤법
+📱 카카오 맞춤법
 KakaoTalk 내장 기능
 Built into KakaoTalk
 

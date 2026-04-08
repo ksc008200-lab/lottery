@@ -29,8 +29,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 짐을 맡겨도 돼요? | jim-eul mat-gyeo-do dwae-yo? | Can I leave my luggage here? |
 
 ### 🗺️ Tourist Vocabulary · 관광 단어
-🏯
-궁 / 궁궐
+🏯 궁 / 궁궐
 gung / gung-gwol
 palace
 
@@ -39,13 +38,11 @@ palace
 sa-won / jeol
 temple
 
-🎭
-박물관
+🎭 박물관
 bang-mul-gwan
 museum
 
-🌊
-해변
+🌊 해변
 hae-byeon
 beach
 
@@ -54,8 +51,7 @@ beach
 san
 mountain
 
-🌉
-다리
+🌉 다리
 da-ri
 bridge
 
@@ -64,8 +60,7 @@ bridge
 han-ok-ma-eul
 traditional village
 
-🎡
-놀이공원
+🎡 놀이공원
 nol-i-gong-won
 amusement park
 

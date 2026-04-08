@@ -9,38 +9,32 @@ From the giant malls of 명동 (Myeongdong) to local 시장 (traditional markets
 ### Korean Money · 한국 돈 (원 · won)
 💰 Korean Won · 원 (₩)
 The Korean currency is **원 (won)**. There are no cents — everything is in whole numbers. Don't panic at big numbers! ₩10,000 ≈ about $7–8 USD.
-🪙
-백 원
+🪙 백 원
 baek won
 ₩100
 coin · 동전
 
-🪙
-오백 원
+🪙 오백 원
 o-baek won
 ₩500
 most common coin
 
-💵
-천 원
+💵 천 원
 cheon won
 ₩1,000
 ≈ $0.75
 
-💵
-오천 원
+💵 오천 원
 o-cheon won
 ₩5,000
 ≈ $3.75
 
-💴
-만 원
+💴 만 원
 man won
 ₩10,000
 ≈ $7.50 · most used
 
-💴
-오만 원
+💴 오만 원
 o-man won
 ₩50,000
 ≈ $37.50 · biggest bill
@@ -62,13 +56,11 @@ Say these prices in Korean:
 정답: 1. 이천 원 2. 만 오천 원 3. 사만 팔천 원 4. 이십만 원
 
 ### 🛍️ Shopping Vocabulary · 쇼핑 단어
-🏬
-백화점
+🏬 백화점
 baek-hwa-jeom
 department store
 
-🏪
-편의점
+🏪 편의점
 pyeon-ui-jeom
 convenience store
 
@@ -82,28 +74,23 @@ traditional market
 ga-gyeok
 price
 
-🔖
-할인
+🔖 할인
 hal-in
 discount / sale
 
-🛒
-장바구니
+🛒 장바구니
 jang-ba-gu-ni
 shopping cart/bag
 
-🧾
-영수증
+🧾 영수증
 yeong-su-jeung
 receipt
 
-💳
-카드
+💳 카드
 ka-deu
 credit card
 
-💵
-현금
+💵 현금
 hyeon-geum
 cash
 

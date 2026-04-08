@@ -7,54 +7,44 @@ K팝 & 한국 엔터테인먼트 · K-pop & han-guk en-teo-tein-meon-teu · Ride
 The Korean Wave — K-pop, K-dramas, Korean movies, Korean food, Korean beauty — has conquered the globe. Most people who learn Korean today do so because of 한류. Now let's learn the language *behind* the wave — the real Korean used in songs, dramas, and fan culture! 🎵📺
 
 ### The Hallyu Wave · 한류의 모든 것
-🎵
-K-팝
+🎵 K-팝
 K-pop
 BTS, BLACKPINK, aespa, NewJeans, Stray Kids...
 
-📺
-K-드라마
+📺 K-드라마
 K-drama
 Crash Landing on You, Squid Game, Goblin...
 
-🎬
-한국 영화
+🎬 한국 영화
 Korean movies
 Parasite (기생충), Train to Busan (부산행)...
 
-💄
-K-뷰티
+💄 K-뷰티
 K-beauty
 Skincare, glass skin, BB cream, sheet masks...
 
-🎮
-웹툰 / 게임
+🎮 웹툰 / 게임
 Webtoon / Games
 Naver Webtoon, League of Legends, StarCraft...
 
 ### 🎤 K-pop Vocabulary · K팝 단어
-🌟
-아이돌
+🌟 아이돌
 a-i-dol
 idol (K-pop star)
 
-👥
-그룹 / 팀
+👥 그룹 / 팀
 geu-rup / tim
 group / team
 
-💿
-앨범
+💿 앨범
 ael-beom
 album
 
-🎬
-뮤직비디오
+🎬 뮤직비디오
 myu-jik-bi-di-o
 music video (MV)
 
-🕺
-안무
+🕺 안무
 an-mu
 choreography
 
@@ -63,8 +53,7 @@ choreography
 paen-deom
 fandom
 
-🏆
-데뷔
+🏆 데뷔
 de-bwi
 debut
 
@@ -73,13 +62,11 @@ debut
 keom-baek
 comeback (new release)
 
-📱
-브이로그
+📱 브이로그
 beu-i-ro-geu
 vlog
 
-🎧
-타이틀곡
+🎧 타이틀곡
 ta-i-teul-gok
 title track
 
@@ -96,18 +83,15 @@ title track
 | 사생팬 | sa-saeng-paen | Sasaeng (overly obsessive fan) |
 
 ### 📺 K-Drama Vocabulary · K드라마 단어
-😭
-막장 드라마
+😭 막장 드라마
 mak-jang deu-ra-ma
 makjang drama (over-the-top dramatic)
 
-💕
-로맨스
+💕 로맨스
 ro-maen-seu
 romance
 
-😱
-반전
+😱 반전
 ban-jeon
 plot twist
 
@@ -116,13 +100,11 @@ PPL
 pi-pi-el
 Product placement (very common in K-dramas!)
 
-📡
-본방사수
+📡 본방사수
 bon-bang-sa-su
 watching the live broadcast (not recorded)
 
-🔄
-정주행
+🔄 정주행
 jeong-ju-haeng
 binge-watching from episode 1
 

@@ -8,8 +8,7 @@
 A good dictionary is your best Korean teacher. But Korean dictionaries work differently from English ones — conjugated verbs look nothing like their base form, and Chinese-based words (한자어) need special attention. This chapter teaches you to find ANY Korean word fast! 🚀
 
 ### 📱 Best Korean Dictionaries · 최고의 한국어 사전
-🟢
-NAVER 사전
+🟢 NAVER 사전
 dict.naver.com
 
 ✅ 가장 많이 사용
@@ -20,8 +19,7 @@ dict.naver.com
 
 ⭐ 1위 추천
 
-🟠
-DAUM 사전
+🟠 DAUM 사전
 dic.daum.net
 
 ✅ 깔끔한 UI
@@ -29,8 +27,7 @@ dic.daum.net
 ✅ 예문 좋음
 ✅ 무료 앱
 
-🔵
-국립국어원
+🔵 국립국어원
 stdict.korean.go.kr
 
 ✅ 공식 표준 사전
@@ -38,8 +35,7 @@ stdict.korean.go.kr
 ✅ 학술적으로 정확
 ⚠️ 영어 뜻 없음
 
-🟡
-Papago
+🟡 Papago
 papago.naver.com
 
 ✅ AI 번역 최강
@@ -116,29 +112,24 @@ This is the most important skill! Korean verbs change form completely when conju
 | 슬랭/신조어 | △ 느린 업데이트 | ✅ 빠른 업데이트 |
 
 ### 💎 사전 활용 꿀팁 · Pro Dictionary Tips
-🔊
-발음 반드시 듣기
+🔊 발음 반드시 듣기
 한국어는 발음이 표기와 다를 때가 많아요. 네이버 사전에서 스피커 아이콘 클릭!
 
-📝
-예문 전체 읽기
+📝 예문 전체 읽기
 뜻만 보지 말고 예문을 꼭 읽어요. 어떤 상황에서 쓰이는지 이해하는 게 더 중요!
 
-🔗
-한자 (漢字) 확인
+🔗 한자 (漢字) 확인
 한국어 단어의 60%는 한자어예요. 한자를 알면 관련 단어를 더 쉽게 외울 수 있어요!
 학교 (學校) = 학 (배우다) + 교 (학교)
 
-📱
-앱 설치 추천
+📱 앱 설치 추천
 **네이버 사전** 앱 — 오프라인도 가능, 단어장 기능, 단어 퀴즈까지!
 
 ✏️
 단어장 만들기
 네이버 사전에서 ♡ 버튼 클릭 → 내 단어장 저장 → 나중에 복습!
 
-🎯
-기본형으로 검색
+🎯 기본형으로 검색
 먹었어요 검색 → 안 나올 수 있음. 먹다로 검색해야 해요!
 
 ### 💬 실전 — 사전 찾아보기 · Practice Looking It Up

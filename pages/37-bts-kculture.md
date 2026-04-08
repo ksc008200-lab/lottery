@@ -46,18 +46,15 @@ BTS가 빌보드 핫 100 1위에 오른 첫 번째 한국 아티스트가 되었
 **BTS (방탄소년단 · Bangtan Sonyeondan · "Bulletproof Boy Scouts")** is the most commercially successful Korean act in history — and arguably the most influential music group of the 21st century. Formed in 2013 under HYBE (formerly Big Hit Entertainment), they defied every expectation placed on a K-pop group.
 
 **BTS(방탄소년단)**는 역사상 가장 상업적으로 성공한 한국 아티스트이며 — 21세기 가장 영향력 있는 음악 그룹이라고도 할 수 있습니다. 2013년 하이브(구 빅히트 엔터테인먼트) 소속으로 결성되어, K팝 그룹에 가해지는 모든 기대를 뛰어넘었습니다.
-🎤
-RM (김남준)
+🎤 RM (김남준)
 Leader · Rapper
 UN speech 2018 · "Speak Yourself"
 
-🎸
-진 (김석진)
+🎸 진 (김석진)
 Vocalist
 "Worldwide Handsome" · 육군 입대
 
-🎧
-슈가 (민윤기)
+🎧 슈가 (민윤기)
 Rapper · Producer
 "Agust D" 솔로
 
@@ -66,18 +63,15 @@ Rapper · Producer
 Rapper · Dancer
 "J-Hope" · Lollapalooza 헤드라이너
 
-🎹
-지민 (박지민)
+🎹 지민 (박지민)
 Vocalist · Dancer
 "Jimin" · Billboard 솔로 1위
 
-🐻
-뷔 (김태형)
+🐻 뷔 (김태형)
 Vocalist
 "V" · 솔로 앨범 "Layover"
 
-🐰
-정국 (전정국)
+🐰 정국 (전정국)
 Vocalist · Main performer
 "Golden Maknae" · 솔로 "Seven"
 
@@ -204,7 +198,6 @@ Korean instant noodles (라면 · ramyeon) are a cultural institution. The Paras
 The most direct impact of Hallyu on the world: **millions of people are learning Korean specifically because of K-culture.**
 
 한류가 세계에 미친 가장 직접적인 영향: **수백만 명이 K문화 때문에 한국어를 배우고 있습니다.**
-
 | 현상 | 수치 |
 | --- | --- |
 | Duolingo 한국어 학습자 증가 (오징어 게임 이후) | +76% |
