@@ -1,65 +1,68 @@
 # Ch05: Numbers — 숫자
 
-<h3>Two Number Systems!</h3>
-    <h3 class="kr">두 가지 숫자 체계!</h3>
+## Numbers — Counting in Korean
+숫자 — 한국어로 세기
+### Two Number Systems!
 
-    <div class="philosophy-grid">
-      <div class="phil-box"><div class="phil-symbol">漢</div><div class="phil-name">Sino-Korean</div><div class="phil-name-kr">한자어 숫자</div><div class="phil-desc">Dates, money, phone numbers, minutes, floors</div></div>
-      <div class="phil-box"><div class="phil-symbol">한</div><div class="phil-name">Native Korean</div><div class="phil-name-kr">고유어 숫자</div><div class="phil-desc">Counting objects, hours, age (casual)</div></div>
-    </div>
+### 두 가지 숫자 체계!
+漢Sino-Korean한자어 숫자Dates, money, phone numbers, minutes, floors
+한Native Korean고유어 숫자Counting objects, hours, age (casual)
+### Sino-Korean Numbers (한자어)
 
-    <h3>Sino-Korean Numbers (한자어)</h3>
-    <table>
-      <thead><tr><th>Number</th><th>한글</th><th>Pronunciation</th><th>Number</th><th>한글</th><th>Pronunciation</th></tr></thead>
-      <tbody>
-        <tr><td>0</td><td class="hangul-cell">영/공</td><td>yeong/gong</td><td>6</td><td class="hangul-cell">육</td><td>yuk</td></tr>
-        <tr><td>1</td><td class="hangul-cell">일</td><td>il</td><td>7</td><td class="hangul-cell">칠</td><td>chil</td></tr>
-        <tr><td>2</td><td class="hangul-cell">이</td><td>i</td><td>8</td><td class="hangul-cell">팔</td><td>pal</td></tr>
-        <tr><td>3</td><td class="hangul-cell">삼</td><td>sam</td><td>9</td><td class="hangul-cell">구</td><td>gu</td></tr>
-        <tr><td>4</td><td class="hangul-cell">사</td><td>sa</td><td>10</td><td class="hangul-cell">십</td><td>sip</td></tr>
-        <tr><td>5</td><td class="hangul-cell">오</td><td>o</td><td>100</td><td class="hangul-cell">백</td><td>baek</td></tr>
-      </tbody>
-    </table>
+| Number | 한글 | Pronunciation |
+| :---: | :---: | :---: |
+| 0 | 영/공 | yeong/gong |
+| 6 | 육 | yuk |
+| 1 | 일 | il |
+| 7 | 칠 | chil |
+| 2 | 이 | i |
+| 8 | 팔 | pal |
+| 3 | 삼 | sam |
+| 9 | 구 | gu |
+| 4 | 사 | sa |
+| 10 | 십 | sip |
+| 5 | 오 | o |
+| 100 | 백 | baek |
 
-    <h3>Native Korean Numbers (고유어)</h3>
-    <table>
-      <thead><tr><th>Number</th><th>한글</th><th>Pronunciation</th><th>Number</th><th>한글</th><th>Pronunciation</th></tr></thead>
-      <tbody>
-        <tr><td>1</td><td class="hangul-cell">하나</td><td>ha-na</td><td>6</td><td class="hangul-cell">여섯</td><td>yeo-seot</td></tr>
-        <tr><td>2</td><td class="hangul-cell">둘</td><td>dul</td><td>7</td><td class="hangul-cell">일곱</td><td>il-gop</td></tr>
-        <tr><td>3</td><td class="hangul-cell">셋</td><td>set</td><td>8</td><td class="hangul-cell">여덟</td><td>yeo-deol</td></tr>
-        <tr><td>4</td><td class="hangul-cell">넷</td><td>net</td><td>9</td><td class="hangul-cell">아홉</td><td>a-hop</td></tr>
-        <tr><td>5</td><td class="hangul-cell">다섯</td><td>da-seot</td><td>10</td><td class="hangul-cell">열</td><td>yeol</td></tr>
-      </tbody>
-    </table>
+### Native Korean Numbers (고유어)
 
-    <h3>Ordinal Numbers · 서수 (순서)</h3>
-    <table>
-      <thead><tr><th>Order</th><th>한글</th><th>Pronunciation</th><th>Order</th><th>한글</th><th>Pronunciation</th></tr></thead>
-      <tbody>
-        <tr><td>1st</td><td class="hangul-cell">첫째</td><td>cheot-jjae</td><td>7th</td><td class="hangul-cell">일곱째</td><td>il-gop-jjae</td></tr>
-        <tr><td>2nd</td><td class="hangul-cell">둘째</td><td>dul-jjae</td><td>8th</td><td class="hangul-cell">여덟째</td><td>yeo-deol-jjae</td></tr>
-        <tr><td>3rd</td><td class="hangul-cell">셋째</td><td>set-jjae</td><td>9th</td><td class="hangul-cell">아홉째</td><td>a-hop-jjae</td></tr>
-        <tr><td>4th</td><td class="hangul-cell">넷째</td><td>net-jjae</td><td>10th</td><td class="hangul-cell">열째</td><td>yeol-jjae</td></tr>
-        <tr><td>5th</td><td class="hangul-cell">다섯째</td><td>da-seot-jjae</td><td>11th</td><td class="hangul-cell">열한째</td><td>yeol-han-jjae</td></tr>
-        <tr><td>6th</td><td class="hangul-cell">여섯째</td><td>yeo-seot-jjae</td><td>20th</td><td class="hangul-cell">스무째</td><td>seu-mu-jjae</td></tr>
-      </tbody>
-    </table>
+| Number | 한글 | Pronunciation |
+| :---: | :---: | :---: |
+| 1 | 하나 | ha-na |
+| 6 | 여섯 | yeo-seot |
+| 2 | 둘 | dul |
+| 7 | 일곱 | il-gop |
+| 3 | 셋 | set |
+| 8 | 여덟 | yeo-deol |
+| 4 | 넷 | net |
+| 9 | 아홉 | a-hop |
+| 5 | 다섯 | da-seot |
+| 10 | 열 | yeol |
 
-    <div class="tip"><div class="tip-icon">🕐</div><div class="tip-content"><strong>Telling Time · 시간 말하기</strong><p>Hours → Native Korean &nbsp;|&nbsp; Minutes → Sino-Korean</p><p class="kr">시(hour) → 고유어 숫자 &nbsp;|&nbsp; 분(minute) → 한자어 숫자</p></div></div>
+### Ordinal Numbers · 서수 (순서)
 
-    <table>
-      <thead><tr><th>Time</th><th>한글</th><th>Pronunciation</th></tr></thead>
-      <tbody>
-        <tr><td>1:00</td><td class="hangul-cell">한 시</td><td>han si</td></tr>
-        <tr><td>3:30</td><td class="hangul-cell">세 시 삼십 분</td><td>se si sam-sip bun</td></tr>
-        <tr><td>6:15</td><td class="hangul-cell">여섯 시 십오 분</td><td>yeo-seot si si-bo bun</td></tr>
-        <tr><td>12:00</td><td class="hangul-cell">열두 시</td><td>yeol-du si</td></tr>
-      </tbody>
-    </table>
+| Order | 한글 | Pronunciation |
+| :---: | :---: | :---: |
+| 1st | 첫째 | cheot-jjae |
+| 7th | 일곱째 | il-gop-jjae |
+| 2nd | 둘째 | dul-jjae |
+| 8th | 여덟째 | yeo-deol-jjae |
+| 3rd | 셋째 | set-jjae |
+| 9th | 아홉째 | a-hop-jjae |
+| 4th | 넷째 | net-jjae |
+| 10th | 열째 | yeol-jjae |
+| 5th | 다섯째 | da-seot-jjae |
+| 11th | 열한째 | yeol-han-jjae |
+| 6th | 여섯째 | yeo-seot-jjae |
+| 20th | 스무째 | seu-mu-jjae |
 
-  </div>
-</div>
+🕐**Telling Time · 시간 말하기**
+Hours → Native Korean  |  Minutes → Sino-Korean
 
-<!-- ══════════════════════════════════════════ CHAPTER 6 -->
-<div class="chapter"
+시(hour) → 고유어 숫자  |  분(minute) → 한자어 숫자
+| Time | 한글 | Pronunciation |
+| :---: | :---: | :---: |
+| 1:00 | 한 시 | han si |
+| 3:30 | 세 시 삼십 분 | se si sam-sip bun |
+| 6:15 | 여섯 시 십오 분 | yeo-seot si si-bo bun |
+| 12:00 | 열두 시 | yeol-du si |
