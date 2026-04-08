@@ -1,11 +1,9 @@
 # Ch09: Conversations — 실생활 대화
 
-
 ## Real Life Conversations — Speak from Day One!
 실생활 대화 — 첫날부터 말하기!
 
 ### Scene 1: Meeting Someone New · 처음 만나는 사람
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 안녕하세요! | an-nyeong-ha-se-yo! | Hello! |
@@ -16,7 +14,6 @@
 | 아직 배우고 있어요. | a-jik bae-u-go it-eo-yo | I'm still learning. |
 
 ### Scene 2: At a Café · 카페에서
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 어서오세요! | eo-seo-o-se-yo! | Welcome! |
@@ -25,7 +22,6 @@
 | 영수증 주세요. | yeong-su-jeung ju-se-yo | Receipt, please. |
 
 ### Scene 3: At a Restaurant · 식당에서
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 저기요! | jeo-gi-yo! | Excuse me! (calling staff) |
@@ -35,7 +31,6 @@
 | 포장해 주세요. | po-jang-hae ju-se-yo | To go, please. |
 
 ### Scene 4: Shopping · 쇼핑할 때
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 그냥 구경하는 거예요. | geu-nyang gu-gyeong-ha-neun geo-ye-yo | Just browsing. |
@@ -45,7 +40,6 @@
 | 카드 돼요? | ka-deu dwae-yo? | Do you accept card? |
 
 ### Scene 5: At the Doctor's · 병원에서
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 어디가 불편하세요? | eo-di-ga bul-pyeon-ha-se-yo? | Where does it hurt? |
@@ -60,7 +54,6 @@
 한국인들은 전화를 받을 때 항상 "여보세요"라고 합니다. 길에서 쓰면 매우 이상하게 들립니다!
 
 ### Top 20 Survival Phrases · 생존 표현 TOP 20
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 안녕하세요 | an-nyeong-ha-se-yo | Hello |

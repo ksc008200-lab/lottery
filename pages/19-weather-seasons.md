@@ -1,6 +1,5 @@
 # Ch19: Weather & Seasons — 날씨 & 계절
 
-
 ## Weather & Seasons — Talk Like a Korean!
 
 날씨 & 계절 · nal-ssi & gye-jeol · Korea's 4 Distinct Seasons!
@@ -131,7 +130,6 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 정답: 1-c, 2-d, 3-b, 4-a, 5-e
 
 ### 🌡️ Temperature · 온도
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 오늘 몇 도예요? | o-neul myeot do-ye-yo? | What is the temperature today? |
@@ -180,7 +178,6 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 (geu-rae-do ga-eu-ri o-ni-kka seon-seon-hae-seo jo-a-yo!) — Still, with autumn coming, it's nice and cool!
 
 ### 🗣️ Useful Weather Phrases · 날씨 표현
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 오늘 날씨 어때요? | o-neul nal-ssi eo-ttae-yo? | How's the weather today? |

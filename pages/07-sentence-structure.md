@@ -1,6 +1,5 @@
 # Ch07: Sentence Structure — 문장 구조
 
-
 ## Sentence Structure — Korean Speaks Backwards!
 문장 구조 — 한국어는 거꾸로 말한다!
 
@@ -12,7 +11,6 @@ Korean: Subject → Object → **Verb LAST!**    (나는 피자를 **먹어요
 영어는 동사가 가운데, 한국어는 동사가 항상 마지막! 끝까지 들어야 무슨 행동인지 알 수 있어요.
 
 ### The Most Important Particles · 핵심 조사
-
 | 조사 | Pronunciation | Role |
 | --- | --- | --- |
 | 은/는 | eun/neun | Topic marker |

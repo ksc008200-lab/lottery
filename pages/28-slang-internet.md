@@ -1,6 +1,5 @@
 # Ch28: Slang & Internet — 슬랭 & MZ세대
 
-
 ## Korean Slang & Internet Language
 한국어 슬랭 & 인터넷 언어 · han-gug-eo seul-laeng & in-teo-net eon-eo
 📱💬🔥
@@ -60,7 +59,6 @@ Crying / sad
 Same feeling as ㅠㅠ
 
 ### 🔥 인기 슬랭 단어 · Popular Slang Words
-
 | 슬랭 | 발음 | Meaning | Example |
 | --- | --- | --- | --- |
 | 대박 | dae-bak | Amazing! Jackpot! Wow! | 이거 진짜 대박이야! = This is amazing! |

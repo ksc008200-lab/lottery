@@ -1,6 +1,5 @@
 # Ch31: "우리" Culture — 우리 문화
 
-
 ## The "Uri" Culture — Korea's Heart of We
 "우리" 문화 — 한국인의 마음속 '우리'
 
@@ -22,7 +21,6 @@ This isn't a grammatical error — it's a window into the **Korean worldview**. 
 ### The Vocabulary of "We"
 
 ### "우리"가 담긴 핵심 표현들
-
 | 한국어 | 직역 (Literal) | 실제 의미 (Real Meaning) |
 | --- | --- | --- |
 | **우리나라** uri-na-ra | our country | Korea (used by Koreans to refer to their own nation) |

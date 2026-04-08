@@ -1,6 +1,5 @@
 # Ch16: Shopping & Money — 쇼핑 & 돈
 
-
 ## Shopping & Money — Shop Like a Korean!
 
 쇼핑 & 돈 · syo-ping & don · From Markets to Malls!
@@ -47,7 +46,6 @@ o-man won
 ≈ $37.50 · biggest bill
 
 #### How to Read Korean Prices · 가격 읽는 법
-
 | Price | 한글 | 발음 | How to say |
 | --- | --- | --- | --- |
 | ₩500 | 오백 원 | o-baek won | 오(5) + 백(100) |
@@ -115,7 +113,6 @@ gyo-hwan / hwan-bul
 exchange / refund
 
 ### 💬 Essential Shopping Phrases · 쇼핑 필수 표현
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
@@ -132,7 +129,6 @@ exchange / refund
 | 환불 되나요? | hwan-bul doe-na-yo? | Can I get a refund? |
 
 #### 👕 Clothing & Colors · 옷 & 색깔
-
 | Size 사이즈 | 한글 | 발음 |
 | --- | --- | --- |
 | Small (S) | 스몰 / 작은 | seu-mol / ja-geun |

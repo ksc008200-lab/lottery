@@ -1,6 +1,5 @@
 # Ch32: No Subject Culture — 주어 생략
 
-
 ## Speaking Without a Subject — Korea's Silent "I"
 주어 없이 말하는 문화 — 한국어의 침묵하는 "나"
 
@@ -173,7 +172,6 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 ### 주어 생략 — 실전 문장 50선
 
 ### 50 Natural Korean Sentences Without a Subject
-
 | 한국어 (주어 생략) | English |
 | --- | --- |
 | 배고파. | I'm hungry. |

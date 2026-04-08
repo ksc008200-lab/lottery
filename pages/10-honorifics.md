@@ -1,6 +1,5 @@
 # Ch10: 존댓말 & 반말 — Korean Respect
 
-
 ## 존댓말 & 반말 — The Art of Korean Respect
 존댓말 & 반말 — 한국어 존경의 예술
 
@@ -59,7 +58,6 @@ As a foreigner learning Korean → always start with **해요체 (~요)**. It's 
 해요체 → 습니다체: 먹어요 → 먹습니다  |  가요 → 갑니다  |  해요 → 합니다
 
 ### Side-by-Side Comparison · 나란히 비교
-
 | Situation | 습니다체 (Formal) | 해요체 (Everyday ⭐) | 반말 (Informal) |
 | --- | --- | --- | --- |
 | Hello | 안녕하십니까 an-nyeong-ha-sim-ni-kka | 안녕하세요 an-nyeong-ha-se-yo | 안녕 an-nyeong |
@@ -81,7 +79,6 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 한국어는 말투(어미)만 바꾸는 것이 아니라, 아예 단어 자체가 달라지는 **높임말**이 있어요. 윗사람의 행동을 말할 때 반드시 사용합니다!
 
 #### ① Honorific Verbs · 높임말 동사 (completely different words!)
-
 | Meaning | 일반 (Normal) | 발음 | 높임말 (Honorific) | 발음 |
 | --- | --- | --- | --- | --- |
 | To eat | 먹다 | meok-da | 드시다 / 잡수시다 | deu-si-da / jap-su-si-da |
@@ -94,7 +91,6 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 | To give (I give to honored person) | 주다 | ju-da | 드리다 | deu-ri-da |
 
 #### ② Honorific Nouns · 높임말 명사 (separate words for people!)
-
 | Meaning | 일반 (Normal) | 발음 | 높임말 (Honorific) | 발음 |
 | --- | --- | --- | --- | --- |
 | Name | 이름 | i-reum | 성함 | seong-ham |
@@ -113,14 +109,12 @@ Add **~(으)시~** to a verb stem to show that the *subject* of the sentence des
 **Example:** 선생님이 오**셨**어요. (seon-saeng-nim-i o-**syeoss**-eo-yo) — The teacher has come. (showing respect to teacher)
 
 #### 💬 Honorific in Action · 높임말 실전
-
 | Context | ❌ Normal (incorrect) | ✅ Honorific (correct) | Pronunciation · Meaning |
 | --- | --- | --- | --- |
 | Talking to grandfather | 할아버지 밥 먹었어? | 할아버지, 진지 드셨어요? | hal-a-beo-ji, jin-ji deu-syeoss-eo-yo? *Grandfather, have you eaten?* |
 | Asking where teacher is | 선생님 어디 있어요? | 선생님 어디 계세요? | seon-saeng-nim eo-di gye-se-yo? *Where is the teacher?* (있다 → 계시다) |
 
 ### K-pop 반말 Slang · K-pop 반말 슬랭
-
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 야! | ya! | Hey! |

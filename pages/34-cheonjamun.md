@@ -1,6 +1,5 @@
 # Ch34: 千字文 — Hanja Unlocks Korean
 
-
 ## 千字文 & Hanja as Meaning-Keys — Know the Characters, Master Korean
 천자문 & 뜻글자 — 한자를 알면 한국어가 매우 쉬워진다!
 

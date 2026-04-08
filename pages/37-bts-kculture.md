@@ -1,6 +1,5 @@
 # Ch37: BTS & K-Culture — 한류
 
-
 ## BTS & K-Culture — The Korean Wave That Swept the World
 한류 & K-문화 — 세계를 휩쓴 한국의 물결
 
@@ -131,7 +130,6 @@ K팝 팬덤은 참여형 문화입니다. 팬들은 공식 이름(ARMY·BLINK·S
 ### K-드라마 — 세계가 빠진 이야기들
 
 ### K-Drama: Stories That Broke Borders
-
 | 드라마 | 연도 | 왜 세계를 사로잡았나 |
 | --- | --- | --- |
 | **겨울연가** Winter Sonata | 2002 | 한류 1파 촉발 — 배용준 "욘사마" 신드롬, 일본·아시아 열풍 |

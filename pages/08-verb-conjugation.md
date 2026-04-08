@@ -1,6 +1,5 @@
 # Ch08: Verb Conjugation — 동사 활용
 
-
 ## Verb Conjugation — One Verb, Infinite Power!
 동사 활용 — 동사 하나로 무한한 표현!
 
@@ -28,7 +27,6 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 | 사랑하다 | sa-rang-ha-da | to love | 사랑해요 | sa-rang-hae-yo |
 
 ### 3 Essential Tenses · 핵심 3가지 시제
-
 | Tense | 한글 | Pronunciation | Meaning |
 | --- | --- | --- | --- |
 | ⏪ Past | 먹었어요 | meog-eoss-eo-yo | I ate |

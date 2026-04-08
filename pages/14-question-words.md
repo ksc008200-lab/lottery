@@ -1,6 +1,5 @@
 # Ch14: Question Words — 의문사
 
-
 ## Question Words — Ask Anything in Korean!
 
 의문사 · ui-mun-sa · The Key to Every Conversation
@@ -63,7 +62,6 @@ HOW MUCH / MANY
 | 누구랑 왔어요? | nu-gu-rang wass-eo-yo? | Who did you come with? |
 
 ### 2 · 뭐 / 무엇 — WHAT
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 이게 뭐예요? | i-ge mwo-ye-yo? | What is this? |
@@ -73,7 +71,6 @@ HOW MUCH / MANY
 | 직업이 뭐예요? | ji-geob-i mwo-ye-yo? | What is your job? |
 
 ### 3 · 어디 — WHERE
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 어디예요? | eo-di-ye-yo? | Where is it? |
@@ -92,7 +89,6 @@ Fill in the correct question word:
 정답: 1. 뭐 2. 어디 3. 누가 4. 뭐
 
 ### 4 · 언제 — WHEN
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 언제 와요? | eon-je wa-yo? | When are you coming? |
@@ -101,7 +97,6 @@ Fill in the correct question word:
 | 언제 시간 있어요? | eon-je si-gan iss-eo-yo? | When do you have time? |
 
 ### 5 · 왜 — WHY
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 왜요? | wae-yo? | Why? (polite) |
@@ -217,7 +212,6 @@ I'm sick / it hurts
 정답: 1. 몇 2. 어디가 3. 왜 4. 몇 5. 어떤 6. 뭐
 
 ### 🗂️ Question Word Master Chart · 의문사 총정리
-
 | 의문사 | 발음 | English | Example |
 | --- | --- | --- | --- |
 | 누가 / 누구 | nu-ga / nu-gu | Who | 누가 왔어요? |

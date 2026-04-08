@@ -1,6 +1,5 @@
 # Ch26: Love & Dating — 사랑 & 연애
 
-
 ## Love & Dating — Korean Romance Culture!
 
 사랑 & 연애 · sa-rang & yeon-ae · The Language of the Heart!
@@ -45,7 +44,6 @@ to break up
 헤어졌어요 · We broke up
 
 ### 💬 Essential Love Phrases · 사랑 표현 필수
-
 | 한글 | 발음 | English | Level |
 | --- | --- | --- | --- |
 | 좋아해요. | jo-a-hae-yo. | I like you. (early feelings) | 💛 Mild |
@@ -137,7 +135,6 @@ Translate into Korean:
 *🌸 Cherry blossoms fall gently... ♬*
 
 ### 💔 Difficult Conversations · 어려운 대화
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 우리 헤어져요. | u-ri he-eo-jyeo-yo. | Let's break up. |

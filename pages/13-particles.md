@@ -1,6 +1,5 @@
 # Ch13: Particles — 조사
 
-
 ## Particles — The Magic Glue of Korean!
 
 조사 · jo-sa · The Secret to Sounding Natural
@@ -92,7 +91,6 @@ Where action HAPPENS · From a place
 🍳 집**에서** 요리해요 — I'm *cooking* at home (action!)
 
 ### 4 · More Essential Particles · 기타 조사
-
 | Particle | 발음 | Meaning | Example | English |
 | --- | --- | --- | --- | --- |
 | 의 | ui (→ "e") | Possessive ('s / of) | 나의 친구 → 내 친구 | my friend |
@@ -191,7 +189,6 @@ I drink coffee with a friend at the café.
 **A:** 네! 30분 후에 갈게요! (ne! sam-sip-bun hu-e gal-ge-yo!) — Yes! I'll go in 30 minutes!
 
 ### 🗂️ Particle Master Chart · 조사 총정리
-
 | Particle | 발음 | Role | When |
 | --- | --- | --- | --- |
 | 은/는 | eun / neun | Topic | General statements, contrast |

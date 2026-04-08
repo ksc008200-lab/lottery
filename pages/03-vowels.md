@@ -1,6 +1,5 @@
 # Ch03: Vowels — 모음
 
-
 ## Korean Vowels
 한국어 모음 — 모든 음절의 핵심
 

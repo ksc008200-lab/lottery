@@ -1,6 +1,5 @@
 # Ch30: Dictionary Guide — 사전 찾는 법
 
-
 ## How to Use a Korean Dictionary
 사전 찾는 법 · sa-jeon chat-neun beop
 📖🔍💡
@@ -107,7 +106,6 @@ This is the most important skill! Korean verbs change form completely when conju
 예시: 가 → 나 → 다 → 라 / 가 → 개 → 거 → 겨 → 고
 
 ### 🤖 번역기 vs 사전 — 언제 뭘 써야 해?
-
 | | 📖 사전 (Dictionary) | 🤖 Papago/번역기 |
 | --- | --- | --- |
 | 단어 뜻 확인 | ✅ 완벽 | △ 부정확할 수 있음 |

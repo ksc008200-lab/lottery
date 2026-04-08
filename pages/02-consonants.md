@@ -1,6 +1,5 @@
 # Ch02: Consonants — 자음
 
-
 ## Korean Consonants
 한국어 자음 — 소리의 기초
 

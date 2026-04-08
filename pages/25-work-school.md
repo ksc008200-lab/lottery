@@ -1,6 +1,5 @@
 # Ch25: Work & School — 직장 & 학교
 
-
 ## Work & School — Korean Workplace & Campus Life!
 
 직장 & 학교 · jik-jang & hak-gyo · Thrive in Korean Professional & Academic Life!
@@ -69,7 +68,6 @@ byeon-ho-sa
 lawyer
 
 ### 💼 Workplace Phrases · 직장 표현
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 직업이 뭐예요? | jik-eob-i mwo-ye-yo? | What is your job? |
@@ -175,7 +173,6 @@ After regular school, most Korean students go to 학원 (private academies) for 
 (pa-i-ting! jal doel geo-ye-yo!) — Fighting! It'll work out!
 
 ### ⭐ Power Phrases for Work & School · 직장 & 학교 핵심 표현
-
 | 한글 | 발음 | English | When |
 | --- | --- | --- | --- |
 | 파이팅! | pa-i-ting! | Fighting! / You got this! | Encouraging someone |

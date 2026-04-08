@@ -1,6 +1,5 @@
 # Ch17: Transportation — 교통 & 길 찾기
 
-
 ## Transportation & Directions — Navigate Korea!
 
 교통 & 길 찾기 · gyo-tong & gil chat-gi · Get Anywhere in Korea!
@@ -45,7 +44,6 @@ on foot / walking
 Korea is very walkable!
 
 ### 🚇 Subway Essentials · 지하철 필수 표현
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 지하철역이 어디예요? | ji-ha-cheol-yeok-i eo-di-ye-yo? | Where is the subway station? |
@@ -124,7 +122,6 @@ sa-geo-ri
 intersection
 
 #### 📍 Useful Location Words · 위치 표현
-
 | 한글 | 발음 | English | Example |
 | --- | --- | --- | --- |
 | 앞 | ap | in front of | 학교 앞 |
@@ -160,7 +157,6 @@ intersection
 (gam-sa-ham-ni-da! jeong-mal chin-jeol-ha-se-yo!) — Thank you! You're so kind!
 
 ### 🎒 Must-Know Transport Vocabulary · 교통 필수 단어
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 타다 | ta-da | to get on / ride (bus, subway, taxi) |

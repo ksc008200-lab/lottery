@@ -1,6 +1,5 @@
 # Ch05: Numbers — 숫자
 
-
 ## Numbers — Counting in Korean
 숫자 — 한국어로 세기
 
@@ -11,7 +10,6 @@
 한Native Korean고유어 숫자Counting objects, hours, age (casual)
 
 ### Sino-Korean Numbers (한자어)
-
 | Number | 한글 | Pronunciation |
 | --- | --- | --- |
 | 0 | 영/공 | yeong/gong |
@@ -28,7 +26,6 @@
 | 100 | 백 | baek |
 
 ### Native Korean Numbers (고유어)
-
 | Number | 한글 | Pronunciation |
 | --- | --- | --- |
 | 1 | 하나 | ha-na |
@@ -43,7 +40,6 @@
 | 10 | 열 | yeol |
 
 ### Ordinal Numbers · 서수 (순서)
-
 | Order | 한글 | Pronunciation |
 | --- | --- | --- |
 | 1st | 첫째 | cheot-jjae |

@@ -1,6 +1,5 @@
 # Ch22: Body & Health — 신체 & 건강
 
-
 ## Body & Health — Stay Safe in Korea!
 
 신체 & 건강 · sin-che & geon-gang · Essential for Every Traveler!
@@ -10,7 +9,6 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 ### Body Parts · 신체 부위
 
 #### Head & Face · 머리 & 얼굴
-
 | | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | 🧠 | 머리 | meo-ri | head / hair |
@@ -23,7 +21,6 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 | 🫁 | 얼굴 | eol-gul | face |
 
 #### Body · 몸통 & 팔다리
-
 | | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | 💪 | 어깨 | eo-kkae | shoulder |
@@ -102,7 +99,6 @@ Translate into Korean:
 정답: 1. 배가 아파요. 2. 열이 나요. 3. 온몸이 아파요. 4. 어지러워요. 5. 기침이 나요. 6. 허리가 아파요.
 
 ### 💊 At the Pharmacy · 약국에서
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 약국이 어디예요? | yak-guk-i eo-di-ye-yo? | Where is the pharmacy? |

@@ -1,6 +1,5 @@
 # Ch12: Grammar Patterns — 문법 패턴
 
-
 ## Grammar Patterns
 
 문법 패턴 · mun-beop pae-teun · Unlock Real Conversation!
@@ -136,7 +135,6 @@ Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 | 마셔요 | 마시지 않아요 | 안 마셔요 | I don't drink |
 
 ### Pattern 5 · ~(으)면 좋겠어요 · I wish / It would be nice if ___
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 날씨가 좋으면 좋겠어요 | nal-ssi-ga jo-eu-myeon jo-kess-eo-yo | I wish the weather were nice |
@@ -283,7 +281,6 @@ money
 I don't have money
 
 ### 🗂️ Pattern Summary · 패턴 요약
-
 | Pattern | Formula | Meaning | Example |
 | --- | --- | --- | --- |
 | 1 | ~고 싶어요 | I want to ___ | 먹고 싶어요 |

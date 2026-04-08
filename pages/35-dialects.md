@@ -1,6 +1,5 @@
 # Ch35: Seoul Standard & Dialects — 사투리
 
-
 ## Seoul Standard Korean & Regional Dialects — One Language, Many Voices
 표준어 & 사투리 — 하나의 언어, 수많은 목소리
 
@@ -85,7 +84,6 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 ### 같은 뜻, 다른 말 — Standard vs Dialect Side by Side
 
 ### The Same Meaning, Expressed in Five Different Ways
-
 | 뜻 | 표준어 (Seoul) | 경상 (Busan) | 전라 (Jeonju) | 충청 (Daejeon) | 제주 |
 | --- | --- | --- | --- | --- | --- |
 | What are you doing? | 뭐 해요? | **뭐 하노?** | **뭐 하냐?** | **뭐 혀유?** | **뭐 ㅎ엄수과?** |

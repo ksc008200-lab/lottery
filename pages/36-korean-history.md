@@ -1,6 +1,5 @@
 # Ch36: Korean History — 한국의 역사
 
-
 ## A History of Korea — 5,000 Years from Gojoseon to Today
 한국의 역사 개요 — 고조선부터 현대까지 5,000년
 
@@ -191,7 +190,6 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 ### 역사 속 핵심 어휘 — Vocabulary From History
 
 ### Words You Will Hear in Korean Media and Conversation
-
 | 단어 | 한자 | 뜻 |
 | --- | --- | --- |
 | **역사** | 歷史 | history |

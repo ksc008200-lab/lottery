@@ -1,6 +1,5 @@
 # Ch21: Adjectives — 형용사
 
-
 ## Adjectives — Describe Everything in Korean!
 
 형용사 · hyeong-yong-sa · Color Your Korean with Description!
@@ -136,7 +135,6 @@ Fill in the correct adjective:
 정답: 1. 잘생겼어요 2. 무거워요 3. 귀여워요 4. 친절하 / 똑똑해요
 
 ### ⚡ Opposite Adjectives · 반대말
-
 | 한글 ➕ | 발음 | English |
 | --- | --- | --- |
 | 좋아요 | jo-a-yo | good |

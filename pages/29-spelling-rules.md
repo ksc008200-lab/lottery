@@ -1,6 +1,5 @@
 # Ch29: Spelling Rules — 맞춤법
 
-
 ## Korean Spelling Rules
 맞춤법 · mat-chum-beop — Write Korean Correctly!
 ✍️📝✅
@@ -69,7 +68,6 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 | 일찍이 (early) | 확실히 (certainly) |
 
 ### 😵 헷갈리는 맞춤법 쌍 · Confusing Pairs
-
 | 틀린 표현 ❌ | 올바른 표현 ✅ | 설명 |
 | --- | --- | --- |
 | 왠만하면 | 웬만하면 | 웬 = "어떤" / 왠 = "왜인지" |

@@ -1,6 +1,5 @@
 # Ch23: K-pop & Entertainment — K팝
 
-
 ## K-pop & Korean Entertainment — Hallyu Wave!
 
 K팝 & 한국 엔터테인먼트 · K-pop & han-guk en-teo-tein-meon-teu · Ride the Korean Wave!
@@ -85,7 +84,6 @@ ta-i-teul-gok
 title track
 
 ### 💜 Fan Culture · 팬 문화
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 최애 | choe-ae | Favorite member / ultimate bias |
@@ -143,7 +141,6 @@ binge-watching from episode 1
 | 사랑해. | sa-rang-hae. | I love you. ❤️ |
 
 ### 📱 Internet & SNS Korean · 인터넷 & SNS 한국어
-
 | 한글 / 줄임말 | 발음 | Full form / Meaning |
 | --- | --- | --- |
 | ㅋㅋㅋ | kk-kk-kk | hahaha (Korean "lol" — ㅋ = "keu" laugh sound) |

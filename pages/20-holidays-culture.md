@@ -1,6 +1,5 @@
 # Ch20: Holidays & Culture — 명절 & 문화
 
-
 ## Korean Holidays & Culture — Celebrate Korea!
 
 한국 명절 & 문화 · han-guk myeong-jeol & mun-hwa · Experience the Real Korea!
@@ -37,7 +36,6 @@ Korean Thanksgiving / Harvest Festival
 jeul-geo-un chu-seok doe-se-yo — Have a joyful Chuseok!
 
 #### 🎊 Holiday Greetings · 명절 인사
-
 | Occasion | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | Lunar New Year | 새해 복 많이 받으세요 | sae-hae bok man-i ba-deu-se-yo | Happy New Year! (lit: Receive lots of blessings) |

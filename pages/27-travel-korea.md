@@ -1,6 +1,5 @@
 # Ch27: Travel in Korea — 한국 여행
 
-
 ## Travel in Korea — Explore Every Corner!
 
 한국 여행 · han-guk yeo-haeng · From Seoul to Jeju — See It All!
@@ -8,7 +7,6 @@
 Safe, clean, with world-class infrastructure — Korea is a traveler's dream. From the neon-lit streets of Seoul to the volcanic beauty of Jeju Island, every corner has something magical. This chapter gives you the language to explore it all! ✈️🏔️🌊
 
 ### Must-Visit Cities & Places · 꼭 가봐야 할 곳
-
 | | 도시 | 발음 | 특징 | 주요 명소 |
 | --- | --- | --- | --- | --- |
 | 🌆 | **서울** | Seoul · seo-ul | 수도 · Capital city | 경복궁 palace · 명동 shopping · 홍대 nightlife · 한강 river parks |
@@ -19,7 +17,6 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 🎭 | **인천** | Incheon · in-cheon | 관문 · Gateway to Korea | 인천국제공항 (world's best airport) · Chinatown · island hopping |
 
 ### 🏨 At the Hotel · 호텔에서
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 체크인 해주세요. | che-keu-in hae-ju-se-yo. | Please check me in. |
@@ -111,7 +108,6 @@ Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing)
 (wa, chu-cheon gam-sa-hae-yo! jeul-geo-un yeo-haeng doe-gil ba-ra-yo!) — Wow, thanks for the recommendation! Hope you have a great trip!
 
 ### 🧳 Essential Travel Phrases · 여행 필수 표현
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 여행 잘 다녀오세요! | yeo-haeng jal da-nyeo-o-se-yo! | Have a great trip! |

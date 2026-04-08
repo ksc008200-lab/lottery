@@ -1,6 +1,5 @@
 # Ch24: Hobbies & Free Time — 취미 & 여가
 
-
 ## Hobbies & Free Time — What Do You Do for Fun?
 
 취미 & 여가 · chwi-mi & yeo-ga · Talk About What You Love!
@@ -136,7 +135,6 @@ Translate into Korean:
 정답: 1. 독서를 좋아해요. 2. 여행을 즐겨요. 3. 기타를 배우고 싶어요. 4. 사진에 관심이 있어요. 5. 취미가 뭐예요?
 
 ### 🌙 Free Time · 여가 시간에 뭐 해요?
-
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 넷플릭스 봐요 | net-peul-lik-seu bwa-yo | I watch Netflix |
