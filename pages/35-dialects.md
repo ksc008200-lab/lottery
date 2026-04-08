@@ -86,7 +86,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 ### The Same Meaning, Expressed in Five Different Ways
 
 | 뜻 | 표준어 (Seoul) | 경상 (Busan) | 전라 (Jeonju) | 충청 (Daejeon) | 제주 |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | What are you doing? | 뭐 해요? | **뭐 하노?** | **뭐 하냐?** | **뭐 혀유?** | **뭐 ㅎ엄수과?** |
 | Where are you going? | 어디 가요? | **어데 가노?** | **어디 가냐?** | **어디 가유?** | **어디 감수과?** |
 | I don't know. | 모르겠어요. | **모르겠다 아이가.** | **모르겄소.** | **모르겠슈.** | **모릅네다.** |
@@ -105,7 +105,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 경상도 사투리 핵심 표현
 
 | 사투리 | 표준어 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **머하노?** | 뭐 해요? | What are you doing? |
 | **와?** | 왜요? | Why? (much stronger tone) |
 | **맞다 아이가!** | 맞잖아요! | Isn't that right! / Exactly! |
@@ -122,7 +122,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 전라도 사투리 핵심 표현
 
 | 사투리 | 표준어 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **워메!** | 어머! | Oh my! / Wow! (surprise/shock) |
 | **~잖능가** | ~잖아요 | isn't it? / don't you know? |
 | **~디야** | ~더라 | I heard / I saw (reported speech) |
@@ -141,7 +141,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 충청도 사투리 핵심 표현
 
 | 사투리 | 표준어 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **~유 / ~슈** | ~요 | polite ending (characteristic Chungcheong feature) |
 | **그려** | 그래요 | Yes, that's right (gentle agreement) |
 | **밥 먹었슈?** | 밥 먹었어요? | Did you eat? |
@@ -158,7 +158,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 제주어 vs 표준어
 
 | 제주어 | 표준어 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **혼저옵서예** | 어서 오세요 | Welcome! (greeting to guests) |
 | **어멍** | 어머니 | mother |
 | **아방** | 아버지 | father |

@@ -73,7 +73,7 @@ title track
 ### 💜 Fan Culture · 팬 문화
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 최애 | choe-ae | Favorite member / ultimate bias |
 | 최애 그룹 | choe-ae geu-rup | Favorite group / ultimate bias group |
 | 직캠 | jik-kaem | Fancam (focused video of one member) |
@@ -112,7 +112,7 @@ binge-watching from episode 1
 💬 Lines you'll hear in EVERY K-drama!
 
 | 한글 | 발음 | English / Context |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 나 너 좋아해. | na neo jo-a-hae. | I like you. (confession!) |
 | 내가 지켜줄게. | nae-ga ji-kyeo-jul-ge. | I'll protect you. (hero moment!) |
 | 이게 다 무슨 일이야! | i-ge da mu-seun il-i-ya! | What is all of this! (shocked!) |
@@ -124,7 +124,7 @@ binge-watching from episode 1
 ### 📱 Internet & SNS Korean · 인터넷 & SNS 한국어
 
 | 한글 / 줄임말 | 발음 | Full form / Meaning |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | ㅋㅋㅋ | kk-kk-kk | hahaha (Korean "lol" — ㅋ = "keu" laugh sound) |
 | ㅎㅎㅎ | hh-hh-hh | hehe (softer laugh) |
 | ㅠㅠ / ㅜㅜ | crying | crying emoticon (looks like tears falling down) |

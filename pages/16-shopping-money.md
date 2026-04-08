@@ -42,7 +42,7 @@ o-man won
 #### How to Read Korean Prices · 가격 읽는 법
 
 | Price | 한글 | 발음 | How to say |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | ₩500 | 오백 원 | o-baek won | 오(5) + 백(100) |
 | ₩3,000 | 삼천 원 | sam-cheon won | 삼(3) + 천(1,000) |
 | ₩12,000 | 만 이천 원 | man i-cheon won | 만(10,000) + 이(2) + 천(1,000) |
@@ -103,7 +103,7 @@ exchange / refund
 ### 💬 Essential Shopping Phrases · 쇼핑 필수 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
 | 이거 입어봐도 돼요? | i-geo ib-eo-bwa-do dwae-yo? | Can I try this on? |
 | 다른 색깔 있어요? | da-reun saek-kkal iss-eo-yo? | Do you have other colors? |
@@ -119,7 +119,7 @@ exchange / refund
 #### 👕 Clothing & Colors · 옷 & 색깔
 
 | Size 사이즈 | 한글 | 발음 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | Small (S) | 스몰 / 작은 | seu-mol / ja-geun |
 | Medium (M) | 미디엄 / 보통 | mi-di-eom / bo-tong |
 | Large (L) | 라지 / 큰 | ra-ji / keun |
@@ -183,7 +183,7 @@ white
 In 시장 (traditional markets), bargaining is completely normal and even expected! Use these phrases:
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 좀 더 싸게 해주세요. | jom deo ssa-ge hae-ju-se-yo. | Please make it a bit cheaper. |
 | 두 개 사면 얼마예요? | du gae sa-myeon eol-ma-ye-yo? | If I buy two, how much? |
 | 그냥 갈게요. | geu-nyang gal-ge-yo. | I'll just leave then. (bluff!) |

@@ -43,7 +43,7 @@ Snow in Seoul!
 Exception: 6월 = 유월 (yu-wol) · 10월 = 시월 (si-wol) — these drop the ㄱ/ㅂ!
 
 | Month | 한글 | 발음 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | January | 1월 | il-wol |
 | July | 7월 | chil-wol |
 | February | 2월 | i-wol |
@@ -125,7 +125,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 ### 🌡️ Temperature · 온도
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 오늘 몇 도예요? | o-neul myeot do-ye-yo? | What is the temperature today? |
 | 영하 10도예요. | yeong-ha sip do-ye-yo. | It's minus 10 degrees. |
 | 영상 25도예요. | yeong-sang i-sip-o do-ye-yo. | It's 25 degrees above zero. |
@@ -173,7 +173,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 ### 🗣️ Useful Weather Phrases · 날씨 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 오늘 날씨 어때요? | o-neul nal-ssi eo-ttae-yo? | How's the weather today? |
 | 날씨가 좋네요! | nal-ssi-ga jon-ne-yo! | What nice weather! |
 | 날씨가 너무 더워요. | nal-ssi-ga neo-mu deo-wo-yo. | The weather is too hot. |

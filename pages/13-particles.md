@@ -21,13 +21,13 @@ New info · emphasis · "who/what does it"
 📌 Rule: When to use 은/는 vs 이/가?
 
 | Use 은/는 | Use 이/가 |
-| --- | --- |
+| :---: | :---: |
 | Topic already known / general statements | New information / first mention |
 | Contrast: "A but B..." | Specific emphasis on WHO |
 | 나**는** 학생이에요 (I am a student) | 누가? 내**가**! (Who? Me!) |
 
 | 한글 | 발음 | English | Note |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 저**는** 미국 사람이에요 | jeo-**neun** mi-guk sa-ram-i-e-yo | I am American | 는 after vowel |
 | 저**는** 한국어를 공부해요 | jeo-**neun** han-gu-geo-reul gong-bu-hae-yo | I study Korean | topic = me |
 | 밥**은** 맛있어요 | bab-**eun** mas-iss-eo-yo | As for rice, it's delicious | 은 after consonant |
@@ -71,7 +71,7 @@ e-seo
 Where action HAPPENS · From a place
 
 | 한글 | 발음 | English | Particle |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 학교**에** 가요 | hak-gyo-**e** ga-yo | I go to school | 에 = destination |
 | 집**에** 있어요 | jib-**e** iss-eo-yo | I am at home | 에 = location (being) |
 | 3시**에** 만나요 | se-si-**e** man-na-yo | Let's meet at 3 o'clock | 에 = time |
@@ -89,7 +89,7 @@ Where action HAPPENS · From a place
 ### 4 · More Essential Particles · 기타 조사
 
 | Particle | 발음 | Meaning | Example | English |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 의 | ui (→ "e") | Possessive ('s / of) | 나의 친구 → 내 친구 | my friend |
 | 과/와 | gwa / wa | And / With (formal) | 친구와 같이 가요 | I go with a friend |
 | 하고 | ha-go | And / With (casual) | 엄마하고 밥 먹어요 | I eat with mom |
@@ -180,7 +180,7 @@ I drink coffee with a friend at the café.
 ### 🗂️ Particle Master Chart · 조사 총정리
 
 | Particle | 발음 | Role | When |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 은/는 | eun / neun | Topic | General statements, contrast |
 | 이/가 | i / ga | Subject | New info, emphasis on who |
 | 을/를 | eul / reul | Object | The thing being acted upon |

@@ -50,7 +50,7 @@ HOW MUCH / MANY
 누구 (nu-gu) = Who? in other positions (are you talking about who?)
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 누가 왔어요? | nu-ga wass-eo-yo? | Who came? |
 | 이게 누구 거예요? | i-ge nu-gu geo-ye-yo? | Whose is this? |
 | 저 사람이 누구예요? | jeo sa-ram-i nu-gu-ye-yo? | Who is that person? |
@@ -58,7 +58,7 @@ HOW MUCH / MANY
 ### 2 · 뭐 / 무엇 — WHAT
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 이게 뭐예요? | i-ge mwo-ye-yo? | What is this? |
 | 뭐 먹고 싶어요? | mwo meok-go sip-eo-yo? | What do you want to eat? |
 | 뭐 하고 있어요? | mwo ha-go iss-eo-yo? | What are you doing? |
@@ -67,7 +67,7 @@ HOW MUCH / MANY
 ### 3 · 어디 — WHERE
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어디예요? | eo-di-ye-yo? | Where is it? |
 | 어디 살아요? | eo-di sal-a-yo? | Where do you live? |
 | 화장실이 어디예요? | hwa-jang-sil-i eo-di-ye-yo? | Where is the restroom? |
@@ -86,7 +86,7 @@ Fill in the correct question word:
 ### 4 · 언제 — WHEN
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 언제 와요? | eon-je wa-yo? | When are you coming? |
 | 생일이 언제예요? | saeng-il-i eon-je-ye-yo? | When is your birthday? |
 | 언제 한국에 왔어요? | eon-je han-gu-ge wass-eo-yo? | When did you come to Korea? |
@@ -94,7 +94,7 @@ Fill in the correct question word:
 ### 5 · 왜 — WHY
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 왜요? | wae-yo? | Why? (polite) |
 | 왜 한국어를 배워요? | wae han-gu-geo-reul bae-wo-yo? | Why do you learn Korean? |
 | 왜 울어요? | wae ul-eo-yo? | Why are you crying? |
@@ -105,7 +105,7 @@ Fill in the correct question word:
 어때요? (eo-ttae-yo?) = **How is it?** — "What do you think? Is it okay?"
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어떻게 해요? | eo-tteo-ke hae-yo? | How do you do it? |
 | 이름이 어떻게 돼요? | i-reum-i eo-tteo-ke dwae-yo? | What is your name? (lit: how does your name go?) |
 | 여기 어떻게 가요? | yeo-gi eo-tteo-ke ga-yo? | How do I get here? |
@@ -117,7 +117,7 @@ Fill in the correct question word:
 몇 (myeot) = How many? → **countable number**
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
 | 얼마나 걸려요? | eol-ma-na geol-lyeo-yo? | How long does it take? |
 | 몇 살이에요? | myeot sal-i-e-yo? | How old are you? |
@@ -199,7 +199,7 @@ I'm sick / it hurts
 ### 🗂️ Question Word Master Chart · 의문사 총정리
 
 | 의문사 | 발음 | English | Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 누가 / 누구 | nu-ga / nu-gu | Who | 누가 왔어요? |
 | 뭐 / 무엇 | mwo / mu-eot | What | 뭐예요? |
 | 어디 | eo-di | Where | 어디 가요? |

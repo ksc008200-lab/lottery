@@ -61,7 +61,7 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 형용사에 붙여 부사를 만들 때 — 이/히 중 어떤 걸 쓸까요?
 
 | -이 사용 | -히 사용 |
-| --- | --- |
+| :---: | :---: |
 | 받침이 ㄱ,ㅂ → 깨끗이 , 가볍이 ❌→ 가벼이 | -하다 형용사 → 조용히 , 솔직히 |
 | 많이 (many/much) | 천천히 (slowly) |
 | 같이 (together) | 특히 (especially) |
@@ -69,7 +69,7 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 ### 😵 헷갈리는 맞춤법 쌍 · Confusing Pairs
 
 | 틀린 표현 ❌ | 올바른 표현 ✅ | 설명 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 왠만하면 | 웬만하면 | 웬 = "어떤" / 왠 = "왜인지" |
 | 왠지 ❌ | 왠지 ✅ | 왠지 = "왜인지" (이건 맞음!) |
 | 어떻해 | 어떡해 | 어떡해 = 어떻게 해 (줄임) |

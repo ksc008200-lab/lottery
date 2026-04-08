@@ -41,7 +41,7 @@ to break up
 ### 💬 Essential Love Phrases · 사랑 표현 필수
 
 | 한글 | 발음 | English | Level |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 좋아해요. | jo-a-hae-yo. | I like you. (early feelings) | 💛 Mild |
 | 많이 좋아해요. | man-i jo-a-hae-yo. | I really like you a lot. | 💛💛 Growing |
 | 사랑해요. | sa-rang-hae-yo. | I love you. (formal/polite) | ❤️ Deep love |
@@ -127,7 +127,7 @@ Translate into Korean:
 ### 💔 Difficult Conversations · 어려운 대화
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 우리 헤어져요. | u-ri he-eo-jyeo-yo. | Let's break up. |
 | 우리 그냥 친구로 지내요. | u-ri geu-nyang chin-gu-ro ji-nae-yo. | Let's just be friends. |
 | 좋은 사람 만나세요. | jo-eun sa-ram man-na-se-yo. | I hope you meet a good person. |

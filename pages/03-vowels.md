@@ -44,7 +44,7 @@ In Korean, every syllable is grouped into a **block**. The consonant and vowel d
 Write Your Name in Korean · 한국어로 이름 쓰기
 
 | English Sound | Korean | Example | Korean Name |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | "a" as in f a ther, sp a | ㅏ | Sara, Anna | 사라, 아나 |
 | "ya" as in ya cht, M a ya | ㅑ | Maya, Anya | 마야, 아냐 |
 | "uh" as in s u n, b u t | ㅓ | Justin, Hunter | 저스틴, 헌터 |

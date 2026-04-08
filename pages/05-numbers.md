@@ -12,7 +12,7 @@
 ### Sino-Korean Numbers (한자어)
 
 | Number | 한글 | Pronunciation |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 0 | 영/공 | yeong/gong |
 | 6 | 육 | yuk |
 | 1 | 일 | il |
@@ -28,7 +28,7 @@
 ### Native Korean Numbers (고유어)
 
 | Number | 한글 | Pronunciation |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 1 | 하나 | ha-na |
 | 6 | 여섯 | yeo-seot |
 | 2 | 둘 | dul |
@@ -42,7 +42,7 @@
 ### Ordinal Numbers · 서수 (순서)
 
 | Order | 한글 | Pronunciation |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 1st | 첫째 | cheot-jjae |
 | 7th | 일곱째 | il-gop-jjae |
 | 2nd | 둘째 | dul-jjae |
@@ -62,7 +62,7 @@ Hours → Native Korean  |  Minutes → Sino-Korean
 시(hour) → 고유어 숫자  |  분(minute) → 한자어 숫자
 
 | Time | 한글 | Pronunciation |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 1:00 | 한 시 | han si |
 | 3:30 | 세 시 삼십 분 | se si sam-sip bun |
 | 6:15 | 여섯 시 십오 분 | yeo-seot si si-bo bun |

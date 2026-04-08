@@ -41,7 +41,7 @@ Korea is very walkable!
 ### 🚇 Subway Essentials · 지하철 필수 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 지하철역이 어디예요? | ji-ha-cheol-yeok-i eo-di-ye-yo? | Where is the subway station? |
 | 몇 호선이에요? | myeot ho-seon-i-e-yo? | Which line is it? |
 | 2호선 타세요. | i-ho-seon ta-se-yo. | Take Line 2. |
@@ -115,7 +115,7 @@ intersection
 #### 📍 Useful Location Words · 위치 표현
 
 | 한글 | 발음 | English | Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 앞 | ap | in front of | 학교 앞 |
 | 뒤 | dwi | behind | 건물 뒤 |
 | 옆 | yeop | next to / beside | 카페 옆 |
@@ -150,7 +150,7 @@ intersection
 ### 🎒 Must-Know Transport Vocabulary · 교통 필수 단어
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 타다 | ta-da | to get on / ride (bus, subway, taxi) |
 | 내리다 | nae-ri-da | to get off |
 | 갈아타다 | gal-a-ta-da | to transfer |

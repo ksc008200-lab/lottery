@@ -13,7 +13,7 @@ a/eo-yo
 ### Past Tense · 과거형
 
 | 기본형 | Pronunciation | 과거형 | Pronunciation | English |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 가다 | ga-da | 갔어요 | gass-eo-yo | I went |
 | 먹다 | meok-da | 먹었어요 | meog-eoss-eo-yo | I ate |
 | 마시다 | ma-si-da | 마셨어요 | ma-syeoss-eo-yo | I drank |
@@ -22,7 +22,7 @@ a/eo-yo
 ### Future Tense · 미래형
 
 | 기본형 | Pronunciation | 미래형 | Pronunciation | English |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 가다 | ga-da | 갈 거예요 | gal geo-ye-yo | I will go |
 | 먹다 | meok-da | 먹을 거예요 | meog-eul geo-ye-yo | I will eat |
 | 오다 | o-da | 올 거예요 | ol geo-ye-yo | I will come |
@@ -30,7 +30,7 @@ a/eo-yo
 ### Time Expression Helpers · 시간 표현 도우미
 
 | ⏪ Past 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어제 | eo-je | yesterday |
 | 내일 | nae-il | tomorrow |
 | 지난주 | ji-nan-ju | last week |

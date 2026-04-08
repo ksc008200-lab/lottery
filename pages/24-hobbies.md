@@ -61,7 +61,7 @@ yoga
 🔧 Key Patterns for Hobbies
 
 | Pattern | Example | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 취미가 뭐예요? | 취미가 뭐예요? | What's your hobby? |
 | ~을/를 좋아해요 | 독서를 좋아해요 | I like reading |
 | ~을/를 즐겨요 | 여행을 즐겨요 | I enjoy traveling |
@@ -120,7 +120,7 @@ Translate into Korean:
 ### 🌙 Free Time · 여가 시간에 뭐 해요?
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 넷플릭스 봐요 | net-peul-lik-seu bwa-yo | I watch Netflix |
 | 카페에서 공부해요 | ka-pe-e-seo gong-bu-hae-yo | I study at a café |
 | 친구들이랑 놀아요 | chin-gu-deul-i-rang nol-a-yo | I hang out with friends |

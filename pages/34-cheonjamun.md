@@ -90,7 +90,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 天 (하늘 천) · "Heaven / Sky"
 
 | **천국 天國** | heaven, paradise (heaven + country) |
-| --- | --- |
+| :---: | :---: |
 | **천재 天才** | genius (heaven + talent — heaven-given talent) |
 | **천연 天然** | natural (heaven + as-is) |
 | **천사 天使** | angel (heaven + messenger) |
@@ -100,7 +100,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 地 (땅 지) · "Earth / Ground"
 
 | **지구 地球** | Earth (earth + sphere) |
-| --- | --- |
+| :---: | :---: |
 | **지하 地下** | underground (earth + below) |
 | **지역 地域** | region, area (earth + territory) |
 | **지도 地圖** | map (earth + picture) |
@@ -110,7 +110,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 人 (사람 인) · "Person"
 
 | **인간 人間** | human being (person + between) |
-| --- | --- |
+| :---: | :---: |
 | **인생 人生** | life, human life (person + life) |
 | **인류 人類** | humanity, humankind (person + category) |
 | **인기 人氣** | popularity (person + energy — "people's energy") |
@@ -120,7 +120,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 水 (물 수) · "Water"
 
 | **수도 水道** | waterway / capital city (water + road) |
-| --- | --- |
+| :---: | :---: |
 | **수영 水泳** | swimming (water + swim) |
 | **홍수 洪水** | flood (great + water) |
 | **음수 飮水** | drinking water (drink + water) |
@@ -130,7 +130,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 火 (불 화) · "Fire"
 
 | **화재 火災** | fire (incident) (fire + disaster) |
-| --- | --- |
+| :---: | :---: |
 | **화산 火山** | volcano (fire + mountain) |
 | **화요일 火曜日** | Tuesday (fire + day) |
 | **화기 火氣** | heat, fiery temper (fire + energy) |
@@ -140,7 +140,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 心 (마음 심) · "Heart / Mind"
 
 | **심리 心理** | psychology (heart + reason) |
-| --- | --- |
+| :---: | :---: |
 | **관심 關心** | interest, concern (relate + heart) |
 | **중심 中心** | center, core (middle + heart) |
 | **진심 眞心** | sincerity, true heart (true + heart) |
@@ -150,7 +150,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 日 (날 일) · "Sun / Day"
 
 | **일요일 日曜日** | Sunday (sun + day) |
-| --- | --- |
+| :---: | :---: |
 | **일기 日記** | diary (day + record) |
 | **일본 日本** | Japan (sun + origin — "land of the rising sun") |
 | **생일 生日** | birthday (life + day) |
@@ -160,7 +160,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 國 (나라 국) · "Country / Nation"
 
 | **한국 韓國** | Korea (Han people + nation) |
-| --- | --- |
+| :---: | :---: |
 | **외국 外國** | foreign country (outside + nation) |
 | **국제 國際** | international (nation + between) |
 | **국민 國民** | citizen, people of a nation (nation + people) |
@@ -170,7 +170,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 文 (글 문) · "Writing / Culture / Pattern"
 
 | **문화 文化** | culture (writing + become) |
-| --- | --- |
+| :---: | :---: |
 | **문법 文法** | grammar (writing + law) |
 | **문학 文學** | literature (writing + learning) |
 | **문서 文書** | document (writing + writing) |
@@ -180,7 +180,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 學 (배울 학) · "Learning / Study"
 
 | **학교 學校** | school (learning + institution) |
-| --- | --- |
+| :---: | :---: |
 | **학생 學生** | student (learning + person) |
 | **대학 大學** | university (great + learning) |
 | **입학 入學** | school admission (enter + learning) |
@@ -197,7 +197,7 @@ Each four-character verse of the 천자문 is a compressed lesson. Here are ten 
 천자문의 각 사자구절은 압축된 수업입니다. 한국어 단어와 연결되는 10개의 핵심 구절을 살펴봅니다:
 
 | 천자문 구절 | 훈독 · 뜻 | 이 글자들이 만드는 한국어 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **天地玄黃** 천지현황 | 하늘·땅·검다·누르다 | 천국 · 지구 · 현대(현) · 황색(황) |
 | **宇宙洪荒** 우주홍황 | 집·집(우주)·크다·거칠다 | 우주(宇宙) · 홍수(洪水) |
 | **日月盈昃** 일월영측 | 해·달·차다·기울다 | 일요일 · 월요일 · 생일 · 매일 |
@@ -217,7 +217,7 @@ Let's be concrete about the math. Say you spend one hour learning the character 
 숫자로 구체적으로 알아봅시다. 한 시간을 들여 **生(날 생 · "생명/태어남")**을 배운다고 합시다. 얻는 것은 다음과 같습니다:
 
 | 한국어 단어 | 한자 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **생일** | 生日 | birthday (life + day) |
 | **생활** | 生活 | daily life (life + live) |
 | **생각** | 生覺 (고유어 혼합) | thought / idea |
@@ -243,7 +243,7 @@ In traditional Korea, the 천자문 was recited rhythmically by children, four c
 전통 한국에서 천자문은 아이들이 네 글자씩 리듬감 있게 암송했습니다. **天地玄黃(천지현황)**을 노래하고, 외치고, 반복해서 글자가 몸에 배게 했습니다. 각 글자는 **훈음(訓音)**으로 배웠습니다 — 의미와 소리의 한국식 읽기입니다:
 
 | 한자 | 훈음 (한국식) | 뜻 | 소리 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 天 | **하늘 천** | 하늘 (sky/heaven) | 천 (cheon) |
 | 地 | **땅 지** | 땅 (earth/ground) | 지 (ji) |
 | 人 | **사람 인** | 사람 (person) | 인 (in) |

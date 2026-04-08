@@ -65,7 +65,7 @@ lawyer
 ### 💼 Workplace Phrases · 직장 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 직업이 뭐예요? | jik-eob-i mwo-ye-yo? | What is your job? |
 | 어디서 일해요? | eo-di-seo il-hae-yo? | Where do you work? |
 | 저는 회사원이에요. | jeo-neun hoe-sa-won-i-e-yo. | I'm an office worker. |
@@ -161,7 +161,7 @@ After regular school, most Korean students go to 학원 (private academies) for 
 ### ⭐ Power Phrases for Work & School · 직장 & 학교 핵심 표현
 
 | 한글 | 발음 | English | When |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 파이팅! | pa-i-ting! | Fighting! / You got this! | Encouraging someone |
 | 수고했어요! | su-go-haess-eo-yo! | Good work! / You worked hard! | After completing work |
 | 열심히 할게요! | yeol-sim-hi hal-ge-yo! | I'll do my best! | Starting a task |

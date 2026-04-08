@@ -56,7 +56,7 @@ husband / wife
 🌟 Unique Korean Concept — Terms Change Based on YOUR Gender!
 
 | Relationship | Male speaker says | Female speaker says |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | Older brother | 형 (hyeong) | 오빠 (o-ppa) |
 | Older sister | 누나 (nu-na) | 언니 (eon-ni) |
 
@@ -65,7 +65,7 @@ husband / wife
 ### Extended Family · 확대 가족
 
 | Relationship | 한글 | 발음 | Note |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | Uncle (father's older brother) | 큰아버지 | keun-a-beo-ji | father's elder brother |
 | Uncle (father's younger brother) | 삼촌 | sam-chon | most common "uncle" |
 | Uncle (mother's brother) | 외삼촌 | oe-sam-chon | 외 = maternal side |
@@ -79,7 +79,7 @@ husband / wife
 Koreans use family terms to address strangers too! It creates warmth and closeness:
 
 | Term | 발음 | Used for |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 아저씨 | a-jeo-ssi | Middle-aged man (like "mister") |
 | 아줌마 / 아주머니 | a-jum-ma / a-ju-meo-ni | Middle-aged woman (polite: 아주머니) |
 | 할아버지 | hal-a-beo-ji | Elderly man (even strangers!) |
@@ -156,7 +156,7 @@ This hierarchy creates strong bonds and lifelong loyalty. Even years later, a �
 ### 💬 Useful Family Phrases · 가족 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 가족이 몇 명이에요? | ga-jok-i myeot myeong-i-e-yo? | How many are in your family? |
 | 형제자매가 있어요? | hyeong-je-ja-mae-ga iss-eo-yo? | Do you have siblings? |
 | 외동이에요. | oe-dong-i-e-yo. | I'm an only child. |

@@ -9,7 +9,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 ### Must-Visit Cities & Places · 꼭 가봐야 할 곳
 
 | | 도시 | 발음 | 특징 | 주요 명소 |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 🌆 | **서울** | Seoul · seo-ul | 수도 · Capital city | 경복궁 palace · 명동 shopping · 홍대 nightlife · 한강 river parks |
 | 🌊 | **부산** | Busan · bu-san | 제2의 도시 · 2nd largest city | 해운대 beach · seafood markets · 감천 culture village |
 | 🏯 | **경주** | Gyeongju · gyeong-ju | 고도 · Ancient capital | UNESCO tombs · 불국사 temple · Korea's history in one city |
@@ -19,7 +19,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 ### 🏨 At the Hotel · 호텔에서
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 체크인 해주세요. | che-keu-in hae-ju-se-yo. | Please check me in. |
 | 예약했어요. | ye-yak-haess-eo-yo. | I have a reservation. |
 | 방이 몇 층이에요? | bang-i myeot cheung-i-e-yo? | What floor is the room on? |
@@ -76,7 +76,7 @@ a) Volcanic island with 한라산   b) Ancient capital with UNESCO tombs   c) 
 Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing) and walk around the palace grounds — it's FREE entry in hanbok! Extremely popular with tourists and locals alike. 📸
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 한복 입어봐도 돼요? | han-bok ib-eo-bwa-do dwae-yo? | Can I try on a hanbok? |
 | 사진 찍어도 돼요? | sa-jin jjig-eo-do dwae-yo? | Can I take a photo? |
 | 같이 사진 찍어요! | ga-chi sa-jin jjig-eo-yo! | Let's take a photo together! |
@@ -104,7 +104,7 @@ Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing)
 ### 🧳 Essential Travel Phrases · 여행 필수 표현
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 여행 잘 다녀오세요! | yeo-haeng jal da-nyeo-o-se-yo! | Have a great trip! |
 | 관광지가 어디예요? | gwan-gwang-ji-ga eo-di-ye-yo? | Where are the tourist attractions? |
 | 입장료가 얼마예요? | ip-jang-nyo-ga eol-ma-ye-yo? | How much is the admission fee? |

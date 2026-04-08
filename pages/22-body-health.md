@@ -11,7 +11,7 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 #### Head & Face · 머리 & 얼굴
 
 | | 한글 | 발음 | English |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 🧠 | 머리 | meo-ri | head / hair |
 | 👁️ | 눈 | nun | eye(s) |
 | 👂 | 귀 | gwi | ear(s) |
@@ -23,7 +23,7 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 #### Body · 몸통 & 팔다리
 
 | | 한글 | 발음 | English |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 💪 | 어깨 | eo-kkae | shoulder |
 | 🫀 | 가슴 | ga-seum | chest |
 | 🫃 | 배 | bae | stomach / belly |
@@ -39,7 +39,7 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 *(i/ga a-pa-yo)* = ___ hurts / ___ is in pain
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 머리가 아파요. | meo-ri-ga a-pa-yo. | My head hurts. (headache) |
 | 배가 아파요. | bae-ga a-pa-yo. | My stomach hurts. |
 | 목이 아파요. | mok-i a-pa-yo. | My throat hurts. |
@@ -93,7 +93,7 @@ Translate into Korean:
 ### 💊 At the Pharmacy · 약국에서
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 약국이 어디예요? | yak-guk-i eo-di-ye-yo? | Where is the pharmacy? |
 | 두통약 주세요. | du-tong-yak ju-se-yo. | Please give me headache medicine. |
 | 소화제 있어요? | so-hwa-je iss-eo-yo? | Do you have antacid / digestive medicine? |

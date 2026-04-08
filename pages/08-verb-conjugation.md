@@ -19,7 +19,7 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 ✅ **하다 (ha-da)** → always becomes **해요 (hae-yo)**
 
 | 기본형 | Pronunciation | Meaning | 해요체 | Pronunciation |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 가다 | ga-da | to go | 가요 | ga-yo |
 | 먹다 | meok-da | to eat | 먹어요 | meog-eo-yo |
 | 마시다 | ma-si-da | to drink | 마셔요 | ma-syeo-yo |
@@ -28,7 +28,7 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 ### 3 Essential Tenses · 핵심 3가지 시제
 
 | Tense | 한글 | Pronunciation | Meaning |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | ⏪ Past | 먹었어요 | meog-eoss-eo-yo | I ate |
 | ▶️ Present | 먹어요 | meog-eo-yo | I eat |
 | ⏩ Future | 먹을 거예요 | meog-eul geo-ye-yo | I will eat |

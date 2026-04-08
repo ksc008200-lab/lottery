@@ -36,7 +36,7 @@ To those *younger/lower* than you
 Also used between *very close friends* regardless of age — 먹어, 어디 가?
 
 | Speech Level | Example 한글 | 발음 | Use When |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 습니다체 Formal Polite | 먹습니다 | meok-seum-ni-da | Formal presentations, news, military, official meetings, job interviews |
 | 드십니까? | deu-sim-ni-kka? | | |
 | 해요체 Everyday Polite ⭐ | 먹어요 | meog-eo-yo | Everyday polite — shops, school, strangers, coworkers, acquaintances |
@@ -57,7 +57,7 @@ As a foreigner learning Korean → always start with **해요체 (~요)**. It's 
 ### Side-by-Side Comparison · 나란히 비교
 
 | Situation | 습니다체 (Formal) | 해요체 (Everyday ⭐) | 반말 (Informal) |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | Hello | 안녕하십니까 an-nyeong-ha-sim-ni-kka | 안녕하세요 an-nyeong-ha-se-yo | 안녕 an-nyeong |
 | Thank you | 감사합니다 gam-sa-ham-ni-da | 감사해요 gam-sa-hae-yo | 고마워 go-ma-wo |
 | I'm sorry | 죄송합니다 joe-song-ham-ni-da | 죄송해요 joe-song-hae-yo | 미안해 mi-an-hae |
@@ -78,7 +78,7 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 #### ① Honorific Verbs · 높임말 동사 (completely different words!)
 
 | Meaning | 일반 (Normal) | 발음 | 높임말 (Honorific) | 발음 |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | To eat | 먹다 | meok-da | 드시다 / 잡수시다 | deu-si-da / jap-su-si-da |
 | To sleep | 자다 | ja-da | 주무시다 | ju-mu-si-da |
 | To exist / be (at a place) | 있다 | it-da | 계시다 | gye-si-da |
@@ -90,7 +90,7 @@ This is unique to Korean! When talking about what a senior/elder *does*, you mus
 #### ② Honorific Nouns · 높임말 명사 (separate words for people!)
 
 | Meaning | 일반 (Normal) | 발음 | 높임말 (Honorific) | 발음 |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | Name | 이름 | i-reum | 성함 | seong-ham |
 | Age | 나이 | na-i | 연세 | yeon-se |
 | House / Home | 집 | jip | 댁 | daek |
@@ -107,13 +107,13 @@ Add **~(으)시~** to a verb stem to show that the *subject* of the sentence des
 #### 💬 Honorific in Action · 높임말 실전
 
 | Context | ❌ Normal (incorrect) | ✅ Honorific (correct) | Pronunciation · Meaning |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | Talking to grandfather | 할아버지 밥 먹었어? | 할아버지, 진지 드셨어요? | hal-a-beo-ji, jin-ji deu-syeoss-eo-yo? *Grandfather, have you eaten?* |
 | Asking where teacher is | 선생님 어디 있어요? | 선생님 어디 계세요? | seon-saeng-nim eo-di gye-se-yo? *Where is the teacher?* (있다 → 계시다) |
 ### K-pop 반말 Slang · K-pop 반말 슬랭
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 야! | ya! | Hey! |
 | 진짜? | jin-jja? | Really? For real? |
 | 대박! | dae-bak! | Amazing! / Jackpot! |

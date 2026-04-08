@@ -21,7 +21,7 @@ Many Korean syllables have a **third element** — a final consonant that sits a
 No matter which consonant is used as batchim, it can only produce **ONE of 7 possible sounds**.
 
 | Sound | Consonants | Example 한글 | Pronunciation | Meaning |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | ㄱ | ㄱ ㄲ ㅋ | 국 | guk | soup |
 | ㄴ | ㄴ | 산 | san | mountain |
 | ㄷ | ㄷ ㅅ ㅆ ㅈ ㅊ ㅎ | 낮 | nat | daytime |
@@ -36,7 +36,7 @@ When a batchim is followed by a vowel, it "slides" into the next syllable.
 받침 뒤에 모음이 오면, 받침이 다음 음절로 "미끄러집니다".
 
 | Written 한글 | How it sounds 발음 | Meaning |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 한국어 | han-gu-geo | Korean language |
 | 집이 | ji-bi | house (subject) |
 | 밥을 | ba-beul | rice (object) |

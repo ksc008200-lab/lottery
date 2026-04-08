@@ -3,7 +3,7 @@
 ### 🧑 People & Relationships · 사람과 관계
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 사람 | sa-ram | person |
 | 친구 | chin-gu | friend |
 | 아버지 | a-beo-ji | father |
@@ -27,7 +27,7 @@
 ### 🌍 Places · 장소
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 학교 | hak-gyo | school |
 | 병원 | byeong-won | hospital |
 | 시장 | si-jang | market |
@@ -51,7 +51,7 @@
 ### 🍚 Food & Drink · 음식과 음료
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 밥 | bap | rice / meal |
 | 물 | mul | water |
 | 빵 | ppang | bread |
@@ -75,7 +75,7 @@
 ### 🌈 Colors · 색깔
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 빨간색 | ppal-gan-saek | red |
 | 파란색 | pa-ran-saek | blue |
 | 노란색 | no-ran-saek | yellow |
@@ -99,7 +99,7 @@
 ### 📅 Time · 시간
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 오늘 | o-neul | today |
 | 내일 | nae-il | tomorrow |
 | 어제 | eo-je | yesterday |
@@ -123,7 +123,7 @@
 ### 🏠 Objects & Home · 사물과 집
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 책 | chaek | book |
 | 가방 | ga-bang | bag |
 | 핸드폰 | haen-deu-pon | mobile phone |
@@ -147,7 +147,7 @@
 ### 🌿 Nature & Weather · 자연과 날씨
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 하늘 | ha-neul | sky |
 | 해 / 태양 | hae / tae-yang | sun |
 | 달 | dal | moon |
@@ -171,7 +171,7 @@
 ### 🏃 Essential Verbs · 필수 동사
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 가다 | ga-da | to go |
 | 오다 | o-da | to come |
 | 먹다 | meok-da | to eat |
@@ -195,7 +195,7 @@
 ### 💬 Essential Adjectives · 필수 형용사
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 크다 | keu-da | big |
 | 작다 | jak-da | small |
 | 많다 | man-ta | many / much |
@@ -219,7 +219,7 @@
 ### ❓ Question Words & Numbers · 의문사와 숫자
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 뭐 / 무엇 | mwo / mu-eot | what |
 | 누구 | nu-gu | who |
 | 어디 | eo-di | where |

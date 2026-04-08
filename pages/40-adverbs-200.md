@@ -27,7 +27,7 @@ CATEGORIES · 카테고리
 **현재·과거·미래 PRESENT / PAST / FUTURE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 지금 | ji-geum | Now | 지금 뭐 해요? — What are you doing *now*? |
 | 오늘 | o-neul | Today | 오늘 날씨가 좋아요. — The weather is nice *today*. |
 | 어제 | eo-je | Yesterday | 어제 뭐 먹었어요? — What did you eat *yesterday*? |
@@ -38,7 +38,7 @@ CATEGORIES · 카테고리
 **시점·순서 TIMING & ORDER**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 일찍 | il-jjik | Early | 일찍 일어났어요. — I woke up *early*. |
 | 늦게 | neut-ge | Late | 늦게 도착했어요. — I arrived *late*. |
 | 아까 | a-kka | A little while ago | 아까 전화했어요. — I called *a while ago*. |
@@ -52,7 +52,7 @@ CATEGORIES · 카테고리
 **결과·빈도 RESULT & FREQUENCY**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 드디어 | deu-di-eo | Finally | 드디어 졸업했어요! — I've *finally* graduated! |
 | 결국 | gyeol-guk | Eventually / In the end | 결국 포기했어요. — *In the end* I gave up. |
 | 가끔 | ga-kkeum | Sometimes | 가끔 영화 봐요. — I watch movies *sometimes*. |
@@ -77,7 +77,7 @@ CATEGORIES · 카테고리
 **강도 HIGH DEGREE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 매우 | mae-u | Very | 매우 좋아요. — It's *very* good. |
 | 아주 | a-ju | Very | 아주 맛있어요. — It's *very* delicious. |
 | 무척 | mu-cheok | Exceedingly | 무척 힘들어요. — It's *exceedingly* hard. |
@@ -92,7 +92,7 @@ CATEGORIES · 카테고리
 **낮은 정도 LOW DEGREE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 조금 | jo-geum | A little | 조금 주세요. — Give me *a little*. |
 | 약간 | yak-gan | Slightly | 약간 달아요. — It's *slightly* sweet. |
 | 겨우 | gyeo-u | Barely / Only just | 겨우 통과했어요. — I *barely* passed. |
@@ -103,7 +103,7 @@ CATEGORIES · 카테고리
 **비교·범위 COMPARISON & SCOPE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 가장 | ga-jang | Most | 가장 좋아하는 음식이 뭐예요? — What food do you like *most*? |
 | 제일 | je-il | Best / Most (colloquial) | 제일 싸요. — It's the *cheapest*. |
 | 훨씬 | hwol-ssin | By far / Much more | 훨씬 나아요. — It's *much* better. |
@@ -123,7 +123,7 @@ CATEGORIES · 카테고리
 **능력·속도 ABILITY & SPEED**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 잘 | jal | Well | 잘 했어요. — You did *well*. |
 | 못 | mot | Cannot / Not well | 한국어를 못 해요. — I *can't* speak Korean. |
 | 빨리 | ppal-li | Quickly / Fast | 빨리 와요! — Come *quickly*! |
@@ -131,7 +131,7 @@ CATEGORIES · 카테고리
 **함께·혼자 TOGETHER & ALONE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 함께 | ham-kke | Together | 함께 가요. — Let's go *together*. |
 | 같이 | ga-chi | Together / Like | 같이 먹어요. — Let's eat *together*. |
 | 혼자 | hon-ja | Alone | 혼자 왔어요. — I came *alone*. |
@@ -140,14 +140,14 @@ CATEGORIES · 카테고리
 **갑작스러움 SUDDENNESS**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 갑자기 | gap-ja-gi | Suddenly | 갑자기 비가 왔어요. — Rain came *suddenly*. |
 | 마침 | ma-chim | Just in time / Coincidentally | 마침 왔네요! — You came *just in time*! |
 | 하필 | ha-pil | Of all things / Why | 하필 오늘이야? — Why today *of all days*? |
 **방식·태도 MANNER & ATTITUDE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 조용히 | jo-yong-hi | Quietly | 조용히 해요. — Be *quiet*. |
 | 열심히 | yeol-sim-hi | Hard / Diligently | 열심히 공부해요. — I study *hard*. |
 | 정확히 | jeong-hwa-ki | Exactly / Precisely | 정확히 말해요. — Speak *precisely*. |
@@ -180,7 +180,7 @@ CATEGORIES · 카테고리
 🚫 4. 부정·의문 부사Negative & Interrogative Adverbs · 15 words
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 안 | an | Not (simple negation) | 안 먹어요. — I don't eat it. |
 | 못 | mot | Cannot (inability) | 못 가요. — I *can't* go. |
 | 전혀 | jeo-nyeo | Not at all | 전혀 몰랐어요. — I had *no idea* at all. |
@@ -202,7 +202,7 @@ CATEGORIES · 카테고리
 **더하기·대조 ADDITION & CONTRAST**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 그리고 | geu-ri-go | And | 밥을 먹었어요. 그리고 커피를 마셨어요. — I ate. *And* I drank coffee. |
 | 그러나 | geu-reo-na | But (formal) | 열심히 했어요. 그러나 실패했어요. — I worked hard. *But* I failed. |
 | 하지만 | ha-ji-man | However (colloquial) | 좋아해요. 하지만 비싸요. — I like it. *However* it's expensive. |
@@ -212,7 +212,7 @@ CATEGORIES · 카테고리
 **인과·결론 CAUSE & CONCLUSION**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 그래서 | geu-rae-seo | So / Therefore | 비가 왔어요. 그래서 안 갔어요. — It rained. *So* I didn't go. |
 | 그러니까 | geu-reo-ni-kka | That's why / So then | 그러니까 말했잖아요. — *That's why* I told you. |
 | 그러면 | geu-reo-myeon | Then / If so | 그러면 언제 가요? — *Then* when are you going? |
@@ -221,7 +221,7 @@ CATEGORIES · 카테고리
 **추가·선택 ADDITION & CHOICE**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 또한 | tto-han | Also / In addition | 또한 중요해요. — It's *also* important. |
 | 더구나 | deo-gu-na | Moreover | 더구나 싸기까지 해요. — *Moreover*, it's even cheap. |
 | 게다가 | ge-da-ga | Besides / On top of that | 게다가 맛있어요. — *On top of that*, it's tasty. |
@@ -236,7 +236,7 @@ CATEGORIES · 카테고리
 **불확실 UNCERTAINTY**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 아마 | a-ma | Maybe / Perhaps | 아마 올 거예요. — *Maybe* they'll come. |
 | 아마도 | a-ma-do | Probably | 아마도 맞을 거예요. — It's *probably* right. |
 | 어쩌면 | eo-jjeo-myeon | Perhaps / Possibly | 어쩌면 늦을 수도 있어요. — *Perhaps* I might be late. |
@@ -244,7 +244,7 @@ CATEGORIES · 카테고리
 **확실·강조 CERTAINTY & EMPHASIS**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 확실히 | hwa-ssil-hi | Certainly / For sure | 확실히 알아요. — I know *for sure*. |
 | 분명히 | bun-myeong-hi | Clearly / Obviously | 분명히 말했어요. — I said it *clearly*. |
 | 마치 | ma-chi | As if / Just like | 마치 꿈 같아요. — It's *like* a dream. |
@@ -255,7 +255,7 @@ CATEGORIES · 카테고리
 **예상·결과 EXPECTATION & OUTCOME**
 
 | 부사 | 발음 | English | 예문 Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 의외로 | ui-oe-ro | Unexpectedly | 의외로 쉬웠어요. — *Unexpectedly*, it was easy. |
 | 뜻밖에 | tteut-ba-kke | Surprisingly | 뜻밖에 만났어요. — I met them *by surprise*. |
 | 다행히 | da-haeng-hi | Fortunately | 다행히 살았어요. — *Fortunately*, I survived. |
@@ -273,7 +273,7 @@ CATEGORIES · 카테고리
 **빛·자연 LIGHT & NATURE**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 반짝반짝 | ban-jjak-ban-jjak | 의태어 | Twinkling — 별이 반짝반짝 빛나요. Stars *twinkle*. |
 | 반짝 | ban-jjak | 의태어 | In a flash — 반짝 떠올랐어요. It flashed *in an instant*. |
 | 졸졸 | jol-jol | 의성어 | Murmuring (water) — 물이 졸졸 흘러요. Water *babbles*. |
@@ -281,7 +281,7 @@ CATEGORIES · 카테고리
 **소리·동작 SOUNDS & MOVEMENTS**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 씽씽 | ssing-ssing | 의성어 | Whizzing — 바람이 씽씽 불어요. Wind *whizzes*. |
 | 삐걱삐걱 | ssi-beok-ssi-beok | 의성어 | Creaking — 문이 삐걱삐걱 소리 나요. Door *creaks*. |
 | 보글보글 | bo-geul-bo-geul | 의성어 | Bubbling — 찌개가 보글보글 끓어요. Stew *bubbles*. |
@@ -290,14 +290,14 @@ CATEGORIES · 카테고리
 **먹기·마시기 EATING & DRINKING**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 아삭아삭 | a-sak-a-sak | 의성어 | Crunchy — 배추가 아삭아삭해요. Cabbage is *crunchy*. |
 | 벌컥벌컥 | beol-keok-beol-keok | 의성어 | Gulping — 물을 벌컥벌컥 마셔요. Gulping water *down*. |
 | 우물우물 | u-mul-u-mul | 의성어 | Mumbling/Chewing — 우물우물 씹어요. Chewing *slowly*. |
 **감정·표정 EMOTIONS & EXPRESSIONS**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 싱글벙글 | sing-geul-beong-geul | 의태어 | Smiling brightly — 싱글벙글 웃어요. Smiling *broadly*. |
 | 조마조마 | jo-ma-jo-ma | 의태어 | Anxiously — 조마조마 기다려요. Waiting *nervously*. |
 | 두근두근 | du-geun-du-geun | 의태어 | Heart racing — 두근두근해요. My heart is *pounding*. |
@@ -306,7 +306,7 @@ CATEGORIES · 카테고리
 **움직임·모양 MOVEMENTS & SHAPES**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 엉금엉금 | eong-geum-eong-geum | 의태어 | Crawling slowly — 엉금엉금 기어요. *Crawling* slowly. |
 | 헐떡헐떡 | heol-tteok-heol-tteok | 의성어 | Panting — 헐떡헐떡 숨을 쉬어요. *Panting* for breath. |
 | 투벅투벅 | tu-beok-tu-beok | 의태어 | Plodding — 투벅투벅 걸어요. Walking *heavily*. |
@@ -327,7 +327,7 @@ CATEGORIES · 카테고리
 **반복·규칙 REPETITION & REGULARITY**
 
 | 단어 | 발음 | 유형 | English & 예문 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 반듯반듯 | ban-deut-ban-deut | 의태어 | Neatly/Straight — 반듯반듯 접어요. Folded up *neatly*. |
 | 꼬박꼬박 | kko-bak-kko-bak | 의태어 | Regularly/Faithfully — 꼬박꼬박 저축해요. Saving *faithfully*. |
 | 차근차근 | cha-geun-cha-geun | 의태어 | Step by step — 차근차근 설명해요. Explaining *step by step*. |

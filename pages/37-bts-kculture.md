@@ -85,7 +85,7 @@ BTS는 재능만으로 돌파한 것이 아닙니다 — **메시지**로 돌파
 BTS 핵심 앨범 & 노래 — Key Albums & Songs
 
 | 작품 | 연도 | 의미 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **화양연화 (花樣年華)** The Most Beautiful Moment in Life | 2015 | 청춘의 아름답고 불안한 순간 — The beautiful, anxious moment of youth |
 | **WINGS** | 2016 | 헤르만 헤세 소설 『데미안』에서 영감 — Inspired by Hesse's "Demian" |
 | **LOVE YOURSELF** 시리즈 | 2017–18 | UN 연설 "Speak Yourself" 기반 — self-love campaign |
@@ -126,7 +126,7 @@ K팝 팬덤은 참여형 문화입니다. 팬들은 공식 이름(ARMY·BLINK·S
 ### K-Drama: Stories That Broke Borders
 
 | 드라마 | 연도 | 왜 세계를 사로잡았나 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **겨울연가** Winter Sonata | 2002 | 한류 1파 촉발 — 배용준 "욘사마" 신드롬, 일본·아시아 열풍 |
 | **대장금** Jewel in the Palace | 2003 | 한국 음식·역사 세계화 — 54개국 방영, 한식 세계화의 시작 |
 | **별에서 온 그대** My Love from the Star | 2013 | 중국 폭발적 인기 — 치맥(치킨+맥주) 문화 수출 |
@@ -158,7 +158,7 @@ Korean directors are celebrated globally for their distinctive storytelling: Bon
 K-뷰티 핵심 어휘
 
 | **피부** 皮膚 | skin (basic word in all skincare) |
-| --- | --- |
+| :---: | :---: |
 | **수분** 水分 | moisture / hydration |
 | **자외선 차단제** | sunscreen (UV protection — cornerstone of K-beauty) |
 | **에센스** | essence — lightweight serum, K-beauty's signature step |
@@ -199,7 +199,7 @@ The most direct impact of Hallyu on the world: **millions of people are learning
 한류가 세계에 미친 가장 직접적인 영향: **수백만 명이 K문화 때문에 한국어를 배우고 있습니다.**
 
 | 현상 | 수치 |
-| --- | --- |
+| :---: | :---: |
 | Duolingo 한국어 학습자 증가 (오징어 게임 이후) | +76% |
 | 한국어 능력시험 (TOPIK) 응시자 (2023년) | 전 세계 85개국 300만 명+ |
 | 세계 한국어 학습자 추정 인원 | 1,600만 명+ (2020년대) |
@@ -209,7 +209,7 @@ The most direct impact of Hallyu on the world: **millions of people are learning
 K-문화에서 배우는 한국어 표현
 
 | 표현 | 출처 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **아이고!** | 드라마·일상 | Oh my! / Goodness! (universal Korean exclamation) |
 | **대박!** | 예능·SNS | Jackpot! / Awesome! / No way! |
 | **파이팅!** | K팝·스포츠 | Go for it! / You've got this! / Fighting! |

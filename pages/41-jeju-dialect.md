@@ -17,12 +17,12 @@ It preserves ancient Korean sounds and vocabulary lost elsewhere — making it f
 **인사 GREETINGS**
 
 | 제주어 Jeju | 표준어 Standard | 뜻 & Notes |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 혼저옵서예 | 어서 오세요 | Welcome! — The most famous Jeju greeting, used to welcome guests. You'll see this everywhere on Jeju Island. |
 **가족 FAMILY**
 
 | 제주어 Jeju | 표준어 Standard | 뜻 & Notes |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어멍 | 어머니 | Mother — from the ancient Korean word 어멈. Warm and intimate. |
 | 아방 | 아버지 | Father — from the old Korean 아비. Still heard among older Jeju residents. |
 | 하르방 | 할아버지 | Grandfather — also the name for the famous *돌하르방* (stone grandfather) statues of Jeju. |
@@ -31,17 +31,17 @@ It preserves ancient Korean sounds and vocabulary lost elsewhere — making it f
 **장소·방향 PLACE & DIRECTION**
 
 | 제주어 Jeju | 표준어 Standard | 뜻 & Notes |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 이디 | 여기 | Here — preserves the older Korean vowel pattern. (cf. 저디 = 저기 there) |
 **자연 NATURE**
 
 | 제주어 Jeju | 표준어 Standard | 뜻 & Notes |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 겨울 | 겨울 | Winter — same in both! One of the rare words shared between Jeju dialect and Standard Korean. |
 **문법 GRAMMAR — 문장 끝맺음**
 
 | 제주어 Jeju | 표준어 Standard | 뜻 & Notes |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | ~수다 / ~마씀 | ~입니다 / ~예요 | Formal sentence endings unique to Jeju — used like the standard formal and polite endings but with distinctly Jeju pronunciation and forms. |
 
 🗿

@@ -49,7 +49,7 @@ BC 57 ~ AD 668
 핵심 어휘 · Key Vocabulary
 
 | **단군왕검** | Dangun Wanggeom — Korea's legendary founding father |
-| --- | --- |
+| :---: | :---: |
 | **홍익인간** 弘益人間 | broadly benefiting humanity — founding national motto |
 | **개천절** 開天節 | National Foundation Day — October 3rd, celebrates Gojoseon's founding |
 | **단군신화** | the Dangun myth — bear + heaven-child story |
@@ -96,7 +96,7 @@ After unification, Silla entered a golden age. The capital **경주 (Gyeongju)**
 통일신라의 유산 · Legacy of Unified Silla
 
 | **불국사** 佛國寺 | Bulguksa Temple, Gyeongju — UNESCO World Heritage, 751 AD |
-| --- | --- |
+| :---: | :---: |
 | **석굴암** 石窟庵 | Seokguram Grotto — stone Buddha sculpture, UNESCO World Heritage |
 | **첨성대** 瞻星臺 | Cheomseongdae Observatory — 7th century, Asia's oldest astronomical observatory |
 | **화랑도** 花郞道 | Hwarangdo — elite warrior-scholar youth order |
@@ -159,7 +159,7 @@ Under colonial rule, Koreans were forbidden to use their language in schools and
 일제강점기 핵심 어휘
 
 | **삼일운동** 三一運動 | March 1st Independence Movement, 1919 — millions declared independence |
-| --- | --- |
+| :---: | :---: |
 | **독립선언서** | Declaration of Independence — read aloud at Tapgol Park, Seoul |
 | **유관순** | Yu Gwan-sun — 19-year-old independence activist, "Korea's Joan of Arc" |
 | **창씨개명** 創氏改名 | forced adoption of Japanese names — cultural erasure policy |
@@ -190,7 +190,7 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 ### Words You Will Hear in Korean Media and Conversation
 
 | 단어 | 한자 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **역사** | 歷史 | history |
 | **왕조** | 王朝 | dynasty (king + dynasty) |
 | **건국** | 建國 | founding of a nation |

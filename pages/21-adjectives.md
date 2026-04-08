@@ -121,7 +121,7 @@ Fill in the correct adjective:
 ### ⚡ Opposite Adjectives · 반대말
 
 | 한글 ➕ | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 좋아요 | jo-a-yo | good |
 | 나빠요 | na-ppa-yo | bad |
 | 빨라요 | ppal-la-yo | fast |
@@ -146,7 +146,7 @@ Fill in the correct adjective:
 💡 Boost your adjectives with these degree words!
 
 | 한글 | 발음 | Meaning | Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 매우 / 아주 | mae-u / a-ju | very | 매우 맛있어요 |
 | 너무 | neo-mu | too / so (strong) | 너무 비싸요 |
 | 좀 / 조금 | jom / jo-geum | a little / somewhat | 좀 어려워요 |

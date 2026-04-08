@@ -54,7 +54,7 @@ Same feeling as ㅠㅠ
 ### 🔥 인기 슬랭 단어 · Popular Slang Words
 
 | 슬랭 | 발음 | Meaning | Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 대박 | dae-bak | Amazing! Jackpot! Wow! | 이거 진짜 대박이야! = This is amazing! |
 | 헐 | heol | OMG / No way! | 헐, 진짜? = OMG, really? |
 | 짱 | jjang | The best! #1! | 너 진짜 짱이야! = You're the best! |
@@ -177,7 +177,7 @@ Reality check / existential crisis moment
 MZ세대 = **M**illennials (1981–1996) + **Z**eneration (1997–2010). They've shaped modern Korean internet culture, slang, and values. Learning their language = unlocking modern Korea! 🇰🇷
 
 | 표현 | 발음 | Meaning & Vibe |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 킹받아 | king-ba-da | Super annoying (킹 = king-level + 열받아 angry) |
 | 요즘 것들 | yo-jeum geo-seul | These days' kids (said about Gen Z by older people) |
 | 인싸 / 아싸 | in-ssa / a-ssa | Insider (popular) / Outsider (loner) |

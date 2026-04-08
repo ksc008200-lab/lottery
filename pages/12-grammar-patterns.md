@@ -13,7 +13,7 @@ Verb stem + 고 싶어요
 *go sip-eo-yo* = want to
 
 | 기본형 (Base) | 발음 | 고 싶어요 form | 발음 | English |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 먹다 | meok-da | 먹고 싶어요 | meok-go sip-eo-yo | I want to eat |
 | 가다 | ga-da | 가고 싶어요 | ga-go sip-eo-yo | I want to go |
 | 배우다 | bae-u-da | 배우고 싶어요 | bae-u-go sip-eo-yo | I want to learn |
@@ -39,7 +39,7 @@ Verb stem + (으)ㄹ 수 있어요
 *(eu)l su iss-eo-yo* = can / am able to  |  *(으)ㄹ 수 없어요* = cannot
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 한국어 할 수 있어요 | han-gu-geo hal su iss-eo-yo | I can speak Korean |
 | 요리 할 수 있어요 | yo-ri hal su iss-eo-yo | I can cook |
 | 수영 할 수 있어요 | su-yeong hal su iss-eo-yo | I can swim |
@@ -95,7 +95,7 @@ Verb stem + 아/어야 해요
 Use **아야 해요** when the last vowel is ㅏ or ㅗ | Use **어야 해요** for all others
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 공부해야 해요 | gong-bu-hae-ya hae-yo | I have to study |
 | 가야 해요 | ga-ya hae-yo | I have to go |
 | 자야 해요 | ja-ya hae-yo | I have to sleep |
@@ -119,7 +119,7 @@ Verb stem + 지 않아요    OR    안 + Verb
 Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 
 | 긍정 (Positive) | 부정 ~지 않아요 | 부정 안 + verb | English |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 가요 | 가지 않아요 | 안 가요 | I don't go |
 | 먹어요 | 먹지 않아요 | 안 먹어요 | I don't eat |
 | 알아요 | 알지 않아요 | 몰라요 | I don't know |
@@ -128,7 +128,7 @@ Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 ### Pattern 5 · ~(으)면 좋겠어요 · I wish / It would be nice if ___
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 날씨가 좋으면 좋겠어요 | nal-ssi-ga jo-eu-myeon jo-kess-eo-yo | I wish the weather were nice |
 | 한국에 가면 좋겠어요 | han-gu-ge ga-myeon jo-kess-eo-yo | I wish I could go to Korea |
 | 복권이 당첨되면 좋겠어요 | bok-gweon-i dang-cheom-doe-myeon jo-kess-eo-yo | I wish I'd win the lottery |
@@ -139,7 +139,7 @@ Koreans rarely state opinions as hard facts. They soften with ~것 같아요 (ge
 It's like saying "I think..." or "It seems..."
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 맛있는 것 같아요 | mas-in-neun geot ga-ta-yo | It seems delicious / I think it's good |
 | 비가 오는 것 같아요 | bi-ga o-neun geot ga-ta-yo | It seems like it's raining |
 | 그 사람이 피곤한 것 같아요 | geu sa-ram-i pi-gon-han geot ga-ta-yo | That person seems tired |
@@ -203,7 +203,7 @@ Use this when YOU decide to do something right now — like a promise to the lis
 Verb stem + (으)ㄹ게요
 
 | 한글 | 발음 | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 제가 할게요 | je-ga hal-ge-yo | I'll do it (I promise) |
 | 제가 낼게요 | je-ga nael-ge-yo | I'll pay |
 | 내일 전화할게요 | nae-il jeon-hwa-hal-ge-yo | I'll call tomorrow |
@@ -264,7 +264,7 @@ I don't have money
 ### 🗂️ Pattern Summary · 패턴 요약
 
 | Pattern | Formula | Meaning | Example |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 1 | ~고 싶어요 | I want to ___ | 먹고 싶어요 |
 | 2 | ~(으)ㄹ 수 있어요 | I can ___ | 할 수 있어요 |
 | 3 | ~아/어야 해요 | I have to ___ | 가야 해요 |

@@ -62,7 +62,7 @@ This is the most important skill! Korean verbs change form completely when conju
 어미 제거 → 다 붙이기
 
 | 문장에서 본 형태 | 사전에서 찾을 기본형 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 마셨어요 | 마시다 | to drink |
 | 들었어 | 듣다 / 들다 | to hear / to hold |
 | 더웠어요 | 덥다 | to be hot |
@@ -80,7 +80,7 @@ This is the most important skill! Korean verbs change form completely when conju
 ③ to smoke · 담배를 먹다
 
 | 항목 | 의미 | 예시 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | [ ] 발음 | 실제 발음 (실제≠표기) | [먹따] — ㄷ이 된소리로 변함 |
 | 품사 | 동사/형용사/명사/부사... | 동사=verb, 형용사=adjective |
 | ① ② ③ | 여러 가지 의미 | 문맥에 맞는 의미 선택 |
@@ -102,7 +102,7 @@ This is the most important skill! Korean verbs change form completely when conju
 ### 🤖 번역기 vs 사전 — 언제 뭘 써야 해?
 
 | | 📖 사전 (Dictionary) | 🤖 Papago/번역기 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 단어 뜻 확인 | ✅ 완벽 | △ 부정확할 수 있음 |
 | 긴 문장 번역 | ❌ 부적합 | ✅ 완벽 |
 | 발음 확인 | ✅ 정확한 발음 제공 | △ 제한적 |

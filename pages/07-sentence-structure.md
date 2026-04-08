@@ -13,7 +13,7 @@ Korean: Subject → Object → **Verb LAST!**    (나는 피자를 **먹어요
 ### The Most Important Particles · 핵심 조사
 
 | 조사 | Pronunciation | Role |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 은/는 | eun/neun | Topic marker |
 | 나는 | na-neun | "As for me..." |
 | 이/가 | i/ga | Subject marker |

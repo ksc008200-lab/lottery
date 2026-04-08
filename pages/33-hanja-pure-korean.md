@@ -79,7 +79,7 @@ The key insight: **each Hanja character carries a meaning**, so once you learn t
 핵심 통찰: **각 한자는 의미를 담고 있어서**, 글자 의미를 알면 모르는 한국어 단어를 추측할 수 있습니다 — 라틴어 어근을 알면 영어 단어를 해독하는 것과 같습니다.
 
 | 한자어 | 한자 분해 | 글자별 의미 | 전체 뜻 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | **학교 (學校)** | 學 + 校 | 배울 학 + 학교 교 | school |
 | **전화 (電話)** | 電 + 話 | 번개 전(電氣) + 말 화 | telephone (electric talk) |
 | **도서관 (圖書館)** | 圖 + 書 + 館 | 그림 도 + 글 서 + 건물 관 | library (picture·book·hall) |
@@ -101,7 +101,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 한자를 쓸 줄 몰라도 됩니다. 이 50가지 구성 요소를 인식하는 것만으로도 수백 개의 어휘를 해독하는 데 도움이 됩니다.
 
 | 한자 | 훈·음 | 한국어 예시 (2개 이상) |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **學 학** | 배울 학 | 학교(學校) · 학생(學生) · 학원(學院) · 대학(大學) |
 | **校 교** | 학교 교 | 학교(學校) · 교장(校長) · 교실(敎室) |
 | **國 국** | 나라 국 | 한국(韓國) · 국제(國際) · 국민(國民) · 외국(外國) |
@@ -141,7 +141,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 **고유어(固有語)**는 중국의 영향 이전부터 존재해 온 한국 고유 단어들입니다. 가장 *근본적인 인간 경험*을 표현하는 경향이 있습니다 — 신체, 자연, 가족, 감정, 기본 동사, 감각 단어들입니다. 보통 더 짧고, 더 감성적이며, 일상 한국어에 깊이 뿌리내리고 있습니다.
 
 | 분류 | 고유어 단어들 |
-| --- | --- |
+| :---: | :---: |
 | **🏔️ 자연 · Nature** | 하늘 (sky) · 땅 (ground) · 바람 (wind) · 비 (rain) · 눈 (snow) · 불 (fire) · 물 (water) · 나무 (tree) · 꽃 (flower) · 돌 (stone) · 달 (moon) · 해 (sun) |
 | **👤 신체 · Body** | 눈 (eye) · 코 (nose) · 입 (mouth) · 귀 (ear) · 손 (hand) · 발 (foot) · 머리 (head) · 배 (belly) · 등 (back) · 팔 (arm) · 다리 (leg) |
 | **👨‍👩‍👧 가족 · Family** | 엄마 (mom) · 아빠 (dad) · 아이 (child) · 오빠 (older brother ♀) · 언니 (older sister ♀) · 형 (older brother ♂) · 누나 (older sister ♂) |
@@ -157,7 +157,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 한국어의 많은 개념에는 고유어와 한자어 두 가지가 모두 있습니다. 종종 바꿔 쓸 수 있지만 **뉘앙스와 격식**이 다릅니다. 고유어는 더 따뜻하고 감성적으로 느껴지고, 한자어는 더 격식 있고 학문적으로 들립니다.
 
 | 개념 | 고유어 (Native) | 한자어 (Sino-Korean) | 뉘앙스 차이 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | love | **사랑** (warm, emotional) | 애정 愛情 (formal, deeper) | 사랑 = everyday; 애정 = literary/formal |
 | water | **물** (natural, everyday) | 수분 水分 (moisture, academic) | 물 = drink water; 수분 = hydration levels |
 | fire | **불** (visceral, immediate) | 화재 火災 (fire incident/disaster) | 불 = campfire, stove; 화재 = emergency/news |
@@ -179,7 +179,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 **외래어(外來語)**는 외국어에서 온 차용어로, 현대에는 압도적으로 영어에서 왔습니다. 한국어 음운에 맞게 한글로 표기하며 분명히 "외국어" 느낌이 납니다.
 
 | 외래어 | 원어 | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **컴퓨터** | computer | computer |
 | **스마트폰** | smartphone | smartphone (핸드폰 is also used) |
 | **커피** | coffee | coffee |
@@ -196,7 +196,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 단어를 분류해보세요 · Classify each word
 
 | 단어 | 분류 | 이유 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 하늘 | 고유어 ✅ | Native Korean — no Chinese character origin, ancient word |
 | 학교 | 한자어 ✅ | 學校 — from Chinese, each syllable = one character |
 | 커피 | 외래어 ✅ | From English "coffee" — phonetic transcription |

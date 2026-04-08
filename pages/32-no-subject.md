@@ -54,7 +54,7 @@ The most common. When you are the one doing the action and the context makes it 
 가장 흔한 경우입니다. 내가 행동의 주체이고 문맥이 명확할 때, 그냥 나/저를 생략합니다.
 
 | 생략 전 (Unnatural) | 생략 후 (Natural) | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 나는 지금 바빠. | **지금 바빠.** | I'm busy right now. |
 | 나는 한국어 공부해. | **한국어 공부해.** | I'm studying Korean. |
 | 나는 이거 싫어. | **이거 싫어.** | I don't like this. |
@@ -68,7 +68,7 @@ Questions and commands directed at the listener almost never include "you."
 상대방에게 하는 질문이나 명령에는 거의 "너" 또는 "당신"을 포함하지 않습니다.
 
 | 생략 전 (Stiff) | 생략 후 (Natural) | 뜻 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 너는 밥 먹었어? | **밥 먹었어?** | Did you eat? |
 | 당신은 어디 가요? | **어디 가요?** | Where are you going? |
 | 너는 뭐 해? | **뭐 해?** | What are you doing? |
@@ -113,7 +113,7 @@ Here is where it gets interesting. When a Korean *does* include the subject — 
 흥미로운 점이 있습니다. 한국어 화자가 주어를 *포함할 때* — 특히 주제 조사 **은/는**을 써서 — 대개 **대조나 강조**를 뜻합니다. 단순한 사실 진술이 아니라 "이 특정 사람에 관해서는…"의 의미입니다.
 
 | 문장 | 뉘앙스 |
-| --- | --- |
+| :---: | :---: |
 | **밥 먹었어?** | Did you eat? (normal, neutral question) |
 | **너는 밥 먹었어?** | Did *YOU* eat? (emphasis — implying others didn't, or checking specifically on you) |
 | **갈게.** | I'll go. (simple, natural) |
@@ -159,7 +159,7 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 주어를 *써야* 할 때, 격식에 따라 두 가지 선택이 있습니다:
 
 | 단어 | 사용 상황 | 예문 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | **나 (na)** | informal — friends, younger people, close relationships | 나 배고파. (I'm hungry.) |
 | **저 (jeo)** | formal — elders, strangers, professional settings | 저 학생이에요. (I'm a student.) |
 | **나는 / 내가** | 나 + topic marker / subject marker (informal) | 나는 몰라. / 내가 할게. |
@@ -173,7 +173,7 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 ### 50 Natural Korean Sentences Without a Subject
 
 | 한국어 (주어 생략) | English |
-| --- | --- |
+| :---: | :---: |
 | 배고파. | I'm hungry. |
 | 졸려. | I'm sleepy. |
 | 다 왔어. | We're almost there. / I'm almost there. |

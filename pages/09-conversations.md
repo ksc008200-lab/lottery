@@ -6,7 +6,7 @@
 ### Scene 1: Meeting Someone New · 처음 만나는 사람
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 안녕하세요! | an-nyeong-ha-se-yo! | Hello! |
 | 처음 뵙겠습니다. | cheo-eum boep-get-seum-ni-da | Nice to meet you. |
 | 이름이 뭐예요? | i-reum-i mwo-ye-yo? | What's your name? |
@@ -16,7 +16,7 @@
 ### Scene 2: At a Café · 카페에서
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어서오세요! | eo-seo-o-se-yo! | Welcome! |
 | ___ 한 잔 주세요. | ___ han jan ju-se-yo | One ___, please. |
 | 얼마예요? | eol-ma-ye-yo? | How much? |
@@ -24,7 +24,7 @@
 ### Scene 3: At a Restaurant · 식당에서
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 저기요! | jeo-gi-yo! | Excuse me! (calling staff) |
 | 주문할게요. | ju-mun-hal-ge-yo | I'd like to order. |
 | ___ 하나 주세요. | ___ ha-na ju-se-yo | One ___, please. |
@@ -33,7 +33,7 @@
 ### Scene 4: Shopping · 쇼핑할 때
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 그냥 구경하는 거예요. | geu-nyang gu-gyeong-ha-neun geo-ye-yo | Just browsing. |
 | 이거 얼마예요? | i-geo eol-ma-ye-yo? | How much is this? |
 | 좀 깎아 주세요. | jom kkak-a ju-se-yo | Please give a discount. |
@@ -42,7 +42,7 @@
 ### Scene 5: At the Doctor's · 병원에서
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 어디가 불편하세요? | eo-di-ga bul-pyeon-ha-se-yo? | Where does it hurt? |
 | 머리가 아파요. | meo-ri-ga a-pa-yo | I have a headache. |
 | 배가 아파요. | bae-ga a-pa-yo | My stomach hurts. |
@@ -57,7 +57,7 @@
 ### Top 20 Survival Phrases · 생존 표현 TOP 20
 
 | 한글 | Pronunciation | English |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 안녕하세요 | an-nyeong-ha-se-yo | Hello |
 | 감사합니다 | gam-sa-ham-ni-da | Thank you |
 | 죄송합니다 | joe-song-ham-ni-da | I'm sorry |

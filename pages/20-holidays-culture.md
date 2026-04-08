@@ -38,7 +38,7 @@ jeul-geo-un chu-seok doe-se-yo — Have a joyful Chuseok!
 #### 🎊 Holiday Greetings · 명절 인사
 
 | Occasion | 한글 | 발음 | English |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | Lunar New Year | 새해 복 많이 받으세요 | sae-hae bok man-i ba-deu-se-yo | Happy New Year! (lit: Receive lots of blessings) |
 | Chuseok | 즐거운 추석 되세요 | jeul-geo-un chu-seok doe-se-yo | Have a joyful Chuseok! |
 | Birthday | 생일 축하해요! | saeng-il chuk-ha-hae-yo! | Happy Birthday! |
@@ -112,7 +112,7 @@ Korean sauna/spa — open 24 hours, with hot rooms, cold rooms, sleeping areas, 
 🎂 Two Special Birthdays!
 
 | Birthday | 한글 | 발음 | Meaning |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | 100th day | 백일 | baek-il | Celebrated because infant mortality was historically high — 100 days = survived! |
 | 1st birthday | 돌잔치 | dol-jan-chi | Baby grabs objects to predict their future career — 돌잡이 ceremony! 🎯 |
 | 60th birthday | 환갑 | hwan-gap | Completion of the 60-year zodiac cycle — huge celebration with family! |
