@@ -68,7 +68,6 @@ yoga
 | ~하는 것을 좋아해요 | 요리하는 것을 좋아해요 | I like cooking (doing it) |
 | ~에 관심이 있어요 | 사진에 관심이 있어요 | I'm interested in photography |
 | ~을/를 배우고 싶어요 | 기타를 배우고 싶어요 | I want to learn guitar |
-
 ### ⚽ Sports · 스포츠
 ⚽
 축구
@@ -119,6 +118,7 @@ Translate into Korean:
 정답: 1. 독서를 좋아해요. 2. 여행을 즐겨요. 3. 기타를 배우고 싶어요. 4. 사진에 관심이 있어요. 5. 취미가 뭐예요?
 
 ### 🌙 Free Time · 여가 시간에 뭐 해요?
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 넷플릭스 봐요 | net-peul-lik-seu bwa-yo | I watch Netflix |

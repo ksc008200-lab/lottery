@@ -9,6 +9,7 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 ### Body Parts · 신체 부위
 
 #### Head & Face · 머리 & 얼굴
+
 | | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | 🧠 | 머리 | meo-ri | head / hair |
@@ -19,8 +20,8 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 | 🦷 | 이 / 치아 | i / chi-a | tooth / teeth |
 | 😮 | 목 | mok | neck / throat |
 | 🫁 | 얼굴 | eol-gul | face |
-
 #### Body · 몸통 & 팔다리
+
 | | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | 💪 | 어깨 | eo-kkae | shoulder |
@@ -31,7 +32,6 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 | ✋ | 손 | son | hand |
 | 🦵 | 다리 | da-ri | leg |
 | 🦶 | 발 | bal | foot |
-
 ### 🤕 Saying Where It Hurts · 아픈 곳 말하기
 🔧 Formula — Body Part + 이/가 + 아파요
 [Body part] + 이/가 아파요
@@ -47,7 +47,6 @@ Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" 
 | 이가 아파요. | i-ga a-pa-yo. | My tooth hurts. |
 | 눈이 아파요. | nun-i a-pa-yo. | My eye hurts. |
 | 온몸이 아파요. | on-mom-i a-pa-yo. | My whole body hurts. |
-
 ### 🌡️ Symptoms & Conditions · 증상
 🤒 열이 나요
 yeol-i na-yo
@@ -92,6 +91,7 @@ Translate into Korean:
 정답: 1. 배가 아파요. 2. 열이 나요. 3. 온몸이 아파요. 4. 어지러워요. 5. 기침이 나요. 6. 허리가 아파요.
 
 ### 💊 At the Pharmacy · 약국에서
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 약국이 어디예요? | yak-guk-i eo-di-ye-yo? | Where is the pharmacy? |
@@ -102,7 +102,6 @@ Translate into Korean:
 | 이 약에 알레르기가 있어요. | i yak-e al-le-reu-gi-ga iss-eo-yo. | I'm allergic to this medicine. |
 | 처방전이 필요해요? | cheo-bang-jeon-i pi-ryo-hae-yo? | Is a prescription needed? |
 | 밴드 주세요. | baen-deu ju-se-yo. | Please give me a Band-Aid. |
-
 ### 💬 At the Hospital · 병원 대화
 🏥 Doctor's Visit · 진료
 **의사:** 어디가 불편하세요?

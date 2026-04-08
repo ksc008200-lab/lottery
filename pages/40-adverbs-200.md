@@ -25,6 +25,7 @@ CATEGORIES · 카테고리
 1. 시간 부사Time Adverbs · 35 words
 
 **현재·과거·미래 PRESENT / PAST / FUTURE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 지금 | ji-geum | Now | 지금 뭐 해요? — What are you doing *now*? |
@@ -34,8 +35,8 @@ CATEGORIES · 카테고리
 | 이미 | i-mi | Already | 이미 알고 있었어요. — I *already* knew. |
 | 벌써 | beol-sseo | Already (sooner than expected) | 벌써 왔어요? — You're here *already*? |
 | 아직 | a-jik | Yet / Still | 아직 안 왔어요. — They haven't come *yet*. |
-
 **시점·순서 TIMING & ORDER**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 일찍 | il-jjik | Early | 일찍 일어났어요. — I woke up *early*. |
@@ -48,8 +49,8 @@ CATEGORIES · 카테고리
 | 방금 | bang-geum | Just now | 방금 끝났어요. — It *just* finished. |
 | 금방 | geum-bang | Soon / Just now | 금방 올게요. — I'll be back *soon*. |
 | 곧 | got | Soon | 곧 도착해요. — I'll arrive *soon*. |
-
 **결과·빈도 RESULT & FREQUENCY**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 드디어 | deu-di-eo | Finally | 드디어 졸업했어요! — I've *finally* graduated! |
@@ -74,6 +75,7 @@ CATEGORIES · 카테고리
 📊 2. 정도 부사Degree Adverbs · 30 words
 
 **강도 HIGH DEGREE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 매우 | mae-u | Very | 매우 좋아요. — It's *very* good. |
@@ -87,8 +89,8 @@ CATEGORIES · 카테고리
 | 대단히 | dae-dan-hi | Greatly | 대단히 감사합니다. — *Greatly* appreciated. |
 | 지나치게 | ji-na-chi-ge | Excessively | 지나치게 먹었어요. — I ate *excessively*. |
 | 극히 | geu-ki | Extremely | 극히 드문 일이에요. — It's an *extremely* rare thing. |
-
 **낮은 정도 LOW DEGREE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 조금 | jo-geum | A little | 조금 주세요. — Give me *a little*. |
@@ -98,8 +100,8 @@ CATEGORIES · 카테고리
 | 거의 | geo-ui | Almost / Nearly | 거의 다 왔어요. — We've *almost* arrived. |
 | 충분히 | chung-bun-hi | Sufficiently | 충분히 먹었어요. — I ate *enough*. |
 | 적당히 | jeok-dang-hi | Moderately | 적당히 해요. — Do it *moderately*. |
-
 **비교·범위 COMPARISON & SCOPE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 가장 | ga-jang | Most | 가장 좋아하는 음식이 뭐예요? — What food do you like *most*? |
@@ -119,14 +121,15 @@ CATEGORIES · 카테고리
 3. 상태·방식 부사State & Manner Adverbs · 40 words
 
 **능력·속도 ABILITY & SPEED**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 잘 | jal | Well | 잘 했어요. — You did *well*. |
 | 못 | mot | Cannot / Not well | 한국어를 못 해요. — I *can't* speak Korean. |
 | 빨리 | ppal-li | Quickly / Fast | 빨리 와요! — Come *quickly*! |
 | 천천히 | cheon-cheon-hi | Slowly | 천천히 말해 주세요. — Please speak *slowly*. |
-
 **함께·혼자 TOGETHER & ALONE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 함께 | ham-kke | Together | 함께 가요. — Let's go *together*. |
@@ -134,15 +137,15 @@ CATEGORIES · 카테고리
 | 혼자 | hon-ja | Alone | 혼자 왔어요. — I came *alone*. |
 | 스스로 | seu-seu-ro | By oneself | 스스로 해요. — Do it *yourself*. |
 | 직접 | jik-jeop | Directly / In person | 직접 만들었어요. — I made it *myself*. |
-
 **갑작스러움 SUDDENNESS**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 갑자기 | gap-ja-gi | Suddenly | 갑자기 비가 왔어요. — Rain came *suddenly*. |
 | 마침 | ma-chim | Just in time / Coincidentally | 마침 왔네요! — You came *just in time*! |
 | 하필 | ha-pil | Of all things / Why | 하필 오늘이야? — Why today *of all days*? |
-
 **방식·태도 MANNER & ATTITUDE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 조용히 | jo-yong-hi | Quietly | 조용히 해요. — Be *quiet*. |
@@ -197,6 +200,7 @@ CATEGORIES · 카테고리
 🔗 5. 문장 연결 부사 (접속 부사)Conjunctive Adverbs · 20 words
 
 **더하기·대조 ADDITION & CONTRAST**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 그리고 | geu-ri-go | And | 밥을 먹었어요. 그리고 커피를 마셨어요. — I ate. *And* I drank coffee. |
@@ -205,8 +209,8 @@ CATEGORIES · 카테고리
 | 그래도 | geu-rae-do | Still / Nevertheless | 힘들어요. 그래도 해야 해요. — It's hard. *Still*, I must do it. |
 | 그런데 | geu-reon-de | But / By the way | 그런데 말이에요... — *By the way*... |
 | 그렇지만 | geu-reot-ji-man | Though / Even so | 알아요. 그렇지만 무서워요. — I know. *Even so*, I'm scared. |
-
 **인과·결론 CAUSE & CONCLUSION**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 그래서 | geu-rae-seo | So / Therefore | 비가 왔어요. 그래서 안 갔어요. — It rained. *So* I didn't go. |
@@ -214,8 +218,8 @@ CATEGORIES · 카테고리
 | 그러면 | geu-reo-myeon | Then / If so | 그러면 언제 가요? — *Then* when are you going? |
 | 따라서 | tta-ra-seo | Consequently / Therefore | 따라서 결정했습니다. — *Therefore*, I decided. |
 | 결과적으로 | gyeol-gwa-jeok-eu-ro | As a result | 결과적으로 성공했어요. — *As a result*, I succeeded. |
-
 **추가·선택 ADDITION & CHOICE**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 또한 | tto-han | Also / In addition | 또한 중요해요. — It's *also* important. |
@@ -230,14 +234,15 @@ CATEGORIES · 카테고리
 🎲 6. 추측·양태 부사Modal & Evidential Adverbs · 20 words
 
 **불확실 UNCERTAINTY**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 아마 | a-ma | Maybe / Perhaps | 아마 올 거예요. — *Maybe* they'll come. |
 | 아마도 | a-ma-do | Probably | 아마도 맞을 거예요. — It's *probably* right. |
 | 어쩌면 | eo-jjeo-myeon | Perhaps / Possibly | 어쩌면 늦을 수도 있어요. — *Perhaps* I might be late. |
 | 혹시 | hok-si | By any chance | 혹시 알아요? — Do you happen to know? |
-
 **확실·강조 CERTAINTY & EMPHASIS**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 확실히 | hwa-ssil-hi | Certainly / For sure | 확실히 알아요. — I know *for sure*. |
@@ -247,8 +252,8 @@ CATEGORIES · 카테고리
 | 사실은 | sa-si-reun | In fact / The truth is | 사실은 거짓말이었어요. — *In fact* it was a lie. |
 | 진실로 | jin-sil-lo | Truly / Sincerely | 진실로 감사해요. — I'm *truly* grateful. |
 | 솔직히 | sol-jji-ki | Honestly / Frankly | 솔직히 말하면... — *Honestly* speaking... |
-
 **예상·결과 EXPECTATION & OUTCOME**
+
 | 부사 | 발음 | English | 예문 Example |
 | --- | --- | --- | --- |
 | 의외로 | ui-oe-ro | Unexpectedly | 의외로 쉬웠어요. — *Unexpectedly*, it was easy. |
@@ -266,14 +271,15 @@ CATEGORIES · 카테고리
 의성어(擬聲語) = **sounds** (e.g. 졸졸 — babbling water) · 의태어(擬態語) = **appearance/movement** (e.g. 반짝반짝 — twinkling). Both work as adverbs.
 
 **빛·자연 LIGHT & NATURE**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 반짝반짝 | ban-jjak-ban-jjak | 의태어 | Twinkling — 별이 반짝반짝 빛나요. Stars *twinkle*. |
 | 반짝 | ban-jjak | 의태어 | In a flash — 반짝 떠올랐어요. It flashed *in an instant*. |
 | 졸졸 | jol-jol | 의성어 | Murmuring (water) — 물이 졸졸 흘러요. Water *babbles*. |
 | 펑펑 | peong-peong | 의성어 | Heavily (snow/tears) — 눈이 펑펑 와요. Snow falls *heavily*. |
-
 **소리·동작 SOUNDS & MOVEMENTS**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 씽씽 | ssing-ssing | 의성어 | Whizzing — 바람이 씽씽 불어요. Wind *whizzes*. |
@@ -281,15 +287,15 @@ CATEGORIES · 카테고리
 | 보글보글 | bo-geul-bo-geul | 의성어 | Bubbling — 찌개가 보글보글 끓어요. Stew *bubbles*. |
 | 뚝 | ttuk | 의성어 | Suddenly stopping — 말이 뚝 끊겼어요. Speech *cut off*. |
 | 툭 | tuk | 의성어 | Light tap — 어깨를 툭 쳤어요. Gave a shoulder *tap*. |
-
 **먹기·마시기 EATING & DRINKING**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 아삭아삭 | a-sak-a-sak | 의성어 | Crunchy — 배추가 아삭아삭해요. Cabbage is *crunchy*. |
 | 벌컥벌컥 | beol-keok-beol-keok | 의성어 | Gulping — 물을 벌컥벌컥 마셔요. Gulping water *down*. |
 | 우물우물 | u-mul-u-mul | 의성어 | Mumbling/Chewing — 우물우물 씹어요. Chewing *slowly*. |
-
 **감정·표정 EMOTIONS & EXPRESSIONS**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 싱글벙글 | sing-geul-beong-geul | 의태어 | Smiling brightly — 싱글벙글 웃어요. Smiling *broadly*. |
@@ -297,8 +303,8 @@ CATEGORIES · 카테고리
 | 두근두근 | du-geun-du-geun | 의태어 | Heart racing — 두근두근해요. My heart is *pounding*. |
 | 투덜투덜 | tu-deol-tu-deol | 의성어 | Grumbling — 투덜투덜 불평해요. *Grumbling* complaints. |
 | 훌쩍훌쩍 | hul-jjeok-hul-jjeok | 의성어 | Sniffling — 훌쩍훌쩍 울어요. Crying and *sniffling*. |
-
 **움직임·모양 MOVEMENTS & SHAPES**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 엉금엉금 | eong-geum-eong-geum | 의태어 | Crawling slowly — 엉금엉금 기어요. *Crawling* slowly. |
@@ -318,8 +324,8 @@ CATEGORIES · 카테고리
 | 깜빡 | kkam-ppak | 의태어 | Flickering/Forgetting — 깜빡 잊었어요. I *forgot* for a moment. |
 | 깜짝 | kkam-jjak | 의성어 | Startled — 깜짝 놀랐어요! I was *startled*! |
 | 훌쩍 | hul-jjeok | 의태어 | With a leap/Sniff — 훌쩍 뛰었어요. Leaped *over*. |
-
 **반복·규칙 REPETITION & REGULARITY**
+
 | 단어 | 발음 | 유형 | English & 예문 |
 | --- | --- | --- | --- |
 | 반듯반듯 | ban-deut-ban-deut | 의태어 | Neatly/Straight — 반듯반듯 접어요. Folded up *neatly*. |

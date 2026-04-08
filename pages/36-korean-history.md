@@ -101,7 +101,6 @@ After unification, Silla entered a golden age. The capital **경주 (Gyeongju)**
 | **첨성대** 瞻星臺 | Cheomseongdae Observatory — 7th century, Asia's oldest astronomical observatory |
 | **화랑도** 花郞道 | Hwarangdo — elite warrior-scholar youth order |
 | **원효대사** | Wonhyo — great Buddhist monk who democratized Buddhist teachings |
-
 ### ④ 고려 (高麗) · 918 ~ 1392
 
 ### The Kingdom That Gave Korea Its Name to the World
@@ -166,7 +165,6 @@ Under colonial rule, Koreans were forbidden to use their language in schools and
 | **창씨개명** 創氏改名 | forced adoption of Japanese names — cultural erasure policy |
 | **광복** 光復 | liberation / restoration of light — August 15, 1945 |
 | **광복절** | Liberation Day — national holiday, August 15th |
-
 ### ⑦ 현대 대한민국 · 1945 ~ 현재
 
 ### From the Ashes of War to the World Stage — The Korean Miracle
@@ -190,6 +188,7 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 ### 역사 속 핵심 어휘 — Vocabulary From History
 
 ### Words You Will Hear in Korean Media and Conversation
+
 | 단어 | 한자 | 뜻 |
 | --- | --- | --- |
 | **역사** | 歷史 | history |
@@ -204,7 +203,6 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 | **한류** | 韓流 | Korean Wave — the global spread of Korean culture |
 | **광복** | 光復 | liberation — literally "return of light" |
 | **조상** | 祖上 | ancestors (origin + above) |
-
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** The English word "Korea" comes from which Korean dynasty?

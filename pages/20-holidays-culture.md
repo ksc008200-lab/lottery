@@ -36,6 +36,7 @@ Korean Thanksgiving / Harvest Festival
 jeul-geo-un chu-seok doe-se-yo — Have a joyful Chuseok!
 
 #### 🎊 Holiday Greetings · 명절 인사
+
 | Occasion | 한글 | 발음 | English |
 | --- | --- | --- | --- |
 | Lunar New Year | 새해 복 많이 받으세요 | sae-hae bok man-i ba-deu-se-yo | Happy New Year! (lit: Receive lots of blessings) |
@@ -45,7 +46,6 @@ jeul-geo-un chu-seok doe-se-yo — Have a joyful Chuseok!
 | Merry Christmas | 메리 크리스마스! | me-ri keu-ri-seu-ma-seu! | Merry Christmas! |
 | Before eating | 잘 먹겠습니다 | jal meok-gess-seum-ni-da | I will eat well (said before meals) |
 | After eating | 잘 먹었습니다 | jal meog-eoss-seum-ni-da | I ate well (said after meals) |
-
 ### 🗓️ Other Korean Holidays & Special Days · 기타 기념일
 🌹 삼일절 · 3월 1일
 sam-il-jeol
@@ -116,7 +116,6 @@ Korean sauna/spa — open 24 hours, with hot rooms, cold rooms, sleeping areas, 
 | 100th day | 백일 | baek-il | Celebrated because infant mortality was historically high — 100 days = survived! |
 | 1st birthday | 돌잔치 | dol-jan-chi | Baby grabs objects to predict their future career — 돌잡이 ceremony! 🎯 |
 | 60th birthday | 환갑 | hwan-gap | Completion of the 60-year zodiac cycle — huge celebration with family! |
-
 ### 💬 Holiday Dialog · 명절 대화
 🌕 Seollal Morning · 설날 아침
 **아버지:** 자, 세배하자!

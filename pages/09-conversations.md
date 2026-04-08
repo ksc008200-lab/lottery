@@ -4,6 +4,7 @@
 실생활 대화 — 첫날부터 말하기!
 
 ### Scene 1: Meeting Someone New · 처음 만나는 사람
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 안녕하세요! | an-nyeong-ha-se-yo! | Hello! |
@@ -12,16 +13,16 @@
 | 저는 ___예요. | jeo-neun ___ye-yo | I am ___. |
 | 어느 나라 사람이에요? | eo-neu na-ra sa-ram-i-e-yo? | Where are you from? |
 | 아직 배우고 있어요. | a-jik bae-u-go it-eo-yo | I'm still learning. |
-
 ### Scene 2: At a Café · 카페에서
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 어서오세요! | eo-seo-o-se-yo! | Welcome! |
 | ___ 한 잔 주세요. | ___ han jan ju-se-yo | One ___, please. |
 | 얼마예요? | eol-ma-ye-yo? | How much? |
 | 영수증 주세요. | yeong-su-jeung ju-se-yo | Receipt, please. |
-
 ### Scene 3: At a Restaurant · 식당에서
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 저기요! | jeo-gi-yo! | Excuse me! (calling staff) |
@@ -29,8 +30,8 @@
 | ___ 하나 주세요. | ___ ha-na ju-se-yo | One ___, please. |
 | 너무 맛있었어요! | neo-mu ma-sit-eoss-eo-yo! | It was so delicious! |
 | 포장해 주세요. | po-jang-hae ju-se-yo | To go, please. |
-
 ### Scene 4: Shopping · 쇼핑할 때
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 그냥 구경하는 거예요. | geu-nyang gu-gyeong-ha-neun geo-ye-yo | Just browsing. |
@@ -38,8 +39,8 @@
 | 좀 깎아 주세요. | jom kkak-a ju-se-yo | Please give a discount. |
 | 다른 색 있어요? | da-reun saek it-eo-yo? | Other colors? |
 | 카드 돼요? | ka-deu dwae-yo? | Do you accept card? |
-
 ### Scene 5: At the Doctor's · 병원에서
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 어디가 불편하세요? | eo-di-ga bul-pyeon-ha-se-yo? | Where does it hurt? |
@@ -54,6 +55,7 @@
 한국인들은 전화를 받을 때 항상 "여보세요"라고 합니다. 길에서 쓰면 매우 이상하게 들립니다!
 
 ### Top 20 Survival Phrases · 생존 표현 TOP 20
+
 | 한글 | Pronunciation | English |
 | --- | --- | --- |
 | 안녕하세요 | an-nyeong-ha-se-yo | Hello |

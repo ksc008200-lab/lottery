@@ -119,6 +119,7 @@ Fill in the correct adjective:
 정답: 1. 잘생겼어요 2. 무거워요 3. 귀여워요 4. 친절하 / 똑똑해요
 
 ### ⚡ Opposite Adjectives · 반대말
+
 | 한글 ➕ | 발음 | English |
 | --- | --- | --- |
 | 좋아요 | jo-a-yo | good |
@@ -141,7 +142,6 @@ Fill in the correct adjective:
 | 멀어요 | meol-eo-yo | far |
 | 많아요 | man-a-yo | many / a lot |
 | 적어요 | jeog-eo-yo | few / little |
-
 ### 📊 Degree Words · 정도 부사
 💡 Boost your adjectives with these degree words!
 
@@ -154,7 +154,6 @@ Fill in the correct adjective:
 | 진짜 | jin-jja | really (casual) | 진짜 멋있어요! |
 | 별로 | byeol-lo | not really / not that | 별로 안 좋아요 |
 | 엄청 | eom-cheong | extremely / insanely | 엄청 재미있어요! |
-
 ### 💬 Describing People · 사람 묘사 대화
 💬 Talking about someone · 누군가에 대해 이야기하기
 **A:** 새 선생님 어때요?

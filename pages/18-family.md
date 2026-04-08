@@ -63,6 +63,7 @@ husband / wife
 💡 **오빠 (oppa)** is also used by females to call a close older male friend or boyfriend — very common in K-dramas! 💕
 
 ### Extended Family · 확대 가족
+
 | Relationship | 한글 | 발음 | Note |
 | --- | --- | --- | --- |
 | Uncle (father's older brother) | 큰아버지 | keun-a-beo-ji | father's elder brother |
@@ -153,6 +154,7 @@ This hierarchy creates strong bonds and lifelong loyalty. Even years later, a �
 (myeong-jeol ttae-ma-da-yo. chu-seok-i-rang seol-lal-e kkok ga-yo!) — Every holiday. I always go for Chuseok and Seollal!
 
 ### 💬 Useful Family Phrases · 가족 표현
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 가족이 몇 명이에요? | ga-jok-i myeot myeong-i-e-yo? | How many are in your family? |

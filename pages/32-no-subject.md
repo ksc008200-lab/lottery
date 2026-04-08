@@ -61,7 +61,6 @@ The most common. When you are the one doing the action and the context makes it 
 | 저는 괜찮아요. | **괜찮아요.** | I'm fine. |
 | 나는 몰랐어. | **몰랐어.** | I didn't know. |
 | 나는 갈게. | **갈게.** | I'll go. |
-
 ### ② "너/당신" 생략 — Dropping "You"
 
 Questions and commands directed at the listener almost never include "you."
@@ -172,6 +171,7 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 ### 주어 생략 — 실전 문장 50선
 
 ### 50 Natural Korean Sentences Without a Subject
+
 | 한국어 (주어 생략) | English |
 | --- | --- |
 | 배고파. | I'm hungry. |
@@ -204,7 +204,6 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 | 이해해. | I understand. |
 | 걱정 마. | Don't worry. |
 | 서두르지 마. | Don't rush. |
-
 ### 주어 생략 vs 영어 비교 — Side by Side
 
 ### How Korean and English Handle the Same Ideas

@@ -33,7 +33,6 @@ New info · emphasis · "who/what does it"
 | 밥**은** 맛있어요 | bab-**eun** mas-iss-eo-yo | As for rice, it's delicious | 은 after consonant |
 | 누**가** 왔어요? | nu-**ga** wass-eo-yo? | Who came? | 가 = subject emphasis |
 | 고양**이가** 귀여워요 | go-yang-**i-ga** gwi-yeo-wo-yo | The cat is cute | 이가 after consonant |
-
 ### 2 · Object Particle · 목적어 조사 · 을/를
 🔧 Formula — What is being acted upon?
 [Subject] + [Object + 을/를] + [Verb]
@@ -88,6 +87,7 @@ Where action HAPPENS · From a place
 🍳 집**에서** 요리해요 — I'm *cooking* at home (action!)
 
 ### 4 · More Essential Particles · 기타 조사
+
 | Particle | 발음 | Meaning | Example | English |
 | --- | --- | --- | --- | --- |
 | 의 | ui (→ "e") | Possessive ('s / of) | 나의 친구 → 내 친구 | my friend |
@@ -97,7 +97,6 @@ Where action HAPPENS · From a place
 | 만 | man | Only / Just | 물만 마셔요 | I only drink water |
 | 부터~까지 | bu-teo ~ kka-ji | From ~ To / Until | 9시부터 6시까지 | From 9 to 6 o'clock |
 | 으로/로 | eu-ro / ro | Direction / By means of | 버스로 가요 | I go by bus |
-
 #### 🖼️ Location Vocabulary · 장소 단어
 🏠 집
 jip
@@ -179,6 +178,7 @@ I drink coffee with a friend at the café.
 **A:** 네! 30분 후에 갈게요! (ne! sam-sip-bun hu-e gal-ge-yo!) — Yes! I'll go in 30 minutes!
 
 ### 🗂️ Particle Master Chart · 조사 총정리
+
 | Particle | 발음 | Role | When |
 | --- | --- | --- | --- |
 | 은/는 | eun / neun | Topic | General statements, contrast |

@@ -55,8 +55,8 @@ HOW MUCH / MANY
 | 이게 누구 거예요? | i-ge nu-gu geo-ye-yo? | Whose is this? |
 | 저 사람이 누구예요? | jeo sa-ram-i nu-gu-ye-yo? | Who is that person? |
 | 누구랑 왔어요? | nu-gu-rang wass-eo-yo? | Who did you come with? |
-
 ### 2 · 뭐 / 무엇 — WHAT
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 이게 뭐예요? | i-ge mwo-ye-yo? | What is this? |
@@ -64,8 +64,8 @@ HOW MUCH / MANY
 | 뭐 하고 있어요? | mwo ha-go iss-eo-yo? | What are you doing? |
 | 이름이 뭐예요? | i-reum-i mwo-ye-yo? | What is your name? |
 | 직업이 뭐예요? | ji-geob-i mwo-ye-yo? | What is your job? |
-
 ### 3 · 어디 — WHERE
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 어디예요? | eo-di-ye-yo? | Where is it? |
@@ -84,21 +84,21 @@ Fill in the correct question word:
 정답: 1. 뭐 2. 어디 3. 누가 4. 뭐
 
 ### 4 · 언제 — WHEN
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 언제 와요? | eon-je wa-yo? | When are you coming? |
 | 생일이 언제예요? | saeng-il-i eon-je-ye-yo? | When is your birthday? |
 | 언제 한국에 왔어요? | eon-je han-gu-ge wass-eo-yo? | When did you come to Korea? |
 | 언제 시간 있어요? | eon-je si-gan iss-eo-yo? | When do you have time? |
-
 ### 5 · 왜 — WHY
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 왜요? | wae-yo? | Why? (polite) |
 | 왜 한국어를 배워요? | wae han-gu-geo-reul bae-wo-yo? | Why do you learn Korean? |
 | 왜 울어요? | wae ul-eo-yo? | Why are you crying? |
 | 왜 안 왔어요? | wae an wass-eo-yo? | Why didn't you come? |
-
 ### 6 · 어떻게 — HOW + 어때요 — HOW IS IT?
 📌 어떻게 vs 어때요
 어떻게 (eo-tteo-ke) = **How** (method / manner) — "How do you do X?"
@@ -111,11 +111,11 @@ Fill in the correct question word:
 | 여기 어떻게 가요? | yeo-gi eo-tteo-ke ga-yo? | How do I get here? |
 | 한국 음식 어때요? | han-guk eum-sik eo-ttae-yo? | How is Korean food? (Do you like it?) |
 | 오늘 기분 어때요? | o-neul gi-bun eo-ttae-yo? | How do you feel today? |
-
 ### 7 · 얼마 / 몇 — HOW MUCH / HOW MANY
 📌 얼마 vs 몇
 얼마 (eol-ma) = How much? → **price / amount**
 몇 (myeot) = How many? → **countable number**
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
@@ -123,7 +123,6 @@ Fill in the correct question word:
 | 몇 살이에요? | myeot sal-i-e-yo? | How old are you? |
 | 몇 명이에요? | myeot myeong-i-e-yo? | How many people? |
 | 몇 시예요? | myeot si-ye-yo? | What time is it? (lit: how many hours?) |
-
 ### 🖼️ Feelings Vocabulary · 기분 단어
 
 Great to use with 어때요? — How do you feel?
@@ -198,6 +197,7 @@ I'm sick / it hurts
 정답: 1. 몇 2. 어디가 3. 왜 4. 몇 5. 어떤 6. 뭐
 
 ### 🗂️ Question Word Master Chart · 의문사 총정리
+
 | 의문사 | 발음 | English | Example |
 | --- | --- | --- | --- |
 | 누가 / 누구 | nu-ga / nu-gu | Who | 누가 왔어요? |

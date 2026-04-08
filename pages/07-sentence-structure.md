@@ -11,6 +11,7 @@ Korean: Subject → Object → **Verb LAST!**    (나는 피자를 **먹어요
 영어는 동사가 가운데, 한국어는 동사가 항상 마지막! 끝까지 들어야 무슨 행동인지 알 수 있어요.
 
 ### The Most Important Particles · 핵심 조사
+
 | 조사 | Pronunciation | Role |
 | --- | --- | --- |
 | 은/는 | eun/neun | Topic marker |
@@ -27,7 +28,6 @@ Korean: Subject → Object → **Verb LAST!**    (나는 피자를 **먹어요
 | 친구와 | chin-gu-wa | "with a friend" |
 | 도 | do | Also / Too |
 | 나도 | na-do | "me too" |
-
 ### Building Sentences Level by Level · 단계별 문장 만들기
 ⭐나는 학생이에요.   na-neun hak-saeng-i-e-yo   → I am a student.
 ⭐⭐나는 커피를 마셔요.   na-neun keo-pi-reul ma-syeo-yo   → I drink coffee.

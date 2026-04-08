@@ -10,6 +10,7 @@
 한Native Korean고유어 숫자Counting objects, hours, age (casual)
 
 ### Sino-Korean Numbers (한자어)
+
 | Number | 한글 | Pronunciation |
 | --- | --- | --- |
 | 0 | 영/공 | yeong/gong |
@@ -24,8 +25,8 @@
 | 10 | 십 | sip |
 | 5 | 오 | o |
 | 100 | 백 | baek |
-
 ### Native Korean Numbers (고유어)
+
 | Number | 한글 | Pronunciation |
 | --- | --- | --- |
 | 1 | 하나 | ha-na |
@@ -38,8 +39,8 @@
 | 9 | 아홉 | a-hop |
 | 5 | 다섯 | da-seot |
 | 10 | 열 | yeol |
-
 ### Ordinal Numbers · 서수 (순서)
+
 | Order | 한글 | Pronunciation |
 | --- | --- | --- |
 | 1st | 첫째 | cheot-jjae |
