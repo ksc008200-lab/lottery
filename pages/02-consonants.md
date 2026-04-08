@@ -1,8 +1,10 @@
 # Ch2: Consonants — 자음
 
 id="ch2">
+
 ## Korean Consonants
 한국어 자음 — 소리의 기초
+
 ### What is a Consonant?
 
 ### 자음이란 무엇인가?

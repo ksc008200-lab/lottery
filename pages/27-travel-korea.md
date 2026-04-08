@@ -1,12 +1,15 @@
 # Ch27: Travel in Korea — 한국 여행
 
 id="ch27">
+
 ## Travel in Korea — Explore Every Corner!
 
 한국 여행 · han-guk yeo-haeng · From Seoul to Jeju — See It All!
 💡 **Korea is one of the most travel-friendly countries in the world!**
 Safe, clean, with world-class infrastructure — Korea is a traveler's dream. From the neon-lit streets of Seoul to the volcanic beauty of Jeju Island, every corner has something magical. This chapter gives you the language to explore it all! ✈️🏔️🌊
+
 ### Must-Visit Cities & Places · 꼭 가봐야 할 곳
+
 | | 도시 | 발음 | 특징 | 주요 명소 |
 | --- | --- | --- | --- | --- |
 | 🌆 | **서울** | Seoul · seo-ul | 수도 · Capital city | 경복궁 palace · 명동 shopping · 홍대 nightlife · 한강 river parks |
@@ -15,7 +18,9 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 🌋 | **제주도** | Jeju Island · je-ju-do | 화산섬 · Volcanic island | 한라산 mountain · lava tubes · tangerine farms · stunning coastlines |
 | 🏙️ | **전주** | Jeonju · jeon-ju | 전통 문화 · Traditional culture | 한옥마을 hanok village · 비빔밥 origin city · Joseon Dynasty charm |
 | 🎭 | **인천** | Incheon · in-cheon | 관문 · Gateway to Korea | 인천국제공항 (world's best airport) · Chinatown · island hopping |
+
 ### 🏨 At the Hotel · 호텔에서
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 체크인 해주세요. | che-keu-in hae-ju-se-yo. | Please check me in. |
@@ -26,6 +31,7 @@ Safe, clean, with world-class infrastructure — Korea is a traveler's dream. Fr
 | 방이 너무 추워요 / 더워요. | bang-i neo-mu chu-wo-yo / deo-wo-yo. | The room is too cold / hot. |
 | 체크아웃이 몇 시예요? | che-keu-a-ut-i myeot si-ye-yo? | What time is checkout? |
 | 짐을 맡겨도 돼요? | jim-eul mat-gyeo-do dwae-yo? | Can I leave my luggage here? |
+
 ### 🗺️ Tourist Vocabulary · 관광 단어
 🏯
 궁 / 궁궐
@@ -77,12 +83,14 @@ a) Volcanic island with 한라산   b) Ancient capital with UNESCO tombs   c) 
 정답: 1-d, 2-e, 3-b, 4-a, 5-c
 👘 한복 체험 (Hanbok Experience) · han-bok che-heom
 Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing) and walk around the palace grounds — it's FREE entry in hanbok! Extremely popular with tourists and locals alike. 📸
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 한복 입어봐도 돼요? | han-bok ib-eo-bwa-do dwae-yo? | Can I try on a hanbok? |
 | 사진 찍어도 돼요? | sa-jin jjig-eo-do dwae-yo? | Can I take a photo? |
 | 같이 사진 찍어요! | ga-chi sa-jin jjig-eo-yo! | Let's take a photo together! |
 | 정말 잘 어울려요! | jeong-mal jal eo-ul-lyeo-yo! | It really suits you! |
+
 ### 💬 Travel Dialog · 여행 대화
 🗺️ Planning a Trip · 여행 계획
 **A:** 이번 주말에 뭐 해요?
@@ -104,6 +112,7 @@ Near palaces like 경복궁, you can rent a 한복 (traditional Korean clothing)
 (wa, chu-cheon gam-sa-hae-yo! jeul-geo-un yeo-haeng doe-gil ba-ra-yo!) — Wow, thanks for the recommendation! Hope you have a great trip!
 
 ### 🧳 Essential Travel Phrases · 여행 필수 표현
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 여행 잘 다녀오세요! | yeo-haeng jal da-nyeo-o-se-yo! | Have a great trip! |

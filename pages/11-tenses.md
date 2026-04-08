@@ -1,6 +1,7 @@
 # Ch11: Tenses — 시제
 
 id="ch11">
+
 ## Tenses — Time Travel in Korean!
 시제 — 한국어로 시간 여행!
 
@@ -10,7 +11,9 @@ ass/eoss-eo-yo
 a/eo-yo
 ⏩Future 미래mi-rae(으)ㄹ 거예요
 (eu)l geo-ye-yo
+
 ### Past Tense · 과거형
+
 | 기본형 | Pronunciation | 과거형 | Pronunciation | English |
 | --- | --- | --- | --- | --- |
 | 가다 | ga-da | 갔어요 | gass-eo-yo | I went |
@@ -18,14 +21,18 @@ a/eo-yo
 | 마시다 | ma-si-da | 마셨어요 | ma-syeoss-eo-yo | I drank |
 | 보다 | bo-da | 봤어요 | bwass-eo-yo | I saw |
 | 공부하다 | gong-bu-ha-da | 공부했어요 | gong-bu-haess-eo-yo | I studied |
+
 ### Future Tense · 미래형
+
 | 기본형 | Pronunciation | 미래형 | Pronunciation | English |
 | --- | --- | --- | --- | --- |
 | 가다 | ga-da | 갈 거예요 | gal geo-ye-yo | I will go |
 | 먹다 | meok-da | 먹을 거예요 | meog-eul geo-ye-yo | I will eat |
 | 오다 | o-da | 올 거예요 | ol geo-ye-yo | I will come |
 | 공부하다 | gong-bu-ha-da | 공부할 거예요 | gong-bu-hal geo-ye-yo | I will study |
+
 ### Time Expression Helpers · 시간 표현 도우미
+
 | ⏪ Past 한글 | 발음 | English |
 | --- | --- | --- |
 | 어제 | eo-je | yesterday |

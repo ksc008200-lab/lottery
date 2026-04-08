@@ -1,11 +1,13 @@
 # Ch24: Hobbies & Free Time — 취미 & 여가
 
 id="ch24">
+
 ## Hobbies & Free Time — What Do You Do for Fun?
 
 취미 & 여가 · chwi-mi & yeo-ga · Talk About What You Love!
 💡 **취미가 뭐예요? — The #1 conversation starter!**
 "What's your hobby?" is one of the first questions Koreans ask when getting to know someone. It breaks the ice instantly and leads to natural, flowing conversation. This chapter gives you all the vocabulary to talk about what you love to do — and discover what others enjoy too! 🎯
+
 ### Popular Hobbies · 인기 있는 취미
 📚
 독서
@@ -67,6 +69,7 @@ dancing
 요가
 yo-ga
 yoga
+
 ### 🗣️ Talking About Hobbies · 취미 말하기
 🔧 Key Patterns for Hobbies
 
@@ -78,6 +81,7 @@ yoga
 | ~하는 것을 좋아해요 | 요리하는 것을 좋아해요 | I like cooking (doing it) |
 | ~에 관심이 있어요 | 사진에 관심이 있어요 | I'm interested in photography |
 | ~을/를 배우고 싶어요 | 기타를 배우고 싶어요 | I want to learn guitar |
+
 ### ⚽ Sports · 스포츠
 ⚽
 축구
@@ -133,6 +137,7 @@ Translate into Korean:
 정답: 1. 독서를 좋아해요. 2. 여행을 즐겨요. 3. 기타를 배우고 싶어요. 4. 사진에 관심이 있어요. 5. 취미가 뭐예요?
 
 ### 🌙 Free Time · 여가 시간에 뭐 해요?
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 넷플릭스 봐요 | net-peul-lik-seu bwa-yo | I watch Netflix |

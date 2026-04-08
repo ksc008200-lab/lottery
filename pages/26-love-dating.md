@@ -1,11 +1,13 @@
 # Ch26: Love & Dating — 사랑 & 연애
 
 id="ch26">
+
 ## Love & Dating — Korean Romance Culture!
 
 사랑 & 연애 · sa-rang & yeon-ae · The Language of the Heart!
 💡 **Korean romance has its own beautiful culture!**
 From the 100-day anniversary celebration to couple matching outfits, Korean dating culture is unique, sweet, and deeply expressive. K-dramas have shown the world how romantic Koreans can be — now learn the real language behind the love! 💕
+
 ### Love & Feelings Vocabulary · 사랑 & 감정 단어
 ❤️
 사랑
@@ -42,7 +44,9 @@ to marry / get married
 he-eo-ji-da
 to break up
 헤어졌어요 · We broke up
+
 ### 💬 Essential Love Phrases · 사랑 표현 필수
+
 | 한글 | 발음 | English | Level |
 | --- | --- | --- | --- |
 | 좋아해요. | jo-a-hae-yo. | I like you. (early feelings) | 💛 Mild |
@@ -55,6 +59,7 @@ to break up
 | 나만 바라봐. | na-man ba-ra-bwa. | Look only at me. (K-drama classic!) | 🎬 Dramatic |
 | 행복해요. | haeng-bok-hae-yo. | I'm happy. (with you) | 😊 Warm |
 | 평생 함께해요. | pyeong-saeng ham-kke-hae-yo. | Let's be together forever. | 💍 Eternal |
+
 ### 💕 Korean Dating Culture · 한국 연애 문화
 📅 100일 기념일
 백일 기념일
@@ -133,6 +138,7 @@ Translate into Korean:
 *🌸 Cherry blossoms fall gently... ♬*
 
 ### 💔 Difficult Conversations · 어려운 대화
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 우리 헤어져요. | u-ri he-eo-jyeo-yo. | Let's break up. |

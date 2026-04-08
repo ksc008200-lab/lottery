@@ -1,12 +1,14 @@
 # Ch29: Spelling Rules — 맞춤법
 
 id="ch29">
+
 ## Korean Spelling Rules
 맞춤법 · mat-chum-beop — Write Korean Correctly!
 ✍️📝✅
 
 💡 **Why Spelling Matters in Korean!**
 Even native Koreans struggle with 맞춤법! A single wrong letter completely changes the meaning — 됐어 vs 됬어, 안 해 vs 않해. Koreans judge each other's writing by spelling — get it right and sound educated! 🎓
+
 ### 🔥 #1 Most Common Mistake — 되 vs 돼
 
 This is the #1 spelling mistake even Koreans make! Here's the easy rule:
@@ -55,16 +57,20 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 ❌ 않 먹어 → ✅ 안 먹어
 ❌ 먹지 안아 → ✅ 먹지 않아
 ❌ 않예뻐 → ✅ 안 예뻐
+
 ### 🔥 #3 — -이 vs -히 (부사 만들기)
 
 형용사에 붙여 부사를 만들 때 — 이/히 중 어떤 걸 쓸까요?
+
 | -이 사용 | -히 사용 |
 | --- | --- |
 | 받침이 ㄱ,ㅂ → 깨끗이 , 가볍이 ❌→ 가벼이 | -하다 형용사 → 조용히 , 솔직히 |
 | 많이 (many/much) | 천천히 (slowly) |
 | 같이 (together) | 특히 (especially) |
 | 일찍이 (early) | 확실히 (certainly) |
+
 ### 😵 헷갈리는 맞춤법 쌍 · Confusing Pairs
+
 | 틀린 표현 ❌ | 올바른 표현 ✅ | 설명 |
 | --- | --- | --- |
 | 왠만하면 | 웬만하면 | 웬 = "어떤" / 왠 = "왜인지" |
@@ -77,6 +83,7 @@ This is the #1 spelling mistake even Koreans make! Here's the easy rule:
 | 금새 | 금세 ✅ | 금세 = 금방, 곧 |
 | 어의없다 | 어이없다 ✅ | 어이 = 기가 막힘 (어의=왕의 의사) |
 | 오랫만에 | 오랜만에 ✅ | 오랜만 = 오랜 시간 만에 |
+
 ### 📏 띄어쓰기 · Spacing Rules
 
 Korean spacing is one of the hardest parts even for natives. Key rules:
@@ -93,6 +100,7 @@ Korean spacing is one of the hardest parts even for natives. Key rules:
 먹었는데 — 어미는 붙여
 예쁘지만 — 접속어미 붙여
 학교에서 — 조사 붙여
+
 ### 😵‍💫 소리는 같지만 뜻이 달라요 · Same Sound, Different Meaning
 낫다
 nat-da
@@ -123,6 +131,7 @@ Straight / Neatly
 ro-seo / ro-sseo
 As (role) / By (means)
 학생으로서 / 말로써
+
 ### 📱 맞춤법 체크 도구 · Spelling Check Tools
 🔍
 네이버 맞춤법 검사기

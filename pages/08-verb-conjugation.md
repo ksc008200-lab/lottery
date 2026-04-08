@@ -1,6 +1,7 @@
 # Ch8: Verb Conjugation — 동사 활용
 
 id="ch8">
+
 ## Verb Conjugation — One Verb, Infinite Power!
 동사 활용 — 동사 하나로 무한한 표현!
 
@@ -18,6 +19,7 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 ✅ Everything else → add **어요 (eo-yo)**
 
 ✅ **하다 (ha-da)** → always becomes **해요 (hae-yo)**
+
 | 기본형 | Pronunciation | Meaning | 해요체 | Pronunciation |
 | --- | --- | --- | --- | --- |
 | 가다 | ga-da | to go | 가요 | ga-yo |
@@ -25,7 +27,9 @@ Remove **다** from dictionary form → get the stem → add **아요** or **어
 | 마시다 | ma-si-da | to drink | 마셔요 | ma-syeo-yo |
 | 공부하다 | gong-bu-ha-da | to study | 공부해요 | gong-bu-hae-yo |
 | 사랑하다 | sa-rang-ha-da | to love | 사랑해요 | sa-rang-hae-yo |
+
 ### 3 Essential Tenses · 핵심 3가지 시제
+
 | Tense | 한글 | Pronunciation | Meaning |
 | --- | --- | --- | --- |
 | ⏪ Past | 먹었어요 | meog-eoss-eo-yo | I ate |

@@ -1,8 +1,10 @@
 # Ch3: Vowels — 모음
 
 id="ch3">
+
 ## Korean Vowels
 한국어 모음 — 모든 음절의 핵심
+
 ### The Philosophy Behind Korean Vowels
 
 ### 한국어 모음의 철학적 배경
@@ -28,6 +30,7 @@ The 10 Basic Vowels · 10개의 기본 모음
 ㅕ여 (yeo)"yuh"여행 (yeo-haeng)travel · 여행
 
 How Letters Combine · 자음과 모음의 결합
+
 ### Building Syllable Blocks
 
 ### 음절 블록 만들기

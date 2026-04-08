@@ -1,8 +1,10 @@
 # Ch32: No Subject Culture — 주어 생략
 
 id="ch32">
+
 ## Speaking Without a Subject — Korea's Silent "I"
 주어 없이 말하는 문화 — 한국어의 침묵하는 "나"
+
 ### The First Shock for English Speakers
 
 ### 영어권 학습자가 처음 받는 충격
@@ -22,6 +24,7 @@ I ate. (saying "나는" feels heavy, like you're emphasizing — "it was *I* who
 ✅ 자연스러움: 밥 먹었어.
 Bap meo-geot-eo.
 Ate. / Had a meal. — totally natural Korean
+
 ### Why Korean Drops the Subject
 
 ### 왜 한국어는 주어를 생략할까?
@@ -51,6 +54,7 @@ This isn't laziness or imprecision — it is a **culturally and grammatically de
 The most common. When you are the one doing the action and the context makes it clear, just drop 나/저.
 
 가장 흔한 경우입니다. 내가 행동의 주체이고 문맥이 명확할 때, 그냥 나/저를 생략합니다.
+
 | 생략 전 (Unnatural) | 생략 후 (Natural) | 뜻 |
 | --- | --- | --- |
 | 나는 지금 바빠. | **지금 바빠.** | I'm busy right now. |
@@ -59,11 +63,13 @@ The most common. When you are the one doing the action and the context makes it 
 | 저는 괜찮아요. | **괜찮아요.** | I'm fine. |
 | 나는 몰랐어. | **몰랐어.** | I didn't know. |
 | 나는 갈게. | **갈게.** | I'll go. |
+
 ### ② "너/당신" 생략 — Dropping "You"
 
 Questions and commands directed at the listener almost never include "you."
 
 상대방에게 하는 질문이나 명령에는 거의 "너" 또는 "당신"을 포함하지 않습니다.
+
 | 생략 전 (Stiff) | 생략 후 (Natural) | 뜻 |
 | --- | --- | --- |
 | 너는 밥 먹었어? | **밥 먹었어?** | Did you eat? |
@@ -75,6 +81,7 @@ Questions and commands directed at the listener almost never include "you."
 
 💡 **Why Koreans avoid "당신":** The word **당신** sounds very formal or even aggressive in daily speech. Koreans rarely say it. Instead, they use the person's name, title, or simply drop the subject entirely. Saying "당신 뭐야?" sounds like a confrontation, not a question.
 💡 **왜 "당신"을 잘 안 쓸까요:** 일상 대화에서 "당신"은 매우 격식적이거나 공격적으로 들립니다. 대신 이름, 직함, 또는 주어 생략을 씁니다. "당신 뭐야?"는 질문이 아니라 대결처럼 들립니다.
+
 ### ③ "그/그녀/그것" 생략 — Dropping "He / She / It"
 
 Once a third person has been introduced in conversation, Korean speakers drop all further references to them — no "he," "she," or "it" needed.
@@ -107,6 +114,7 @@ No, (he) said (he) is fine.
 Here is where it gets interesting. When a Korean *does* include the subject — especially with the topic marker **은/는** — it usually signals a **contrast or emphasis**. It means "as for *this particular person*…" rather than just stating a fact.
 
 흥미로운 점이 있습니다. 한국어 화자가 주어를 *포함할 때* — 특히 주제 조사 **은/는**을 써서 — 대개 **대조나 강조**를 뜻합니다. 단순한 사실 진술이 아니라 "이 특정 사람에 관해서는…"의 의미입니다.
+
 | 문장 | 뉘앙스 |
 | --- | --- |
 | **밥 먹었어?** | Did you eat? (normal, neutral question) |
@@ -118,6 +126,7 @@ Here is where it gets interesting. When a Korean *does* include the subject — 
 
 💡 **핵심 규칙:** 주어 생략 = 중립적, 자연스러움. 주어 포함 = 강조 또는 대조. 이 차이를 알면 한국어가 훨씬 자연스럽게 들립니다.
 *Key rule: No subject = neutral, natural. Subject included = emphasis or contrast. Knowing this difference makes your Korean sound dramatically more native.*
+
 ### 한국어가 애매하게 들리는 이유 — Why Korean Sounds "Vague" to Foreigners
 
 ### The Precision Is In the Context, Not the Words
@@ -151,6 +160,7 @@ Depending on context, this can mean:
 When you *do* need to include "I" in Korean, you have two choices based on formality:
 
 주어를 *써야* 할 때, 격식에 따라 두 가지 선택이 있습니다:
+
 | 단어 | 사용 상황 | 예문 |
 | --- | --- | --- |
 | **나 (na)** | informal — friends, younger people, close relationships | 나 배고파. (I'm hungry.) |
@@ -160,9 +170,11 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 
 💡 **나 vs 내 / 저 vs 제:** When 나/저 is followed by 가 (subject marker), it contracts: 나 + 가 → **내가**, 저 + 가 → **제가**. This contraction is mandatory in natural speech.
 나/저 뒤에 주격조사 가가 붙으면 줄어듭니다: 나+가 → **내가**, 저+가 → **제가**. 자연스러운 말에서는 반드시 줄여야 합니다.
+
 ### 주어 생략 — 실전 문장 50선
 
 ### 50 Natural Korean Sentences Without a Subject
+
 | 한국어 (주어 생략) | English |
 | --- | --- |
 | 배고파. | I'm hungry. |
@@ -195,6 +207,7 @@ When you *do* need to include "I" in Korean, you have two choices based on forma
 | 이해해. | I understand. |
 | 걱정 마. | Don't worry. |
 | 서두르지 마. | Don't rush. |
+
 ### 주어 생략 vs 영어 비교 — Side by Side
 
 ### How Korean and English Handle the Same Ideas

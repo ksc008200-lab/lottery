@@ -1,8 +1,10 @@
 # Ch36: Korean History — 한국의 역사
 
 id="ch36">
+
 ## A History of Korea — 5,000 Years from Gojoseon to Today
 한국의 역사 개요 — 고조선부터 현대까지 5,000년
+
 ### Why Korean History Matters for Language Learners
 
 ### 왜 한국어 학습자에게 역사가 중요한가
@@ -38,6 +40,7 @@ BC 57 ~ AD 668
 
 1948 ~ 현재
 대한민국 Republic of Korea · Han River Miracle
+
 ### ① 고조선 (古朝鮮) · BC 2333 ~ BC 108
 
 ### The Dawn Kingdom — 단군왕검과 홍익인간
@@ -52,6 +55,7 @@ BC 57 ~ AD 668
 | **홍익인간** 弘益人間 | broadly benefiting humanity — founding national motto |
 | **개천절** 開天節 | National Foundation Day — October 3rd, celebrates Gojoseon's founding |
 | **단군신화** | the Dangun myth — bear + heaven-child story |
+
 Gojoseon eventually fell to the Han Chinese in **108 BC**. But its legacy endures — every Korean child learns 홍익인간, and October 3rd (**개천절**) is a national holiday celebrating the founding.
 
 고조선은 결국 기원전 108년 한나라에 멸망했습니다. 하지만 그 유산은 지속됩니다 — 모든 한국 아이들이 홍익인간을 배우고, 10월 3일 **개천절**은 건국을 기념하는 국가 공휴일입니다.
@@ -83,6 +87,7 @@ For over 700 years, the Korean peninsula was divided among three rival kingdoms,
 수도: 경주 · 유명한 왕: 태종무열왕, 문무왕
 💡 **언어 속 삼국:** 오늘날 한국 지명에 삼국의 흔적이 남아 있습니다. **경기도(京畿道)**는 신라 수도권, **충청도(忠淸道)**는 백제 핵심부, **평양(平壤)**은 고구려 수도였습니다. 역사가 지명 속에 살아있습니다.
 *The Three Kingdoms live on in Korean place names. Gyeonggi was Silla's capital region, Chungcheong was Baekje's heartland, and Pyongyang was Goguryeo's capital.*
+
 ### ③ 통일신라 (統一新羅) · 668 ~ 935
 
 ### The Golden Age of Culture and Buddhism
@@ -98,6 +103,7 @@ After unification, Silla entered a golden age. The capital **경주 (Gyeongju)**
 | **첨성대** 瞻星臺 | Cheomseongdae Observatory — 7th century, Asia's oldest astronomical observatory |
 | **화랑도** 花郞道 | Hwarangdo — elite warrior-scholar youth order |
 | **원효대사** | Wonhyo — great Buddhist monk who democratized Buddhist teachings |
+
 ### ④ 고려 (高麗) · 918 ~ 1392
 
 ### The Kingdom That Gave Korea Its Name to the World
@@ -162,6 +168,7 @@ Under colonial rule, Koreans were forbidden to use their language in schools and
 | **창씨개명** 創氏改名 | forced adoption of Japanese names — cultural erasure policy |
 | **광복** 光復 | liberation / restoration of light — August 15, 1945 |
 | **광복절** | Liberation Day — national holiday, August 15th |
+
 ### ⑦ 현대 대한민국 · 1945 ~ 현재
 
 ### From the Ashes of War to the World Stage — The Korean Miracle
@@ -185,6 +192,7 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 ### 역사 속 핵심 어휘 — Vocabulary From History
 
 ### Words You Will Hear in Korean Media and Conversation
+
 | 단어 | 한자 | 뜻 |
 | --- | --- | --- |
 | **역사** | 歷史 | history |
@@ -199,6 +207,7 @@ Since the late 1990s, Korean culture has swept the world — K-pop, K-dramas, Ko
 | **한류** | 韓流 | Korean Wave — the global spread of Korean culture |
 | **광복** | 光復 | liberation — literally "return of light" |
 | **조상** | 祖上 | ancestors (origin + above) |
+
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** The English word "Korea" comes from which Korean dynasty?

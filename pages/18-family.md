@@ -1,11 +1,13 @@
 # Ch18: Family — 가족 & 관계
 
 id="ch18">
+
 ## Family & Relationships — Korean Family Culture!
 
 가족 & 관계 · ga-jok & gwan-gye · The Heart of Korean Society
 💡 **Family is everything in Korean culture!**
 Korea has a deeply Confucian family structure — every relationship has a specific term. Unlike English where "uncle" covers many relatives, Korean has *different words* depending on whether it's your mother's side or father's side, older or younger. It sounds complex, but it shows how much Koreans value family bonds! 👨‍👩‍👧‍👦
+
 ### Immediate Family · 직계 가족
 👴
 할아버지
@@ -69,9 +71,11 @@ husband / wife
 | --- | --- | --- |
 | Older brother | 형 (hyeong) | 오빠 (o-ppa) |
 | Older sister | 누나 (nu-na) | 언니 (eon-ni) |
+
 💡 **오빠 (oppa)** is also used by females to call a close older male friend or boyfriend — very common in K-dramas! 💕
 
 ### Extended Family · 확대 가족
+
 | Relationship | 한글 | 발음 | Note |
 | --- | --- | --- | --- |
 | Uncle (father's older brother) | 큰아버지 | keun-a-beo-ji | father's elder brother |
@@ -85,6 +89,7 @@ husband / wife
 
 🤩 Cool Korean Habit — Calling Strangers Like Family!
 Koreans use family terms to address strangers too! It creates warmth and closeness:
+
 | Term | 발음 | Used for |
 | --- | --- | --- |
 | 아저씨 | a-jeo-ssi | Middle-aged man (like "mister") |
@@ -167,6 +172,7 @@ This hierarchy creates strong bonds and lifelong loyalty. Even years later, a �
 (myeong-jeol ttae-ma-da-yo. chu-seok-i-rang seol-lal-e kkok ga-yo!) — Every holiday. I always go for Chuseok and Seollal!
 
 ### 💬 Useful Family Phrases · 가족 표현
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 가족이 몇 명이에요? | ga-jok-i myeot myeong-i-e-yo? | How many are in your family? |

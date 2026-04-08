@@ -1,11 +1,13 @@
 # Ch23: K-pop & Entertainment — K팝
 
 id="ch23">
+
 ## K-pop & Korean Entertainment — Hallyu Wave!
 
 K팝 & 한국 엔터테인먼트 · K-pop & han-guk en-teo-tein-meon-teu · Ride the Korean Wave!
 💡 **한류 (Hallyu) changed the world!**
 The Korean Wave — K-pop, K-dramas, Korean movies, Korean food, Korean beauty — has conquered the globe. Most people who learn Korean today do so because of 한류. Now let's learn the language *behind* the wave — the real Korean used in songs, dramas, and fan culture! 🎵📺
+
 ### The Hallyu Wave · 한류의 모든 것
 🎵
 K-팝
@@ -31,6 +33,7 @@ Skincare, glass skin, BB cream, sheet masks...
 웹툰 / 게임
 Webtoon / Games
 Naver Webtoon, League of Legends, StarCraft...
+
 ### 🎤 K-pop Vocabulary · K팝 단어
 🌟
 아이돌
@@ -81,7 +84,9 @@ vlog
 타이틀곡
 ta-i-teul-gok
 title track
+
 ### 💜 Fan Culture · 팬 문화
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 최애 | choe-ae | Favorite member / ultimate bias |
@@ -92,6 +97,7 @@ title track
 | 팬사인회 | paen-sa-in-hoe | Fan signing event |
 | 응원봉 | eung-won-bong | Light stick (official fan lightstick) |
 | 사생팬 | sa-saeng-paen | Sasaeng (overly obsessive fan) |
+
 ### 📺 K-Drama Vocabulary · K드라마 단어
 😭
 막장 드라마
@@ -122,6 +128,7 @@ watching the live broadcast (not recorded)
 정주행
 jeong-ju-haeng
 binge-watching from episode 1
+
 ### 🎬 Famous K-Drama Phrases · 드라마 명대사
 💬 Lines you'll hear in EVERY K-drama!
 
@@ -135,7 +142,9 @@ binge-watching from episode 1
 | 잡지마. 가지마. | jap-ji-ma. ga-ji-ma. | Don't hold me. Don't go. (tearful!) |
 | 우리 사귀는 거야? | u-ri sa-gwi-neun geo-ya? | Are we dating? (the moment!) |
 | 사랑해. | sa-rang-hae. | I love you. ❤️ |
+
 ### 📱 Internet & SNS Korean · 인터넷 & SNS 한국어
+
 | 한글 / 줄임말 | 발음 | Full form / Meaning |
 | --- | --- | --- |
 | ㅋㅋㅋ | kk-kk-kk | hahaha (Korean "lol" — ㅋ = "keu" laugh sound) |

@@ -1,11 +1,13 @@
 # Ch16: Shopping & Money — 쇼핑 & 돈
 
 id="ch16">
+
 ## Shopping & Money — Shop Like a Korean!
 
 쇼핑 & 돈 · syo-ping & don · From Markets to Malls!
 💡 **Korea is a shopper's paradise!**
 From the giant malls of 명동 (Myeongdong) to local 시장 (traditional markets), Korea has it all. Knowing how to ask prices, bargain politely, and pay will make your experience 10x more fun. Let's go shopping! 🛍️
+
 ### Korean Money · 한국 돈 (원 · won)
 💰 Korean Won · 원 (₩)
 The Korean currency is **원 (won)**. There are no cents — everything is in whole numbers. Don't panic at big numbers! ₩10,000 ≈ about $7–8 USD.
@@ -44,7 +46,9 @@ man won
 o-man won
 ₩50,000
 ≈ $37.50 · biggest bill
+
 #### How to Read Korean Prices · 가격 읽는 법
+
 | Price | 한글 | 발음 | How to say |
 | --- | --- | --- | --- |
 | ₩500 | 오백 원 | o-baek won | 오(5) + 백(100) |
@@ -110,7 +114,9 @@ cash
 교환/환불
 gyo-hwan / hwan-bul
 exchange / refund
+
 ### 💬 Essential Shopping Phrases · 쇼핑 필수 표현
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 얼마예요? | eol-ma-ye-yo? | How much is it? |
@@ -125,7 +131,9 @@ exchange / refund
 | 선물 포장 해주세요. | seon-mul po-jang hae-ju-se-yo. | Please gift-wrap it. |
 | 영수증 주세요. | yeong-su-jeung ju-se-yo. | Please give me a receipt. |
 | 환불 되나요? | hwan-bul doe-na-yo? | Can I get a refund? |
+
 #### 👕 Clothing & Colors · 옷 & 색깔
+
 | Size 사이즈 | 한글 | 발음 |
 | --- | --- | --- |
 | Small (S) | 스몰 / 작은 | seu-mol / ja-geun |
@@ -158,6 +166,7 @@ black
 하얀색
 ha-yan-saek
 white
+
 ### 💬 Full Shopping Dialog · 쇼핑 실전 대화
 🧥 Clothing Store · 옷가게
 **직원:** 어서오세요! 뭐 찾으세요?
@@ -188,6 +197,7 @@ white
 (ne, doem-ni-da. yeong-su-jeung deu-ril-kka-yo?) — Yes, we do. Would you like a receipt?
 🏘️ At the Traditional Market · 시장에서 — Bargaining Tips!
 In 시장 (traditional markets), bargaining is completely normal and even expected! Use these phrases:
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 좀 더 싸게 해주세요. | jom deo ssa-ge hae-ju-se-yo. | Please make it a bit cheaper. |

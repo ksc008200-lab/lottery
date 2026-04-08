@@ -1,8 +1,10 @@
 # Ch35: Seoul Standard & Dialects — 사투리
 
 id="ch35">
+
 ## Seoul Standard Korean & Regional Dialects — One Language, Many Voices
 표준어 & 사투리 — 하나의 언어, 수많은 목소리
+
 ### The Moment a Korean Hears Your Accent
 
 ### 한국인이 당신의 말투를 듣는 순간
@@ -30,6 +32,7 @@ K팝, 대부분의 K드라마, 전 세계에서 소비되는 한국 미디어
 💡 **표준어의 공식 정의 (1988년):** "교양 있는 사람들이 두루 쓰는 현대 서울말"
 *Official definition: "The contemporary Seoul language used broadly by educated people."*
 — 표준어는 서울 사람이 쓰는 모든 말이 아니라, *교양 있는 서울 사람*의 말이 기준입니다.
+
 ### 한국의 방언 지도 — Korea's Dialect Map
 
 ### Seven Major Regional Dialects
@@ -83,6 +86,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 ### 같은 뜻, 다른 말 — Standard vs Dialect Side by Side
 
 ### The Same Meaning, Expressed in Five Different Ways
+
 | 뜻 | 표준어 (Seoul) | 경상 (Busan) | 전라 (Jeonju) | 충청 (Daejeon) | 제주 |
 | --- | --- | --- | --- | --- | --- |
 | What are you doing? | 뭐 해요? | **뭐 하노?** | **뭐 하냐?** | **뭐 혀유?** | **뭐 ㅎ엄수과?** |
@@ -93,6 +97,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | Really? | 정말요? | **진짜가?** | **그랴?** | **정말유?** | **진짜마씀?** |
 | Grandmother | 할머니 | **할매** | **할매** | **할매** | **할망** |
 | Grandfather | 할아버지 | **할배** | **할배** | **할배** | **하르방** |
+
 ### 경상도 사투리 깊이 파기 — Gyeongsang Dialect: Korea's Most Famous Saturi
 
 ### The "Ppalli-Ppalli" Dialect With a Heart
@@ -114,6 +119,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **억수로 맛있다!** | 엄청 맛있어요! | Incredibly delicious! ("억수로" = extremely) |
 | **가시나** | 여자아이 / 그 여자 | girl / that woman (regional term) |
 | **마 됐다.** | 그냥 됐어. | Just forget it. / Never mind. (casual dismissal) |
+
 ### 전라도 사투리 — Jeolla Dialect: Warm, Lyrical, Musical
 
 ### The "Soft South" of Korean
@@ -132,6 +138,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 
 💡 **"거시기"의 전설:** 전라도 방언의 "거시기"는 한국에서 유명한 단어입니다. 명사도, 동사도, 감탄사도 될 수 있는 만능 단어로, 대화 상대가 문맥으로 의미를 파악해야 합니다. "거시기 좀 거시기 해줄 수 있어?" → "Can you do that thing to that thing?" 이 단어가 자연스러운 전라도 대화에서 수십 번 등장할 수 있습니다.
 *"Geosigi" is legendary — it can mean any noun, verb, or exclamation. Context does all the work. A classic Jeolla conversation might use it dozens of times.*
+
 ### 충청도 사투리 — Chungcheong Dialect: The Slow and Gentle South
 
 ### Korea's Most "Comforting" Accent
@@ -145,6 +152,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **~했다네유** | ~했다네요 | I heard that (soft hearsay) |
 | **거기유** | 저기요 | Excuse me / Hey there |
 | **아따** | 아이고 / 어머 | Oh dear / Goodness (mild exclamation) |
+
 ### 제주어 — Jeju Language: A World Apart
 
 ### UNESCO-Listed: A Language Dying With Its Elders
@@ -165,6 +173,7 @@ Korea is a small country — roughly the size of the state of Indiana or the UK 
 | **겨울** | 겨울 | winter (same! one of few shared words) |
 | **삼춘** | 아저씨/아주머니 | any adult in the community (not just uncle) |
 | **~수다 / ~마씀** | ~입니다 / ~예요 | formal sentence endings unique to Jeju |
+
 ### 사투리의 사회적 의미 — The Social Power of Dialect
 
 ### Pride, Prejudice, and Belonging

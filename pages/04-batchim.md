@@ -1,8 +1,10 @@
 # Ch4: Batchim — 받침
 
 id="ch4">
+
 ## Batchim — The Secret Sound at the Bottom
 받침 — 음절 아래 숨겨진 소리
+
 ### What is Batchim?
 
 ### 받침이란 무엇인가?
@@ -13,11 +15,13 @@ Many Korean syllables have a **third element** — a final consonant that sits a
 가+ㄹ=갈gal · (to go)
 고+ㅇ=공gong · (ball!)
 나+ㄹ=날nal · (day)
+
 ### The 7 Batchim Sound Groups
 
 ### 7가지 받침 소리 그룹
 
 No matter which consonant is used as batchim, it can only produce **ONE of 7 possible sounds**.
+
 | Sound | Consonants | Example 한글 | Pronunciation | Meaning |
 | --- | --- | --- | --- | --- |
 | ㄱ | ㄱ ㄲ ㅋ | 국 | guk | soup |
@@ -32,6 +36,7 @@ No matter which consonant is used as batchim, it can only produce **ONE of 7 pos
 When a batchim is followed by a vowel, it "slides" into the next syllable.
 
 받침 뒤에 모음이 오면, 받침이 다음 음절로 "미끄러집니다".
+
 | Written 한글 | How it sounds 발음 | Meaning |
 | --- | --- | --- |
 | 한국어 | han-gu-geo | Korean language |

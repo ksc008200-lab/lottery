@@ -1,12 +1,14 @@
 # Ch28: Slang & Internet — 슬랭 & MZ세대
 
 id="ch28">
+
 ## Korean Slang & Internet Language
 한국어 슬랭 & 인터넷 언어 · han-gug-eo seul-laeng & in-teo-net eon-eo
 📱💬🔥
 
 💡 **Why Learn Slang?**
 Korean slang evolves FAST — especially on social media, gaming, and K-pop communities. Understanding 인터넷 언어 (internet language) will make you sound natural, help you understand K-pop fan chats, Korean YouTube comments, and connect with Korean friends your age. MZ세대 (Millennials + Gen Z) use these every day! 🚀
+
 ### ⌨️ 인터넷 줄임말 · Internet Abbreviations
 
 Koreans love shortcuts! These appear constantly in chats, comments, and texts:
@@ -57,7 +59,9 @@ Short for 후덜덜
 uu
 Crying / sad
 Same feeling as ㅠㅠ
+
 ### 🔥 인기 슬랭 단어 · Popular Slang Words
+
 | 슬랭 | 발음 | Meaning | Example |
 | --- | --- | --- | --- |
 | 대박 | dae-bak | Amazing! Jackpot! Wow! | 이거 진짜 대박이야! = This is amazing! |
@@ -74,6 +78,7 @@ Same feeling as ㅠㅠ
 | 소확행 | so-hwak-haeng | Small but certain happiness | 커피 한 잔이 나의 소확행 = Coffee is my little joy |
 | 워라밸 | wo-ra-bael | Work-Life Balance | 워라밸이 중요해 = Work-life balance matters |
 | 빌런 | bil-reon | Villain / strange person | 지하철 빌런 = Subway weirdo |
+
 ### 📱 SNS & 소셜 미디어 단어 · Social Media Vocabulary
 ❤️
 좋아요
@@ -134,6 +139,7 @@ Hashtag
 바이럴
 ba-i-reol
 Viral
+
 ### ✂️ 줄임말 · Shortened Words
 
 Koreans shorten everyday words all the time — even in speech!
@@ -184,9 +190,11 @@ gap-bun
 현실 자각 타임 → 현타
 hyeon-ta
 Reality check / existential crisis moment
+
 ### 🌟 MZ세대 문화 표현 · MZ Generation Culture Terms
 💡 What is MZ세대?
 MZ세대 = **M**illennials (1981–1996) + **Z**eneration (1997–2010). They've shaped modern Korean internet culture, slang, and values. Learning their language = unlocking modern Korea! 🇰🇷
+
 | 표현 | 발음 | Meaning & Vibe |
 | --- | --- | --- |
 | 킹받아 | king-ba-da | Super annoying (킹 = king-level + 열받아 angry) |
@@ -198,6 +206,7 @@ MZ세대 = **M**illennials (1981–1996) + **Z**eneration (1997–2010). They've
 | 쩐다 | jjeonda | That's sick! / Insane! (very slang) |
 | 레알 | re-al | For real / seriously (from Spanish "real") |
 | 꿀잼 / 노잼 | kkul-jaem / no-jaem | Honey fun (super fun) / No fun (boring) |
+
 ### 💬 실제 카카오톡 대화 · Real KakaoTalk Chat
 
 Here's what Korean texting actually looks like:

@@ -1,16 +1,19 @@
 # Ch12: Grammar Patterns — 문법 패턴
 
 id="ch12">
+
 ## Grammar Patterns
 
 문법 패턴 · mun-beop pae-teun · Unlock Real Conversation!
 💡 **Why Grammar Patterns?**
 Korean grammar patterns are like *power-ups*! Once you learn a pattern, you can plug in ANY verb and create hundreds of new sentences instantly. This chapter teaches you the 8 most essential patterns that real Koreans use every single day.
+
 ### Pattern 1 · ~고 싶어요 · I want to ___
 🔧 Formula
 Verb stem + 고 싶어요
 
 *go sip-eo-yo* = want to
+
 | 기본형 (Base) | 발음 | 고 싶어요 form | 발음 | English |
 | --- | --- | --- | --- | --- |
 | 먹다 | meok-da | 먹고 싶어요 | meok-go sip-eo-yo | I want to eat |
@@ -36,6 +39,7 @@ Verb stem + 고 싶어요
 Verb stem + (으)ㄹ 수 있어요
 
 *(eu)l su iss-eo-yo* = can / am able to  |  *(으)ㄹ 수 없어요* = cannot
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 한국어 할 수 있어요 | han-gu-geo hal su iss-eo-yo | I can speak Korean |
@@ -43,6 +47,7 @@ Verb stem + (으)ㄹ 수 있어요
 | 수영 할 수 있어요 | su-yeong hal su iss-eo-yo | I can swim |
 | 운전 할 수 없어요 | un-jeon hal su eobs-eo-yo | I cannot drive |
 | 기타 칠 수 있어요 | gi-ta chil su iss-eo-yo | I can play guitar |
+
 #### 🎨 Skill Vocabulary · 능력 단어
 🏊
 수영
@@ -98,6 +103,7 @@ Fill in with **있어요** or **없어요**:
 Verb stem + 아/어야 해요
 
 Use **아야 해요** when the last vowel is ㅏ or ㅗ | Use **어야 해요** for all others
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 공부해야 해요 | gong-bu-hae-ya hae-yo | I have to study |
@@ -121,6 +127,7 @@ Use **아야 해요** when the last vowel is ㅏ or ㅗ | Use **어야 해요** 
 Verb stem + 지 않아요    OR    안 + Verb
 
 Both forms mean the same thing! **안 + verb** is more casual and faster to say.
+
 | 긍정 (Positive) | 부정 ~지 않아요 | 부정 안 + verb | English |
 | --- | --- | --- | --- |
 | 가요 | 가지 않아요 | 안 가요 | I don't go |
@@ -128,23 +135,28 @@ Both forms mean the same thing! **안 + verb** is more casual and faster to say.
 | 알아요 | 알지 않아요 | 몰라요 | I don't know |
 | 좋아해요 | 좋아하지 않아요 | 안 좋아해요 | I don't like |
 | 마셔요 | 마시지 않아요 | 안 마셔요 | I don't drink |
+
 ### Pattern 5 · ~(으)면 좋겠어요 · I wish / It would be nice if ___
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 날씨가 좋으면 좋겠어요 | nal-ssi-ga jo-eu-myeon jo-kess-eo-yo | I wish the weather were nice |
 | 한국에 가면 좋겠어요 | han-gu-ge ga-myeon jo-kess-eo-yo | I wish I could go to Korea |
 | 복권이 당첨되면 좋겠어요 | bok-gweon-i dang-cheom-doe-myeon jo-kess-eo-yo | I wish I'd win the lottery |
 | 시험이 쉬우면 좋겠어요 | si-heom-i swi-u-myeon jo-kess-eo-yo | I wish the exam were easy |
+
 ### Pattern 6 · ~는 것 같아요 · It seems like / I think ___
 🔧 Formula — Soft Opinions (Polite Korean way!)
 Koreans rarely state opinions as hard facts. They soften with ~것 같아요 (geot ga-ta-yo).
 It's like saying "I think..." or "It seems..."
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 맛있는 것 같아요 | mas-in-neun geot ga-ta-yo | It seems delicious / I think it's good |
 | 비가 오는 것 같아요 | bi-ga o-neun geot ga-ta-yo | It seems like it's raining |
 | 그 사람이 피곤한 것 같아요 | geu sa-ram-i pi-gon-han geot ga-ta-yo | That person seems tired |
 | 가격이 비싼 것 같아요 | ga-gyeok-i bi-ssan geot ga-ta-yo | The price seems expensive |
+
 ### Pattern 7 · ~고 있어요 · I am ___-ing (right now!)
 🔧 Formula — Present Progressive
 Verb stem + 고 있어요
@@ -208,6 +220,7 @@ Translate using ~고 있어요:
 Use this when YOU decide to do something right now — like a promise to the listener.
 
 Verb stem + (으)ㄹ게요
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 제가 할게요 | je-ga hal-ge-yo | I'll do it (I promise) |
@@ -269,7 +282,9 @@ don
 money
 돈이 없어요
 I don't have money
+
 ### 🗂️ Pattern Summary · 패턴 요약
+
 | Pattern | Formula | Meaning | Example |
 | --- | --- | --- | --- |
 | 1 | ~고 싶어요 | I want to ___ | 먹고 싶어요 |

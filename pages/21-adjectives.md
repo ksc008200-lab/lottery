@@ -1,11 +1,13 @@
 # Ch21: Adjectives — 형용사
 
 id="ch21">
+
 ## Adjectives — Describe Everything in Korean!
 
 형용사 · hyeong-yong-sa · Color Your Korean with Description!
 💡 **Korean adjectives are actually verbs!**
 In English, adjectives sit *before* nouns: "a beautiful girl." In Korean, adjectives behave like verbs — they conjugate! You say 예뻐요 (it's pretty) the same way you say 가요 (I go). This makes Korean adjectives incredibly powerful and flexible! 🎨
+
 ### How Korean Adjectives Work · 형용사의 규칙
 📌 As a Predicate (after noun) — most common!
 Subject + **Adjective + 요**
@@ -58,6 +60,7 @@ heavy
 가벼워요
 ga-byeo-wo-yo
 light (weight)
+
 ### 😍 Appearance · 외모
 💅
 예뻐요
@@ -88,6 +91,7 @@ tall (person)
 날씬해요
 nal-ssin-hae-yo
 slim / slender
+
 ### 🧠 Personality · 성격
 😁
 친절해요
@@ -133,6 +137,7 @@ Fill in the correct adjective:
 정답: 1. 잘생겼어요 2. 무거워요 3. 귀여워요 4. 친절하 / 똑똑해요
 
 ### ⚡ Opposite Adjectives · 반대말
+
 | 한글 ➕ | 발음 | English |
 | --- | --- | --- |
 | 좋아요 | jo-a-yo | good |
@@ -155,6 +160,7 @@ Fill in the correct adjective:
 | 멀어요 | meol-eo-yo | far |
 | 많아요 | man-a-yo | many / a lot |
 | 적어요 | jeog-eo-yo | few / little |
+
 ### 📊 Degree Words · 정도 부사
 💡 Boost your adjectives with these degree words!
 
@@ -167,6 +173,7 @@ Fill in the correct adjective:
 | 진짜 | jin-jja | really (casual) | 진짜 멋있어요! |
 | 별로 | byeol-lo | not really / not that | 별로 안 좋아요 |
 | 엄청 | eom-cheong | extremely / insanely | 엄청 재미있어요! |
+
 ### 💬 Describing People · 사람 묘사 대화
 💬 Talking about someone · 누군가에 대해 이야기하기
 **A:** 새 선생님 어때요?

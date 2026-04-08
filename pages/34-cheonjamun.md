@@ -1,8 +1,10 @@
 # Ch34: 千字文 — Hanja Unlocks Korean
 
 id="ch34">
+
 ## 千字文 & Hanja as Meaning-Keys — Know the Characters, Master Korean
 천자문 & 뜻글자 — 한자를 알면 한국어가 매우 쉬워진다!
+
 ### The Secret Nobody Tells Korean Learners
 
 ### 아무도 알려주지 않는 비밀
@@ -39,6 +41,7 @@ Understanding this contrast is the key to everything:
 예: 學 → 학교(學校)·학생(學生)·학원(學院)·유학(留學)·독학(獨學)·장학금(奬學金)
 💡 **핵심 비유:** 한글은 영어의 알파벳과 같습니다 — 소리를 만듭니다. 한자는 영어의 어근(root)과 같습니다 — "bio"(생명), "tele"(먼 곳), "phon"(소리). bio를 알면 biology·biography·biome를 알 수 있습니다. 學을 알면 학교·학생·학원·대학·입학·졸업을 이해할 수 있습니다.
 *Hangul = the alphabet (makes sounds). Hanja = word roots like "bio," "tele," "phon." Know "bio" → biology, biography, biome. Know 學 → 학교, 학생, 학원, 대학, 입학.*
+
 ### 천자문이란 무엇인가 — What Is the 千字文?
 
 ### The Thousand Character Classic: 1,500 Years of Learning
@@ -66,6 +69,7 @@ The **천자문 (千字文 · Qianziwen)** — literally "Thousand Character Tex
 
 진수열장 · Jin-su-yeol-jang
 별자리들이 늘어서다 · The stars and constellations are arrayed
+
 ### 왜 천자문이 지금도 중요한가 — Why 천자문 Still Matters Today
 
 ### Korea's Foundational Text: 1,500 Years of Use
@@ -186,6 +190,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 | **독학 獨學** | self-study (alone + learning) |
 | **장학금 奬學金** | scholarship (encourage + learning + money) |
 | **유학 留學** | studying abroad (stay + learning) |
+
 ### 천자문 구절로 배우는 한자 — Learning Hanja Through 천자문 Verses
 
 ### Classic Verses and the Korean Words They Unlock
@@ -193,6 +198,7 @@ This is where it gets exciting. Each Hanja character is a **meaning-seed**. Plan
 Each four-character verse of the 천자문 is a compressed lesson. Here are ten foundational verses with their Korean word connections:
 
 천자문의 각 사자구절은 압축된 수업입니다. 한국어 단어와 연결되는 10개의 핵심 구절을 살펴봅니다:
+
 | 천자문 구절 | 훈독 · 뜻 | 이 글자들이 만드는 한국어 |
 | --- | --- | --- |
 | **天地玄黃** 천지현황 | 하늘·땅·검다·누르다 | 천국 · 지구 · 현대(현) · 황색(황) |
@@ -205,6 +211,7 @@ Each four-character verse of the 천자문 is a compressed lesson. Here are ten 
 | **心動神疲** 심동신피 | 마음·움직이다·신·지치다 | 심리 · 운동(運動) · 신경(神經) · 피로(疲勞) |
 | **言語助者** 언어조자 | 말·말씀·돕다·사람 | 언어(言語) · 한국어(語) · 조력자(助力者) |
 | **學優登仕** 학우등사 | 배우다·뛰어나다·오르다·벼슬 | 학교 · 우수(優秀) · 등산(登山) · 사회(社會) |
+
 ### 한자를 알면 한국어가 쉬워지는 이유 — The Multiplier Effect
 
 ### Learn 1 Hanja → Unlock 10+ Korean Words
@@ -212,6 +219,7 @@ Each four-character verse of the 천자문 is a compressed lesson. Here are ten 
 Let's be concrete about the math. Say you spend one hour learning the character **生 (날 생 · "life/birth")**. Here is what you get:
 
 숫자로 구체적으로 알아봅시다. 한 시간을 들여 **生(날 생 · "생명/태어남")**을 배운다고 합시다. 얻는 것은 다음과 같습니다:
+
 | 한국어 단어 | 한자 | 뜻 |
 | --- | --- | --- |
 | **생일** | 生日 | birthday (life + day) |
@@ -226,6 +234,7 @@ Let's be concrete about the math. Say you spend one hour learning the character 
 | **위생** | 衛生 | hygiene, sanitation (guard + life) |
 | **신생아** | 新生兒 | newborn (new + life + child) |
 | **재생** | 再生 | regeneration, replay (again + life) |
+
 **One character. Twelve words unlocked.** This is the multiplier effect of learning Hanja through the 천자문 system.
 
 **글자 하나. 열두 개 단어 해금.** 이것이 천자문 시스템으로 한자를 배울 때의 배수 효과입니다.
@@ -237,6 +246,7 @@ Let's be concrete about the math. Say you spend one hour learning the character 
 In traditional Korea, the 천자문 was recited rhythmically by children, four characters at a time. The verse **天地玄黃 (천지현황)** was sung, chanted, and repeated until the characters were second nature. Each character was learned with its **훈음 (hun-eum)** — the Korean reading of its meaning and sound:
 
 전통 한국에서 천자문은 아이들이 네 글자씩 리듬감 있게 암송했습니다. **天地玄黃(천지현황)**을 노래하고, 외치고, 반복해서 글자가 몸에 배게 했습니다. 각 글자는 **훈음(訓音)**으로 배웠습니다 — 의미와 소리의 한국식 읽기입니다:
+
 | 한자 | 훈음 (한국식) | 뜻 | 소리 |
 | --- | --- | --- | --- |
 | 天 | **하늘 천** | 하늘 (sky/heaven) | 천 (cheon) |
@@ -255,6 +265,7 @@ In traditional Korea, the 천자문 was recited rhythmically by children, four c
 💡 **요일과 천자문:** 한국의 요일 이름은 모두 천자문의 핵심 자연 한자에서 왔습니다:
 월요일(月 달) · 화요일(火 불) · 수요일(水 물) · 목요일(木 나무) · 금요일(金 금) · 토요일(土 흙) · 일요일(日 해)
 *The Korean days of the week come directly from 천자문 nature characters: Moon · Fire · Water · Wood · Metal · Earth · Sun.*
+
 ### 생각해볼 점 — Hanja as a Lifelong Learning Strategy
 
 ### You Don't Need to Write Hanja — Just Recognize the Meaning

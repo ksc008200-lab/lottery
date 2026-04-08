@@ -1,8 +1,10 @@
 # Ch33: Hanja & Pure Korean — 한자어 & 고유어
 
 id="ch33">
+
 ## Hanja Culture & Pure Korean — The Two Roots of Every Word
 한자 문화권 & 고유어 · 한자어 — 모든 단어의 두 뿌리
+
 ### The Hidden Chinese Inside Korean
 
 ### 한국어 안에 숨어 있는 한자
@@ -40,6 +42,7 @@ Loanwords
 ~5%
 컴퓨터, 버스
 커피, 피자, 핸드폰
+
 ### 한자 문화권이란 무엇인가 — The Sinosphere
 
 ### What Is the Chinese Character Cultural Zone?
@@ -66,6 +69,7 @@ The **한자 문화권 (漢字文化圈)** — known in English as the *Sinosphe
 💡 **놀라운 사실:** 한국어, 일본어, 베트남어는 같은 한자 어원을 공유하기 때문에, 같은 개념의 단어가 발음은 달라도 구조가 매우 유사합니다.
 예: 학교(한국) · 学校 gakkō(일본) · học hiệu(베트남) → 모두 "배울 학(學) + 학교 교(校)"
 *Because Korean, Japanese, and Vietnamese share Chinese roots, many equivalent words have nearly identical structures even if pronounced differently.*
+
 ### 한자어란 무엇인가 — What Are Sino-Korean (한자어) Words?
 
 ### Sino-Korean Words: Chinese Sounds Reborn in Korean
@@ -77,6 +81,7 @@ Sino-Korean words are **Chinese words phonetically adapted into Korean pronuncia
 The key insight: **each Hanja character carries a meaning**, so once you learn the character-meanings, you can often guess unfamiliar Korean words — just like knowing Latin roots helps you decode English.
 
 핵심 통찰: **각 한자는 의미를 담고 있어서**, 글자 의미를 알면 모르는 한국어 단어를 추측할 수 있습니다 — 라틴어 어근을 알면 영어 단어를 해독하는 것과 같습니다.
+
 | 한자어 | 한자 분해 | 글자별 의미 | 전체 뜻 |
 | --- | --- | --- | --- |
 | **학교 (學校)** | 學 + 校 | 배울 학 + 학교 교 | school |
@@ -91,6 +96,7 @@ The key insight: **each Hanja character carries a meaning**, so once you learn t
 | **국제 (國際)** | 國 + 際 | 나라 국 + 사이 제 | international (nation·between) |
 | **대학 (大學)** | 大 + 學 | 클 대 + 배울 학 | university (great learning) |
 | **병원 (病院)** | 病 + 院 | 병 병 + 집 원 | hospital (illness house) |
+
 ### 꼭 알아야 할 한자 50자 — 50 Must-Know Hanja Characters
 
 ### Learn These and Unlock Thousands of Korean Words
@@ -98,6 +104,7 @@ The key insight: **each Hanja character carries a meaning**, so once you learn t
 You don't need to *write* Hanja to benefit from knowing them. Just recognizing these 50 building blocks will help you decode hundreds of vocabulary words.
 
 한자를 쓸 줄 몰라도 됩니다. 이 50가지 구성 요소를 인식하는 것만으로도 수백 개의 어휘를 해독하는 데 도움이 됩니다.
+
 | 한자 | 훈·음 | 한국어 예시 (2개 이상) |
 | --- | --- | --- |
 | **學 학** | 배울 학 | 학교(學校) · 학생(學生) · 학원(學院) · 대학(大學) |
@@ -130,6 +137,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 | **情 정** | 뜻 정 / 정 정 | 감정(感情) · 우정(友情) · 애정(愛情) |
 | **友 우** | 벗 우 | 친구(親舊) · 우정(友情) · 우방(友邦) |
 | **家 가** | 집 가 | 가족(家族) · 국가(國家) · 작가(作家) · 가정(家庭) |
+
 ### 고유어란 무엇인가 — What Are Pure Korean (고유어) Words?
 
 ### The Original Korean — Words That Predate Chinese Influence
@@ -137,6 +145,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 **고유어 (固有語)** are the native Korean words that have existed since before Chinese influence. They tend to describe the most *fundamental human experiences* — body, nature, family, emotions, basic verbs, sensory words. They are often shorter, more emotional, and deeply rooted in daily Korean life.
 
 **고유어(固有語)**는 중국의 영향 이전부터 존재해 온 한국 고유 단어들입니다. 가장 *근본적인 인간 경험*을 표현하는 경향이 있습니다 — 신체, 자연, 가족, 감정, 기본 동사, 감각 단어들입니다. 보통 더 짧고, 더 감성적이며, 일상 한국어에 깊이 뿌리내리고 있습니다.
+
 | 분류 | 고유어 단어들 |
 | --- | --- |
 | **🏔️ 자연 · Nature** | 하늘 (sky) · 땅 (ground) · 바람 (wind) · 비 (rain) · 눈 (snow) · 불 (fire) · 물 (water) · 나무 (tree) · 꽃 (flower) · 돌 (stone) · 달 (moon) · 해 (sun) |
@@ -145,6 +154,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 | **💛 감정 · Emotions** | 사랑 (love) · 기쁨 (joy) · 슬픔 (sadness) · 두려움 (fear) · 그리움 (longing) · 설렘 (excitement) · 아픔 (heartache) |
 | **🏠 일상 · Daily Life** | 밥 (rice/meal) · 집 (home) · 길 (road) · 옷 (clothes) · 일 (work) · 말 (speech) · 글 (writing) · 힘 (strength) |
 | **🎨 의성어 · Sound Words** | 반짝반짝 (twinkling) · 보슬보슬 (drizzling) · 살살 (gently) · 쿵쿵 (thud thud) · 졸졸 (babbling) · 깡충깡충 (hopping) |
+
 ### 같은 개념, 두 개의 단어 — Same Concept, Two Words
 
 ### The Native vs Sino-Korean Pair: Subtle Differences in Nuance
@@ -152,6 +162,7 @@ You don't need to *write* Hanja to benefit from knowing them. Just recognizing t
 Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equivalent. They are often interchangeable, but carry different **nuance and register**: pure Korean feels warmer and more emotional; Sino-Korean sounds more formal and academic.
 
 한국어의 많은 개념에는 고유어와 한자어 두 가지가 모두 있습니다. 종종 바꿔 쓸 수 있지만 **뉘앙스와 격식**이 다릅니다. 고유어는 더 따뜻하고 감성적으로 느껴지고, 한자어는 더 격식 있고 학문적으로 들립니다.
+
 | 개념 | 고유어 (Native) | 한자어 (Sino-Korean) | 뉘앙스 차이 |
 | --- | --- | --- | --- |
 | love | **사랑** (warm, emotional) | 애정 愛情 (formal, deeper) | 사랑 = everyday; 애정 = literary/formal |
@@ -165,6 +176,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 
 💡 **두 가지 숫자 체계:** 한국어에는 *두 개의 완전한 숫자 체계*가 있습니다. 고유어 숫자(하나·둘·셋)는 나이·사람 수·물건 수에, 한자어 숫자(일·이·삼)는 날짜·전화번호·층수·금액에 씁니다.
 *Korean has TWO complete number systems. Native numbers (하나·둘·셋) are used for age and counting objects; Sino-Korean numbers (일·이·삼) are used for dates, money, floors, phone numbers.*
+
 ### 외래어 — The Third Layer: Loanwords
 
 ### Modern Words Borrowed From Other Languages
@@ -172,6 +184,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 **외래어 (外來語)** are foreign loanwords, overwhelmingly from English in modern times. They are written in Hangul using Korean phonetics and sound distinctly "foreign."
 
 **외래어(外來語)**는 외국어에서 온 차용어로, 현대에는 압도적으로 영어에서 왔습니다. 한국어 음운에 맞게 한글로 표기하며 분명히 "외국어" 느낌이 납니다.
+
 | 외래어 | 원어 | 뜻 |
 | --- | --- | --- |
 | **컴퓨터** | computer | computer |
@@ -184,6 +197,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 | **콘텐츠** | contents | content (media) |
 | **파이팅** | fighting | Go for it! / You've got this! (Korean usage) |
 | **셀카** | self + camera | selfie (Korean portmanteau) |
+
 ### 한국어 어휘 분류 연습 — Classify the Word!
 
 ### Is It 고유어, 한자어, or 외래어?
@@ -199,6 +213,7 @@ Many concepts in Korean have *both* a pure Korean word and a Sino-Korean equival
 | 아파트 | 외래어 ✅ | From English "apartment" — transcribed phonetically |
 | 밥 | 고유어 ✅ | Native Korean — rice/meal, fundamental daily word |
 | 문화 | 한자어 ✅ | 文化 — 문(writing) + 화(become/transform) |
+
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** 전화 (電話) means "telephone." What do the two characters literally mean?

@@ -1,8 +1,10 @@
 # Ch37: BTS & K-Culture — 한류
 
 id="ch37">
+
 ## BTS & K-Culture — The Korean Wave That Swept the World
 한류 & K-문화 — 세계를 휩쓴 한국의 물결
+
 ### 한류란 무엇인가 — What Is Hallyu?
 
 ### The Wave That Nobody Predicted
@@ -80,6 +82,7 @@ Vocalist
 정국 (전정국)
 Vocalist · Main performer
 "Golden Maknae" · 솔로 "Seven"
+
 ### BTS가 세계에 보낸 메시지
 
 ### Why BTS Is More Than Music
@@ -101,6 +104,7 @@ BTS 핵심 앨범 & 노래 — Key Albums & Songs
 
 💡 **ARMY (아미):** BTS의 팬덤 이름 — "Adorable Representative M.C. for Youth." 전 세계 수천만 명의 팬이 자발적으로 조직되어 스트리밍·차트 지원·사회 공헌 캠페인을 펼칩니다. BTS와 ARMY는 단순한 아티스트-팬 관계가 아니라 *공동체*입니다.
 *ARMY is not just a fanbase — it is a self-organizing global community that amplifies BTS's messages on mental health, self-love, and social causes.*
+
 ### K-팝이란 무엇인가 — What Makes K-pop K-pop?
 
 ### The System Behind the Sound
@@ -128,6 +132,7 @@ K팝 팬덤은 참여형 문화입니다. 팬들은 공식 이름(ARMY·BLINK·S
 ### K-드라마 — 세계가 빠진 이야기들
 
 ### K-Drama: Stories That Broke Borders
+
 | 드라마 | 연도 | 왜 세계를 사로잡았나 |
 | --- | --- | --- |
 | **겨울연가** Winter Sonata | 2002 | 한류 1파 촉발 — 배용준 "욘사마" 신드롬, 일본·아시아 열풍 |
@@ -139,6 +144,7 @@ K팝 팬덤은 참여형 문화입니다. 팬들은 공식 이름(ARMY·BLINK·S
 | **오징어 게임** Squid Game | 2021 | 넷플릭스 94개국 1위 · 역대 최다 시청 · 한국어 학습 76% 급증 |
 | **이상한 변호사 우영우** Extraordinary Attorney Woo | 2022 | 자폐 스펙트럼·법정 드라마 · 넷플릭스 글로벌 TOP10 |
 | **더 글로리** The Glory | 2022 | 학교폭력 복수 스릴러 · 넷플릭스 전 세계 1위 |
+
 ### K-영화 — 스크린의 혁명
 
 ### Korean Cinema: Art That Broke Hollywood
@@ -169,6 +175,7 @@ K-뷰티 핵심 어휘
 | **쿠션 파운데이션** | cushion foundation — Korean invention, now worldwide |
 | **글로우** | glow — the dewy, lit-from-within skin ideal |
 | **피부 결** | skin texture — smoothness and evenness |
+
 ### K-푸드 — 세계의 식탁 위에 오른 한국 음식
 
 ### From Kimchi to the World's Tables
@@ -200,6 +207,7 @@ Korean instant noodles (라면 · ramyeon) are a cultural institution. The Paras
 The most direct impact of Hallyu on the world: **millions of people are learning Korean specifically because of K-culture.**
 
 한류가 세계에 미친 가장 직접적인 영향: **수백만 명이 K문화 때문에 한국어를 배우고 있습니다.**
+
 | 현상 | 수치 |
 | --- | --- |
 | Duolingo 한국어 학습자 증가 (오징어 게임 이후) | +76% |
@@ -220,6 +228,7 @@ K-문화에서 배우는 한국어 표현
 | **사랑해** | 모든 K-문화 | I love you — the phrase the world learned first |
 | **헐!** | 예능·드라마 | Whoa! / No way! / I can't believe it! |
 | **진짜?** | 일상·드라마 | Really? For real? |
+
 ### Quick Quiz · 빠른 퀴즈
 
 **Q1.** What does BTS (방탄소년단) literally mean?

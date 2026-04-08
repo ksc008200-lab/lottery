@@ -1,11 +1,13 @@
 # Ch19: Weather & Seasons — 날씨 & 계절
 
 id="ch19">
+
 ## Weather & Seasons — Talk Like a Korean!
 
 날씨 & 계절 · nal-ssi & gye-jeol · Korea's 4 Distinct Seasons!
 💡 **Weather is the #1 conversation starter!**
 Koreans talk about weather constantly — it's the perfect small talk topic. Korea has 4 beautifully distinct seasons: cherry blossoms in spring 🌸, hot humid summers ☀️, breathtaking autumn foliage 🍁, and cold snowy winters ❄️. Learning weather vocabulary opens up endless conversations!
+
 ### The Four Seasons · 사계절
 🌸
 봄
@@ -38,10 +40,12 @@ Winter · 12월~2월
 Cold & dry
 Snow in Seoul!
 -10~5°C
+
 ### 📅 Months of the Year · 월
 🔧 Easy Rule — Just add 월 (wol) = month!
 1월 (il-wol) = January  |  2월 (i-wol) = February  |  3월 (sam-wol) = March
 Exception: 6월 = 유월 (yu-wol) · 10월 = 시월 (si-wol) — these drop the ㄱ/ㅂ!
+
 | Month | 한글 | 발음 |
 | --- | --- | --- |
 | January | 1월 | il-wol |
@@ -56,6 +60,7 @@ Exception: 6월 = 유월 (yu-wol) · 10월 = 시월 (si-wol) — these drop the 
 | November | 11월 | si-bil-wol |
 | June ⚠️ | 6월 | yu-wol |
 | December | 12월 | si-bi-wol |
+
 ### 🖼️ Weather Vocabulary · 날씨 단어
 ☀️
 맑아요
@@ -127,6 +132,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 정답: 1-c, 2-d, 3-b, 4-a, 5-e
 
 ### 🌡️ Temperature · 온도
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 오늘 몇 도예요? | o-neul myeot do-ye-yo? | What is the temperature today? |
@@ -134,6 +140,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 | 영상 25도예요. | yeong-sang i-sip-o do-ye-yo. | It's 25 degrees above zero. |
 | 날씨 예보가 어때요? | nal-ssi ye-bo-ga eo-ttae-yo? | What's the weather forecast? |
 | 내일 비가 올 것 같아요. | nae-il bi-ga ol geot ga-ta-yo. | I think it will rain tomorrow. |
+
 ### 🗓️ Seasonal Activities · 계절별 활동
 🌸 봄 (Spring) — bom
 - 벚꽃 구경 (beot-kkot gu-gyeong) — cherry blossom viewing
@@ -174,6 +181,7 @@ a) 맑아요   b) 더워요   c) 비가 와요   d) 눈이 와요   e) 바�
 (geu-rae-do ga-eu-ri o-ni-kka seon-seon-hae-seo jo-a-yo!) — Still, with autumn coming, it's nice and cool!
 
 ### 🗣️ Useful Weather Phrases · 날씨 표현
+
 | 한글 | 발음 | English |
 | --- | --- | --- |
 | 오늘 날씨 어때요? | o-neul nal-ssi eo-ttae-yo? | How's the weather today? |

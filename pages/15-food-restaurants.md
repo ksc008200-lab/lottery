@@ -1,11 +1,13 @@
 # Ch15: Food & Restaurants — 음식 & 식당
 
 id="ch15">
+
 ## Korean Food & Restaurants — Eat Like a Local!
 
 한국 음식 & 식당 · han-guk eum-sik & sik-dang · The Most Delicious Chapter!
 💡 **Food is the heart of Korean culture!**
 In Korea, asking 밥 먹었어요? (Did you eat?) is how people say *"How are you?"* Food isn't just fuel — it's love, community, and culture. This chapter teaches you to order food, describe taste, and survive (and thrive!) in any Korean restaurant. 🍜
+
 ### Must-Know Korean Foods · 꼭 알아야 할 한국 음식
 🥘
 비빔밥
@@ -78,6 +80,7 @@ Korean blood sausage — popular street food
 sik-hye
 Sikhye
 Sweet rice punch — traditional dessert drink
+
 ### 🖼️ How Does It Taste? · 맛이 어때요?
 🌶️
 매워요
@@ -129,6 +132,7 @@ a) 달아요 — Sweet   b) 매워요 — Spicy   c) 맛있어요! 구워 먹�
 ### 🍽️ At the Restaurant · 식당에서
 
 #### Essential Restaurant Phrases · 식당 필수 표현
+
 | 한글 | 발음 | English | When to say |
 | --- | --- | --- | --- |
 | 여기요! | yeo-gi-yo! | Excuse me! / Over here! | Calling the server |
@@ -143,6 +147,7 @@ a) 달아요 — Sweet   b) 매워요 — Spicy   c) 맛있어요! 구워 먹�
 | 계산서 주세요. | gye-san-seo ju-se-yo. | Please bring the bill. | Paying time |
 | 카드 돼요? | ka-deu dwae-yo? | Do you accept cards? | Before paying |
 | 포장해 주세요. | po-jang-hae ju-se-yo. | Please pack it to go. | Takeout |
+
 #### 🥤 Drinks Vocabulary · 음료 단어
 💧
 물
@@ -173,6 +178,7 @@ juice
 녹차
 nok-cha
 green tea
+
 ### 💬 Full Restaurant Dialog · 식당 실전 대화
 🍖 At a Samgyeopsal Restaurant · 삼겹살 식당
 **직원 (Staff):** 어서오세요! 몇 분이세요?

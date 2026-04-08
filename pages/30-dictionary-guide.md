@@ -1,12 +1,14 @@
 # Ch30: Dictionary Guide — 사전 찾는 법
 
 id="ch30">
+
 ## How to Use a Korean Dictionary
 사전 찾는 법 · sa-jeon chat-neun beop
 📖🔍💡
 
 💡 **사전은 최고의 선생님!**
 A good dictionary is your best Korean teacher. But Korean dictionaries work differently from English ones — conjugated verbs look nothing like their base form, and Chinese-based words (한자어) need special attention. This chapter teaches you to find ANY Korean word fast! 🚀
+
 ### 📱 Best Korean Dictionaries · 최고의 한국어 사전
 🟢
 NAVER 사전
@@ -46,6 +48,7 @@ papago.naver.com
 ✅ 사진 번역 가능
 ✅ 음성 번역
 ⚠️ 사전보다 번역기
+
 ### 🔑 핵심! 동사/형용사 기본형 찾기 · Finding Base Forms
 
 This is the most important skill! Korean verbs change form completely when conjugated. You must find the **기본형 (base form)** ending in **다** to look it up.
@@ -72,6 +75,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | 도와줬어 | 돕다 | to help |
 | 불러요 | 부르다 | to call / to sing |
 | 힘들었어 | 힘들다 | to be difficult/tough |
+
 ### 📖 사전 항목 읽는 법 · How to Read a Dictionary Entry
 
 네이버 사전에서 먹다를 검색하면 이런 항목이 나와요:
@@ -89,6 +93,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | ① ② ③ | 여러 가지 의미 | 문맥에 맞는 의미 선택 |
 | 예문 | 실제 사용 예시 | 가장 중요! 꼭 읽어보기 |
 | 🔊 발음 버튼 | 원어민 발음 듣기 | 네이버/다음 사전에서 지원 |
+
 ### 🔤 가나다순 · Korean Alphabetical Order
 
 종이 사전이나 목록에서 단어를 찾을 때 필요해요:
@@ -101,7 +106,9 @@ This is the most important skill! Korean verbs change form completely when conju
 ㅏ ㅐ ㅑ ㅒ ㅓ ㅔ ㅕ ㅖ ㅗ ㅘ ㅙ ㅚ ㅛ ㅜ ㅝ ㅞ ㅟ ㅠ ㅡ ㅢ ㅣ
 
 예시: 가 → 나 → 다 → 라 / 가 → 개 → 거 → 겨 → 고
+
 ### 🤖 번역기 vs 사전 — 언제 뭘 써야 해?
+
 | | 📖 사전 (Dictionary) | 🤖 Papago/번역기 |
 | --- | --- | --- |
 | 단어 뜻 확인 | ✅ 완벽 | △ 부정확할 수 있음 |
@@ -110,6 +117,7 @@ This is the most important skill! Korean verbs change form completely when conju
 | 사진 속 글자 | ❌ | ✅ 카메라 번역 지원 |
 | 예문 학습 | ✅ 예문 풍부 | ❌ 없음 |
 | 슬랭/신조어 | △ 느린 업데이트 | ✅ 빠른 업데이트 |
+
 ### 💎 사전 활용 꿀팁 · Pro Dictionary Tips
 🔊
 발음 반드시 듣기
@@ -135,6 +143,7 @@ This is the most important skill! Korean verbs change form completely when conju
 🎯
 기본형으로 검색
 먹었어요 검색 → 안 나올 수 있음. 먹다로 검색해야 해요!
+
 ### 💬 실전 — 사전 찾아보기 · Practice Looking It Up
 
 이 문장에서 모르는 단어가 있으면 어떻게 찾을까요?

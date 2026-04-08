@@ -1,8 +1,10 @@
 # Ch1: Hangul Birth — 한글의 탄생
 
 id="ch1">
+
 ## The Birth of Hangul
 한글의 탄생 — 사랑에서 태어난 문자
+
 ### The Story Behind Hangul
 
 ### 한글 탄생 이야기
