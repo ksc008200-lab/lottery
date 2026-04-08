@@ -1,70 +1,55 @@
 # Ch22: Body & Health — 신체 & 건강
 
+id="ch22">
+
 Chapter 22 · 제22장
 
 ## Body & Health — Stay Safe in Korea!
 
-
 신체 & 건강 · sin-che & geon-gang · Essential for Every Traveler!
 
+💡 **Medical Korean could save your life!**
 
-
-
-      💡 **Medical Korean could save your life!**
-
-      Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" is not just useful — it can be essential. Korea has excellent hospitals and pharmacies, but staff may not always speak English. This chapter gives you the vocabulary to get the help you need! 🏥
-
-
-
+Knowing how to say "my head hurts," "I have a fever," or "I'm allergic to this" is not just useful — it can be essential. Korea has excellent hospitals and pharmacies, but staff may not always speak English. This chapter gives you the vocabulary to get the help you need! 🏥
 
 ### Body Parts · 신체 부위
 
-
 #### Head & Face · 머리 & 얼굴
 
-
-|  | 한글 | 발음 | English |
-| --- | --- | --- | --- |
-| 🧠 | 머리 | meo-ri | head / hair |
-| 👁️ | 눈 | nun | eye(s) |
-| 👂 | 귀 | gwi | ear(s) |
-| 👃 | 코 | ko | nose |
-| 👄 | 입 | ip | mouth |
-| 🦷 | 이 / 치아 | i / chi-a | tooth / teeth |
-| 😮 | 목 | mok | neck / throat |
-| 🫁 | 얼굴 | eol-gul | face |
-
-
+| 한글 | 발음 | English |
+| --- | --- | --- |
+| 🧠 | 머리 | meo-ri |
+| 👁️ | 눈 | nun |
+| 👂 | 귀 | gwi |
+| 👃 | 코 | ko |
+| 👄 | 입 | ip |
+| 🦷 | 이 / 치아 | i / chi-a |
+| 😮 | 목 | mok |
+| 🫁 | 얼굴 | eol-gul |
 
 #### Body · 몸통 & 팔다리
 
-
-|  | 한글 | 발음 | English |
-| --- | --- | --- | --- |
-| 💪 | 어깨 | eo-kkae | shoulder |
-| 🫀 | 가슴 | ga-seum | chest |
-| 🫃 | 배 | bae | stomach / belly |
-| 🔙 | 등 / 허리 | deung / heo-ri | back / lower back |
-| 🦾 | 팔 | pal | arm |
-| ✋ | 손 | son | hand |
-| 🦵 | 다리 | da-ri | leg |
-| 🦶 | 발 | bal | foot |
-
-
-
+| 한글 | 발음 | English |
+| --- | --- | --- |
+| 💪 | 어깨 | eo-kkae |
+| 🫀 | 가슴 | ga-seum |
+| 🫃 | 배 | bae |
+| 🔙 | 등 / 허리 | deung / heo-ri |
+| 🦾 | 팔 | pal |
+| ✋ | 손 | son |
+| 🦵 | 다리 | da-ri |
+| 🦶 | 발 | bal |
 
 ### 🤕 Saying Where It Hurts · 아픈 곳 말하기
 
+---
 
-      🔧 Formula — Body Part + 이/가 + 아파요
+---
+🔧 Formula — Body Part + 이/가 + 아파요
 
-
-        [Body part] + 이/가 아파요
-
+[Body part] + 이/가 아파요
 
 *(i/ga a-pa-yo)* = ___ hurts / ___ is in pain
-
-
 
 | 한글 | 발음 | English |
 | --- | --- | --- |
@@ -76,65 +61,68 @@ Chapter 22 · 제22장
 | 눈이 아파요. | nun-i a-pa-yo. | My eye hurts. |
 | 온몸이 아파요. | on-mom-i a-pa-yo. | My whole body hurts. |
 
-
-
-
 ### 🌡️ Symptoms & Conditions · 증상
 
+---
 
+🤒
+열이 나요
+yeol-i na-yo
+I have a fever
 
-        🤒
-        열이 나요
-        yeol-i na-yo
-        I have a fever
+---
 
+🤧
+콧물이 나요
+kon-mul-i na-yo
+I have a runny nose
 
-        🤧
-        콧물이 나요
-        kon-mul-i na-yo
-        I have a runny nose
+---
 
+😮‍💨
+기침이 나요
+gi-chim-i na-yo
+I'm coughing
 
-        😮‍💨
-        기침이 나요
-        gi-chim-i na-yo
-        I'm coughing
+---
 
+🤢
+토할 것 같아요
+to-hal geot ga-ta-yo
+I feel like vomiting
 
-        🤢
-        토할 것 같아요
-        to-hal geot ga-ta-yo
-        I feel like vomiting
+---
 
+😵
+어지러워요
+eo-ji-reo-wo-yo
+I feel dizzy
 
-        😵
-        어지러워요
-        eo-ji-reo-wo-yo
-        I feel dizzy
+---
 
+😴
+피곤해요
+pi-gon-hae-yo
+I'm exhausted
 
-        😴
-        피곤해요
-        pi-gon-hae-yo
-        I'm exhausted
+---
 
+😣
+소화가 안 돼요
+so-hwa-ga an dwae-yo
+I have indigestion
 
-        😣
-        소화가 안 돼요
-        so-hwa-ga an dwae-yo
-        I have indigestion
+---
 
+🩹
+다쳤어요
+da-chyeoss-eo-yo
+I got hurt / injured
 
-        🩹
-        다쳤어요
-        da-chyeoss-eo-yo
-        I got hurt / injured
+---
 
-
-
-
-
-      📝 QUIZ 1 — What's wrong? 어디가 아파요?
+---
+📝 QUIZ 1 — What's wrong? 어디가 아파요?
 
 Translate into Korean:
 
@@ -144,11 +132,7 @@ Translate into Korean:
 
 정답: 1. 배가 아파요. 2. 열이 나요. 3. 온몸이 아파요. 4. 어지러워요. 5. 기침이 나요. 6. 허리가 아파요.
 
-
-
-
 ### 💊 At the Pharmacy · 약국에서
-
 
 | 한글 | 발음 | English |
 | --- | --- | --- |
@@ -161,89 +145,86 @@ Translate into Korean:
 | 처방전이 필요해요? | cheo-bang-jeon-i pi-ryo-hae-yo? | Is a prescription needed? |
 | 밴드 주세요. | baen-deu ju-se-yo. | Please give me a Band-Aid. |
 
-
-
-
 ### 💬 At the Hospital · 병원 대화
 
-
-      🏥 Doctor's Visit · 진료
+🏥 Doctor's Visit · 진료
 
 **의사:** 어디가 불편하세요?
 
-      (eo-di-ga bul-pyeon-ha-se-yo?) — Where are you uncomfortable? / What's wrong?
+(eo-di-ga bul-pyeon-ha-se-yo?) — Where are you uncomfortable? / What's wrong?
 
 **환자:** 어제부터 목이 아프고 열이 나요.
 
-      (eo-je-bu-teo mok-i a-peu-go yeol-i na-yo.) — Since yesterday my throat hurts and I have a fever.
+(eo-je-bu-teo mok-i a-peu-go yeol-i na-yo.) — Since yesterday my throat hurts and I have a fever.
 
 **의사:** 기침도 해요?
 
-      (gi-chim-do hae-yo?) — Are you coughing too?
+(gi-chim-do hae-yo?) — Are you coughing too?
 
 **환자:** 네, 조금요. 그리고 온몸이 쑤셔요.
 
-      (ne, jo-geum-yo. geu-ri-go on-mom-i ssu-syeo-yo.) — Yes, a little. And my whole body aches.
+(ne, jo-geum-yo. geu-ri-go on-mom-i ssu-syeo-yo.) — Yes, a little. And my whole body aches.
 
 **의사:** 감기 같네요. 약 드릴게요. 푹 쉬세요!
 
-      (gam-gi gat-ne-yo. yak deu-ril-ge-yo. puk swi-se-yo!) — Looks like a cold. I'll give you medicine. Please rest well!
+(gam-gi gat-ne-yo. yak deu-ril-ge-yo. puk swi-se-yo!) — Looks like a cold. I'll give you medicine. Please rest well!
 
 **환자:** 감사합니다. 약은 어떻게 먹어요?
 
-      (gam-sa-ham-ni-da. yak-eun eo-tteo-ke meog-eo-yo?) — Thank you. How do I take the medicine?
+(gam-sa-ham-ni-da. yak-eun eo-tteo-ke meog-eo-yo?) — Thank you. How do I take the medicine?
 
 **의사:** 하루 세 번, 식후에 드세요.
 
-      (ha-ru se beon, sik-hu-e deu-se-yo.) — Three times a day, after meals.
-
-
-
+(ha-ru se beon, sik-hu-e deu-se-yo.) — Three times a day, after meals.
 
 ### 💪 Healthy Living Vocabulary · 건강 생활 단어
 
+---
 
+🏃
+운동하다
+un-dong-ha-da
+to exercise
 
-        🏃
-        운동하다
-        un-dong-ha-da
-        to exercise
+---
 
+😴
+잘 자다
+jal ja-da
+to sleep well
 
-        😴
-        잘 자다
-        jal ja-da
-        to sleep well
+---
 
+🥗
+잘 먹다
+jal meok-da
+to eat well
 
-        🥗
-        잘 먹다
-        jal meok-da
-        to eat well
+---
 
+💧
+물 많이 마시다
+mul man-i ma-si-da
+drink lots of water
 
-        💧
-        물 많이 마시다
-        mul man-i ma-si-da
-        drink lots of water
+---
 
+🧘
+스트레스
+seu-teu-re-seu
+stress
 
-        🧘
-        스트레스
-        seu-teu-re-seu
-        stress
+---
 
+🚭
+금연
+geum-yeon
+no smoking
 
-        🚭
-        금연
-        geum-yeon
-        no smoking
+---
 
-
-
-
-
-      📝 QUIZ 2 — At the pharmacy! 약국에서!
+---
+📝 QUIZ 2 — At the pharmacy! 약국에서!
 
 1. How do you ask "Where is the pharmacy?"
 
@@ -255,10 +236,10 @@ Translate into Korean:
 
 정답: 1. 약국이 어디예요? 2. 하루 세 번, 식후에 드세요. 3. 이 약에 알레르기가 있어요. 4. 푹 쉬세요!
 
+---
 
-
-
-      🏆 FINAL QUIZ — Body Part + 아파요!
+---
+🏆 FINAL QUIZ — Body Part + 아파요!
 
 **Say it in Korean:**
 
@@ -268,19 +249,14 @@ Translate into Korean:
 
 정답:
 
-        1. 머리가 아파요.
+1. 머리가 아파요.
 
-        2. 열이 나고 기침이 나요.
+2. 열이 나고 기침이 나요.
 
-        3. 병원이 어디예요?
+3. 병원이 어디예요?
 
-        4. 어지럽고 토할 것 같아요.
+4. 어지럽고 토할 것 같아요.
 
-        5. 두통약 주세요.
+5. 두통약 주세요.
 
-
-
-
-      🏥 **Chapter 22 Complete! 제22장 완료!**
-
-      You can now describe any symptom, visit a Korean hospital, and buy medicine at a pharmacy! Stay healthy, rest well, and remember: 푹 쉬세요! (Please rest well!) 건강하세요! 💊
+🏥 **Chapter 22 Complete! 제22장 완료!**

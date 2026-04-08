@@ -1,24 +1,20 @@
 # Ch6: Vocabulary 200 — 필수 단어
 
+id="ch6">
+
 Chapter 6 · 제6장
 
 ## Essential Vocabulary — 200 Words
 
-    필수 단어 200개
+필수 단어 200개
 
-
-
-
-      🧑People사람20 words
-      🌍Places장소20 words
-      🍚Food음식20 words
-      🌈Colors색깔20 words
-      📅Time시간20 words
-
-
+🧑People사람20 words
+🌍Places장소20 words
+🍚Food음식20 words
+🌈Colors색깔20 words
+📅Time시간20 words
 
 ### People & Relationships · 사람과 관계
-
 
 | 한글 | Pronunciation | English | 한글 | Pronunciation | English |
 | --- | --- | --- | --- | --- | --- |
@@ -28,10 +24,7 @@ Chapter 6 · 제6장
 | 형/오빠 | hyeong/o-ppa | older brother | 누나/언니 | nu-na/eon-ni | older sister |
 | 선생님 | seon-saeng-nim | teacher | 학생 | hak-saeng | student |
 
-
-
 ### Essential Verbs · 필수 동사
-
 
 | 한글 | Pronunciation | English | 한글 | Pronunciation | English |
 | --- | --- | --- | --- | --- | --- |
@@ -41,10 +34,7 @@ Chapter 6 · 제6장
 | 말하다 | mal-ha-da | to speak | 읽다 | ik-da | to read |
 | 사랑하다 | sa-rang-ha-da | to love | 좋아하다 | jo-a-ha-da | to like |
 
-
-
 ### Question Words · 의문사
-
 
 | 한글 | Pronunciation | English | 한글 | Pronunciation | English |
 | --- | --- | --- | --- | --- | --- |

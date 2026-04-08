@@ -1,28 +1,21 @@
 # Ch5: Numbers — 숫자
 
+id="ch5">
+
 Chapter 5 · 제5장
 
 ## Numbers — Counting in Korean
 
-    숫자 — 한국어로 세기
-
-
-
+숫자 — 한국어로 세기
 
 ### Two Number Systems!
 
-
 ### 두 가지 숫자 체계!
 
-
-
-      漢Sino-Korean한자어 숫자Dates, money, phone numbers, minutes, floors
-      한Native Korean고유어 숫자Counting objects, hours, age (casual)
-
-
+漢Sino-Korean한자어 숫자Dates, money, phone numbers, minutes, floors
+한Native Korean고유어 숫자Counting objects, hours, age (casual)
 
 ### Sino-Korean Numbers (한자어)
-
 
 | Number | 한글 | Pronunciation | Number | 한글 | Pronunciation |
 | --- | --- | --- | --- | --- | --- |
@@ -33,10 +26,7 @@ Chapter 5 · 제5장
 | 4 | 사 | sa | 10 | 십 | sip |
 | 5 | 오 | o | 100 | 백 | baek |
 
-
-
 ### Native Korean Numbers (고유어)
-
 
 | Number | 한글 | Pronunciation | Number | 한글 | Pronunciation |
 | --- | --- | --- | --- | --- | --- |
@@ -46,10 +36,7 @@ Chapter 5 · 제5장
 | 4 | 넷 | net | 9 | 아홉 | a-hop |
 | 5 | 다섯 | da-seot | 10 | 열 | yeol |
 
-
-
 ### Ordinal Numbers · 서수 (순서)
-
 
 | Order | 한글 | Pronunciation | Order | 한글 | Pronunciation |
 | --- | --- | --- | --- | --- | --- |
@@ -60,11 +47,10 @@ Chapter 5 · 제5장
 | 5th | 다섯째 | da-seot-jjae | 11th | 열한째 | yeol-han-jjae |
 | 6th | 여섯째 | yeo-seot-jjae | 20th | 스무째 | seu-mu-jjae |
 
-
-    🕐**Telling Time · 시간 말하기**
+🕐**Telling Time · 시간 말하기**
 Hours → Native Korean  |  Minutes → Sino-Korean
-시(hour) → 고유어 숫자  |  분(minute) → 한자어 숫자
 
+시(hour) → 고유어 숫자  |  분(minute) → 한자어 숫자
 
 | Time | 한글 | Pronunciation |
 | --- | --- | --- |
