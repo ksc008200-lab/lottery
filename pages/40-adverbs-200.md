@@ -22,7 +22,7 @@ CATEGORIES · 카테고리
 🔔 의성·의태어 (40)
 
 ⏰
-1. 시간 부사Time Adverbs · 35 words
+## 1. 시간 부사Time Adverbs · 35 words
 
 **현재·과거·미래 PRESENT / PAST / FUTURE**
 
@@ -74,8 +74,7 @@ CATEGORIES · 카테고리
 | 잠시 | jam-si | Briefly / For a moment | 잠시 기다려 주세요. — Please wait *briefly*. |
 | 잠깐 | jam-kkan | A moment (shorter) | 잠깐만요! — Just *a moment*! |
 
-📊
-2. 정도 부사Degree Adverbs · 30 words
+## 2. 정도 부사Degree Adverbs · 30 words
 
 **강도 HIGH DEGREE**
 
@@ -123,7 +122,7 @@ CATEGORIES · 카테고리
 | 대강 | dae-gang | Roughly / Approximately | 대강 봤어요. — I looked at it *roughly*. |
 
 ⚙️
-3. 상태·방식 부사State & Manner Adverbs · 40 words
+## 3. 상태·방식 부사State & Manner Adverbs · 40 words
 
 **능력·속도 ABILITY & SPEED**
 
@@ -185,8 +184,7 @@ CATEGORIES · 카테고리
 | 쉽게 | swip-ge | Easily | 쉽게 할 수 있어요. — You can do it *easily*. |
 | 드물게 | deu-mul-ge | Rarely | 드물게 눈이 와요. — It *rarely* snows. |
 
-🚫
-4. 부정·의문 부사Negative & Interrogative Adverbs · 15 words
+## 4. 부정·의문 부사Negative & Interrogative Adverbs · 15 words
 
 | 부사 | 발음 | English | 예문 Example |
 | :---: | :---: | :---: | :---: |
@@ -206,8 +204,7 @@ CATEGORIES · 카테고리
 | 과연 | gwa-yeon | Indeed / Sure enough | 과연 잘하네요. — *Indeed*, they do it well. |
 | 아무래도 | a-mu-rae-do | Somehow / It seems like | 아무래도 늦을 것 같아요. — It *seems like* I'll be late. |
 
-🔗
-5. 문장 연결 부사 (접속 부사)Conjunctive Adverbs · 20 words
+## 5. 문장 연결 부사 (접속 부사)Conjunctive Adverbs · 20 words
 
 **더하기·대조 ADDITION & CONTRAST**
 
@@ -243,8 +240,7 @@ CATEGORIES · 카테고리
 | 반면에 | ban-myeon-e | On the other hand | 반면에 그건 달라요. — *On the other hand*, that's different. |
 | 마지막으로 | ma-ji-ma-geu-ro | Lastly / Finally | 마지막으로 감사해요. — *Lastly*, thank you. |
 
-🎲
-6. 추측·양태 부사Modal & Evidential Adverbs · 20 words
+## 6. 추측·양태 부사Modal & Evidential Adverbs · 20 words
 
 **불확실 UNCERTAINTY**
 
@@ -280,8 +276,7 @@ CATEGORIES · 카테고리
 | 기어이 | gi-eo-i | By all means / Insistently | 기어이 해냈어요. — I did it *no matter what*. |
 | 무조건 | mu-jo-geon | Unconditionally / No matter what | 무조건 해요. — Do it *no matter what*. |
 
-🔔
-7. 의성어·의태어Onomatopoeia & Mimetic Words · 40 words
+## 7. 의성어·의태어Onomatopoeia & Mimetic Words · 40 words
 
 💡 Tip:
 의성어(擬聲語) = **sounds** (e.g. 졸졸 — babbling water) · 의태어(擬態語) = **appearance/movement** (e.g. 반짝반짝 — twinkling). Both work as adverbs.
