@@ -1,6 +1,6 @@
-# Ch17: Transportation — 교통 & 길 찾기
+# Ch18: Transportation — 교통 & 길 찾기
 
-Chapter 17 · 제17장
+Chapter 18 · 제18장
 
 ## Transportation & Directions — Navigate Korea!
 

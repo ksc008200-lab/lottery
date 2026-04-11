@@ -1,6 +1,6 @@
-# Ch20: Holidays & Culture — 명절 & 문화
+# Ch21: Holidays & Culture — 명절 & 문화
 
-Chapter 20 · 제20장
+Chapter 21 · 제21장
 
 ## Korean Holidays & Culture — Celebrate Korea!
 

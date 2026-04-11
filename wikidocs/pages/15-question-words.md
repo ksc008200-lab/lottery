@@ -1,6 +1,6 @@
-# Ch14: Question Words — 의문사
+# Ch15: Question Words — 의문사
 
-Chapter 14 · 제14장
+Chapter 15 · 제15장
 
 ## Question Words — Ask Anything in Korean!
 

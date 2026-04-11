@@ -1,6 +1,6 @@
-# Ch19: Weather & Seasons — 날씨 & 계절
+# Ch20: Weather & Seasons — 날씨 & 계절
 
-Chapter 19 · 제19장
+Chapter 20 · 제20장
 
 ## Weather & Seasons — Talk Like a Korean!
 

@@ -1,6 +1,6 @@
-# Ch35: Seoul Standard & Dialects — 사투리
+# Ch38: Seoul Standard & Dialects — 사투리
 
-Chapter 35 · 제35장
+Chapter 38 · 제38장
 
 ## Seoul Standard Korean & Regional Dialects — One Language, Many Voices
 

@@ -1,6 +1,6 @@
-# Ch15: Food & Restaurants — 음식 & 식당
+# Ch16: Food & Restaurants — 음식 & 식당
 
-Chapter 15 · 제15장
+Chapter 16 · 제16장
 
 ## Korean Food & Restaurants — Eat Like a Local!
 

@@ -1,4 +1,4 @@
-# Ch40: 200 Essential Adverbs — 필수 부사 200개
+# Ch43: 200 Essential Adverbs — 필수 부사 200개
 
 Chapter 40
   200 Essential Korean Adverbs

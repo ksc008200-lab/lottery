@@ -1,6 +1,6 @@
-# Ch31: "우리" Culture — 우리 문화
+# Ch32: "우리" Culture — 우리 문화
 
-Chapter 31 · 제31장
+Chapter 32 · 제32장
 
 ## The "Uri" Culture — Korea's Heart of We
 

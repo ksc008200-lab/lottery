@@ -1,6 +1,6 @@
-# Ch25: Work & School — 직장 & 학교
+# Ch26: Work & School — 직장 & 학교
 
-Chapter 25 · 제25장
+Chapter 26 · 제26장
 
 ## Work & School — Korean Workplace & Campus Life!
 

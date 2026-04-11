@@ -1,6 +1,6 @@
-# Ch16: Shopping & Money — 쇼핑 & 돈
+# Ch17: Shopping & Money — 쇼핑 & 돈
 
-Chapter 16 · 제16장
+Chapter 17 · 제17장
 
 ## Shopping & Money — Shop Like a Korean!
 

@@ -1,6 +1,6 @@
-# Ch26: Love & Dating — 사랑 & 연애
+# Ch27: Love & Dating — 사랑 & 연애
 
-Chapter 26 · 제26장
+Chapter 27 · 제27장
 
 ## Love & Dating — Korean Romance Culture!
 

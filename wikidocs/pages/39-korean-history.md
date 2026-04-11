@@ -1,6 +1,6 @@
-# Ch36: Korean History — 한국의 역사
+# Ch39: Korean History — 한국의 역사
 
-Chapter 36 · 제36장
+Chapter 39 · 제39장
 
 ## A History of Korea — 5,000 Years from Gojoseon to Today
 

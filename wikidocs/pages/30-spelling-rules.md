@@ -1,4 +1,4 @@
-# Ch29: Spelling Rules — 맞춤법
+# Ch30: Spelling Rules — 맞춤법
 
 Chapter 29
 

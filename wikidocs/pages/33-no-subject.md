@@ -1,6 +1,6 @@
-# Ch32: No Subject Culture — 주어 생략
+# Ch33: No Subject Culture — 주어 생략
 
-Chapter 32 · 제32장
+Chapter 33 · 제33장
 
 ## Speaking Without a Subject — Korea's Silent "I"
 

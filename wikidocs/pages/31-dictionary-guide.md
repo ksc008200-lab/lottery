@@ -1,4 +1,4 @@
-# Ch30: Dictionary Guide — 사전 찾는 법
+# Ch31: Dictionary Guide — 사전 찾는 법
 
 Chapter 30
 

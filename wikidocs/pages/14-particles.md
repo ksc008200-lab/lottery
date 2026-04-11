@@ -1,6 +1,6 @@
-# Ch13: Particles — 조사
+# Ch14: Particles — 조사
 
-Chapter 13 · 제13장
+Chapter 14 · 제14장
 
 ## Particles — The Magic Glue of Korean!
 

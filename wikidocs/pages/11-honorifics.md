@@ -1,6 +1,6 @@
-# Ch10: 존댓말 & 반말 — Korean Respect
+# Ch11: 존댓말 & 반말 — Korean Respect
 
-Chapter 10 · 제10장
+Chapter 11 · 제11장
 
 ## 존댓말 & 반말 — The Art of Korean Respect
 

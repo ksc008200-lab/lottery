@@ -1,6 +1,6 @@
-# Ch22: Body & Health — 신체 & 건강
+# Ch23: Body & Health — 신체 & 건강
 
-Chapter 22 · 제22장
+Chapter 23 · 제23장
 
 ## Body & Health — Stay Safe in Korea!
 

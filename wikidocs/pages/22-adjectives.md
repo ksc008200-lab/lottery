@@ -1,6 +1,6 @@
-# Ch21: Adjectives — 형용사
+# Ch22: Adjectives — 형용사
 
-Chapter 21 · 제21장
+Chapter 22 · 제22장
 
 ## Adjectives — Describe Everything in Korean!
 

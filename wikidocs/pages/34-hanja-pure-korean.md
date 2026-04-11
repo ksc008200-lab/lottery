@@ -1,6 +1,6 @@
-# Ch33: Hanja & Pure Korean — 한자어 & 고유어
+# Ch34: Hanja & Pure Korean — 한자어 & 고유어
 
-Chapter 33 · 제33장
+Chapter 34 · 제34장
 
 ## Hanja Culture & Pure Korean — The Two Roots of Every Word
 

@@ -1,6 +1,6 @@
-# Ch37: BTS & K-Culture — 한류
+# Ch40: BTS & K-Culture — 한류
 
-Chapter 37 · 제37장
+Chapter 40 · 제40장
 
 ## BTS & K-Culture — The Korean Wave That Swept the World
 

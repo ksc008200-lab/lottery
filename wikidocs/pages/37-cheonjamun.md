@@ -1,6 +1,6 @@
-# Ch34: 千字文 — Hanja Unlocks Korean
+# Ch37: 千字文 — Hanja Unlocks Korean
 
-Chapter 34 · 제34장
+Chapter 37 · 제37장
 
 ## 千字文 & Hanja as Meaning-Keys — Know the Characters, Master Korean
 

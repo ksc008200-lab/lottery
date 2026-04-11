@@ -1,4 +1,4 @@
-# Ch28: Slang & Internet — 슬랭 & MZ세대
+# Ch29: Slang & Internet — 슬랭 & MZ세대
 
 Chapter 28
 

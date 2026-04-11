@@ -1,6 +1,6 @@
-# Ch23: K-pop & Entertainment — K팝
+# Ch24: K-pop & Entertainment — K팝
 
-Chapter 23 · 제23장
+Chapter 24 · 제24장
 
 ## K-pop & Korean Entertainment — Hallyu Wave!
 

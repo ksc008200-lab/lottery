@@ -1,6 +1,6 @@
-# Ch12: Grammar Patterns — 문법 패턴
+# Ch13: Grammar Patterns — 문법 패턴
 
-Chapter 12 · 제12장
+Chapter 13 · 제13장
 
 ## Grammar Patterns
 

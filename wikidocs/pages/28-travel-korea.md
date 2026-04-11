@@ -1,6 +1,6 @@
-# Ch27: Travel in Korea — 한국 여행
+# Ch28: Travel in Korea — 한국 여행
 
-Chapter 27 · 제27장
+Chapter 28 · 제28장
 
 ## Travel in Korea — Explore Every Corner!
 

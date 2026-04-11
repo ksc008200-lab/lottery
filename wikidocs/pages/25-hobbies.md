@@ -1,6 +1,6 @@
-# Ch24: Hobbies & Free Time — 취미 & 여가
+# Ch25: Hobbies & Free Time — 취미 & 여가
 
-Chapter 24 · 제24장
+Chapter 25 · 제25장
 
 ## Hobbies & Free Time — What Do You Do for Fun?
 
