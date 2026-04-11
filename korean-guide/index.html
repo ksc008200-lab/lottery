@@ -837,9 +837,236 @@
   .vocab-row:nth-child(odd) { background: #f8fafc; }
   .vocab-row:nth-child(even) { background: #fff; }
   .vocab-row span:first-child { color: var(--blue); }
+
+/* ══════════════════════════════════════════
+   PAYWALL STYLES
+══════════════════════════════════════════ */
+.chapter-locked {
+  position: relative;
+}
+.chapter-locked .chapter-body {
+  max-height: 260px;
+  overflow: hidden;
+  filter: blur(5px);
+  user-select: none;
+  pointer-events: none;
+}
+.paywall-gate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, transparent 0%, rgba(249,247,243,0.85) 30%, #f9f7f3 60%);
+  z-index: 10;
+  padding: 20px;
+}
+.paywall-gate-inner {
+  text-align: center;
+  max-width: 360px;
+}
+.paywall-icon { font-size: 36px; margin-bottom: 10px; }
+.paywall-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+.paywall-desc {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.paywall-price {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--blue);
+  margin: 12px 0;
+  letter-spacing: -0.04em;
+}
+.paywall-lang-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.paywall-btn-buy {
+  display: block;
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.paywall-btn-buy:hover { opacity: 0.88; transform: translateY(-1px); }
+.paywall-btn-key {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, color 0.15s;
+}
+.paywall-btn-key:hover { border-color: var(--blue); color: var(--blue); }
+.sidebar-locked .sidebar-num {
+  background: #ddd !important;
+  color: #999 !important;
+  font-size: 10px !important;
+}
+.sidebar-locked .sidebar-num::after {
+  content: '🔒';
+  font-size: 9px;
+}
+/* ── Unlock Modal ── */
+#unlock-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+#unlock-modal.open { display: flex; }
+.unlock-modal-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  text-align: center;
+}
+.unlock-modal-box h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+}
+.unlock-modal-box p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+.unlock-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.unlock-input:focus { border-color: var(--blue); }
+.unlock-submit {
+  width: 100%;
+  padding: 13px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+  margin-bottom: 8px;
+}
+.unlock-submit:hover { opacity: 0.88; }
+.unlock-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+.unlock-msg { font-size: 13px; min-height: 20px; margin-bottom: 8px; }
+.unlock-msg.ok { color: #16a34a; font-weight: 600; }
+.unlock-msg.err { color: #dc2626; }
+.unlock-close {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+/* ── Sticky footer bar ── */
+#paywall-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark);
+  color: #fff;
+  z-index: 500;
+  padding: 12px 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+#paywall-bar span { color: rgba(255,255,255,0.75); }
+#paywall-bar strong { color: var(--accent); }
+#paywall-bar-buy {
+  background: var(--accent);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+#paywall-bar-key {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
 </style>
 </head>
 <body>
+
+<!-- ══ UNLOCK MODAL ══ -->
+<div id="unlock-modal" role="dialog" aria-modal="true" aria-labelledby="unlock-modal-title">
+  <div class="unlock-modal-box">
+    <h3 id="unlock-modal-title">🔓 Enter License Key</h3>
+    <p>After purchasing, check your email for the license key.<br>Enter it below to unlock all 36 chapters instantly.</p>
+    <input class="unlock-input" id="unlock-key-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="35" autocomplete="off" spellcheck="false">
+    <div class="unlock-msg" id="unlock-msg"></div>
+    <button class="unlock-submit" id="unlock-submit-btn" onclick="submitLicenseKey()">Unlock Now</button>
+    <br>
+    <button class="unlock-close" onclick="closeUnlockModal()">Cancel</button>
+  </div>
+</div>
+
+<!-- ══ PAYWALL STICKY BAR ══ -->
+<div id="paywall-bar">
+  <span>🔒 <strong>36 chapters</strong> locked — Full course $9.99</span>
+  <a id="paywall-bar-buy" href="https://ksc008200.gumroad.com/l/learnkorean" target="_blank" rel="noopener">Buy Now — $9.99</a>
+  <button id="paywall-bar-key" onclick="showUnlockModal()">I have a key</button>
+</div>
 
 <!-- ══ TOP SEARCH BAR ══ -->
 <div class="top-search-bar">
@@ -11327,5 +11554,162 @@
 </div>
 </div>
 
+
+<script>
+/* ══════════════════════════════════════════
+   PAYWALL — Learn Korean Guide
+   Free: Ch1–Ch5 | Paid: Ch6–Ch41
+══════════════════════════════════════════ */
+(function () {
+  const FREE_CHAPTERS   = 5;
+  const TOTAL_CHAPTERS  = 41;
+  const STORAGE_KEY     = 'krguide_license_v1';
+  const GUMROAD_LINK    = 'https://ksc008200.gumroad.com/l/learnkorean';
+  const VERIFY_URL      = '/api/verify';
+
+  // ── Check unlock status ──
+  function isUnlocked() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+      const d = JSON.parse(raw);
+      return d && d.valid === true;
+    } catch (e) { return false; }
+  }
+
+  function markUnlocked(key) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ valid: true, key: key, ts: Date.now() }));
+  }
+
+  // ── Build paywall overlay HTML ──
+  function buildOverlay() {
+    const div = document.createElement('div');
+    div.className = 'paywall-gate';
+    div.innerHTML =
+      '<div class="paywall-gate-inner">' +
+        '<div class="paywall-icon">🔒</div>' +
+        '<div class="paywall-title">Premium Chapter</div>' +
+        '<div class="paywall-desc">Unlock all 36 remaining chapters</div>' +
+        '<div class="paywall-price">$9.99</div>' +
+        '<div class="paywall-lang-note">🌍 Use Google Translate to read in any language</div>' +
+        '<a class="paywall-btn-buy" href="' + GUMROAD_LINK + '" target="_blank" rel="noopener">Buy Now — $9.99</a>' +
+        '<button class="paywall-btn-key" onclick="showUnlockModal()">Already have a key?</button>' +
+      '</div>';
+    return div;
+  }
+
+  // ── Lock chapters ──
+  function lockChapters() {
+    for (let i = FREE_CHAPTERS + 1; i <= TOTAL_CHAPTERS; i++) {
+      const ch = document.getElementById('ch' + i);
+      if (!ch) continue;
+      ch.classList.add('chapter-locked');
+      ch.appendChild(buildOverlay());
+    }
+    // Lock sidebar links
+    for (let i = FREE_CHAPTERS + 1; i <= TOTAL_CHAPTERS; i++) {
+      const link = document.querySelector('.sidebar-link[data-ch="ch' + i + '"]');
+      if (link) link.classList.add('sidebar-locked');
+    }
+    // Show sticky bar
+    const bar = document.getElementById('paywall-bar');
+    if (bar) bar.style.display = 'flex';
+    // Add bottom padding so bar doesn't cover content
+    document.body.style.paddingBottom = '60px';
+  }
+
+  // ── Unlock all chapters (after valid key) ──
+  function unlockAll() {
+    document.querySelectorAll('.chapter-locked').forEach(function (ch) {
+      ch.classList.remove('chapter-locked');
+      const gate = ch.querySelector('.paywall-gate');
+      if (gate) gate.remove();
+    });
+    document.querySelectorAll('.sidebar-locked').forEach(function (el) {
+      el.classList.remove('sidebar-locked');
+    });
+    const bar = document.getElementById('paywall-bar');
+    if (bar) bar.style.display = 'none';
+    document.body.style.paddingBottom = '';
+  }
+
+  // ── Init ──
+  if (isUnlocked()) {
+    // already purchased — nothing to lock
+  } else {
+    // Wait for DOM before applying
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', lockChapters);
+    } else {
+      lockChapters();
+    }
+  }
+
+  // ── Modal helpers (global) ──
+  window.showUnlockModal = function () {
+    document.getElementById('unlock-modal').classList.add('open');
+    document.getElementById('unlock-key-input').focus();
+    document.getElementById('unlock-msg').textContent = '';
+    document.getElementById('unlock-msg').className = 'unlock-msg';
+  };
+
+  window.closeUnlockModal = function () {
+    document.getElementById('unlock-modal').classList.remove('open');
+  };
+
+  // Close on backdrop click
+  document.getElementById('unlock-modal').addEventListener('click', function (e) {
+    if (e.target === this) window.closeUnlockModal();
+  });
+
+  // Enter key submits
+  document.getElementById('unlock-key-input').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') window.submitLicenseKey();
+  });
+
+  // ── License key submission ──
+  window.submitLicenseKey = async function () {
+    const input = document.getElementById('unlock-key-input');
+    const btn   = document.getElementById('unlock-submit-btn');
+    const msg   = document.getElementById('unlock-msg');
+    const key   = input.value.trim().toUpperCase();
+
+    if (!key) { msg.textContent = 'Please enter your license key.'; msg.className = 'unlock-msg err'; return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Verifying…';
+    msg.textContent = '';
+
+    try {
+      const res = await fetch(VERIFY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ license_key: key })
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        markUnlocked(key);
+        msg.textContent = '✅ Unlocked! Loading full content…';
+        msg.className = 'unlock-msg ok';
+        setTimeout(function () {
+          window.closeUnlockModal();
+          unlockAll();
+        }, 900);
+      } else {
+        msg.textContent = data.error || 'Invalid license key. Please check and try again.';
+        msg.className = 'unlock-msg err';
+        btn.disabled = false;
+        btn.textContent = 'Unlock Now';
+      }
+    } catch (e) {
+      msg.textContent = 'Network error. Please try again.';
+      msg.className = 'unlock-msg err';
+      btn.disabled = false;
+      btn.textContent = 'Unlock Now';
+    }
+  };
+})();
+</script>
 </body>
 </html>
