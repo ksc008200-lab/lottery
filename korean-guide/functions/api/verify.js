@@ -34,7 +34,7 @@ export async function onRequestPost(context) {
     });
   }
 
-  const productPermalink = env.GUMROAD_PRODUCT_PERMALINK || 'learnkorean';
+  const productPermalink = env.GUMROAD_PRODUCT_PERMALINK || 'gnefla';
 
   // Call Gumroad license verification API
   let gumroadRes;
