@@ -1044,6 +1044,105 @@
   font-family: inherit;
   white-space: nowrap;
 }
+/* ── Crypto payment button (paywall overlay) ── */
+.paywall-btn-crypto {
+  display: block;
+  background: #f7931a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 32px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.paywall-btn-crypto:hover { opacity: 0.88; transform: translateY(-1px); }
+/* ── Crypto button in sticky bar ── */
+#paywall-bar-crypto {
+  background: #f7931a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+/* ── Crypto pending modal ── */
+#crypto-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1001;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+#crypto-modal.open { display: flex; }
+.crypto-modal-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.crypto-modal-box h3 { margin: 0 0 10px; font-size: 20px; }
+.crypto-modal-box p { color: #555; font-size: 14px; margin: 0 0 20px; line-height: 1.6; }
+.crypto-spinner {
+  width: 40px; height: 40px;
+  border: 4px solid #eee;
+  border-top-color: #f7931a;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 20px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.crypto-key-display {
+  background: #f5f5f5;
+  border: 1.5px dashed #ccc;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #111;
+  margin: 0 0 16px;
+  word-break: break-all;
+}
+.crypto-copy-btn {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.crypto-msg { font-size: 13px; color: #dc2626; min-height: 18px; margin-bottom: 8px; }
+.crypto-msg.ok { color: #16a34a; font-weight: 600; }
+.crypto-close-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 6px;
+}
 </style>
 </head>
 <body>
@@ -1061,10 +1160,37 @@
   </div>
 </div>
 
+<!-- ══ CRYPTO PAYMENT MODAL ══ -->
+<div id="crypto-modal" role="dialog" aria-modal="true" aria-labelledby="crypto-modal-title">
+  <div class="crypto-modal-box">
+    <h3 id="crypto-modal-title">₿ Crypto Payment</h3>
+    <div id="crypto-modal-body">
+      <!-- State 1: loading -->
+      <div id="crypto-state-loading">
+        <div class="crypto-spinner"></div>
+        <p id="crypto-status-text">Creating payment…</p>
+      </div>
+      <!-- State 2: success — show key -->
+      <div id="crypto-state-success" style="display:none">
+        <p>✅ Payment confirmed! Your license key:</p>
+        <div class="crypto-key-display" id="crypto-key-value"></div>
+        <div class="crypto-msg ok" id="crypto-key-msg"></div>
+        <button class="crypto-copy-btn" onclick="copyCryptoKey()">Copy Key &amp; Unlock</button>
+      </div>
+      <!-- State 3: error -->
+      <div id="crypto-state-error" style="display:none">
+        <p class="crypto-msg" id="crypto-error-text">Something went wrong.</p>
+      </div>
+    </div>
+    <button class="crypto-close-btn" onclick="closeCryptoModal()">Close</button>
+  </div>
+</div>
+
 <!-- ══ PAYWALL STICKY BAR ══ -->
 <div id="paywall-bar">
   <span>🔒 <strong>36 chapters</strong> locked — Full course $9.90</span>
   <a id="paywall-bar-buy" href="https://jessamine13.gumroad.com/l/gnefla" target="_blank" rel="noopener">Buy Now — $9.90</a>
+  <button id="paywall-bar-crypto" onclick="startCryptoPayment()">₿ Crypto</button>
   <button id="paywall-bar-key" onclick="showUnlockModal()">I have a key</button>
 </div>
 
@@ -11593,6 +11719,7 @@
         '<div class="paywall-price">$9.90</div>' +
         '<div class="paywall-lang-note">🌍 Use Google Translate to read in any language</div>' +
         '<a class="paywall-btn-buy" href="' + GUMROAD_LINK + '" target="_blank" rel="noopener">Buy Now — $9.90</a>' +
+        '<button class="paywall-btn-crypto" onclick="startCryptoPayment()">₿ Pay with Crypto (BTC / ETH / USDC)</button>' +
         '<button class="paywall-btn-key" onclick="showUnlockModal()">Already have a key?</button>' +
       '</div>';
     return div;
@@ -11709,6 +11836,132 @@
       btn.textContent = 'Unlock Now';
     }
   };
+
+  /* ══════════════════════════════════════════
+     CRYPTO PAYMENT — Coinbase Commerce
+  ══════════════════════════════════════════ */
+  const CRYPTO_ORDER_KEY = 'krguide_crypto_order_v1';
+  const CRYPTO_POLL_INTERVAL = 5000;  // 5 seconds
+  const CRYPTO_POLL_MAX = 24;          // max 2 minutes
+
+  let cryptoPollTimer = null;
+  let cryptoPollCount = 0;
+
+  // ── Open / close modal ──
+  window.closeCryptoModal = function () {
+    document.getElementById('crypto-modal').classList.remove('open');
+    if (cryptoPollTimer) { clearInterval(cryptoPollTimer); cryptoPollTimer = null; }
+  };
+
+  function showCryptoModal() {
+    document.getElementById('crypto-modal').classList.add('open');
+  }
+
+  function setCryptoState(state) {
+    document.getElementById('crypto-state-loading').style.display = state === 'loading' ? '' : 'none';
+    document.getElementById('crypto-state-success').style.display = state === 'success' ? '' : 'none';
+    document.getElementById('crypto-state-error').style.display   = state === 'error'   ? '' : 'none';
+  }
+
+  // ── Start crypto payment ──
+  window.startCryptoPayment = async function () {
+    showCryptoModal();
+    setCryptoState('loading');
+    document.getElementById('crypto-status-text').textContent = 'Creating payment…';
+
+    let data;
+    try {
+      const res = await fetch('/api/create-charge', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      data = await res.json();
+    } catch (e) {
+      setCryptoState('error');
+      document.getElementById('crypto-error-text').textContent = 'Network error. Please try again.';
+      return;
+    }
+
+    if (!data.success || !data.invoice_url) {
+      setCryptoState('error');
+      document.getElementById('crypto-error-text').textContent = data.error || 'Failed to create payment. Try again.';
+      return;
+    }
+
+    // Save order ID and redirect to NOWPayments checkout
+    localStorage.setItem(CRYPTO_ORDER_KEY, JSON.stringify({ order_id: data.order_id, ts: Date.now() }));
+    window.location.href = data.invoice_url;
+  };
+
+  // ── Copy key and unlock ──
+  window.copyCryptoKey = function () {
+    const key = document.getElementById('crypto-key-value').textContent;
+    navigator.clipboard.writeText(key).catch(function () {});
+    document.getElementById('crypto-key-msg').textContent = '📋 Copied!';
+
+    markUnlocked(key);
+    window.closeCryptoModal();
+    unlockAll();
+  };
+
+  // ── Poll for payment confirmation ──
+  function pollCryptoPayment(orderId) {
+    cryptoPollCount = 0;
+    document.getElementById('crypto-status-text').textContent = 'Waiting for payment confirmation…';
+
+    cryptoPollTimer = setInterval(async function () {
+      cryptoPollCount++;
+      try {
+        const res = await fetch('/api/crypto-verify?order_id=' + encodeURIComponent(orderId));
+        const data = await res.json();
+
+        if (data.success && data.license_key) {
+          clearInterval(cryptoPollTimer);
+          cryptoPollTimer = null;
+          setCryptoState('success');
+          document.getElementById('crypto-key-value').textContent = data.license_key;
+          markUnlocked(data.license_key);
+          unlockAll();
+          return;
+        }
+      } catch (e) { /* ignore transient errors, keep polling */ }
+
+      if (cryptoPollCount >= CRYPTO_POLL_MAX) {
+        clearInterval(cryptoPollTimer);
+        cryptoPollTimer = null;
+        setCryptoState('error');
+        document.getElementById('crypto-error-text').textContent =
+          'Payment not confirmed yet. Blockchain confirmations can take a few minutes — please refresh the page shortly.';
+      } else {
+        const remaining = (CRYPTO_POLL_MAX - cryptoPollCount) * (CRYPTO_POLL_INTERVAL / 1000);
+        document.getElementById('crypto-status-text').textContent =
+          'Waiting for blockchain confirmation… (' + remaining + 's left)';
+      }
+    }, CRYPTO_POLL_INTERVAL);
+  }
+
+  // ── On page load: check if returning from NOWPayments ──
+  (function checkCryptoReturn() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('crypto_return') !== '1') return;
+
+    // Clean URL
+    window.history.replaceState({}, '', window.location.pathname);
+
+    const stored = localStorage.getItem(CRYPTO_ORDER_KEY);
+    if (!stored) return;
+
+    let parsed;
+    try { parsed = JSON.parse(stored); } catch { return; }
+
+    const orderId = parsed.order_id;
+    if (!orderId) return;
+
+    showCryptoModal();
+    setCryptoState('loading');
+    pollCryptoPayment(orderId);
+  })();
+
 })();
 </script>
 </body>

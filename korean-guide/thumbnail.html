@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:600px; height:600px; overflow:hidden; }
+.card {
+  width:600px; height:600px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 45%, #0f3460 100%);
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  position:relative; overflow:hidden;
+  font-family: Arial, 'Helvetica Neue', sans-serif;
+}
+.bg-char {
+  position:absolute;
+  font-family: Arial, sans-serif;
+  font-size:420px;
+  color:rgba(255,255,255,0.04);
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+  font-weight:700;
+}
+.flag { font-size:48px; margin-bottom:16px; }
+.badge {
+  background:#E8C84A;
+  color:#1a1a2e;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  padding:6px 20px;
+  border-radius:30px;
+  margin-bottom:24px;
+}
+.title {
+  font-size:52px;
+  font-weight:800;
+  color:white;
+  line-height:1.05;
+  text-align:center;
+  letter-spacing:-1px;
+  margin-bottom:6px;
+}
+.title span { color:#E8C84A; }
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size:18px;
+  color:rgba(255,255,255,0.55);
+  margin-bottom:28px;
+  text-align:center;
+}
+.divider {
+  width:60px; height:3px;
+  background:#E8C84A;
+  margin-bottom:24px;
+  border-radius:2px;
+}
+.features {
+  display:flex; flex-direction:column; gap:8px;
+  align-items:flex-start;
+  margin-bottom:28px;
+}
+.feat {
+  font-size:13px;
+  color:rgba(255,255,255,0.8);
+  font-weight:600;
+}
+.feat span { color:#E8C84A; margin-right:6px; }
+.price-badge {
+  background:rgba(232,200,74,0.15);
+  border:2px solid #E8C84A;
+  border-radius:40px;
+  padding:10px 32px;
+  color:#E8C84A;
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+.domain {
+  position:absolute;
+  bottom:18px;
+  font-size:11px;
+  color:rgba(255,255,255,0.25);
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="bg-char">한</div>
+  <div class="flag">🇰🇷</div>
+  <div class="badge">Complete Beginner's Guide</div>
+  <div class="title">Learn <span>Korean</span></div>
+  <div class="subtitle">한국어 완전 학습 가이드</div>
+  <div class="divider"></div>
+  <div class="features">
+    <div class="feat"><span>✅</span>28 Chapters · Zero to Conversational</div>
+    <div class="feat"><span>✅</span>Grammar · Vocab · Real Conversations</div>
+    <div class="feat"><span>✅</span>K-pop · Travel · Food · Slang</div>
+    <div class="feat"><span>✅</span>Quizzes &amp; Emoji Picture Cards</div>
+  </div>
+  <div class="price-badge">PDF — $9.99</div>
+  <div class="domain">krguide.com</div>
+</div>
+</body>
+</html>
