@@ -11,7 +11,7 @@ PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
 TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "").strip()
 
 TOPICS = [
-    # 건강
+    # ── 건강 (기존 39개 유지) ──
     ("혈압 관리에 좋은 음식 TOP 5", "건강관리", "blood pressure healthy food"),
     ("하루 30분 걷기의 놀라운 건강 효과", "건강생활", "walking exercise health"),
     ("면역력 높이는 생활습관 7가지", "건강", "immune system healthy lifestyle"),
@@ -37,7 +37,6 @@ TOPICS = [
     ("단백질 식품 TOP 10 완벽 정리", "건강다이어트", "protein food diet health"),
     ("혈액순환 개선을 위한 운동과 음식", "건강생활", "blood circulation exercise food"),
     ("아침 식사의 중요성과 건강한 아침 메뉴", "건강생활", "healthy breakfast morning food"),
-    # 건강 추가
     ("갱년기 여성을 위한 호르몬 균형 식단", "건강관리", "menopause diet hormone balance"),
     ("50대 이후 꼭 받아야 할 건강검진 항목", "시니어건강", "health checkup over 50 senior"),
     ("신장 건강을 지키는 생활 습관과 음식", "건강관리", "kidney health food lifestyle"),
@@ -52,11 +51,134 @@ TOPICS = [
     ("불면증 극복을 위한 수면 루틴과 음식", "건강생활", "insomnia sleep routine food"),
     ("피로 회복에 좋은 비타민과 미네랄 총정리", "건강식품", "fatigue vitamins minerals supplement"),
     ("노화 방지를 위한 항산화 생활 습관", "건강백세", "anti aging antioxidant lifestyle"),
+
+    # ── 응급상황 대처요령 (신규 8개, 건강관리 카테고리) ──
+    ("어머니가 미끄러지셨을 때 — 의식 확인부터 119까지 첫 5분", "건강관리", "emergency fall first aid senior"),
+    ("갑작스러운 가슴 통증, 심근경색 골든타임 대처법", "건강관리", "heart attack emergency response"),
+    ("뇌졸중 의심 신호 FAST 체크와 4.5시간의 의미", "건강관리", "stroke FAST emergency"),
+    ("코피가 멈추지 않을 때 — 올바른 응급조치 순서", "건강관리", "nosebleed first aid"),
+    ("화상 입었을 때 절대 하면 안 되는 것 7가지", "건강관리", "burn first aid mistakes"),
+    ("음식이 목에 걸렸을 때 — 하임리히법 정확히 하는 법", "건강관리", "heimlich choking first aid"),
+    ("당뇨 환자가 의식을 잃을 때 — 저혈당 응급처치", "건강관리", "hypoglycemia diabetes emergency"),
+    ("벌에 쏘였을 때 알레르기 쇼크 대처와 예방", "건강관리", "bee sting allergy emergency"),
+
+    # ── 멘탈헬스 (정신건강·여가·보람 통합) 신규 12개 ──
+    ("불안장애 자가 진단과 일상 회복법", "멘탈헬스", "anxiety disorder mental health"),
+    ("우울감을 이겨내는 작은 습관 5가지", "멘탈헬스", "depression overcoming daily habits"),
+    ("번아웃 신호 알아차리고 회복하는 방법", "멘탈헬스", "burnout recovery mental wellness"),
+    ("명상 처음 시작하는 사람을 위한 5분 가이드", "멘탈헬스", "meditation beginner mindfulness"),
+    ("스트레스 받을 때 즉시 도움되는 호흡법", "멘탈헬스", "stress relief breathing technique"),
+    ("은퇴 후 시작한 정원 가꾸기 — 마음이 회복되었습니다", "멘탈헬스", "gardening retirement mental wellness"),
+    ("매일 10분 감사 일기로 기분 바꾸기", "멘탈헬스", "gratitude journal mood improvement"),
+    ("디지털 디톡스 실천 가이드 — 핸드폰에서 멀어지기", "멘탈헬스", "digital detox phone wellness"),
+    ("외로움을 다루는 건강한 7가지 방법", "멘탈헬스", "loneliness coping mental health"),
+    ("동네 복지관 봉사활동을 시작하고 달라진 일상", "멘탈헬스", "volunteer community senior wellness"),
+    ("악기 배우기로 되찾은 집중력 — 시니어 추천 악기", "멘탈헬스", "music instrument senior brain"),
+    ("도서관 200% 활용으로 풍요로운 노후 만들기", "멘탈헬스", "library reading retirement leisure"),
+
+    # ── 재테크 (신규 12개) ──
+    ("ETF 처음 시작하는 초보자 입문 가이드", "재테크", "ETF investing beginner finance"),
+    ("연금저축·IRP로 절세하는 노후 준비법", "재테크", "retirement pension tax saving korea"),
+    ("월급쟁이를 위한 자동 저축 시스템 만들기", "재테크", "automatic saving system salary"),
+    ("부동산 청약 가점 올리는 실전 전략", "재테크", "real estate apartment subscription"),
+    ("주식 초보가 피해야 할 7가지 투자 실수", "재테크", "stock investing mistakes beginner"),
+    ("배당주 투자로 월 현금흐름 만들기", "재테크", "dividend stock cash flow investing"),
+    ("가계부 앱 추천과 지출 관리 노하우", "재테크", "budget app expense tracking"),
+    ("신용점수 올리는 실전 방법 7가지", "재테크", "credit score improvement finance"),
+    ("초보자를 위한 미국 주식 시작 가이드", "재테크", "US stock investing beginner"),
+    ("적금 vs 예금 vs CMA 어디에 넣어야 할까", "재테크", "savings deposit comparison korea"),
+    ("종합소득세 절세 노하우 직장인 편", "재테크", "income tax saving employee korea"),
+    ("월 100만원으로 시작하는 분산 투자 포트폴리오", "재테크", "monthly investment portfolio diversification"),
+
+    # ── 생활정보 (여행·운동·일상 통합) 신규 12개 ──
+    ("이사 갈 때 절대 잊으면 안 되는 체크리스트", "생활정보", "moving day checklist home"),
+    ("국민연금 예상 수령액 조회와 늘리는 법", "생활정보", "national pension calculation"),
+    ("전기·가스 요금 절약하는 12가지 실전 팁", "생활정보", "energy saving home utility bill"),
+    ("정부 지원금·복지 혜택 한 번에 찾는 법", "생활정보", "government support benefit korea"),
+    ("자동차 보험 가입 전 꼭 확인할 5가지", "생활정보", "car insurance comparison checklist"),
+    ("건강보험 환급금 조회·신청 방법", "생활정보", "health insurance refund korea"),
+    ("실손보험 청구 누락 없이 받는 노하우", "생활정보", "medical insurance claim korea"),
+    ("시니어 부부에게 추천하는 국내 여행지 7곳 — 평지 위주", "생활정보", "senior couple korea travel easy"),
+    ("기차로 떠나는 한국의 슬로 트래블 후기", "생활정보", "train slow travel korea senior"),
+    ("실내에서 할 수 있는 시니어 유산소 운동 7가지", "생활정보", "indoor cardio senior exercise"),
+    ("의자 요가로 매일 10분 — 무릎 약한 분들에게 추천", "생활정보", "chair yoga senior knee"),
+    ("탄성 밴드 한 개로 시작하는 집안 근력 운동", "생활정보", "resistance band home senior"),
+
+    # ── 반려동물 (신규 10개) ──
+    ("강아지 사료 고를 때 꼭 봐야 할 성분", "반려동물", "dog food ingredients pet"),
+    ("고양이 첫 입양 전 준비물 완벽 정리", "반려동물", "cat adoption first time supplies"),
+    ("반려견 산책 시 주의사항과 매너", "반려동물", "dog walking etiquette pet"),
+    ("강아지 분리불안 극복 훈련법", "반려동물", "dog separation anxiety training"),
+    ("고양이 화장실 문제 해결 가이드", "반려동물", "cat litter box training"),
+    ("노령견 건강 관리와 식이 조절", "반려동물", "senior dog health diet"),
+    ("강아지 치아 관리 — 양치부터 스케일링까지", "반려동물", "dog dental care brushing"),
+    ("고양이가 보내는 스트레스 신호와 해결법", "반려동물", "cat stress signs solutions"),
+    ("반려견과 함께하는 건강한 다이어트 방법", "반려동물", "dog weight loss healthy diet"),
+    ("처음 동물병원 방문 시 꼭 확인해야 할 것들", "반려동물", "pet first vet visit checklist"),
+
+    # ── 뷰티건강 (신규 10개) ──
+    ("피부 노화 늦추는 안티에이징 식습관", "뷰티건강", "anti aging skin diet beauty"),
+    ("탈모 케어 샴푸 고르는 기준 5가지", "뷰티건강", "hair loss shampoo selection"),
+    ("기미·잡티 줄이는 생활 습관과 식품", "뷰티건강", "skin pigmentation lifestyle"),
+    ("건성 피부를 위한 보습 루틴 완벽 가이드", "뷰티건강", "dry skin moisturizing routine"),
+    ("자외선 차단제 올바르게 바르는 법", "뷰티건강", "sunscreen application skincare"),
+    ("두피 마사지로 모발 건강 되살리기", "뷰티건강", "scalp massage hair health"),
+    ("입술이 자꾸 트는 진짜 원인과 케어법", "뷰티건강", "chapped lips care prevention"),
+    ("여드름 흉터 자국 관리 실전 가이드", "뷰티건강", "acne scar care skincare"),
+    ("손톱이 약해질 때 챙겨야 할 영양과 케어", "뷰티건강", "weak nails care nutrition"),
+    ("머리카락 빠짐 줄이는 일상 습관 8가지", "뷰티건강", "hair fall reduction daily habits"),
 ]
 
 # 속보뉴스 비율: 애드센스 승인 전까지 비활성화
 USE_NEWS = False  # 승인 후 활성화: TAVILY_API_KEY and random.random() < 0.30
-topic, category, image_query = random.choice(TOPICS)
+
+
+def fetch_published_titles():
+    """이미 게시된 글 제목 set 반환 (중복 방지용)"""
+    used = set()
+    try:
+        page = 1
+        while True:
+            resp = requests.get(
+                "https://bichonbuff.com/api/posts",
+                params={"page": page, "limit": 100},
+                timeout=10
+            )
+            if resp.status_code != 200:
+                print(f"⚠️ 기존 글 조회 실패 (HTTP {resp.status_code}) — 중복 체크 생략")
+                return set()
+            data = resp.json()
+            posts = data.get("posts", [])
+            if not posts:
+                break
+            for p in posts:
+                title = (p.get("title") or "").strip()
+                if title:
+                    used.add(title)
+            if len(posts) < 100:
+                break
+            page += 1
+            if page > 10:  # 안전 가드 (최대 1,000개)
+                break
+    except Exception as e:
+        print(f"⚠️ 기존 글 조회 예외: {e} — 중복 체크 생략")
+        return set()
+    return used
+
+
+# ── 중복 방지: 이미 게시된 제목과 정확히 일치하면 후보에서 제외 ──
+used_titles = fetch_published_titles()
+print(f"📚 기존 게시된 글 수: {len(used_titles)}")
+
+available_topics = [t for t in TOPICS if t[0] not in used_titles]
+print(f"🎯 사용 가능한 주제: {len(available_topics)} / {len(TOPICS)}")
+
+if not available_topics:
+    print("❌ 모든 주제가 소진되었습니다. TOPICS 확장 필요. 종료합니다.")
+    raise SystemExit(0)
+
+topic, category, image_query = random.choice(available_topics)
+print(f"✅ 선택된 주제: {topic} (카테고리: {category})")
 
 
 FALLBACK_IMAGES = {
@@ -363,40 +485,58 @@ def generate_post(topic, references="", body_image="", experiences=""):
   </figure>
   (alt 속성에는 "이미지" 같은 단어 대신 해당 섹션 내용을 설명하는 구체적인 한국어 문장을 넣으세요)""" if body_image else ""
 
-    prompt = f"""당신은 건강한 생활을 10년째 직접 실천하며 블로그를 운영 중인 건강 전문 블로거입니다.
-영양학 지식과 함께 본인의 직접 체험, 주변 사람들의 경험을 자연스럽게 녹여 글을 씁니다.
+    prompt = f"""당신은 '행복한시니어' 블로그를 5년째 직접 운영 중인 60대 운영자입니다.
+의사·약사·트레이너가 아니라 **본인이 실제로 겪고, 시도하고, 실패하고, 다시 시도해 온 평범한 사람**입니다.
+어머니(85세)와 함께 살며, 본인의 건강 변화·실수·재시도를 솔직히 기록합니다.
+독자는 50~70대 시니어가 대부분이며, 추상적 정보보다 "내 옆집 이웃이 들려주는 이야기" 같은 글을 찾아옵니다.
 
 주제: {topic}
 {ref_section}{exp_section}
-[작성 규칙]
-- HTML 형식 (h2, h3, p, ul, li, strong, blockquote, table 태그 적극 활용)
-- 분량: 1800~2500단어
-- 구성:
-  1. 개인적인 경험이나 주변 사례로 시작하는 도입부 (통계/연구 수치 포함)
-  2. 핵심 내용 5개 섹션 (각 섹션마다 h2 태그)
-  3. 각 섹션에 연구 결과, 전문가 의견, 구체적 수치 포함
-  4. blockquote 태그로 전문가 인용구 또는 실제 후기 1~2개 삽입
-  5. 실천 가능한 팁을 bullet point로 정리
-  6. 마무리 (핵심 요약 + 독자 행동 유도)
-- "연구에 따르면", "전문가들은", "○○ 대학 연구팀" 등 출처 명시
-- 위에 제공된 [실제 체험담 자료]를 참고하여, 블로거 본인 또는 독자들의 실제 경험처럼 자연스럽게 1~2곳에 녹여주세요.
-  예) "저도 3개월 전부터 직접 해봤는데...", "카페에서 많은 분들이 비슷한 경험을 나눠주셨어요..."
-  단, 출처 URL은 노출하지 말고 내용만 자연스럽게 반영하세요.
-- 의학적 면책 조항을 마지막에 추가
-- 친근하고 공감가는 문체 (너무 딱딱하지 않게)
-- SEO를 위해 주제 키워드를 자연스럽게 반복
+[작성 규칙 — 핵심: AdSense E-E-A-T 통과를 위한 '경험 기반' 글쓰기]
 
-[SEO 필수 규칙 - 반드시 준수]
-1. 첫 번째 <p> 태그의 첫 문장에 제목의 핵심 키워드를 자연스럽게 포함하세요.
-   예) 주제가 "혈압 낮추는 법"이면 → "혈압을 낮추는 방법을 찾고 계신가요? ..."
-2. 링크(<a> 태그)를 사용할 때는 반드시 설명적인 앵커 텍스트를 사용하세요.
-   금지: <a href="...">여기</a>, <a href="...">클릭</a>
-   권장: <a href="...">혈압 낮추는 DASH 식단 자세히 보기</a>
+▶ 도입부 (반드시 첫 200자 안에 다음 셋 중 둘 이상 포함):
+  1. 내가 직접 겪은 구체적 사건 (날짜·장소·대사 포함). 예: "작년 11월 초, 어머니가 새벽에 화장실 가시다가…"
+  2. 내가 가졌던 오해 또는 실패 경험. 예: "처음엔 이게 별 거 아닌 줄 알고 그냥 넘겼는데…"
+  3. 그래서 내가 무엇을 직접 알아보고, 무엇을 시도했는지의 동기. 예: "그날 이후 한 달 동안 ○○를 직접 찾아봤습니다."
+  ※ "안녕하세요 여러분", "오늘은 ○○에 대해 알아볼게요" 같은 인사말은 절대 금지.
+
+▶ 본문 (5개 h2 섹션, 1800~2500단어, 다음 요소 모두 포함):
+  - 1인칭 화자 시점 유지 ("저는", "제가", "우리 어머니는", "제 친구 ○○씨가")
+  - 각 섹션마다 본인 또는 주변인의 **구체 일화** 1개 이상 (실명 X, 가명·이니셜 OK)
+  - "안 되더라" / "효과 없었다" / "오히려 부작용 생겼다" 같은 **실패·시행착오** 1~2회 솔직히 언급
+  - 그럼에도 **무엇이 통했는지** 본인의 결론 + 그 결론에 도달한 과정
+  - 객관적 근거(연구·전문가 의견·구체 수치)는 본인 경험을 뒷받침하는 보조자료로 사용 (메인이 아님)
+  - blockquote 태그로 본인의 다짐·반성·깨달음 1~2개 삽입 ("그때 알았다…")
+  - 표(table) 1개 — 본인이 직접 시도한 항목별 비교/체크리스트 형식
+
+▶ 마무리:
+  - 추상적 결론("건강 관리가 중요합니다") 금지
+  - "오늘부터 저는 이걸 ○○하기로 했습니다" 같은 **본인의 구체적 다짐** 1줄
+  - 독자에게 "여러분은 어떻게 하고 계신가요?" 식 질문 1줄로 마무리
+
+▶ 의학·금융 정보의 경우:
+  - 마지막에 면책 조항 필수: "본 글은 개인의 경험을 정리한 것으로, 의학적/법률적 자문이 아닙니다. 증상이나 의문 사항은 반드시 전문가와 상담하세요."
+  - 단, 면책이 본문 톤(1인칭 체험)을 흐리지 않게 별도 박스로 처리.
+
+▶ HTML 형식 (h2/h3/p/ul/li/strong/blockquote/table/figure 적극 활용)
+
+[SEO 필수 규칙 — 반드시 준수]
+1. 첫 <p> 첫 문장에 제목의 핵심 키워드를 자연스럽게 포함하되, **본인 일화로 시작**. 예: "○○ 증상을 처음 느낀 건 작년 가을이었습니다."
+2. 링크(<a>) 앵커 텍스트는 설명형. "여기"·"클릭" 금지.
+3. 키워드 반복은 자연스럽게 (1500자 기준 5~8회).
 {body_image_instruction}
 
+[AdSense 봇이 거부하는 글의 특징 — 절대 피하기]
+- "○○에 대해 알아봅시다" 식 강의 톤
+- 모든 정보가 일반론·교과서적으로만 나열
+- 본인 흔적 0%, 누구나 쓸 수 있는 내용
+- 같은 주제로 인터넷에 흔히 떠도는 정보 단순 재포장
+- 결론이 "건강이 중요합니다" 같은 추상적 마무리
+→ 위 5가지 중 하나라도 해당되면 글을 다시 쓰세요.
+
 아래 형식으로만 응답하세요. 마크다운 코드블록(```)을 절대 사용하지 마세요:
-TITLE: (매력적인 제목, 숫자나 효과를 포함)
-EXCERPT: (80~120자 요약, 검색 결과에 표시될 문장)
+TITLE: (1인칭 시점 또는 구체 사건이 드러나는 매력적 제목)
+EXCERPT: (80~120자, 본인이 겪은 일이 짐작되는 한 문장)
 KEYWORDS: (SEO 키워드 5~7개, 쉼표 구분)
 CONTENT: (HTML 본문 전체, 코드블록 없이 HTML 태그만 사용)"""
 
