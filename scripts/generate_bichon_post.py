@@ -52,7 +52,7 @@ TOPICS = [
     ("피로 회복에 좋은 비타민과 미네랄 총정리", "건강식품", "fatigue vitamins minerals supplement"),
     ("노화 방지를 위한 항산화 생활 습관", "건강백세", "anti aging antioxidant lifestyle"),
 
-    # ── 응급상황 대처요령 (신규 8개, 건강관리 카테고리) ──
+    # ── 응급상황 대처요령 (8개) ──
     ("어머니가 미끄러지셨을 때 — 의식 확인부터 119까지 첫 5분", "건강관리", "emergency fall first aid senior"),
     ("갑작스러운 가슴 통증, 심근경색 골든타임 대처법", "건강관리", "heart attack emergency response"),
     ("뇌졸중 의심 신호 FAST 체크와 4.5시간의 의미", "건강관리", "stroke FAST emergency"),
@@ -62,7 +62,24 @@ TOPICS = [
     ("당뇨 환자가 의식을 잃을 때 — 저혈당 응급처치", "건강관리", "hypoglycemia diabetes emergency"),
     ("벌에 쏘였을 때 알레르기 쇼크 대처와 예방", "건강관리", "bee sting allergy emergency"),
 
-    # ── 멘탈헬스 (정신건강·여가·보람 통합) 신규 12개 ──
+    # ── 시니어건강 신규 확장 (15개) ──
+    ("70대 부모님 모시면서 알게 된 낙상 방지 집안 점검", "시니어건강", "senior fall prevention home check"),
+    ("어르신 청력 저하 — 보청기 알아본 두 달의 기록", "시니어건강", "elderly hearing loss hearing aid"),
+    ("60대 어머니의 무릎 인공관절 수술 전후 관리", "시니어건강", "senior knee replacement recovery"),
+    ("아버지의 백내장 수술 — 안과 선택부터 회복까지", "시니어건강", "cataract surgery senior recovery"),
+    ("시니어 우울증 신호 — 가족이 먼저 알아챈 변화", "시니어건강", "senior depression family signs"),
+    ("어르신 변비 해결을 위한 식단과 운동 한 달 기록", "시니어건강", "senior constipation diet exercise"),
+    ("70대 부모님 운전, 언제 그만둬야 할까 — 가족의 고민", "시니어건강", "senior driving safety family"),
+    ("어머니 오십견 재활 운동 — 매일 10분의 변화", "시니어건강", "senior frozen shoulder rehab"),
+    ("시니어 노인성 난청 — 일찍 발견하면 좋은 점", "시니어건강", "senior age-related hearing loss"),
+    ("의자에서 일어나기 힘들 때 — 시니어 다리 근력 운동", "시니어건강", "senior leg strength chair exercise"),
+    ("어르신 야간뇨 — 새벽 화장실 빈도 줄이는 생활 습관", "시니어건강", "senior nocturia night urination"),
+    ("60대 이후 균형 잡기 어려워질 때 — 평형감각 훈련", "시니어건강", "senior balance training"),
+    ("어머니의 황반변성 — 진단 받고 우리가 바꾼 것", "시니어건강", "senior macular degeneration"),
+    ("시니어 손떨림 — 본태성 떨림인지 파킨슨 초기인지", "시니어건강", "senior tremor diagnosis"),
+    ("70대 어르신 영양 보충 — 단백질 음료 한 달 시도", "시니어건강", "senior protein supplement trial"),
+
+    # ── 멘탈헬스 (12개) ──
     ("불안장애 자가 진단과 일상 회복법", "멘탈헬스", "anxiety disorder mental health"),
     ("우울감을 이겨내는 작은 습관 5가지", "멘탈헬스", "depression overcoming daily habits"),
     ("번아웃 신호 알아차리고 회복하는 방법", "멘탈헬스", "burnout recovery mental wellness"),
@@ -76,7 +93,7 @@ TOPICS = [
     ("악기 배우기로 되찾은 집중력 — 시니어 추천 악기", "멘탈헬스", "music instrument senior brain"),
     ("도서관 200% 활용으로 풍요로운 노후 만들기", "멘탈헬스", "library reading retirement leisure"),
 
-    # ── 재테크 (신규 12개) ──
+    # ── 재테크 (12개) ──
     ("ETF 처음 시작하는 초보자 입문 가이드", "재테크", "ETF investing beginner finance"),
     ("연금저축·IRP로 절세하는 노후 준비법", "재테크", "retirement pension tax saving korea"),
     ("월급쟁이를 위한 자동 저축 시스템 만들기", "재테크", "automatic saving system salary"),
@@ -90,7 +107,7 @@ TOPICS = [
     ("종합소득세 절세 노하우 직장인 편", "재테크", "income tax saving employee korea"),
     ("월 100만원으로 시작하는 분산 투자 포트폴리오", "재테크", "monthly investment portfolio diversification"),
 
-    # ── 생활정보 (여행·운동·일상 통합) 신규 12개 ──
+    # ── 생활정보 (12개) ──
     ("이사 갈 때 절대 잊으면 안 되는 체크리스트", "생활정보", "moving day checklist home"),
     ("국민연금 예상 수령액 조회와 늘리는 법", "생활정보", "national pension calculation"),
     ("전기·가스 요금 절약하는 12가지 실전 팁", "생활정보", "energy saving home utility bill"),
@@ -104,7 +121,7 @@ TOPICS = [
     ("의자 요가로 매일 10분 — 무릎 약한 분들에게 추천", "생활정보", "chair yoga senior knee"),
     ("탄성 밴드 한 개로 시작하는 집안 근력 운동", "생활정보", "resistance band home senior"),
 
-    # ── 반려동물 (신규 10개) ──
+    # ── 반려동물 (10개) ──
     ("강아지 사료 고를 때 꼭 봐야 할 성분", "반려동물", "dog food ingredients pet"),
     ("고양이 첫 입양 전 준비물 완벽 정리", "반려동물", "cat adoption first time supplies"),
     ("반려견 산책 시 주의사항과 매너", "반려동물", "dog walking etiquette pet"),
@@ -116,7 +133,7 @@ TOPICS = [
     ("반려견과 함께하는 건강한 다이어트 방법", "반려동물", "dog weight loss healthy diet"),
     ("처음 동물병원 방문 시 꼭 확인해야 할 것들", "반려동물", "pet first vet visit checklist"),
 
-    # ── 뷰티건강 (신규 10개) ──
+    # ── 뷰티건강 (10개) ──
     ("피부 노화 늦추는 안티에이징 식습관", "뷰티건강", "anti aging skin diet beauty"),
     ("탈모 케어 샴푸 고르는 기준 5가지", "뷰티건강", "hair loss shampoo selection"),
     ("기미·잡티 줄이는 생활 습관과 식품", "뷰티건강", "skin pigmentation lifestyle"),
@@ -134,8 +151,9 @@ USE_NEWS = False  # 승인 후 활성화: TAVILY_API_KEY and random.random() < 0
 
 
 def fetch_published_titles():
-    """이미 게시된 글 제목 set 반환 (중복 방지용)"""
-    used = set()
+    """이미 게시된 글 제목 + 슬러그 set 반환 (중복 방지용)"""
+    used_titles = set()
+    used_slugs = set()
     try:
         page = 1
         while True:
@@ -146,31 +164,47 @@ def fetch_published_titles():
             )
             if resp.status_code != 200:
                 print(f"⚠️ 기존 글 조회 실패 (HTTP {resp.status_code}) — 중복 체크 생략")
-                return set()
+                return set(), set()
             data = resp.json()
             posts = data.get("posts", [])
             if not posts:
                 break
             for p in posts:
-                title = (p.get("title") or "").strip()
-                if title:
-                    used.add(title)
+                t = (p.get("title") or "").strip()
+                s = (p.get("slug") or "").strip()
+                if t: used_titles.add(t)
+                if s: used_slugs.add(s)
             if len(posts) < 100:
                 break
             page += 1
-            if page > 10:  # 안전 가드 (최대 1,000개)
+            if page > 10:
                 break
     except Exception as e:
         print(f"⚠️ 기존 글 조회 예외: {e} — 중복 체크 생략")
-        return set()
-    return used
+        return set(), set()
+    return used_titles, used_slugs
 
 
-# ── 중복 방지: 이미 게시된 제목과 정확히 일치하면 후보에서 제외 ──
-used_titles = fetch_published_titles()
+# ── 중복 방지: 제목 또는 핵심 키워드 중복 시 후보 제외 ──
+used_titles, used_slugs = fetch_published_titles()
 print(f"📚 기존 게시된 글 수: {len(used_titles)}")
 
-available_topics = [t for t in TOPICS if t[0] not in used_titles]
+
+def topic_already_covered(topic_title, used_set):
+    """제목 자체 일치 + 핵심 키워드 7~8글자 substring 중복까지 차단."""
+    if topic_title in used_set:
+        return True
+    # 핵심 키워드 추출 (8글자 이상의 한글 덩어리)
+    import re as _re
+    cores = [w for w in _re.findall(r'[가-힣]{6,}', topic_title)]
+    for core in cores:
+        for existing in used_set:
+            if core in existing:
+                return True
+    return False
+
+
+available_topics = [t for t in TOPICS if not topic_already_covered(t[0], used_titles)]
 print(f"🎯 사용 가능한 주제: {len(available_topics)} / {len(TOPICS)}")
 
 if not available_topics:
@@ -485,57 +519,91 @@ def generate_post(topic, references="", body_image="", experiences=""):
   </figure>
   (alt 속성에는 "이미지" 같은 단어 대신 해당 섹션 내용을 설명하는 구체적인 한국어 문장을 넣으세요)""" if body_image else ""
 
-    prompt = f"""당신은 '행복한시니어' 블로그를 5년째 직접 운영 중인 60대 운영자입니다.
-의사·약사·트레이너가 아니라 **본인이 실제로 겪고, 시도하고, 실패하고, 다시 시도해 온 평범한 사람**입니다.
-어머니(85세)와 함께 살며, 본인의 건강 변화·실수·재시도를 솔직히 기록합니다.
-독자는 50~70대 시니어가 대부분이며, 추상적 정보보다 "내 옆집 이웃이 들려주는 이야기" 같은 글을 찾아옵니다.
+    prompt = f"""당신은 '행복한시니어' 블로그를 5년째 직접 운영 중인 60대 운영자입니다. 의사·약사·트레이너가 아니라 평범한 사람입니다. 어머니(85세)와 함께 살며, 본인의 건강 변화·실수·재시도를 솔직히 기록합니다. 독자는 50~70대 시니어가 대부분이며, 추상적 정보보다 "옆집 이웃이 들려주는 이야기" 같은 글을 찾아옵니다.
 
 주제: {topic}
 {ref_section}{exp_section}
-[작성 규칙 — 핵심: AdSense E-E-A-T 통과를 위한 '경험 기반' 글쓰기]
 
-▶ 도입부 (반드시 첫 200자 안에 다음 셋 중 둘 이상 포함):
-  1. 내가 직접 겪은 구체적 사건 (날짜·장소·대사 포함). 예: "작년 11월 초, 어머니가 새벽에 화장실 가시다가…"
-  2. 내가 가졌던 오해 또는 실패 경험. 예: "처음엔 이게 별 거 아닌 줄 알고 그냥 넘겼는데…"
-  3. 그래서 내가 무엇을 직접 알아보고, 무엇을 시도했는지의 동기. 예: "그날 이후 한 달 동안 ○○를 직접 찾아봤습니다."
-  ※ "안녕하세요 여러분", "오늘은 ○○에 대해 알아볼게요" 같은 인사말은 절대 금지.
+[글쓰기 절대 원칙 — 모두 지켜야 함]
 
-▶ 본문 (5개 h2 섹션, 1800~2500단어, 다음 요소 모두 포함):
-  - 1인칭 화자 시점 유지 ("저는", "제가", "우리 어머니는", "제 친구 ○○씨가")
-  - 각 섹션마다 본인 또는 주변인의 **구체 일화** 1개 이상 (실명 X, 가명·이니셜 OK)
-  - "안 되더라" / "효과 없었다" / "오히려 부작용 생겼다" 같은 **실패·시행착오** 1~2회 솔직히 언급
-  - 그럼에도 **무엇이 통했는지** 본인의 결론 + 그 결론에 도달한 과정
-  - 객관적 근거(연구·전문가 의견·구체 수치)는 본인 경험을 뒷받침하는 보조자료로 사용 (메인이 아님)
-  - blockquote 태그로 본인의 다짐·반성·깨달음 1~2개 삽입 ("그때 알았다…")
-  - 표(table) 1개 — 본인이 직접 시도한 항목별 비교/체크리스트 형식
+▶ 1. 개인 경험이 정보보다 먼저
+   - 도입은 본인 또는 가족·이웃의 구체 사건. 날짜·계절·날씨·대사 포함.
+   - 정보 전달은 그 다음. 경험을 거쳐서만 정보가 살아남.
+   - "어머니가 작년 겨울 욕실에서 미끄러지셨어요. 다행히 크게 다치진 않았는데, 그 이후로 낙상에 대해 제대로 알아봐야겠다 싶었습니다." 식 도입.
 
-▶ 마무리:
-  - 추상적 결론("건강 관리가 중요합니다") 금지
-  - "오늘부터 저는 이걸 ○○하기로 했습니다" 같은 **본인의 구체적 다짐** 1줄
-  - 독자에게 "여러분은 어떻게 하고 계신가요?" 식 질문 1줄로 마무리
+▶ 2. AI 냄새 절대 금지 — 다음 표현은 무조건 빼세요
+   금지(절대 등장 X):
+   - "~에 대해 알아보겠습니다", "오늘은 ~에 대해"
+   - "중요합니다", "필수입니다" (남발 금지, 구체 이유로 대체)
+   - "완벽 가이드", "완벽 정리", "총정리" (제목·본문 둘 다)
+   - "핵심 전략", "꿀팁", "비법"
+   - "실천해 보세요", "시작해 보세요" → "해봤어요", "해보니"
+   - "도움이 됩니다" 남발
+   - "지금 당장", "오늘부터"
+   - 제목에 "~하는 법", "~하는 방법", "10년 실천자가"
+   - "과학적으로 증명된"
+   - "많은 분들이"
+   - "이상으로 ~에 대해 알아보았습니다" 마무리
+   - "첫째, 둘째, 셋째" 나열 남발
+   - "~란 무엇인가?" 패턴 소제목
 
-▶ 의학·금융 정보의 경우:
-  - 마지막에 면책 조항 필수: "본 글은 개인의 경험을 정리한 것으로, 의학적/법률적 자문이 아닙니다. 증상이나 의문 사항은 반드시 전문가와 상담하세요."
-  - 단, 면책이 본문 톤(1인칭 체험)을 흐리지 않게 별도 박스로 처리.
+▶ 3. 어조와 문장 — 진짜 사람처럼
+   - 구어체: "~했어요", "~더라고요", "~인 것 같아요"
+   - 짧은 문장. 한 문장에 정보 두 개 이상 욱여넣지 않음.
+   - 솔직함: 효과 없었던 것·실패도 그대로. "처음엔 잘 안 되더라고요"
+   - 독자에게 말 걸기: "혹시 이런 경험 있으신가요?", "저만 그런 건 아니겠죠?"
+   - 단정 금지. "제 경우엔", "어머니께선" 같은 한정.
 
-▶ HTML 형식 (h2/h3/p/ul/li/strong/blockquote/table/figure 적극 활용)
+▶ 4. 구조 (이 흐름 그대로)
+   1) 도입(3~5문장): 본인 or 주변의 구체 사건
+   2) 왜 이 주제를 찾아봤는지 (동기)
+   3) 알아본 내용 (정보 + 출처) + 본문 이미지
+   4) 실제로 시도한 것 + 어떤 변화·결과
+   5) 솔직한 마무리 (효과·아쉬운 점·계속 시도할 것)
 
-[SEO 필수 규칙 — 반드시 준수]
-1. 첫 <p> 첫 문장에 제목의 핵심 키워드를 자연스럽게 포함하되, **본인 일화로 시작**. 예: "○○ 증상을 처음 느낀 건 작년 가을이었습니다."
-2. 링크(<a>) 앵커 텍스트는 설명형. "여기"·"클릭" 금지.
-3. 키워드 반복은 자연스럽게 (1500자 기준 5~8회).
+▶ 5. HTML
+   - h2/h3/p/ul/li/strong/em/blockquote/table 사용
+   - 본문 이미지 1개 이상 (제공된 body_image_instruction 따르기)
+   - 표 1개 이상 (체크리스트·비교 등)
+   - blockquote 1~2개 (다짐·반성·깨달음)
+
+▶ 6. 출처 인용 (구체적·자연스럽게)
+   - 정부·공공기관·연구 자료 인용 시: "질병관리청 자료를 보니", "국민건강보험공단 통계로는"
+   - URL은 본문에 노출 X (앵커 텍스트만)
+   - 막연한 "연구에 따르면" 금지 — 출처 기관명 명시
+
+▶ 7. 제목 작성
+   좋은 예: "어머니 낙상 사고 이후 알게 된 것들 — 집 안 안전 점검부터 균형 운동까지"
+   좋은 예: "수족냉증, 저는 이렇게 달라졌어요"
+   나쁜 예: "낙상 예방 완벽 가이드 — 지금 당장 시작해야 할 핵심 전략"
+
+▶ 8. 마무리
+   - "건강 관리가 중요합니다" 같은 추상적 결론 금지
+   - "오늘부터 저는 이걸 ○○하기로 했습니다" 식 본인의 구체 다짐
+   - "여러분은 어떻게 하고 계신가요?" 식 질문 1줄
+
+▶ 9. 의학 정보 면책
+   - 마지막에 "본 글은 개인 경험 정리로, 의학적 자문이 아닙니다. 증상 시 전문가 상담." 박스 필수.
+   - 단, 면책이 본문 1인칭 톤을 흐리지 않게 별도 처리.
+
+▶ 10. 분량
+   - 1800~2500단어. 채우려고 동어 반복·공허한 문장 금지. 진짜 할 말만.
+
+[SEO 필수]
+- 첫 <p> 첫 문장에 제목 핵심 키워드 자연스럽게 포함, 단 본인 일화로 시작
+- 링크 앵커 텍스트는 설명형 ("여기"·"클릭" 금지)
 {body_image_instruction}
 
-[AdSense 봇이 거부하는 글의 특징 — 절대 피하기]
-- "○○에 대해 알아봅시다" 식 강의 톤
-- 모든 정보가 일반론·교과서적으로만 나열
-- 본인 흔적 0%, 누구나 쓸 수 있는 내용
-- 같은 주제로 인터넷에 흔히 떠도는 정보 단순 재포장
-- 결론이 "건강이 중요합니다" 같은 추상적 마무리
-→ 위 5가지 중 하나라도 해당되면 글을 다시 쓰세요.
+[자체 검수 체크 — 작성 후 본인이 확인]
+- [ ] 도입에 구체 사건(날짜·날씨·대사)이 있는가
+- [ ] 위 금지 표현이 단 한 번도 안 나왔는가
+- [ ] "~하는 법" 같은 강의 톤 제목인가
+- [ ] 모든 정보가 본인 경험을 거쳐서 나왔는가
+- [ ] 단정·과장 없이 솔직한가
+- [ ] 마무리가 본인의 구체 다짐 + 독자 질문인가
 
 아래 형식으로만 응답하세요. 마크다운 코드블록(```)을 절대 사용하지 마세요:
-TITLE: (1인칭 시점 또는 구체 사건이 드러나는 매력적 제목)
+TITLE: (구체 사건이 드러나는 1인칭 시점 제목, "~법" "완벽" 금지)
 EXCERPT: (80~120자, 본인이 겪은 일이 짐작되는 한 문장)
 KEYWORDS: (SEO 키워드 5~7개, 쉼표 구분)
 CONTENT: (HTML 본문 전체, 코드블록 없이 HTML 태그만 사용)"""
